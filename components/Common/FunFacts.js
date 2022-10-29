@@ -15,10 +15,10 @@ const FunFacts = () => {
             >
               <div className="single-fun-fact">
                 <h3>
-                  820
+                  500
                   <span className="sign-icon">+</span>
                 </h3>
-                <p>Data Analytics</p>
+                <p>GHG Project</p>
               </div>
             </div>
 
@@ -31,10 +31,10 @@ const FunFacts = () => {
             >
               <div className="single-fun-fact">
                 <h3>
-                  150
+                  10
                   <span className="sign-icon">+</span>
                 </h3>
-                <p>Data Management</p>
+                <p>Life Cycle Assessment</p>
               </div>
             </div>
 
@@ -50,7 +50,9 @@ const FunFacts = () => {
                   20
                   <span className="sign-icon">+</span>
                 </h3>
-                <p>Managed Analytics</p>
+                <p>
+                  Climate Change Adaptation
+                </p>
               </div>
             </div>
 

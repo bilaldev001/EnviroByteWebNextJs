@@ -102,9 +102,30 @@ const Navbar = () => {
 
                       <li className="nav-item">
                         <Link href="/service-details" activeClassName="active">
-                          <a className="nav-link">Service Details</a>
+                          <a className="nav-link">Decarbonization Pathway</a>
                         </Link>
                       </li>
+                      <li className="nav-item">
+                        <Link href="/service-details" activeClassName="active">
+                          <a className="nav-link">Materiality Assessment</a>
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link href="/service-details" activeClassName="active">
+                          <a className="nav-link">Climate Change Adaptation</a>
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link href="/pricing" activeClassName="active">
+                          <a className="nav-link">Life Cycle Assessment</a>
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link href="/pricing" activeClassName="active">
+                          <a className="nav-link">TCFD Scenario Analysis</a>
+                        </Link>
+                      </li>
+
                     </ul>
                   </li>
 

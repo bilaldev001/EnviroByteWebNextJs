@@ -738,6 +738,7 @@ Main Banner Area CSS
 .main-banner-content p {
   color: #ffffff;
   margin: 0 0 0 0;
+  font-size: 20px;
 }
 .main-banner-content .banner-btn {
   margin-top: 35px;

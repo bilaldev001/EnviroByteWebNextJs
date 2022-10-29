@@ -270,3 +270,4 @@ sketch
 # End of https://www.toptal.com/developers/gitignore/api/intellij,react,node
 /public/images/logo-black.png
 /public/images/logo-white.png
+/build/cache/webpack/client-development/*.pack

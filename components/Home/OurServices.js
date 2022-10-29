@@ -7,8 +7,9 @@ const OurServices = () => {
       <div className="data-service-section pb-100">
         <div className="container">
           <div className="section-title">
-            <span>Our Services</span>
-            <h2>Explore Our Data Services</h2>
+            <span>Be the Change</span>
+            <h2>Data-driven Reporting and Planning
+            </h2>
           </div>
 
           <div className="row align-items-center justify-content-center">
@@ -21,7 +22,7 @@ const OurServices = () => {
                   <h3>
                     <Link href="/service-details">
                       <a>
-                        Big Data
+                        Regulatory and ESG
                         <i className="flaticon-right"></i>
                       </a>
                     </Link>
@@ -35,7 +36,7 @@ const OurServices = () => {
                   <h3>
                     <Link href="/service-details">
                       <a>
-                        Data Science
+                        Materiality Assessment
                         <i className="flaticon-right"></i>
                       </a>
                     </Link>
@@ -49,7 +50,7 @@ const OurServices = () => {
                   <h3>
                     <Link href="/service-details">
                       <a>
-                        Managed Analytics
+                        Life Cycle Assessment
                         <i className="flaticon-right"></i>
                       </a>
                     </Link>
@@ -67,7 +68,7 @@ const OurServices = () => {
                   <h3>
                     <Link href="/service-details">
                       <a>
-                        Data Analytics
+                        Decarbonization Pathway
                         <i className="flaticon-right"></i>
                       </a>
                     </Link>
@@ -81,7 +82,7 @@ const OurServices = () => {
                   <h3>
                     <Link href="/service-details">
                       <a>
-                        Business Intelligence
+                        Climate Change Adaptation
                         <i className="flaticon-right"></i>
                       </a>
                     </Link>
@@ -95,7 +96,7 @@ const OurServices = () => {
                   <h3>
                     <Link href="/service-details">
                       <a>
-                        Data Management
+                        TCFD Scenario Analysis
                         <i className="flaticon-right"></i>
                       </a>
                     </Link>

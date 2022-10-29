@@ -272,3 +272,4 @@ sketch
 /public/images/logo-white.png
 /build/cache/webpack/client-development/*.pack
 package-lock.json
+/build/*

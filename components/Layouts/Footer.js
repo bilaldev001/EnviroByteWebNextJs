@@ -15,37 +15,14 @@ const Footer = () => {
                   <h3>About Us</h3>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  At EnviroByte, we build the products that we want to use ourselves. After over 10 years working with
+                  black box software, we are tired of the GHG/air reporting tools that the market is offering. We
+                  designed EmissionX with easy verification and assurance in mind by integrating data science tools
+                  (e.g. Jupyter Lab) with CI/CD processes, which offers the most flexibility, transparency, and
+                  customization.
                 </p>
 
-                <ul className="footer-social">
-                  <li>
-                    <a href="https://www.facebook.com/" target="_blank">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
 
-                  <li>
-                    <a href="https://www.twitter.com/" target="_blank">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="https://www.pinterest.com/" target="_blank">
-                      <i className="fab fa-pinterest"></i>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                      <i className="fab fa-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
               </div>
             </div>
 
@@ -63,17 +40,17 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href="/projects">
-                      <a>Project</a>
+                      <a>Team</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/services">
-                      <a>Services</a>
+                      <a>Emission Factor Hub</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/team">
-                      <a>Team</a>
+                      <a>Login</a>
                     </Link>
                   </li>
                   <li>
@@ -94,27 +71,27 @@ const Footer = () => {
                 <ul className="footer-quick-links">
                   <li>
                     <Link href="/">
-                      <a>Home</a>
+                      <a>AI Emissions Monitoring</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/blog">
-                      <a>Blog</a>
+                      <a>Regulatory Reporting</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/services">
-                      <a>Services</a>
+                      <a>Life Circle Assessment</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/partner">
-                      <a>Client</a>
+                      <a>Decarbonization</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/contact">
-                      <a>Contact</a>
+                      <a>Scenario Analysis</a>
                     </Link>
                   </li>
                 </ul>
@@ -130,20 +107,16 @@ const Footer = () => {
                 <div className="footer-info-contact">
                   <i className="flaticon-call-answer"></i>
                   <h3>Phone</h3>
-                  <span>+123(456)123</span>
+                  <span>+1 403.809.8844</span>
                 </div>
 
                 <div className="footer-info-contact">
                   <i className="flaticon-envelope"></i>
                   <h3>Email</h3>
-                  <span>hello@raxr.com</span>
+                  <span>info@envirobyte.com</span>
                 </div>
 
-                <div className="footer-info-contact">
-                  <i className="flaticon-maps-and-flags"></i>
-                  <h3>Address</h3>
-                  <span>32 st Kilda Road, Melbourne VIC, 3004 Australia</span>
-                </div>
+
               </div>
             </div>
           </div>
@@ -162,9 +135,9 @@ const Footer = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6">
               <p>
-                &copy; {currentYear} Raxr. All Rights Reserved by
-                <a href="https://envytheme.com/" target="_blank">
-                  EnvyTheme
+                &copy; {currentYear} EnviroByte. All Rights Reserved by
+                <a href="https://www.fishcreekpark.homes/" target="_blank">
+                  SmartPeople
                 </a>
               </p>
             </div>

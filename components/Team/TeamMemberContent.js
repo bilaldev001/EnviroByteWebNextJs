@@ -7,156 +7,155 @@ const TeamMemberContent = () => {
         <div className="container">
           <div className="section-title">
             <span>Our Experts</span>
-            <h2>Meet Our Leadership Preparing For Your Success</h2>
+            <h2>People who started EnviroByte</h2>
           </div>
 
           <div className="row">
-            <div className="col-lg-4 col-sm-6">
+            <div className="col-lg-3 col-sm-6">
               <div className="single-team-item">
                 <div className="team-image">
-                  <img src="/images/team/team1.jpg" alt="team" />
+                  <img src="/images/team/team1.png" alt="team" />
 
                   <div className="team-social">
-                    <a href="https://www.facebook.com/" target="_blank">
-                      <i className="fab fa-facebook-f"></i>
+                    <a href="/bio-details" target="_blank">
+                      <i className="fa fa-id-badge"></i>
                     </a>
-                    <a href="https://www.twitter.com/" target="_blank">
-                      <i className="fab fa-twitter"></i>
+                    <a href="https://www.linkedin.com/in/briansloof/" target="_blank">
+                      <i className="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i className="fab fa-instagram"></i>
+                    <a href="/contact" target="_blank">
+                      <i className="fa fa-envelope"></i>
                     </a>
                   </div>
                 </div>
 
                 <div className="team-content">
-                  <h3>Thomas Edison</h3>
-                  <span>Web Developer</span>
+                  <h3>Brian Sloof</h3>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-sm-6">
+            <div className="col-lg-3 col-sm-6">
               <div className="single-team-item">
                 <div className="team-image">
-                  <img src="/images/team/team2.jpg" alt="team" />
+                  <img src="/images/team/team2.png" alt="team" />
 
                   <div className="team-social">
-                    <a href="https://www.facebook.com/" target="_blank">
-                      <i className="fab fa-facebook-f"></i>
+                    <a href="/bio-details" target="_blank">
+                      <i className="fa fa-id-badge"></i>
                     </a>
-                    <a href="https://www.twitter.com/" target="_blank">
-                      <i className="fab fa-twitter"></i>
+                    <a href="https://www.linkedin.com/in/ghgoffsetter/" target="_blank">
+                      <i className="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i className="fab fa-instagram"></i>
+                    <a href="/contact" target="_blank">
+                      <i className="fa fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="team-content">
+                  <h3>Nelson Lee</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-sm-6">
+              <div className="single-team-item">
+                <div className="team-image">
+                  <img src="/images/team/team3.png" alt="team" />
+
+                  <div className="team-social">
+                    <a href="/bio-details" target="_blank">
+                      <i className="fa fa-id-badge"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pubkevinpoirier791/" target="_blank">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                    <a href="/contact" target="_blank">
+                      <i className="fa fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="team-content">
+                  <h3>Kevin Poirier</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-sm-6">
+              <div className="single-team-item">
+                <div className="team-image">
+                  <img src="/images/team/team4.png" alt="team" />
+
+                  <div className="team-social">
+                    <a href="/bio-details" target="_blank">
+                      <i className="fa fa-id-badge"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/minxingsi/" target="_blank">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                    <a href="/contact" target="_blank">
+                      <i className="fa fa-envelope"></i>
                     </a>
                   </div>
                 </div>
 
                 <div className="team-content">
                   <h3>Louis Pasteur</h3>
-                  <span>Project Manager</span>
+                </div>
+              </div>
+            </div>
+            <div className="section-title">
+              <br/>
+              <br/>
+              <br/>
+              <span>Our Advisors</span>
+              <h2>People who advise EnviroByte</h2>
+            </div>
+            <div className="col-lg-6 col-sm-6">
+              <div className="single-team-item">
+                <div className="team-image">
+                  <img src="/images/team/team5.png" alt="team" />
+
+                  <div className="team-social">
+                    <a href="/bio-details" target="_blank">
+                      <i className="fa fa-id-badge"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/perry-toms-4567666/" target="_blank">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                    <a href="/contact" target="_blank">
+                      <i className="fa fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+                <div className="team-content">
+                  <h3>Perry Toms</h3>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-sm-6">
+            <div className="col-lg-6 col-sm-6">
               <div className="single-team-item">
                 <div className="team-image">
-                  <img src="/images/team/team3.jpg" alt="team" />
+                  <img src="/images/team/team6.png" alt="team" />
 
                   <div className="team-social">
-                    <a href="https://www.facebook.com/" target="_blank">
-                      <i className="fab fa-facebook-f"></i>
+                    <a href="/bio-details" target="_blank">
+                      <i className="fa fa-id-badge"></i>
                     </a>
-                    <a href="https://www.twitter.com/" target="_blank">
-                      <i className="fab fa-twitter"></i>
+                    <a href=" https://www.linkedin.com/in/john-parr-yyc/" target="_blank">
+                      <i className="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i className="fab fa-instagram"></i>
+                    <a href="/contact" target="_blank">
+                      <i className="fa fa-envelope"></i>
                     </a>
                   </div>
                 </div>
 
                 <div className="team-content">
-                  <h3>Pierre Curie</h3>
-                  <span>Web Designer</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-sm-6">
-              <div className="single-team-item">
-                <div className="team-image">
-                  <img src="/images/team/team4.jpg" alt="team" />
-
-                  <div className="team-social">
-                    <a href="https://www.facebook.com/" target="_blank">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.twitter.com/" target="_blank">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="team-content">
-                  <h3>Louis Pasteur</h3>
-                  <span>Marketing Manager</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-sm-6">
-              <div className="single-team-item">
-                <div className="team-image">
-                  <img src="/images/team/team5.jpg" alt="team" />
-
-                  <div className="team-social">
-                    <a href="https://www.facebook.com/" target="_blank">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.twitter.com/" target="_blank">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="team-content">
-                  <h3>Edmond Halley</h3>
-                  <span>Agent Management</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-sm-6">
-              <div className="single-team-item">
-                <div className="team-image">
-                  <img src="/images/team/team6.jpg" alt="team" />
-
-                  <div className="team-social">
-                    <a href="https://www.facebook.com/" target="_blank">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.twitter.com/" target="_blank">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="team-content">
-                  <h3>Brian Cox</h3>
-                  <span>Content Writer</span>
+                  <h3>John Parr</h3>
                 </div>
               </div>
             </div>

@@ -17,7 +17,7 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                       data-aos-once="true"
                     >
-                      <h1>Data Science as a Service</h1>
+                      <h1>Data-driven Sustainability</h1>
                     </div>
 
                     <div
@@ -27,10 +27,10 @@ const MainBanner = () => {
                       data-aos-once="true"
                     >
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip.
+                        EnviroByte applies data-driven methods with environmental science, software engineering, and
+                        machine learning to increase efficiency and effectiveness of sustainability reporting, planning,
+                        monitoring and management, including Greenhouse Gas emissions, Criteria Air Contaminants, etc.
+
                       </p>
                     </div>
 

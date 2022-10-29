@@ -132,20 +132,30 @@ const Navbar = () => {
                   <li className="nav-item">
                     <Link href="#">
                       <a className="nav-link">
-                        Projects <i className="fas fa-chevron-down"></i>
+                        Data Science<i className="fas fa-chevron-down"></i>
                       </a>
                     </Link>
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <Link href="/projects" activeClassName="active">
-                          <a className="nav-link">Projects</a>
+                          <a className="nav-link">Advanced Data Analytics</a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
                         <Link href="/project-details" activeClassName="active">
-                          <a className="nav-link">Project Details</a>
+                          <a className="nav-link">IoT Air Quality Monitoring</a>
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link href="/project-details" activeClassName="active">
+                          <a className="nav-link">Predictive Emissions Monitoring</a>
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link href="/project-details" activeClassName="active">
+                          <a className="nav-link">Predictive Analytics</a>
                         </Link>
                       </li>
                     </ul>
@@ -154,74 +164,14 @@ const Navbar = () => {
                   <li className="nav-item">
                     <Link href="#">
                       <a className="nav-link">
-                        Pages <i className="fas fa-chevron-down"></i>
+                        APP <i className="fas fa-chevron-down"></i>
                       </a>
                     </Link>
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link href="/about-us" activeClassName="active">
-                          <a className="nav-link">About Us</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/team" activeClassName="active">
-                          <a className="nav-link">Team</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/services" activeClassName="active">
-                          <a className="nav-link">Services</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/service-details" activeClassName="active">
-                          <a className="nav-link">Service Details</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/projects" activeClassName="active">
-                          <a className="nav-link">Projects</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/project-details" activeClassName="active">
-                          <a className="nav-link">Project Details</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/pricing" activeClassName="active">
-                          <a className="nav-link">Pricing</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/partner" activeClassName="active">
-                          <a className="nav-link">Partner</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/faq" activeClassName="active">
-                          <a className="nav-link">FAQ</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/coming-soon" activeClassName="active">
-                          <a className="nav-link">Coming Soon</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/404" activeClassName="active">
-                          <a className="nav-link">404 Error Page</a>
+                        <Link href="https://ghg.mzcodelab.com" activeClassName="active">
+                          <a className="nav-link" target="_blank">Emission Factor Hub</a>
                         </Link>
                       </li>
                     </ul>

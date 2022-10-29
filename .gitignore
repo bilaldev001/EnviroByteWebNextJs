@@ -273,3 +273,4 @@ sketch
 /build/cache/webpack/client-development/*.pack
 package-lock.json
 /build/*
+/.idea/

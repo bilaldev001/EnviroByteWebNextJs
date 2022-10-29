@@ -2884,19 +2884,19 @@ Page Title Area CSS
 }
 
 .item-bg1 {
-  background-image: url(/images/page-title-bg-2.jpg);
+  background-image: url(../public/images/page-title-bg-2.jpg);
 }
 
 .item-bg2 {
-  background-image: url(/images/page-title-bg-3.jpg);
+  background-image: url(../public/images/page-title-bg-3.jpeg);
 }
 
 .item-bg3 {
-  background-image: url(/images/page-title-bg-4.jpg);
+  background-image: url(../public/images/page-title-bg-4.jpg);
 }
 
 .item-bg4 {
-  background-image: url(/images/page-title-bg-5.jpg);
+  background-image: url(../public/images/page-title-bg-5.jpg);
 }
 
 /*================================================
@@ -3312,7 +3312,7 @@ Coming Soon Area CSS
   position: relative;
   z-index: 1;
   height: 100vh;
-  background-image: url(/images/page-title-bg.jpg);
+  background-image: url(../public/images/page-title-bg.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

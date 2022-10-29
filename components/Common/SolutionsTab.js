@@ -10,38 +10,127 @@ const SolutionsTab = () => {
           <div className="solutions-list-tab">
             <Tabs>
               <TabList>
-                <Tab>Research & Solution</Tab>
-                <Tab>Design & Strategy</Tab>
-                <Tab>Analytics AI</Tab>
-                <Tab>Cloud Deployment</Tab>
+                <Tab>Advanced Data Analytics</Tab>
+                <Tab>IoT Air Quality Monitoring</Tab>
+                <Tab>Predictive Emissions Monitoring</Tab>
+                <Tab>Predictive Maintenance/Analytics</Tab>
               </TabList>
 
               <TabPanel>
+                {/* Tabs item 1 */}
                 <div className="row align-items-center">
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
-                      <h3>Enterprise AI & Data Platform Solutions</h3>
+                      <h3>Advanced Data Analytics</h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Quis ipsum suspendisse ultrices gravida.
-                        Risus commodo viverra maecenas accumsan lacus vel
-                        facilisis. Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry.
+                        In this project, we extracted actual operating data from a public database- Petrinex (Canada’s
+                        Petroleum Information Network), which contains more than 35 million records for 18 in situ oil
+                        sands extraction schemes. We analyze fuel gas use, steam injection, solvent co-injection, oil
+                        production, flare, and vent volumes.
                       </p>
 
                       <ul className="tab-list">
                         <li>
                           <i className="flaticon-tick-1"></i>
-                          Innovation idea the latest business technology
+                          Data mining for in situ oil extraction
                         </li>
                         <li>
                           <i className="flaticon-tick-1"></i>
-                          Safe secure services for your online email account
+                          Fuel consumption benchmarking
                         </li>
                         <li>
                           <i className="flaticon-tick-1"></i>
-                          Digital content marketing online
+                          Carbon/emission intensity benchmarking
+                        </li>
+                      </ul>
+
+                      <div className="tab-btn">
+                        <Link href="/service-details">
+                          <a className="default-btn">
+                            Read More <span></span>
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-lg-5">
+                    <div className="tab-image-right">
+                      <img src="/images/tab-solution.png" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </TabPanel>
+              {/* Tabs item 2 */}
+              <TabPanel>
+                <div className="row align-items-center">
+                  <div className="col-lg-5">
+                    <div className="tab-image-left">
+                      <img src="/images/tab-solution.png" alt="image" />
+                    </div>
+                  </div>
+
+                  <div className="col-lg-7">
+                    <div className="tab-solution-content">
+                      <h3>Air emissions/quality monitoring by</h3>
+                      <h3>cost-effective sensors</h3>
+                      <p>
+                        We calibrated a low-cost particle sensor using machine learning techniques. The particle senor
+                        was used to monitor ambient air quality. The internet of thing (IoT) enabled low-cost sensors
+                        can be used to construct a high-resolution PM monitoring network and provide real-time emission
+                        monitoring data.
+                      </p>
+
+                      <ul className="tab-list">
+                        <li>
+                          <i className="flaticon-tick-1"></i>
+                          Air emissions monitoring
+                        </li>
+                        <li>
+                          <i className="flaticon-tick-1"></i>
+                          Sensor calibration using machine learning methods
+                        </li>
+                        <li>
+                          <i className="flaticon-tick-1"></i>
+                          Neural network and gradient boosting
+                        </li>
+                      </ul>
+
+                      <div className="tab-btn">
+                        <Link href="/service-details">
+                          <a className="default-btn">
+                            Read More <span></span>
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </TabPanel>
+
+              {/* Tabs item 3 */}
+              <TabPanel>
+                <div className="row align-items-center">
+                  <div className="col-lg-7">
+                    <div className="tab-solution-content">
+                      <h3>AI-Based Emission Monitoring</h3>
+                      <p>
+                        EnviroByte helps facility operators with machine learning methods to develop their predictive
+                        emission models by themselves for emissions monitoring and reporting.
+                      </p>
+
+                      <ul className="tab-list">
+                        <li>
+                          <i className="flaticon-tick-1"></i>
+                          Predictive emission monitoring system
+                        </li>
+                        <li>
+                          <i className="flaticon-tick-1"></i>
+                          Machine learning methods for emission monitoring
+                        </li>
+                        <li>
+                          <i className="flaticon-tick-1"></i>
+                          Emission monitoring and reporting
                         </li>
                       </ul>
 
@@ -73,125 +162,26 @@ const SolutionsTab = () => {
 
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
-                      <h3>Design & Strategy Data Platform Solutions</h3>
+                      <h3>Data-driven approaches for predictive analytics</h3>
                       <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo. Nemo
-                        enim ipsam voluptatem quia voluptas sit aspernatur aut
-                        odit aut fugit, sed quia consequuntur magni dolores eos
-                        qui ratione.
+                        Data-driven discovery from Petrinex using unsupervised machine learning algorithms to discover
+                        steam consumption patterns for in situ oil sand operations to reduce GHG emission from
+                        extraction processes. The study showed that the cyclic steam stimulation (CSS) recovery method
+                        was less efficient than the steam assisted gravity drainage (SAGD) recovery method.
                       </p>
 
                       <ul className="tab-list">
                         <li>
                           <i className="flaticon-tick-1"></i>
-                          Innovation idea the latest business technology
+                          Data-driven for in situ oil sand operations
                         </li>
                         <li>
                           <i className="flaticon-tick-1"></i>
-                          Safe secure services for your online email account
+                          Steam consumption patterns
                         </li>
                         <li>
                           <i className="flaticon-tick-1"></i>
-                          Digital content marketing online
-                        </li>
-                      </ul>
-
-                      <div className="tab-btn">
-                        <Link href="/service-details">
-                          <a className="default-btn">
-                            Read More <span></span>
-                          </a>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </TabPanel>
-
-              <TabPanel>
-                <div className="row align-items-center">
-                  <div className="col-lg-7">
-                    <div className="tab-solution-content">
-                      <h3>Analytics AI & Data Platform Solutions</h3>
-                      <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo. Nemo
-                        enim ipsam voluptatem quia voluptas sit aspernatur aut
-                        odit aut fugit, sed quia consequuntur magni dolores eos
-                        qui ratione.
-                      </p>
-
-                      <ul className="tab-list">
-                        <li>
-                          <i className="flaticon-tick-1"></i>
-                          Innovation idea the latest business technology
-                        </li>
-                        <li>
-                          <i className="flaticon-tick-1"></i>
-                          Safe secure services for your online email account
-                        </li>
-                        <li>
-                          <i className="flaticon-tick-1"></i>
-                          Digital content marketing online
-                        </li>
-                      </ul>
-
-                      <div className="tab-btn">
-                        <Link href="/service-details">
-                          <a className="default-btn">
-                            Read More <span></span>
-                          </a>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-5">
-                    <div className="tab-image-right">
-                      <img src="/images/tab-solution.png" alt="image" />
-                    </div>
-                  </div>
-                </div>
-              </TabPanel>
-
-              <TabPanel>
-                <div className="row align-items-center">
-                  <div className="col-lg-5">
-                    <div className="tab-image-left">
-                      <img src="/images/tab-solution.png" alt="image" />
-                    </div>
-                  </div>
-
-                  <div className="col-lg-7">
-                    <div className="tab-solution-content">
-                      <h3>Cloud Deployment AI & Data Platform Solutions</h3>
-                      <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo. Nemo
-                        enim ipsam voluptatem quia voluptas sit aspernatur aut
-                        odit aut fugit, sed quia consequuntur magni dolores eos
-                        qui ratione.
-                      </p>
-
-                      <ul className="tab-list">
-                        <li>
-                          <i className="flaticon-tick-1"></i>
-                          Innovation idea the latest business technology
-                        </li>
-                        <li>
-                          <i className="flaticon-tick-1"></i>
-                          Safe secure services for your online email account
-                        </li>
-                        <li>
-                          <i className="flaticon-tick-1"></i>
-                          Digital content marketing online
+                          SOR and carbon intensity
                         </li>
                       </ul>
 

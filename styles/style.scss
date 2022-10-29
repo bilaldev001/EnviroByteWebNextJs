@@ -368,7 +368,7 @@ Navbar Area CSS
                         weight: 500;
                     }
                     color: $white-color;
-                    text-transform: capitalize;
+                    text-transform: none;
                     padding: {
                         left: 0;
                         right: 0;
@@ -417,7 +417,7 @@ Navbar Area CSS
                     li {
                         padding: 0;
                         a {
-                            text-transform: capitalize;
+                            text-transform: none;
                             padding: 8px 15px;
                             padding-left: 0;
                             margin: 0;
@@ -469,7 +469,7 @@ Navbar Area CSS
                                     li {
                                         a {
                                             color: #696997;
-                                            text-transform: capitalize;
+                                            text-transform: none;
         
                                             &:hover, &:focus, &.active {
                                                 color: $main-color;
@@ -483,7 +483,7 @@ Navbar Area CSS
                                             li {
                                                 a {
                                                     color: #696997;
-                                                    text-transform: capitalize;
+                                                    text-transform: none;
                                                     &:hover, &:focus, &.active {
                                                         color: $main-color;
                                                     }
@@ -496,7 +496,7 @@ Navbar Area CSS
                                                     li {
                                                         a {
                                                             color: #696997;
-                                                            text-transform: capitalize;
+                                                            text-transform: none;
                                                             &:hover, &:focus, &.active {
                                                                 color: $main-color;
                                                             }
@@ -509,7 +509,7 @@ Navbar Area CSS
                                                             li {
                                                                 a {
                                                                     color: #696997;
-                                                                    text-transform: capitalize;
+                                                                    text-transform: none;
                                 
                                                                     &:hover, &:focus, &.active {
                                                                         color: $main-color;
@@ -523,7 +523,7 @@ Navbar Area CSS
                                                                     li {
                                                                         a {
                                                                             color: #696997;
-                                                                            text-transform: capitalize;
+                                                                            text-transform: none;
                                                                             &:hover, &:focus, &.active {
                                                                                 color: $main-color;
                                                                             }

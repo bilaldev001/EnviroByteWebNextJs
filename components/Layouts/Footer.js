@@ -149,11 +149,6 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="lines">
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
-        </div>
 
         <div className="partner-shape-img1">
           <img src="/images/shape/partnar-shape-2.png" alt="image" />

@@ -1241,6 +1241,7 @@ About Section CSS
 .about-content p {
   font-weight: 400;
   margin: 0 0 0 0;
+  font-size: 20px;
 }
 .about-content .about-list {
   margin-bottom: 0;

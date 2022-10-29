@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const AboutUs = () => {
+const BriefEmissionX = () => {
   return (
     <>
       <div className="about-section ptb-100">
@@ -15,30 +15,30 @@ const AboutUs = () => {
 
             <div className="col-lg-6">
               <div className="about-content">
-                <span>About Us</span>
-                <h2>Focused On Actionable Insights</h2>
+                <span>A Scalable and Customizable Emissions Reporting Tool</span>
+                <h2>EmissionX</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                  We build the products that we want to use ourselves. This is why we design EmissionX with easy
+                  verification and assurance in mind by integrating data science tools (e.g. Jupyter Lab) with CI/CD
+                  processes, which offers the most flexibility, transparency, and customization.
                 </p>
 
                 <ul className="about-list">
                   <li>
                     <i className="flaticon-tick"></i>
-                    Professional Consultancy Service
+                    Alberta TIER, BC GHG, SK OBPS, ECCC OBPS
                   </li>
                   <li>
                     <i className="flaticon-tick"></i>
-                    24/7 Support Center
+                    GHG Protocol
                   </li>
                   <li>
                     <i className="flaticon-tick"></i>
-                    Custom Service & Operation
+                    US EPA GHGRP
                   </li>
                   <li>
                     <i className="flaticon-tick"></i>
-                    Advanced Advisory Team
+                    ECCC NPRI, ECCC GHGRP
                   </li>
                 </ul>
 
@@ -56,4 +56,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default BriefEmissionX;

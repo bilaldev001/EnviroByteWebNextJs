@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Layouts/Navbar";
 import MainBanner from "../components/Home/MainBanner";
-import AboutUs from "../components/Home/AboutUs";
+import BriefEmissionX from "../components/Home/BriefEmissionX";
 import OurServices from "../components/Home/OurServices";
 import FunFacts from "../components/Common/FunFacts";
 import SolutionsTab from "../components/Common/SolutionsTab";
@@ -14,7 +14,7 @@ const Index = () => {
 
       <MainBanner />
 
-      <AboutUs />
+      <BriefEmissionX />
 
       <OurServices />
 

@@ -178,42 +178,14 @@ const Navbar = () => {
                   </li>
 
                   <li className="nav-item">
-                    <Link href="#">
-                      <a className="nav-link">
-                        Blog <i className="fas fa-chevron-down"></i>
-                      </a>
+                    <Link href="/contact" activeClassName="active">
+                      <a className="nav-link">Contact Us</a>
                     </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link href="/blog" activeClassName="active">
-                          <a className="nav-link">Blog Grid</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/blog2" activeClassName="active">
-                          <a className="nav-link">Blog Right Sidebar</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/blog3" activeClassName="active">
-                          <a className="nav-link">Blog Left Sidebar</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/blog-details" activeClassName="active">
-                          <a className="nav-link">Blog Details</a>
-                        </Link>
-                      </li>
-                    </ul>
                   </li>
 
                   <li className="nav-item">
                     <Link href="/contact" activeClassName="active">
-                      <a className="nav-link">Contact Us</a>
+                      <a className="nav-link">login</a>
                     </Link>
                   </li>
                 </ul>

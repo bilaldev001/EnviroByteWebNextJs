@@ -185,7 +185,7 @@ const Navbar = () => {
 
                   <li className="nav-item">
                     <Link href="/contact" activeClassName="active">
-                      <a className="https://www.google.ca" target="_blank">login</a>
+                      <a className="https://www.google.ca" target="_blank">Login</a>
                     </Link>
                   </li>
                 </ul>

@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Raxr - React Next Data Science & AI Analytics Template</title>
+        <title>EnviroByte</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 

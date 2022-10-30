@@ -42,7 +42,7 @@ const BriefEmissionX = () => {
                   </li>
                 </ul>
 
-                <Link href="/about-us">
+                <Link href="/emissionx">
                   <a className="default-btn">
                     Read More <span></span>
                   </a>

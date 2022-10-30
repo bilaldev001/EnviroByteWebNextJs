@@ -3302,6 +3302,12 @@ Projects Details Area CSS
 .project-details-image {
     margin-bottom: 30px;
 }
+.project-details-emissionximage {
+    margin-bottom: auto;
+    margin-left: 8%;
+    margin-right: 8%;
+
+}
 .projects-details-desc {
     margin-top: 5px;
     h3 {
@@ -3309,6 +3315,12 @@ Projects Details Area CSS
         font: {
             size: 30px;
         }
+    }
+    p{
+        font-size: 20px;
+    }
+    text{
+        font-size: 20px;
     }
     .features-text {
         margin: {

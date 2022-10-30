@@ -3071,12 +3071,24 @@ Projects Details Area CSS
   margin-bottom: 30px;
 }
 
+.project-details-emissionximage {
+  margin-bottom: auto;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
 .projects-details-desc {
   margin-top: 5px;
 }
 .projects-details-desc h3 {
   margin-bottom: 13px;
   font-size: 30px;
+}
+.projects-details-desc p {
+  font-size: 20px;
+}
+.projects-details-desc text {
+  font-size: 20px;
 }
 .projects-details-desc .features-text {
   margin-top: 15px;

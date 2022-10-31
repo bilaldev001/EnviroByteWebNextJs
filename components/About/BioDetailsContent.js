@@ -9,7 +9,7 @@ const BioDetailsContent = () => {
                         <div className="row align-items-center">
                             <div className="col-lg-3 col-md-12">
                                 <div className="services-details-image">
-                                    <img src="/images/team/team6.png" alt="image" />
+                                    <img src="/images/team/team1.jpg" alt="image" />
                                 </div>
                             </div>
 
@@ -31,7 +31,7 @@ const BioDetailsContent = () => {
                         <div className="row align-items-center">
                             <div className="col-lg-3 col-md-12">
                                 <div className="services-details-image">
-                                    <img src="/images/team/team6.png" alt="image" />
+                                    <img src="/images/team/team2.jpg" alt="image" />
                                 </div>
                             </div>
 
@@ -53,7 +53,7 @@ const BioDetailsContent = () => {
                         <div className="row align-items-center">
                             <div className="col-lg-3 col-md-12">
                                 <div className="services-details-image">
-                                    <img src="/images/team/team6.png" alt="image" />
+                                    <img src="/images/team/team3.jpg" alt="image" />
                                 </div>
                             </div>
 
@@ -84,7 +84,7 @@ const BioDetailsContent = () => {
                         <div className="row align-items-center">
                             <div className="col-lg-3 col-md-12">
                                 <div className="services-details-image">
-                                    <img src="/images/team/team6.png" alt="image" />
+                                    <img src="/images/team/team4.jpg" alt="image" />
                                 </div>
                             </div>
 
@@ -108,7 +108,7 @@ const BioDetailsContent = () => {
                         <div className="row align-items-center">
                             <div className="col-lg-3 col-md-12">
                                 <div className="services-details-image">
-                                    <img src="/images/team/team6.png" alt="image" />
+                                    <img src="/images/team/team5.jpg" alt="image" />
                                 </div>
                             </div>
 
@@ -137,7 +137,7 @@ const BioDetailsContent = () => {
                         <div className="row align-items-center">
                             <div className="col-lg-3 col-md-12">
                                 <div className="services-details-image">
-                                    <img src="/images/team/team6.png" alt="image" />
+                                    <img src="/images/team/team6.jpg" alt="image" />
                                 </div>
                             </div>
 

@@ -14,7 +14,7 @@ const TeamMemberContent = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-team-item">
                 <div className="team-image">
-                  <img src="/images/team/team1.png" alt="team" />
+                  <img src="/images/team/team1.jpg" alt="team" />
 
                   <div className="team-social">
                     <a href="/bio-details" target="_blank">
@@ -38,7 +38,7 @@ const TeamMemberContent = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-team-item">
                 <div className="team-image">
-                  <img src="/images/team/team2.png" alt="team" />
+                  <img src="/images/team/team2.jpg" alt="team" />
 
                   <div className="team-social">
                     <a href="/bio-details" target="_blank">
@@ -62,7 +62,7 @@ const TeamMemberContent = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-team-item">
                 <div className="team-image">
-                  <img src="/images/team/team3.png" alt="team" />
+                  <img src="/images/team/team3.jpg" alt="team" />
 
                   <div className="team-social">
                     <a href="/bio-details" target="_blank">
@@ -86,7 +86,7 @@ const TeamMemberContent = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-team-item">
                 <div className="team-image">
-                  <img src="/images/team/team4.png" alt="team" />
+                  <img src="/images/team/team4.jpg" alt="team" />
 
                   <div className="team-social">
                     <a href="/bio-details" target="_blank">
@@ -116,7 +116,7 @@ const TeamMemberContent = () => {
             <div className="col-lg-6 col-sm-6">
               <div className="single-team-item">
                 <div className="team-image">
-                  <img src="/images/team/team5.png" alt="team" />
+                  <img src="/images/team/team5.jpg" alt="team" />
 
                   <div className="team-social">
                     <a href="/bio-details" target="_blank">
@@ -139,7 +139,7 @@ const TeamMemberContent = () => {
             <div className="col-lg-6 col-sm-6">
               <div className="single-team-item">
                 <div className="team-image">
-                  <img src="/images/team/team6.png" alt="team" />
+                  <img src="/images/team/team6.jpg" alt="team" />
 
                   <div className="team-social">
                     <a href="/bio-details" target="_blank">

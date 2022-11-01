@@ -45,7 +45,7 @@ const SolutionsTab = () => {
                       </ul>
 
                       <div className="tab-btn">
-                        <Link href="/service-details">
+                        <Link href="/service/advanced-data-analytics">
                           <a className="default-btn">
                             Read More <span></span>
                           </a>

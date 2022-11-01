@@ -138,7 +138,7 @@ const Navbar = () => {
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link href="/projects" activeClassName="active">
+                        <Link href="/service/advanced-data-analytics" activeClassName="active">
                           <a className="nav-link">Advanced Data Analytics</a>
                         </Link>
                       </li>

@@ -97,7 +97,7 @@ const SolutionsTab = () => {
                       </ul>
 
                       <div className="tab-btn">
-                        <Link href="/service-details">
+                        <Link href="/service/IoT-Air-Quality-Monitoring">
                           <a className="default-btn">
                             Read More <span></span>
                           </a>

@@ -135,7 +135,7 @@ const SolutionsTab = () => {
                       </ul>
 
                       <div className="tab-btn">
-                        <Link href="/service-details">
+                        <Link href="/service/predictive-emissions-monitoring">
                           <a className="default-btn">
                             Read More <span></span>
                           </a>
@@ -186,7 +186,7 @@ const SolutionsTab = () => {
                       </ul>
 
                       <div className="tab-btn">
-                        <Link href="/service-details">
+                        <Link href="/service/predictive-analytics">
                           <a className="default-btn">
                             Read More <span></span>
                           </a>

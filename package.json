@@ -9,6 +9,7 @@
     },
     "dependencies": {
         "@svgr/webpack":"6.5.0",
+        "@formspree/react": "2.4.0",
         "aos": "^2.3.4",
         "axios": "^0.22.0",
         "fslightbox-react": "^1.6.2-2",

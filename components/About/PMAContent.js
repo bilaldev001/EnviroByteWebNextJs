@@ -106,7 +106,7 @@ const PMAContent = () => {
 
 							<div className="single-info-box">
 								<Link href="/contact">
-									<a className="default-btn">Contact us for more information</a>
+									<a className="default-btn">Contact us</a>
 								</Link>
 							</div>
 						</div>

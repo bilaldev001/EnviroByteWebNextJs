@@ -101,7 +101,7 @@ const Navbar = () => {
                       </li>
 
                       <li className="nav-item">
-                        <Link href="/service-details" activeClassName="active">
+                        <Link href="/emissionx/decarbonization-pathway" activeClassName="active">
                           <a className="nav-link">Decarbonization Pathway</a>
                         </Link>
                       </li>

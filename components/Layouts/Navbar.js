@@ -59,7 +59,7 @@ const Navbar = () => {
                   <li className="nav-item">
                     <Link href="/">
                       <a className="nav-link">
-                        Home
+                        Home one
                       </a>
                     </Link>
                   </li>

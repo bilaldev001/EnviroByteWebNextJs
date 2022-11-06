@@ -149,7 +149,7 @@ const Navbar = () => {
                   <li className="nav-item">
                     <Link href="#">
                       <a className="nav-link">
-                        Data Science<i className="fas fa-chevron-down"></i>
+                        Data Science <i className="fas fa-chevron-down"></i>
                       </a>
                     </Link>
 

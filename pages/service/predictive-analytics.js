@@ -9,7 +9,7 @@ const PredictiveAnalytics = () => {
 		return (
 			<>
 				<Head><title>EnviroByte Inc. | Predictive Analytics</title>
-					<meta name="keywords" content={"envirobyte Environment GHG Calgary Alberta Predictive Analytics"}/>
+					<meta name="keywords" content={"envirobyte Environment GHG Calgary calgary Alberta Predictive Analytics"}/>
 					<meta property="og:title" content="EnviroByte Inc. - Predictive Analytics"/>
 					<meta property="og:PageType" content="website"/>
 					<meta property="og:type" content="website"/>

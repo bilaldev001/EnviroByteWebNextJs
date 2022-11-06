@@ -34,8 +34,8 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-md navbar-light">
               <Link href="/">
                 <a className="navbar-brand">
-                  <WhiteLogo className="white-logo" width ={200} alt ="logo"/>
-                  <BlackLogo className="black-logo" width= {200} alt="logo"/>
+                  <WhiteLogo className="white-logo" width={200} alt="logo" />
+                  <BlackLogo className="black-logo" width={200} alt="logo" />
                 </a>
               </Link>
 
@@ -58,9 +58,7 @@ const Navbar = () => {
                 <ul className="navbar-nav">
                   <li className="nav-item">
                     <Link href="/">
-                      <a className="nav-link">
-                        Home
-                      </a>
+                      <a className="nav-link">Home</a>
                     </Link>
                   </li>
 
@@ -95,66 +93,99 @@ const Navbar = () => {
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link href="https://ghg.mzcodelab.com/" activeClassName="active">
-                          <a className="nav-link" target="_blank">Regulatory and ESG</a>
+                        <Link
+                          href="https://ghg.mzcodelab.com/"
+                          activeClassName="active"
+                        >
+                          <a className="nav-link" target="_blank">
+                            Regulatory and ESG
+                          </a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
-                        <Link href="/emissionx/decarbonization-pathway" activeClassName="active">
+                        <Link
+                          href="/emissionx/decarbonization-pathway"
+                          activeClassName="active"
+                        >
                           <a className="nav-link">Decarbonization Pathway</a>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/emissionx/materiality-assessment" activeClassName="active">
+                        <Link
+                          href="/emissionx/materiality-assessment"
+                          activeClassName="active"
+                        >
                           <a className="nav-link">Materiality Assessment</a>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/emissionx/climate-change-adaption" activeClassName="active">
+                        <Link
+                          href="/emissionx/climate-change-adaption"
+                          activeClassName="active"
+                        >
                           <a className="nav-link">Climate Change Adaptation</a>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/emissionx/life-cycle-assessment" activeClassName="active">
+                        <Link
+                          href="/emissionx/life-cycle-assessment"
+                          activeClassName="active"
+                        >
                           <a className="nav-link">Life Cycle Assessment</a>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/emissionx/tcfd-scenario-analysis" activeClassName="active">
+                        <Link
+                          href="/emissionx/tcfd-scenario-analysis"
+                          activeClassName="active"
+                        >
                           <a className="nav-link">TCFD Scenario Analysis</a>
                         </Link>
                       </li>
-
                     </ul>
                   </li>
 
                   <li className="nav-item">
                     <Link href="#">
                       <a className="nav-link">
-                        Data Science <i className="fas fa-chevron-down"></i>
+                        Data Science<i className="fas fa-chevron-down"></i>
                       </a>
                     </Link>
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link href="/service/advanced-data-analytics" activeClassName="active">
+                        <Link
+                          href="/service/advanced-data-analytics"
+                          activeClassName="active"
+                        >
                           <a className="nav-link">Advanced Data Analytics</a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
-                        <Link href="/service/IoT-Air-Quality-Monitoring" activeClassName="active">
+                        <Link
+                          href="/service/IoT-Air-Quality-Monitoring"
+                          activeClassName="active"
+                        >
                           <a className="nav-link">IoT Air Quality Monitoring</a>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/service/predictive-emissions-monitoring" activeClassName="active">
-                          <a className="nav-link">Predictive Emissions Monitoring</a>
+                        <Link
+                          href="/service/predictive-emissions-monitoring"
+                          activeClassName="active"
+                        >
+                          <a className="nav-link">
+                            Predictive Emissions Monitoring
+                          </a>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/service/predictive-analytics" activeClassName="active">
+                        <Link
+                          href="/service/predictive-analytics"
+                          activeClassName="active"
+                        >
                           <a className="nav-link">Predictive Analytics</a>
                         </Link>
                       </li>
@@ -170,8 +201,13 @@ const Navbar = () => {
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link href="https://ghg.mzcodelab.com" activeClassName="active">
-                          <a className="nav-link" target="_blank">Emission Factor Hub</a>
+                        <Link
+                          href="https://ghg.mzcodelab.com"
+                          activeClassName="active"
+                        >
+                          <a className="nav-link" target="_blank">
+                            Emission Factor Hub
+                          </a>
                         </Link>
                       </li>
                     </ul>
@@ -185,11 +221,12 @@ const Navbar = () => {
 
                   <li className="nav-item">
                     <Link href="/contact" activeClassName="active">
-                      <a className="https://www.google.ca" target="_blank">Login</a>
+                      <a className="https://www.google.ca" target="_blank">
+                        Login
+                      </a>
                     </Link>
                   </li>
                 </ul>
-
               </div>
             </nav>
           </div>

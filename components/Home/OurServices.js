@@ -20,8 +20,8 @@ const OurServices = () => {
                     <i className="flaticon-big-data"></i>
                   </div>
                   <h3>
-                    <Link href="/service-details">
-                      <a>
+                    <Link href="https://ghg.mzcodelab.com/">
+                      <a target="_blank">
                         Regulatory and ESG
                         <i className="flaticon-right"></i>
                       </a>
@@ -34,8 +34,8 @@ const OurServices = () => {
                     <i className="flaticon-science"></i>
                   </div>
                   <h3>
-                    <Link href="/service-details">
-                      <a>
+                    <Link href="/emissionx/materiality-assessment">
+                      <a target="_blank">
                         Materiality Assessment
                         <i className="flaticon-right"></i>
                       </a>
@@ -48,8 +48,8 @@ const OurServices = () => {
                     <i className="flaticon-document"></i>
                   </div>
                   <h3>
-                    <Link href="/service-details">
-                      <a>
+                    <Link href="/emissionx/life-cycle-assessment">
+                      <a target="_blank">
                         Life Cycle Assessment
                         <i className="flaticon-right"></i>
                       </a>
@@ -66,8 +66,8 @@ const OurServices = () => {
                     <i className="flaticon-data-analytics"></i>
                   </div>
                   <h3>
-                    <Link href="/service-details">
-                      <a>
+                    <Link href="/emissionx/decarbonization-pathway">
+                      <a target="_blank">
                         Decarbonization Pathway
                         <i className="flaticon-right"></i>
                       </a>
@@ -80,8 +80,8 @@ const OurServices = () => {
                     <i className="flaticon-chart"></i>
                   </div>
                   <h3>
-                    <Link href="/service-details">
-                      <a>
+                    <Link href="/emissionx/climate-change-adaption">
+                      <a target="_blank">
                         Climate Change Adaptation
                         <i className="flaticon-right"></i>
                       </a>
@@ -94,8 +94,8 @@ const OurServices = () => {
                     <i className="flaticon-data"></i>
                   </div>
                   <h3>
-                    <Link href="/service-details">
-                      <a>
+                    <Link href="/emissionx/tcfd-scenario-analysis">
+                      <a target="_blank">
                         TCFD Scenario Analysis
                         <i className="flaticon-right"></i>
                       </a>

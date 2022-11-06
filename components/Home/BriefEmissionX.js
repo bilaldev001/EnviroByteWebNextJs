@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import BriefLogo from "../../public/images/emisssionx/Brieflogo.svg";
 
 const BriefEmissionX = () => {
   return (
@@ -9,7 +10,7 @@ const BriefEmissionX = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="about-image">
-                <img src="/images/about.png" alt="image" />
+                <BriefLogo width={480} alt="logo"/>
               </div>
             </div>
 

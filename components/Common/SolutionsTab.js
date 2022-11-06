@@ -66,7 +66,7 @@ const SolutionsTab = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5">
                     <div className="tab-image-left">
-                      <img src="/images/tab-solution.png" alt="image" />
+                      <img src="/images/projects/project4.png" alt="image" />
                     </div>
                   </div>
 
@@ -146,17 +146,17 @@ const SolutionsTab = () => {
 
                   <div className="col-lg-5">
                     <div className="tab-image-right">
-                      <img src="/images/tab-solution.png" alt="image" />
+                      <img src="/images/projects/project1.png" alt="image" />
                     </div>
                   </div>
                 </div>
               </TabPanel>
-
+              {/* Tabs item 4 */}
               <TabPanel>
                 <div className="row align-items-center">
                   <div className="col-lg-5">
                     <div className="tab-image-left">
-                      <img src="/images/tab-solution.png" alt="image" />
+                      <img src="/images/projects/project3.png" alt="image" />
                     </div>
                   </div>
 

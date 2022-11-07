@@ -14,7 +14,7 @@ const ProjectDetails = () => {
 				breadcrumbTextOne="Home"
 				breadcrumbTextTwo="Materiality Assessment"
 				breadcrumbUrl="/"
-				bgImage="/images/page-title-bg-3.jpeg"
+				bgImage=""
 			/>
 
 			<ProjectDetailsContent />

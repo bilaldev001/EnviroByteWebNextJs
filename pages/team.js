@@ -27,7 +27,7 @@ const Team = () => {
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Our Team Member"
         breadcrumbUrl="/"
-        bgImage="/images/page-title-bg-5.jpg"
+        bgImage=""
       />
 
       <TeamMemberContent />

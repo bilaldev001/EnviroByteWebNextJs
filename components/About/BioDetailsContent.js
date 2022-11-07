@@ -98,8 +98,6 @@ const BioDetailsContent = () => {
                                             change adaptation and mitigation training to planning and engineering departments
                                             in wastewater and drinking water for clients in Belize, Waterloo, Oshawa, and
                                             at the Mohawks of the Bay of Quinte.
-
-
                                         </p>
                                     </div>
 

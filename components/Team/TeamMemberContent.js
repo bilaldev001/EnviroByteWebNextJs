@@ -116,7 +116,7 @@ const TeamMemberContent = () => {
             <div className="col-lg-6 col-sm-6">
               <div className="single-team-item">
                 <div className="team-image">
-                  <img src="/images/team/Perry.jpg" alt="team" />
+                  <img src="/images/team/Perry.jpg" width={360} height={300} alt="team" />
 
                   <div className="team-social">
                     <a href="/bio-details" target="_blank">
@@ -139,7 +139,7 @@ const TeamMemberContent = () => {
             <div className="col-lg-6 col-sm-6">
               <div className="single-team-item">
                 <div className="team-image">
-                  <img src="/images/team/John.jpg" alt="team" />
+                  <img src="/images/team/John.jpg" width={360} height={300} alt="team" />
 
                   <div className="team-social">
                     <a href="/bio-details" target="_blank">

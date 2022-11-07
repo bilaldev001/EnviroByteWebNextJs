@@ -5,23 +5,23 @@ import BioDetail from "../components/About/BioDetailsContent";
 import Footer from "../components/Layouts/Footer";
 
 const BioDetails = () => {
-    return (
-        <>
-            <Navbar />
+  return (
+    <>
+      <Navbar />
 
-            <PageBanner
-                pageTitle="Blog Grid"
-                breadcrumbTextOne="Home"
-                breadcrumbTextTwo="Blog Grid"
-                breadcrumbUrl="/"
-                bgImage="/images/page-title-bg-3.jpeg"
-            />
+      <PageBanner
+        pageTitle="Bio Details"
+        breadcrumbTextOne="Home"
+        breadcrumbTextTwo="Team Details"
+        breadcrumbUrl="/"
+        bgImage=""
+      />
 
-            <BioDetail />
+      <BioDetail />
 
-            <Footer />
-        </>
-    );
+      <Footer />
+    </>
+  );
 };
 
 export default BioDetails;

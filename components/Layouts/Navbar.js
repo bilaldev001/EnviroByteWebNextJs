@@ -34,8 +34,8 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-md navbar-light">
               <Link href="/">
                 <a className="navbar-brand">
-                  <WhiteLogo className="white-logo" width={200} alt="logo" />
-                  <BlackLogo className="black-logo" width={200} alt="logo" />
+                  <WhiteLogo className="white-logo" width={200} height={25} alt="logo" />
+                  <BlackLogo className="black-logo" width={200} height={25} alt="logo" />
                 </a>
               </Link>
 

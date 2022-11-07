@@ -2822,7 +2822,7 @@ Page Title Area CSS
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 400px;
 }
 .page-title-area::before {
   content: "";

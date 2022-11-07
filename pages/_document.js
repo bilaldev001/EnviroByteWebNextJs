@@ -17,8 +17,8 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap"
             rel="stylesheet"
           />
-            {/*<link rel="icon" type="image/png" href="/favicon.png"></link>*/}
-          <link rel="icon" href="/favicon-32x32.png" sizes="any"></link>
+          {/*<link rel="icon" type="image/png" href="/favicon.png"></link>*/}
+          <link rel="icon" href="/Favicon_20221106.png" sizes="any"></link>
           <link rel="icon" href="/icon.svg" type="image/svg+xml"></link>
           <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
           <link rel="manifest" href="../site.webmanifest"></link>

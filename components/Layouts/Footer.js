@@ -39,18 +39,18 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/projects">
+                    <Link href="/team">
                       <a>Team</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services">
-                      <a>Emission Factor Hub</a>
+                    <Link href="https://ghg.mzcodelab.com/">
+                      <a target="_blank">Emission Factor Hub</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/team">
-                      <a>Login</a>
+                    <Link href="https://www.google.ca">
+                      <a target="_blank">Login</a>
                     </Link>
                   </li>
                   <li>
@@ -70,27 +70,27 @@ const Footer = () => {
 
                 <ul className="footer-quick-links">
                   <li>
-                    <Link href="/">
+                    <Link href="/service/IoT-Air-Quality-Monitoring">
                       <a>AI Emissions Monitoring</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/blog">
-                      <a>Regulatory Reporting</a>
+                    <Link href="https://ghg.mzcodelab.com/">
+                      <a target="_blank">Regulatory Reporting</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services">
+                    <Link href="/emissionx/life-cycle-assessment">
                       <a>Life Circle Assessment</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/partner">
+                    <Link href="/emissionx/decarbonization-pathway">
                       <a>Decarbonization</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact">
+                    <Link href="/service/predictive-analytics">
                       <a>Scenario Analysis</a>
                     </Link>
                   </li>

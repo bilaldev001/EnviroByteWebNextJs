@@ -15,14 +15,14 @@ const Footer = () => {
                   <h3>About Us</h3>
                 </div>
                 <p>
-                  At EnviroByte, we build the products that we want to use ourselves. After over 10 years working with
-                  black box software, we are tired of the GHG/air reporting tools that the market is offering. We
-                  designed EmissionX with easy verification and assurance in mind by integrating data science tools
-                  (e.g. Jupyter Lab) with CI/CD processes, which offers the most flexibility, transparency, and
-                  customization.
+                  At EnviroByte, we build the products that we want to use
+                  ourselves. After over 10 years working with black box
+                  software, we are tired of the GHG/air reporting tools that the
+                  market is offering. We designed EmissionX with easy
+                  verification and assurance in mind by integrating data science
+                  tools (e.g. Jupyter Lab) with CI/CD processes, which offers
+                  the most flexibility, transparency, and customization.
                 </p>
-
-
               </div>
             </div>
 
@@ -115,13 +115,10 @@ const Footer = () => {
                   <h3>Email</h3>
                   <span>info@envirobyte.com</span>
                 </div>
-
-
               </div>
             </div>
           </div>
         </div>
-
 
         <div className="partner-shape-img1">
           <img src="/images/shape/partnar-shape-2.png" alt="image" />
@@ -136,13 +133,13 @@ const Footer = () => {
             <div className="col-lg-6 col-md-6">
               <p>
                 &copy; {currentYear} EnviroByte. All Rights Reserved by
-                <a href="https://www.fishcreekpark.homes/" target="_blank">
+                <a href="https://envirobyte.com" target="_blank">
                   SmartPeople
                 </a>
               </p>
             </div>
 
-            <div className="col-lg-6 col-md-6">
+            {/* <div className="col-lg-6 col-md-6">
               <ul>
                 <li>
                   <Link href="/terms-condition">
@@ -155,7 +152,7 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

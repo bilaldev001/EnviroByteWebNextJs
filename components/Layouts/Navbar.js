@@ -77,7 +77,7 @@ const Navbar = () => {
                       </li>
 
                       <li className="nav-item">
-                        <Link href="/services" activeClassName="active">
+                        <Link href="/data-driven-approach" activeClassName="active">
                           <a className="nav-link">Data Driven Approach</a>
                         </Link>
                       </li>
@@ -156,7 +156,7 @@ const Navbar = () => {
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <Link
-                          href="/service/advanced-data-analytics"
+                          href="/data-science/advanced-data-analytics"
                           activeClassName="active"
                         >
                           <a className="nav-link">Advanced Data Analytics</a>
@@ -165,7 +165,7 @@ const Navbar = () => {
 
                       <li className="nav-item">
                         <Link
-                          href="/service/IoT-Air-Quality-Monitoring"
+                          href="/data-science/IoT-Air-Quality-Monitoring"
                           activeClassName="active"
                         >
                           <a className="nav-link">IoT Air Quality Monitoring</a>
@@ -173,7 +173,7 @@ const Navbar = () => {
                       </li>
                       <li className="nav-item">
                         <Link
-                          href="/service/predictive-emissions-monitoring"
+                          href="/data-science/predictive-emissions-monitoring"
                           activeClassName="active"
                         >
                           <a className="nav-link">
@@ -183,7 +183,7 @@ const Navbar = () => {
                       </li>
                       <li className="nav-item">
                         <Link
-                          href="/service/predictive-analytics"
+                          href="/data-science/predictive-analytics"
                           activeClassName="active"
                         >
                           <a className="nav-link">Predictive Analytics</a>

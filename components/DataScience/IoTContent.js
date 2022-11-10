@@ -46,7 +46,7 @@ const IoTContent = () => {
             </p>
             <br />
             <p>
-              <a href="/contact" target="_blank">
+              <a href="/Users/mzh/Projects/JavaScript/raxrn_new/pages/contact" target="_blank">
                 Contact us for more information.{" "}
               </a>
             </p>
@@ -89,7 +89,7 @@ const IoTContent = () => {
             </div>
 
             <div className="single-info-box">
-              <Link href="/contact">
+              <Link href="/Users/mzh/Projects/JavaScript/raxrn_new/pages/contact">
                 <a className="default-btn">Contact us</a>
               </Link>
             </div>

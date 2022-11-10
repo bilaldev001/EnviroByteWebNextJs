@@ -70,7 +70,7 @@ const Footer = () => {
 
                 <ul className="footer-quick-links">
                   <li>
-                    <Link href="/service/IoT-Air-Quality-Monitoring">
+                    <Link href="/data-science/IoT-Air-Quality-Monitoring">
                       <a>AI Emissions Monitoring</a>
                     </Link>
                   </li>
@@ -90,7 +90,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/service/predictive-analytics">
+                    <Link href="/data-science/predictive-analytics">
                       <a>Scenario Analysis</a>
                     </Link>
                   </li>

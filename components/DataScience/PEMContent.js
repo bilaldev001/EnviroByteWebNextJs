@@ -77,7 +77,7 @@ const PEMContent = () => {
             </div>
 
             <div className="single-info-box">
-              <Link href="/contact">
+              <Link href="/Users/mzh/Projects/JavaScript/raxrn_new/pages/contact">
                 <a className="default-btn">Contact us</a>
               </Link>
             </div>

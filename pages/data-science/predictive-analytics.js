@@ -1,31 +1,31 @@
 import React from "react";
 import Navbar from "../../components/Layouts/Navbar";
 import PageBanner from "../../components/Common/PageBanner";
-import ADAContent from "../../components/About/ADAContent";
+import PMAContent from "../../components/DataScience/PMAContent";
 import Footer from "../../components/Layouts/Footer";
 import Head from "next/head";
 
-const AdvancedDataAnalytics = () => {
+const PredictiveAnalytics = () => {
   return (
     <>
       <Head>
-        <title>EnviroByte Inc. | Advanced Data Analytics</title>
+        <title>EnviroByte Inc. | Predictive Analytics</title>
         <meta
           name="keywords"
           content={
-            "envirobyte Environment GHG Calgary Alberta Advanced Data Analytics"
+            "envirobyte Environment GHG Calgary calgary Alberta Predictive Analytics"
           }
         />
         <meta
           property="og:title"
-          content="EnviroByte Inc. - Advanced Data Analytics"
+          content="EnviroByte Inc. - Predictive Analytics"
         />
         <meta property="og:PageType" content="website" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="https://www.envirobyte.com" />
         <meta
           property="og:url"
-          content="https://www.envirobyte.com/pages/service/advancedatanalytics.js"
+          content="https://www.envirobyte.com/pages/datascience/predictiveanalytics.js"
         />
         <meta property="og:locale" content="en" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -37,17 +37,18 @@ const AdvancedDataAnalytics = () => {
       <Navbar />
 
       <PageBanner
-        pageTitle="Advanced Data Analytics"
+        pageTitle="Predictive Analytics"
         breadcrumbTextOne="Home"
-        breadcrumbTextTwo="Advanced Data Analytics"
+        breadcrumbTextTwo="Predictive Analytics"
         breadcrumbUrl="/"
-        bgImage=""
+        bgImage="banner-bg-img3"
       />
 
-      <ADAContent />
+      <PMAContent />
+
       <Footer />
     </>
   );
 };
 
-export default AdvancedDataAnalytics;
+export default PredictiveAnalytics;

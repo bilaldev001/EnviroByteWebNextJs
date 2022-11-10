@@ -45,7 +45,7 @@ const SolutionsTab = () => {
                       </ul>
 
                       <div className="tab-btn">
-                        <Link href="/service/advanced-data-analytics">
+                        <Link href="/data-science/advanced-data-analytics">
                           <a className="default-btn">
                             Read More <span></span>
                           </a>
@@ -97,7 +97,7 @@ const SolutionsTab = () => {
                       </ul>
 
                       <div className="tab-btn">
-                        <Link href="/service/IoT-Air-Quality-Monitoring">
+                        <Link href="/data-science/IoT-Air-Quality-Monitoring">
                           <a className="default-btn">
                             Read More <span></span>
                           </a>
@@ -135,7 +135,7 @@ const SolutionsTab = () => {
                       </ul>
 
                       <div className="tab-btn">
-                        <Link href="/service/predictive-emissions-monitoring">
+                        <Link href="/data-science/predictive-emissions-monitoring">
                           <a className="default-btn">
                             Read More <span></span>
                           </a>
@@ -186,7 +186,7 @@ const SolutionsTab = () => {
                       </ul>
 
                       <div className="tab-btn">
-                        <Link href="/service/predictive-analytics">
+                        <Link href="/data-science/predictive-analytics">
                           <a className="default-btn">
                             Read More <span></span>
                           </a>

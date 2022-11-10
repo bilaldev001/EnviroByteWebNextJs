@@ -1,42 +1,33 @@
 import React from "react";
 import Navbar from "../../components/Layouts/Navbar";
 import PageBanner from "../../components/Common/PageBanner";
-import IoTContent from "../../components/About/IoTContent";
+import ADAContent from "../../components/DataScience/ADAContent";
 import Footer from "../../components/Layouts/Footer";
 import Head from "next/head";
 
-const IoTAirQualityMonitoring = () => {
+const AdvancedDataAnalytics = () => {
   return (
     <>
       <Head>
-        <title>EnviroByte Inc. | IoT Air Quality Monitoring</title>
+        <title>EnviroByte Inc. | Advanced Data Analytics</title>
         <meta
           name="keywords"
           content={
-            "envirobyte Environment GHG Calgary Alberta IoT Air Quality Monitoring"
+            "envirobyte Environment GHG Calgary Alberta Advanced Data Analytics"
           }
         />
         <meta
           property="og:title"
-          content="EnviroByte Inc. - IoT Air Quality Monitoring"
+          content="EnviroByte Inc. - Advanced Data Analytics"
         />
         <meta property="og:PageType" content="website" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="https://www.envirobyte.com" />
         <meta
           property="og:url"
-          content="https://www.envirobyte.com/pages/service/IoT-Air-Quality-Monitoring.js"
+          content="https://www.envirobyte.com/pages/service/advancedatanalytics.js"
         />
         <meta property="og:locale" content="en" />
-        <meta name="twitter:site" content="@envirobyte" />
-        <meta
-          property="twitter:title"
-          content="EnviroByte Inc. - IoT Air Quality Monitoring"
-        />
-        <meta
-          property="twitter:url"
-          content="https://www.envirobyte.com/pages/service/IoT-Air-Quality-Monitoring.js"
-        />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta
           name="description"
@@ -46,17 +37,17 @@ const IoTAirQualityMonitoring = () => {
       <Navbar />
 
       <PageBanner
-        pageTitle="IoT Air Quality Monitoring"
+        pageTitle="Advanced Data Analytics"
         breadcrumbTextOne="Home"
-        breadcrumbTextTwo="IoT Air Quality Monitoring"
+        breadcrumbTextTwo="Advanced Data Analytics"
         breadcrumbUrl="/"
         bgImage=""
       />
 
-      <IoTContent />
+      <ADAContent />
       <Footer />
     </>
   );
 };
 
-export default IoTAirQualityMonitoring;
+export default AdvancedDataAnalytics;

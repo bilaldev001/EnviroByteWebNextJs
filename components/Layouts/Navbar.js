@@ -220,8 +220,8 @@ const Navbar = () => {
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/contact" activeClassName="active">
-                      <a className="https://www.google.ca" target="_blank">
+                    <Link href="https://www.google.ca" activeClassName="active">
+                      <a target="_blank">
                         Login
                       </a>
                     </Link>

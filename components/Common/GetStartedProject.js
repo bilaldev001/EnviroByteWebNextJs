@@ -1,5 +1,5 @@
 import React from "react";
-import Link from 'next/link';
+import Link from "next/link";
 
 const GetStartedProject = () => {
   return (
@@ -10,7 +10,9 @@ const GetStartedProject = () => {
             <div className="col-lg-6">
               <div className="productive-content">
                 <span>Let’s Get Started</span>
-                <h3>Are you ready for a better, more productive business </h3>
+                <h3>
+                  Are you ready for a better, more productive emission reporting{" "}
+                </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -21,14 +23,14 @@ const GetStartedProject = () => {
                 <div className="productive-btn">
                   <Link href="/projects">
                     <a className="productive-btn">
-                      Get Started Project
+                      Read More
                       <span></span>
                     </a>
                   </Link>
 
                   <Link href="/contact">
                     <a className="productive-btn-one">
-                      Contact With Us
+                      Contact Us
                       <span></span>
                     </a>
                   </Link>

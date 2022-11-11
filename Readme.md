@@ -115,5 +115,5 @@ PROJECT ROOT
    │-- requirements.txt                                         # Development modules and dependencies
    │
    │
-   │***********************************************************************************************
+   │
 ```

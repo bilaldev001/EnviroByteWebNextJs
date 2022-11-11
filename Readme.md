@@ -76,7 +76,7 @@ PROJECT ROOT
    │        ├── _document.js
    │        ├── about-us.js
    │        ├── api/
-   │        └── contact.js
+   │              └── contact.js
    │        ├── bio-details.js
    │        ├── blog-details.js
    │        ├── blog.js

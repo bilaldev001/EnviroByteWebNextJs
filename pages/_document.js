@@ -1,5 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
+/**
+ * This is a custom document that is used to render the initial HTML
+ */
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);

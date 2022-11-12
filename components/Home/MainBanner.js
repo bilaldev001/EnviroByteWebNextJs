@@ -27,10 +27,12 @@ const MainBanner = () => {
                       data-aos-once="true"
                     >
                       <p>
-                        EnviroByte applies data-driven methods with environmental science, software engineering, and
-                        machine learning to increase efficiency and effectiveness of sustainability reporting, planning,
-                        monitoring and management, including Greenhouse Gas emissions, Criteria Air Contaminants, etc.
-
+                        EnviroByte applies data-driven methods with
+                        environmental science, software engineering, and machine
+                        learning to increase efficiency and effectiveness of
+                        sustainability reporting, planning, monitoring and
+                        management, including Greenhouse Gas emissions, Criteria
+                        Air Contaminants, etc.
                       </p>
                     </div>
 

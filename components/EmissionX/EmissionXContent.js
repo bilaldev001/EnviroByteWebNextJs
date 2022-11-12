@@ -60,7 +60,7 @@ const EmissionXContent = () => {
               jurisdictions, facilities, and industries.
             </p>
             <p>
-              We designed EmissionX with easy verification and assurance in mind
+              We designed EmissionX&trade; with easy verification and assurance in mind
               by integrating data science tools (e.g., Jupyter Lab) with CI/CD
               processes, offering the most flexibility, transparency, and
               customization. This not only leads to smoother verifications and
@@ -69,7 +69,7 @@ const EmissionXContent = () => {
             </p>
 
             <text>
-              EmissionX is programed for many different regulatory and voluntary
+              EmissionX&trade; is programed for many different regulatory and voluntary
               reporting frameworks, including but not limited to:
               <p></p>
               <ul>

@@ -22,7 +22,7 @@ const GetStartedProject = () => {
 
                 <div className="productive-btn">
                   <Link href="/projects">
-                    <a className="productive-btn">
+                    <a className="productive-btn-one">
                       Read More
                       <span></span>
                     </a>

@@ -71,7 +71,7 @@ const EmissionXContent = () => {
             <text>
               EmissionX is programed for many different regulatory and voluntary
               reporting frameworks, including but not limited to:
-              <br />
+              <p></p>
               <ul>
                 <li>
                   Alberta TIER, BC GHG Reporting Regulation, ECCC OBPS, SK OBPS,

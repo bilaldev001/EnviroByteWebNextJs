@@ -17,7 +17,7 @@ const BriefEmissionX = () => {
             <div className="col-lg-6">
               <div className="about-content">
                 <span>A Scalable and Customizable Emissions Reporting Tool</span>
-                <h2>EmissionX</h2>
+                <h2>EmissionX&trade;</h2>
                 <p>
                   We build the products that we want to use ourselves. This is why we design EmissionX with easy
                   verification and assurance in mind by integrating data science tools (e.g. Jupyter Lab) with CI/CD

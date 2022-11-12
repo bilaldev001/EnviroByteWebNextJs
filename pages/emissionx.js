@@ -14,7 +14,9 @@ const EmissionX = () => {
         <title>EnviroByte Inc. | EmissionX</title>
         <meta
           name="keywords"
-          content={"envirobyte Environment GHG Calgary Alberta EmissionX"}
+          content={
+            "Alberta TIER, GHG Reporting, SOC Report, GHG Software, NPRI Reporting"
+          }
         />
         <meta property="og:title" content="EnviroByte Inc. - EmissionX" />
         <meta property="og:PageType" content="website" />

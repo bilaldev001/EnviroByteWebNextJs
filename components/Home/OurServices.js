@@ -8,8 +8,7 @@ const OurServices = () => {
         <div className="container">
           <div className="section-title">
             <span>Be the Change</span>
-            <h2>Data-driven Reporting and Planning
-            </h2>
+            <h2>Data-driven Reporting and Planning</h2>
           </div>
 
           <div className="row align-items-center justify-content-center">
@@ -22,7 +21,7 @@ const OurServices = () => {
                   <h3>
                     <Link href="https://ghg.mzcodelab.com/">
                       <a target="_blank">
-                        Regulatory and ESG
+                        GHG and Other Air Emissions
                         <i className="flaticon-right"></i>
                       </a>
                     </Link>
@@ -36,7 +35,7 @@ const OurServices = () => {
                   <h3>
                     <Link href="/emissionx/materiality-assessment">
                       <a target="_blank">
-                        Materiality Assessment
+                        Life Cycle Assessment
                         <i className="flaticon-right"></i>
                       </a>
                     </Link>
@@ -50,7 +49,7 @@ const OurServices = () => {
                   <h3>
                     <Link href="/emissionx/life-cycle-assessment">
                       <a target="_blank">
-                        Life Cycle Assessment
+                        Climate Change Adaptation
                         <i className="flaticon-right"></i>
                       </a>
                     </Link>
@@ -68,7 +67,7 @@ const OurServices = () => {
                   <h3>
                     <Link href="/emissionx/decarbonization-pathway">
                       <a target="_blank">
-                        Decarbonization Pathway
+                        Climate Change Risk Assessment
                         <i className="flaticon-right"></i>
                       </a>
                     </Link>
@@ -82,7 +81,7 @@ const OurServices = () => {
                   <h3>
                     <Link href="/emissionx/climate-change-adaption">
                       <a target="_blank">
-                        Climate Change Adaptation
+                        Climate Change Mitigation
                         <i className="flaticon-right"></i>
                       </a>
                     </Link>

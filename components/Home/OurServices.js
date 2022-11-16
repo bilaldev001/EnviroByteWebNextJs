@@ -21,7 +21,7 @@ const OurServices = () => {
                   <h3>
                     <Link href="https://ghg.mzcodelab.com/">
                       <a target="_blank">
-                        GHG and Other Air Emissions
+                        GHG and Air Emissions
                         <i className="flaticon-right"></i>
                       </a>
                     </Link>

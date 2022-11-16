@@ -94,7 +94,7 @@ const Navbar = () => {
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <Link
-                          href="https://ghg.mzcodelab.com/"
+                          href="/emissionx"
                           activeClassName="active"
                         >
                           <a className="nav-link" target="_blank">
@@ -105,7 +105,7 @@ const Navbar = () => {
 
                       <li className="nav-item">
                         <Link
-                          href="/emissionx/decarbonization-pathway"
+                          href="/emissionx/climate-change"
                           activeClassName="active"
                         >
                           <a className="nav-link">

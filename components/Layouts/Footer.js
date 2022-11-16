@@ -80,12 +80,12 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/emissionx/life-cycle-assessment">
+                    <Link href="/emissionx/climate-change">
                       <a>Life Circle Assessment</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/emissionx/decarbonization-pathway">
+                    <Link href="/emissionx/climate-change">
                       <a>Decarbonization</a>
                     </Link>
                   </li>

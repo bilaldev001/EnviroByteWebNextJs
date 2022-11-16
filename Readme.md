@@ -91,11 +91,8 @@ PROJECT ROOT
    │              ├── predictive-analytics.js            # Predictive Analytics page in Data Science and call components/DataScience/PMAContent.js
    │              └── predictive-emissions-monitoring.js # Predictive Emissions Monitoring page in Data Science and call components/DataScience/PEMContent.js
    │         ├── emissionx/
-   │              ├── climate-change-adaption.js         # Climate Change Adaption page in EmissionX and call components/Projects/ProjectDetailsContent.js
-   │              ├── decarbonization-pathway.js         # Decarbonization Pathway page in EmissionX and call components/Projects/ProjectDetailsContent.js
-   │              ├── life-cycle-assessment.js           # Life Cycle Assessment page in EmissionX and call components/Projects/ProjectDetailsContent.js
-   │              ├── materiality-assessment.js          # Materiality Assessment page in EmissionX and call components/Projects/ProjectDetailsContent.js
-   │              └── tcfd-scenario-analysis.js          # TCFD Scenario Analysis page in EmissionX and call components/Projects/ProjectDetailsContent.js
+   │              ├── climate-change.js                  # Climate Change page in EmissionX and call components/EmissionX/ClimateChange.js
+   │            
    │         ├── emissionx.js                            # EmissionX page and call components/EmissionX/EmissionXContent.js
    │         ├── faq.js                                  # Faq page - not used
    │         ├── index.js                                # Home page 

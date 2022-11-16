@@ -98,7 +98,7 @@ const Navbar = () => {
                           activeClassName="active"
                         >
                           <a className="nav-link" target="_blank">
-                            Regulatory and ESG
+                            Emission
                           </a>
                         </Link>
                       </li>
@@ -108,41 +108,12 @@ const Navbar = () => {
                           href="/emissionx/decarbonization-pathway"
                           activeClassName="active"
                         >
-                          <a className="nav-link">Decarbonization Pathway</a>
+                          <a className="nav-link">
+                            Climate Change
+                          </a>
                         </Link>
                       </li>
-                      <li className="nav-item">
-                        <Link
-                          href="/emissionx/materiality-assessment"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">Materiality Assessment</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          href="/emissionx/climate-change-adaption"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">Climate Change Adaptation</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          href="/emissionx/life-cycle-assessment"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">Life Cycle Assessment</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          href="/emissionx/tcfd-scenario-analysis"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">TCFD Scenario Analysis</a>
-                        </Link>
-                      </li>
+
                     </ul>
                   </li>
 

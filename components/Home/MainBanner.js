@@ -60,104 +60,12 @@ const MainBanner = () => {
                 </div>
 
                 <div className="col-lg-6 col-md-12">
-                  <div className="banner-image">
-                    <img
-                      src="/images/home-three/home-three-shape1.png"
-                      alt="image"
-                      data-aos="fade-up"
-                      data-aos-delay="100"
-                      data-aos-duration="1200"
-                    />
-
-                    <img
-                      src="/images/home-three/home-three-shape2.png"
-                      alt="image"
-                      data-aos="fade-up"
-                      data-aos-delay="100"
-                      data-aos-duration="1200"
-                    />
-
-                    <img
-                      src="/images/home-three/home-three-shape3.png"
-                      alt="image"
-                      data-aos="fade-left"
-                      data-aos-delay="100"
-                      data-aos-duration="1200"
-                    />
-
-                    <img
-                      src="/images/home-three/home-three-shape4.png"
-                      alt="image"
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                      data-aos-duration="1200"
-                    />
-
-                    <img
-                      src="/images/home-three/home-three-shape5.png"
-                      alt="image"
-                      data-aos="zoom-in-up"
-                      data-aos-delay="100"
-                      data-aos-duration="1200"
-                    />
-
-                    <img
-                      src="/images/home-three/home-three-shape6.png"
-                      alt="image"
-                      data-aos="fade-down"
-                      data-aos-delay="100"
-                      data-aos-duration="1200"
-                    />
-
-                    <img
-                      src="/images/home-three/home-three-shape7.png"
-                      alt="image"
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                      data-aos-duration="1200"
-                    />
-
-                    <img
-                      src="/images/home-three/home-three-shape8.png"
-                      alt="image"
-                      data-aos="fade-up"
-                      data-aos-delay="100"
-                      data-aos-duration="1200"
-                    />
-
-                    <img
-                      src="/images/home-three/home-three-shape9.png"
-                      alt="image"
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                      data-aos-duration="1200"
-                    />
-
-                    <img
-                      src="/images/home-three/home-three-shape10.png"
-                      alt="image"
-                      data-aos="fade-up"
-                      data-aos-delay="100"
-                      data-aos-duration="1200"
-                    />
-
-                    <img
-                      src="/images/home-three/home-three-shape11.png"
-                      alt="image"
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                      data-aos-duration="1200"
-                    />
-
-                    {/* Main Image */}
-                    <img
+                  {/* Main Image */}
+                  <img
                       src="/images/home-three/main-image3.png"
                       alt="image"
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                      data-aos-duration="1200"
-                    />
-                  </div>
+
+                  />
                 </div>
               </div>
             </div>

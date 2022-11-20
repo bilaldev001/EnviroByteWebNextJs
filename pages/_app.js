@@ -14,6 +14,7 @@ import "../styles/responsive.css";
 
 import Head from "next/head";
 import GoTop from "../components/Shared/GoTop";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   React.useEffect(() => {
@@ -22,14 +23,18 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-          <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-RMCG4QY4VP"></script>
-          <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments)}
-              gtag('js', new Date());
-              gtag('config', 'G-RMCG4QY4VP');
-          </script>
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <Script id="google-analytics" strategy="afterInteractive">
+              {`
+          				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          				ga('create', 'G-RMCG4QY4VP', 'auto');
+          				ga('send', 'pageview');
+        			`}
+          </Script>
         <title>EnviroByte</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>

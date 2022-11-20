@@ -9,6 +9,14 @@ const DataDrivenApproach = () => {
 	return (
 		<>
 			<Head>
+				<!-- Google tag (gtag.js) -->
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-RMCG4QY4VP"></script>
+				<script>
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments)}
+					gtag('js', new Date());
+					gtag('config', 'G-RMCG4QY4VP');
+				</script>
 				<title>EnviroByte Inc. | Data Driven Approach</title>
 				<meta name="keywords" content={"envirobyte Environment GHG Calgary Alberta Data Driven Approach"} />
 				<meta property="og:title" content="EnviroByte Inc. - Data Driven Approach" />

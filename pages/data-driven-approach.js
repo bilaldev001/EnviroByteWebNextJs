@@ -20,6 +20,10 @@ const DataDrivenApproach = () => {
 
           				ga('create', 'G-RMCG4QY4VP', 'auto');
           				ga('send', 'pageview');
+          				ga(function(tracker) {
+  						console.log(ga.q);
+						});
+
         			`}
 				</Script>
 

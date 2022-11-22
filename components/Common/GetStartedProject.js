@@ -14,10 +14,11 @@ const GetStartedProject = () => {
                   Are you ready for a better, more productive emission reporting{" "}
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices Lorem Ipsum is simply dummy
-                  text.
+                  We build the products that we want to use ourselves. This is
+                  why we design EmissionX with easy verification and assurance
+                  in mind by integrating data science tools (e.g. Jupyter Lab)
+                  with CI/CD processes, which offers the most flexibility,
+                  transparency, and customization.
                 </p>
 
                 <div className="productive-btn">

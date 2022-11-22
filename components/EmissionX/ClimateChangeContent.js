@@ -6,9 +6,6 @@ const ClimateChangeContent = () => {
 		<>
 			<div className="project-details-area ptb-100">
 				<div className="container">
-					<div className="project-details-image">
-						<img src="/images/projects/project-details.jpg" alt="image" />
-					</div>
 
 					<div className="projects-details-desc">
 						<h3>Climate Change Adaptation</h3>

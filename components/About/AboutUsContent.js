@@ -6,9 +6,6 @@ const AboutUsContent = () => {
 		<>
 			<div className="project-details-area ptb-100">
 				<div className="container">
-					<div className="project-details-image">
-						<img src="/images/about/flowchart_1200x700.png" alt="image"/>
-					</div>
 
 					<div className="projects-details-desc">
 						<h3>Valuable Services are What We're Dedicated to</h3>

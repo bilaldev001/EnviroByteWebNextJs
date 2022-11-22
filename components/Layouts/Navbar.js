@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "../../utils/ActiveLink";
 import WhiteLogo from "../../public/images/logo/whitemark.svg";
-import BlackLogo from "../../public/images/logo/blackmark.svg";
+import BlackLogo from "../../public/images/logo/blackmarkv2.svg";
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true);
@@ -34,8 +34,8 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-md navbar-light">
               <Link href="/">
                 <a className="navbar-brand">
-                  <WhiteLogo className="white-logo" width={200} height={25} alt="logo" />
-                  <BlackLogo className="black-logo" width={200} height={25} alt="logo" />
+                  <WhiteLogo className="white-logo" width={218} height={25} alt="logo" />
+                  <BlackLogo className="black-logo" width={220} height={30} alt="logo" />
                 </a>
               </Link>
 

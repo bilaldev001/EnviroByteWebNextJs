@@ -41,7 +41,7 @@ const GetStartedProject = () => {
 
             <div className="col-lg-6">
               <div className="productive-image">
-                <img src="/images/productive.png" alt="image" />
+                <img src="/images/emisssionx/EmissionX_fact.svg" alt="image" />
               </div>
             </div>
           </div>

@@ -77,52 +77,6 @@ const ClimateChangeContent = () => {
 							GHG emissions.
 						</p>
 						<br/>
-						<div className="project-details-info">
-							<div className="single-info-box">
-								<h4>Client</h4>
-								<span>James Anderson</span>
-							</div>
-
-							<div className="single-info-box">
-								<h4>Category</h4>
-								<span>Network, Marketing</span>
-							</div>
-
-							<div className="single-info-box">
-								<h4>Date</h4>
-								<span>February 28, 2020</span>
-							</div>
-
-							<div className="single-info-box">
-								<h4>Share</h4>
-								<ul className="social">
-									<li>
-										<a href="https://www.facebook.com/" target="_blank">
-											<i className="fab fa-facebook-f"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://twitter.com/" target="_blank">
-											<i className="fab fa-twitter"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.linkedin.com/" target="_blank">
-											<i className="fab fa-linkedin-in"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.instagram.com/" target="_blank">
-											<i className="fab fa-instagram"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-
-							<div className="single-info-box">
-								<a href="#" className="default-btn" target="_blank">Live Preview</a>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>

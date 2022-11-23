@@ -22,7 +22,7 @@ class MyDocument extends Document {
           />
           {/*<link rel="icon" type="image/png" href="/favicon.png"></link>*/}
           <link rel="icon" href="/Favicon_20221121.png" sizes="any"></link>
-          <link rel="icon" href="/icon.svg" type="image/svg+xml"></link>
+          <link rel="icon" href="/Favicon.svg" type="image/svg+xml"></link>
           <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
           <link rel="manifest" href="../site.webmanifest"></link>
         </Head>

@@ -7,6 +7,7 @@ const IoTContent = () => {
     <div className="project-details-area ptb-100">
       <div className="container">
         <div className="projects-details-desc">
+          <h3>Machine learning approach to calibration low-cost IoT sensors</h3>
           <div className="row align-items-center">
             <p>
               Particle sensing technology has shown great potential for
@@ -45,7 +46,6 @@ const IoTContent = () => {
               significantly different.
             </p>
             <br />
-
           </div>
 
           <p></p>
@@ -86,7 +86,9 @@ const IoTContent = () => {
 
             <div className="single-info-box">
               <Link href="/contact">
-                <a className="default-btn" target="_blank">Contact us</a>
+                <a className="default-btn" target="_blank">
+                  Contact us
+                </a>
               </Link>
             </div>
           </div>

@@ -12,9 +12,9 @@ const EmissionX = () => {
   return (
     <>
       <Head>
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <Script id="google-analytics" strategy="afterInteractive">
-              {`
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
           				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -27,13 +27,20 @@ const EmissionX = () => {
 						});
 
         			`}
-          </Script>
-        <title>EnviroByte Inc. | EmissionX</title>
+        </Script>
+        <title>
+          Transparent and auditable GHG Reporting for Alberta TIER, BC GHG, SK
+          OBPS, ECCC GHGRP
+        </title>
         <meta
           name="keywords"
           content={
             "Alberta TIER, GHG Reporting, SOC Report, GHG Software, NPRI Reporting"
           }
+        />
+        <meta
+          name="description"
+          content="EnviroByte brings data science and software development techniques - CI/CD processes to GHG reporting. EmissionX offers the most flexibilities for various GHG reporting requirements with maximum transparency and auditability."
         />
         <meta property="og:title" content="EnviroByte Inc. - EmissionX" />
         <meta property="og:PageType" content="website" />
@@ -45,10 +52,6 @@ const EmissionX = () => {
         />
         <meta property="og:locale" content="en" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta
-          name="description"
-          content="Envirobyte services are here to help you and your business...Official web site of EnviroByte, located in Calgary, Alberta, Canada."
-        />
       </Head>
       <Navbar />
 
@@ -62,11 +65,11 @@ const EmissionX = () => {
 
       <EmissionXContent />
 
-      <FunFacts />
+      {/* <FunFacts /> */}
 
-      <div className="pb-100">
+      {/* <div className="pb-100">
         <GetStartedProject />
-      </div>
+      </div> */}
 
       <Footer />
     </>

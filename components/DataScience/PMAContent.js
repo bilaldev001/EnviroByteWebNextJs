@@ -7,6 +7,9 @@ const PMAContent = () => {
     <div className="project-details-area ptb-100">
       <div className="container">
         <div className="projects-details-desc">
+          <h3>
+            Unsupervised machine learning on Canadian oil sands operations
+          </h3>
           <div className="row align-items-center">
             <p>
               Canada’s in situ oil sands can help meet the global oil demand.
@@ -92,7 +95,9 @@ const PMAContent = () => {
 
             <div className="single-info-box">
               <Link href="/contact">
-                <a className="default-btn" target="_blank">Contact us</a>
+                <a className="default-btn" target="_blank">
+                  Contact us
+                </a>
               </Link>
             </div>
           </div>

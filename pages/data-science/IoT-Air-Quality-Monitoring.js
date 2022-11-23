@@ -10,9 +10,9 @@ const IoTAirQualityMonitoring = () => {
   return (
     <>
       <Head>
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <Script id="google-analytics" strategy="afterInteractive">
-              {`
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
           				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -25,17 +25,21 @@ const IoTAirQualityMonitoring = () => {
 						});
 
         			`}
-          </Script>
-        <title>EnviroByte Inc. | IoT Air Quality Monitoring</title>
+        </Script>
+        <title>
+          How to use low-cost sensors for air quality monitoring - EnviroByte
+        </title>
         <meta
           name="keywords"
-          content={
-            "envirobyte Environment GHG Calgary Alberta IoT Air Quality Monitoring"
-          }
+          content={"IoT, air emissions, air quality, low-cost sensor"}
+        />
+        <meta
+          name="description"
+          content="Using low-cost sensors, a high density network of sensors can be deployed to monitor air quality, such as NOx, SO2, PM, VOCs. We have developed a low-cost sensor network for air quality monitoring. We can help you deploy a low-cost sensor network for air quality monitoring."
         />
         <meta
           property="og:title"
-          content="EnviroByte Inc. - IoT Air Quality Monitoring"
+          content="Air Emissions Monitoring using low-cost sensor and Internal of Things"
         />
         <meta property="og:PageType" content="website" />
         <meta property="og:type" content="website" />
@@ -45,20 +49,7 @@ const IoTAirQualityMonitoring = () => {
           content="https://www.envirobyte.com/pages/service/IoT-Air-Quality-Monitoring.js"
         />
         <meta property="og:locale" content="en" />
-        <meta name="twitter:site" content="@envirobyte" />
-        <meta
-          property="twitter:title"
-          content="EnviroByte Inc. - IoT Air Quality Monitoring"
-        />
-        <meta
-          property="twitter:url"
-          content="https://www.envirobyte.com/pages/service/IoT-Air-Quality-Monitoring.js"
-        />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta
-          name="description"
-          content="Envirobyte services are here to help you and your business...Official web site of EnviroByte, located in Calgary, Alberta, Canada."
-        />
       </Head>
       <Navbar />
 

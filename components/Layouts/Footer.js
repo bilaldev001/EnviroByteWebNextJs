@@ -70,28 +70,28 @@ const Footer = () => {
 
                 <ul className="footer-quick-links">
                   <li>
-                    <Link href="/data-science/IoT-Air-Quality-Monitoring">
-                      <a>AI Emissions Monitoring</a>
+                    <Link href="/data-science/predictive-emissions-monitoring">
+                      <a target="_blank">AI Emissions Monitoring</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://ghg.mzcodelab.com/">
+                    <Link href="/emissionx">
                       <a target="_blank">Regulatory Reporting</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/emissionx/climate-change">
-                      <a>Life Circle Assessment</a>
+                    <Link href="/emissionx">
+                      <a target="_blank">Life Cycle Assessment</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/emissionx/climate-change">
-                      <a>Decarbonization</a>
+                      <a target="_blank">Climate Change Adapatation</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/data-science/predictive-analytics">
-                      <a>Scenario Analysis</a>
+                    <Link href="/emissionx/climate-change">
+                      <a target="_blank">Scenario Analysis</a>
                     </Link>
                   </li>
                 </ul>

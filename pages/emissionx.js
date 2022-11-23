@@ -12,9 +12,9 @@ const EmissionX = () => {
   return (
     <>
       <Head>
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <Script id="google-analytics" strategy="afterInteractive">
-              {`
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
           				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -27,7 +27,7 @@ const EmissionX = () => {
 						});
 
         			`}
-          </Script>
+        </Script>
         <title>EnviroByte Inc. | EmissionX</title>
         <meta
           name="keywords"
@@ -62,11 +62,11 @@ const EmissionX = () => {
 
       <EmissionXContent />
 
-      <FunFacts />
+      {/* <FunFacts /> */}
 
-      <div className="pb-100">
+      {/* <div className="pb-100">
         <GetStartedProject />
-      </div>
+      </div> */}
 
       <Footer />
     </>

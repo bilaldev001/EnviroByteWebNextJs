@@ -26,16 +26,22 @@ const PredictiveEmissionsMonitoring = () => {
 
         			`}
         </Script>
-        <title>EnviroByte | Predictive Emissions Monitoring System</title>
+        <title>
+          Regulatory approval processes for PEMS in Alberta and in US -
+          EnviroByte
+        </title>
+        <meta
+          name="description"
+          content="PEMS (predictive emissions monitoring system) is used to monitor NOx and SO2 and is permitted under Alberta 2021 CEMS code and US EPA. We have extensive experiennce with PEMS development. PEMS can used as an alternative to CEMS. 
+		  The PEMS cost is about 50% of CEMS, and almost no maintenance is required. we develop PEMSs and provide regulatory approval services for PEMS in Alberta and in US."
+        />
         <meta
           name="keywords"
-          content={
-            "envirobyte Environment GHG Calgary Alberta Predictive Emissions Monitoring"
-          }
+          content={"PEMS, Predictive Emission Monitoring System"}
         />
         <meta
           property="og:title"
-          content="EnviroByte Inc. - Predictive Emissions Monitoring"
+          content="Predictive Emission Monitoring System"
         />
         <meta property="og:PageType" content="website" />
         <meta property="og:type" content="website" />
@@ -46,10 +52,6 @@ const PredictiveEmissionsMonitoring = () => {
         />
         <meta property="og:locale" content="en" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta
-          name="description"
-          content="PEMS (predictive emissions monitoring system) is used to monitor NOx and SO2 and is permitted under Alberta 2021 CEMS code and US EPA. We have extensive experiennce with PEMS development. PEMS can used as an alternative to CEMS. The PEMS cost is about 50% of CEMS, and almost no maintenance is required."
-        />
       </Head>
       <Navbar />
 

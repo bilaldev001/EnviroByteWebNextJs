@@ -7,6 +7,9 @@ const PEMContent = () => {
     <div className="project-details-area ptb-100">
       <div className="container">
         <div className="projects-details-desc">
+          <h3>
+            Predictive Emission Monitoring Systme (PEMS) for NOx monitoring
+          </h3>
           <div className="row align-items-center">
             <p>
               The nitrogen oxides (NO<sub>x</sub>) has significant adverse
@@ -46,9 +49,15 @@ const PEMContent = () => {
               CEMS at federal and provincial levels. For example, Alberta 2021
               CEMS code outlines the requirements of PEMS.
             </p>
+
             <div className="project-details-image-wrapleft">
               <PEMLogo alt="image" width="900" />
             </div>
+            <h3>Predictive Emissions for GHG monitoring</h3>
+            <p>
+              Contact us to learn more about PEMS and how we transfer PEMS to
+              GHG monitoring
+            </p>
           </div>
 
           <p></p>
@@ -78,7 +87,9 @@ const PEMContent = () => {
 
             <div className="single-info-box">
               <Link href="/contact">
-                <a className="default-btn" target="_blank">Contact us</a>
+                <a className="default-btn" target="_blank">
+                  Contact us
+                </a>
               </Link>
             </div>
           </div>

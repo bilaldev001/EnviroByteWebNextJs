@@ -28,12 +28,19 @@ const EmissionX = () => {
 
         			`}
         </Script>
-        <title>EnviroByte Inc. | EmissionX</title>
+        <title>
+          Transparent and auditable GHG Reporting for Alberta TIER, BC GHG, SK
+          OBPS, ECCC GHGRP
+        </title>
         <meta
           name="keywords"
           content={
             "Alberta TIER, GHG Reporting, SOC Report, GHG Software, NPRI Reporting"
           }
+        />
+        <meta
+          name="description"
+          content="EnviroByte brings data science and software development techniques - CI/CD processes to GHG reporting. EmissionX offers the most flexibilities for various GHG reporting requirements with maximum transparency and auditability."
         />
         <meta property="og:title" content="EnviroByte Inc. - EmissionX" />
         <meta property="og:PageType" content="website" />
@@ -45,10 +52,6 @@ const EmissionX = () => {
         />
         <meta property="og:locale" content="en" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta
-          name="description"
-          content="Envirobyte services are here to help you and your business...Official web site of EnviroByte, located in Calgary, Alberta, Canada."
-        />
       </Head>
       <Navbar />
 

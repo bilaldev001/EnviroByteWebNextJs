@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import BriefLogo from "../../public/images/emisssionx/Brieflogo.svg";
+import BriefLogo from "../../public/images/emisssionx/Brieflogo-2.svg";
 
 const BriefEmissionX = () => {
   return (
@@ -10,18 +10,22 @@ const BriefEmissionX = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="about-image">
-                <BriefLogo width={480} alt="logo"/>
+                <BriefLogo width={480} alt="logo" />
               </div>
             </div>
 
             <div className="col-lg-6">
               <div className="about-content">
-                <span>A Scalable and Customizable Emissions Reporting Tool</span>
+                <span>
+                  A Scalable and Customizable Emissions Reporting Tool
+                </span>
                 <h2>EmissionX&trade;</h2>
                 <p>
-                  We build the products that we want to use ourselves. This is why we design EmissionX with easy
-                  verification and assurance in mind by integrating data science tools (e.g. Jupyter Lab) with CI/CD
-                  processes, which offers the most flexibility, transparency, and customization.
+                  We build the products that we want to use ourselves. This is
+                  why we design EmissionX with easy verification and assurance
+                  in mind by integrating data science tools (e.g. Jupyter Lab)
+                  with CI/CD processes, which offers the most flexibility,
+                  transparency, and customization.
                 </p>
 
                 <ul className="about-list">

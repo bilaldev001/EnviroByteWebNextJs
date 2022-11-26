@@ -58,7 +58,7 @@ const DataDrivenApproachContent = () => {
             </div>
           </div>
           <div className="project-details-image">
-            <img src="/images/projects/Data-Framework-2.svg" alt="image" />
+            <img src="/images/projects/DataFramework.svg" alt="image" />
           </div>
         </div>
       </div>

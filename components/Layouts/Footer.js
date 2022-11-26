@@ -80,7 +80,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/emissionx">
+                    <Link href="/emissionx/life-cycle-assessment">
                       <a target="_blank">Life Cycle Assessment</a>
                     </Link>
                   </li>

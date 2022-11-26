@@ -33,7 +33,7 @@ const OurServices = () => {
                     <i className="flaticon-science"></i>
                   </div>
                   <h3>
-                    <Link href="/emissionx/climate-change">
+                    <Link href="/emissionx/life-cycle-assessment">
                       <a target="_blank">
                         Life Cycle Assessment
                         <i className="flaticon-right"></i>

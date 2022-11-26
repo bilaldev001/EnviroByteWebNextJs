@@ -105,6 +105,17 @@ const Navbar = () => {
 
                       <li className="nav-item">
                         <Link
+                            href="/emissionx/life-cycle-assessment"
+                            activeClassName="active"
+                        >
+                          <a className="nav-link">
+                            LCA
+                          </a>
+                        </Link>
+                      </li>
+
+                      <li className="nav-item">
+                        <Link
                           href="/emissionx/climate-change"
                           activeClassName="active"
                         >

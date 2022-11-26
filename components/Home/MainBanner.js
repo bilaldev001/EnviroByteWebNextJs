@@ -59,14 +59,7 @@ const MainBanner = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-6 col-md-12">
-                  {/* Main Image */}
-                  <img
-                      src="/images/home-three/main-image3.png"
-                      alt="image"
 
-                  />
-                </div>
               </div>
             </div>
           </div>

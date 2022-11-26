@@ -35,7 +35,7 @@ const Navbar = () => {
               <Link href="/">
                 <a className="navbar-brand">
                   <WhiteLogo className="white-logo" width={218} height={25} alt="logo" />
-                  <BlackLogo className="black-logo" width={220} height={30} alt="logo" />
+                  <BlackLogo className="black-logo" width={225} height={30} alt="logo" />
                 </a>
               </Link>
 

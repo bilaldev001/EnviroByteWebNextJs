@@ -40,7 +40,9 @@ PROJECT ROOT
    │          └── PEMContent.js                          # Details of the Predictive Emissions Monitoring page
    │          └── PMAContent.js                          # Details of the Predictive Analytics page
    │     ├── EmissionX/
+   │          ├── ClimateChangeContent.js                # Details of the Climate Change page
    │          └── EmissionXContent.js                    # Details of the EmissionX page - click read more in Home page
+   │          └── LCAContent.js                          # Details of the Life Cycle Assessment page
    │     ├── Faq/
    │          ├── FaqContactForm.js                      # Faq contact form component - not used
    │          └── FaqContent.js                          # Details of the Faq page - not used  

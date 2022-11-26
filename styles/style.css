@@ -93,7 +93,7 @@ a {
   text-decoration: none;
   transition: 0.6s;
   outline: 0 !important;
-  color: #0f4c81;
+  color: #0e3496;
 }
 a:hover {
   text-decoration: none;
@@ -103,7 +103,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-family: "Dosis", sans-serif;
-  color: #0f4c81;
+  color: #0e3496;
 }
 
 p {
@@ -208,7 +208,7 @@ p:last-child {
 }
 .section-title h2 {
   font-size: 40px;
-  color: #0f4c81;
+  color: #0e3496;
   margin: 10px 0 0 0;
 }
 
@@ -411,7 +411,7 @@ Navbar Area CSS
   padding-left: 0;
   margin: 0;
   position: relative;
-  color: #0f4c81;
+  color: #0e3496;
   font-size: 15.5px;
   font-weight: 400;
   transition: 0.6s;
@@ -1235,7 +1235,7 @@ About Section CSS
 }
 .about-content h2 {
   font-size: 40px;
-  color: #0f4c81;
+  color: #0e3496;
   margin: 12px 0 14px 0;
 }
 .about-content p {
@@ -1251,7 +1251,7 @@ About Section CSS
 .about-content .about-list li {
   font-size: 16px;
   font-weight: 600;
-  color: #0f4c81;
+  color: #0e3496;
   list-style-type: none;
   padding-bottom: 15px;
 }
@@ -1304,13 +1304,13 @@ Data Services Section CSS
 }
 .data-services-item .single-data-service-box h3 {
   font-size: 18px;
-  color: #0f4c81;
+  color: #0e3496;
   font-family: "Open Sans", sans-serif;
   margin: 0 0 0 0;
   transition: 0.6s;
 }
 .data-services-item .single-data-service-box h3 a {
-  color: #0f4c81;
+  color: #0e3496;
   display: block;
 }
 .data-services-item .single-data-service-box h3 a:hover {
@@ -1434,7 +1434,7 @@ Tabs Solutions Section CSS
   cursor: pointer;
   display: block;
   border-radius: 2px;
-  color: #0f4c81;
+  color: #0e3496;
   box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
   font-family: "Dosis", sans-serif;
   padding-right: 20px;
@@ -1456,7 +1456,7 @@ Tabs Solutions Section CSS
 }
 .solutions-list-tab .react-tabs__tab-panel .tab-solution-content h3 {
   font-size: 38px;
-  color: #0f4c81;
+  color: #0e3496;
   margin: 0 0 14px 0;
 }
 .solutions-list-tab .react-tabs__tab-panel .tab-solution-content p {
@@ -1513,7 +1513,7 @@ Work Section CSS
 }
 .work-item .work-content h3 {
   font-size: 22px;
-  color: #0f4c81;
+  color: #0e3496;
   margin: 0 0 8px 0;
   transition: 0.6s;
 }
@@ -1584,7 +1584,7 @@ Testimonial Section CSS
 }
 .testimonial-slider .testimonial-single-item .testimonial-info h3 {
   font-size: 22px;
-  color: #0f4c81;
+  color: #0e3496;
   margin: 0 0 5px 0;
 }
 .testimonial-slider .testimonial-single-item .testimonial-info span {
@@ -1791,7 +1791,7 @@ Sidebar Widget Area CSS
   transition: 0.6s;
 }
 .widget-area .widget_search form button:hover {
-  background-color: #0f4c81;
+  background-color: #0e3496;
   color: #ffffff;
 }
 .widget-area .widget_plamb_posts_thumb {
@@ -1857,7 +1857,7 @@ Sidebar Widget Area CSS
 .widget-area .widget_recent_entries ul li {
   position: relative;
   margin-bottom: 12px;
-  color: #0f4c81;
+  color: #0e3496;
   padding-left: 14px;
   line-height: 1.5;
   font-weight: 400;
@@ -1877,7 +1877,7 @@ Sidebar Widget Area CSS
 }
 .widget-area .widget_recent_entries ul li a {
   display: inline-block;
-  color: #0f4c81;
+  color: #0e3496;
 }
 .widget-area .widget_recent_entries ul li a:hover {
   color: #00b0ee;
@@ -1916,7 +1916,7 @@ Sidebar Widget Area CSS
 }
 .widget-area .widget_recent_comments ul li a {
   display: inline-block;
-  color: #0f4c81;
+  color: #0e3496;
   margin-right: 5px;
   margin-left: 5px;
 }
@@ -1932,7 +1932,7 @@ Sidebar Widget Area CSS
   position: relative;
   margin-bottom: 12px;
   padding-left: 14px;
-  color: #0f4c81;
+  color: #0e3496;
   font-size: 15.5px;
   font-weight: 400;
 }
@@ -1950,7 +1950,7 @@ Sidebar Widget Area CSS
 }
 .widget-area .widget_archive ul li a {
   display: inline-block;
-  color: #0f4c81;
+  color: #0e3496;
 }
 .widget-area .widget_archive ul li a:hover {
   color: #00b0ee;
@@ -1981,7 +1981,7 @@ Sidebar Widget Area CSS
   position: absolute;
 }
 .widget-area .widget_categories ul li a {
-  color: #0f4c81;
+  color: #0e3496;
   display: block;
 }
 .widget-area .widget_categories ul li a:hover {
@@ -1999,7 +1999,7 @@ Sidebar Widget Area CSS
 .widget-area .widget_meta ul li {
   position: relative;
   margin-bottom: 12px;
-  color: #0f4c81;
+  color: #0e3496;
   padding-left: 14px;
   font-size: 15.5px;
   font-weight: 400;
@@ -2018,7 +2018,7 @@ Sidebar Widget Area CSS
 }
 .widget-area .widget_meta ul li a {
   display: inline-block;
-  color: #0f4c81;
+  color: #0e3496;
 }
 .widget-area .widget_meta ul li a:hover {
   color: #00b0ee;
@@ -2029,7 +2029,7 @@ Sidebar Widget Area CSS
 .widget-area .tagcloud a {
   background-color: #f1f1f1;
   display: inline-block;
-  color: #0f4c81;
+  color: #0e3496;
   font-weight: 400;
   font-size: 14.5px !important;
   padding: 7px 15px;
@@ -2061,7 +2061,7 @@ Sidebar Widget Area CSS
 }
 .widget-area .widget_event_details ul li span {
   display: inline-block;
-  color: #0f4c81;
+  color: #0e3496;
   font-weight: 400;
 }
 .widget-area .widget_event_details ul li a {
@@ -2170,7 +2170,7 @@ Subscribe Area CSS
   font-weight: 400;
 }
 .subscribe-content h2 {
-  color: #0f4c81;
+  color: #0e3496;
   margin-bottom: 14px;
   margin-left: auto;
   margin-right: auto;
@@ -2193,7 +2193,7 @@ Subscribe Area CSS
   padding-left: 25px;
   border-radius: 5px;
   outline: 0;
-  color: #0f4c81;
+  color: #0e3496;
 }
 .newsletter-form .input-newsletter::placeholder {
   color: #737b9a;
@@ -2215,7 +2215,7 @@ Subscribe Area CSS
   font-weight: 400;
 }
 .newsletter-form button:hover {
-  background-color: #0f4c81;
+  background-color: #0e3496;
   color: #ffffff;
 }
 .newsletter-form #validator-newsletter {
@@ -2342,7 +2342,7 @@ Process Section CSS
 }
 .process-item h3 {
   font-size: 22px;
-  color: #0f4c81;
+  color: #0e3496;
   margin: 0 0 10px 0;
 }
 .process-item p {
@@ -2420,7 +2420,7 @@ Software Section CSS
   z-index: 1;
   position: relative;
   transition: 0.6s;
-  color: #0f4c81;
+  color: #0e3496;
   font-family: "Dosis", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -2647,7 +2647,7 @@ Subscribe Section CSS
   margin-bottom: 25px;
 }
 .subscribe-content-area .subscribe-content h2 {
-  color: #0f4c81;
+  color: #0e3496;
   font-size: 32px;
   margin-bottom: 10px;
 }
@@ -2666,7 +2666,7 @@ Subscribe Section CSS
   padding-left: 25px;
   border-radius: 5px;
   outline: 0;
-  color: #0f4c81;
+  color: #0e3496;
 }
 .subscribe-content-area .newsletter-form .input-newsletter::placeholder {
   color: #737b9a;
@@ -2688,7 +2688,7 @@ Subscribe Section CSS
   font-weight: 400;
 }
 .subscribe-content-area .newsletter-form button:hover {
-  background-color: #0f4c81;
+  background-color: #0e3496;
   color: #ffffff;
 }
 
@@ -3270,7 +3270,7 @@ Pagination Area CSS
   display: inline-block;
   background-color: #ffffff;
   line-height: 48px;
-  color: #0f4c81;
+  color: #0e3496;
   box-shadow: 0 2px 10px 0 #d8dde6;
   font-size: 18px;
   font-weight: 700;
@@ -3684,7 +3684,7 @@ Blog Details Area CSS
 }
 .blog-details-desc .article-footer .article-tags span {
   display: inline-block;
-  color: #0f4c81;
+  color: #0e3496;
   font-size: 17px;
   margin-right: 8px;
   position: relative;
@@ -3757,7 +3757,7 @@ blockquote, .blockquote {
   margin-top: 20px;
 }
 blockquote p, .blockquote p {
-  color: #0f4c81;
+  color: #0e3496;
   line-height: 1.6;
   margin-bottom: 0;
   font-style: italic;
@@ -3815,7 +3815,7 @@ blockquote::after, .blockquote::after {
 .comments-area .comment-body {
   border-bottom: 1px solid #eeeeee;
   padding-left: 65px;
-  color: #0f4c81;
+  color: #0e3496;
   font-size: 14px;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -3825,7 +3825,7 @@ blockquote::after, .blockquote::after {
 }
 .comments-area .comment-body .reply a {
   border: 1px solid #ded9d9;
-  color: #0f4c81;
+  color: #0e3496;
   display: inline-block;
   padding: 5px 20px;
   border-radius: 30px;
@@ -3900,7 +3900,7 @@ blockquote::after, .blockquote::after {
 .comments-area .comment-respond label {
   display: block;
   font-weight: 600;
-  color: #0f4c81;
+  color: #0e3496;
   margin-bottom: 5px;
 }
 .comments-area .comment-respond input[type=date], .comments-area .comment-respond input[type=time], .comments-area .comment-respond input[type=datetime-local], .comments-area .comment-respond input[type=week], .comments-area .comment-respond input[type=month], .comments-area .comment-respond input[type=text], .comments-area .comment-respond input[type=email], .comments-area .comment-respond input[type=url], .comments-area .comment-respond input[type=password], .comments-area .comment-respond input[type=search], .comments-area .comment-respond input[type=tel], .comments-area .comment-respond input[type=number], .comments-area .comment-respond textarea {
@@ -3973,7 +3973,7 @@ blockquote::after, .blockquote::after {
 }
 .comments-area .comment-respond .form-submit input:hover, .comments-area .comment-respond .form-submit input:focus {
   color: #ffffff;
-  background-color: #0f4c81;
+  background-color: #0e3496;
 }
 
 /*================================================
@@ -3993,7 +3993,7 @@ Footer Section CSS
   content: "";
   height: 100%;
   width: 100%;
-  background-color: #0f4c81;
+  background-color: #0e3496;
   left: 0;
   right: 0;
   top: 0;
@@ -4224,7 +4224,7 @@ Go Top CSS
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #0f4c81;
+  background: #0e3496;
   opacity: 0;
   visibility: hidden;
   transition: 0.6s;

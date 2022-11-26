@@ -133,7 +133,7 @@ const Footer = () => {
             <div className="col-lg-6 col-md-6">
               <p>
                 &copy; {currentYear} EnviroByte. All Rights Reserved by
-                <a href="https://envirobyte.com" target="_blank">
+                <a href="/team" target="_blank">
                   SmartPeople
                 </a>
               </p>

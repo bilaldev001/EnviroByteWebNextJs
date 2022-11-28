@@ -14,16 +14,8 @@ PROJECT ROOT
    │          ├── AboutUsContent.js                      # Details of the about-us page
    │          ├── BioDetailsContent.js                   # Details of the bio page         
    │          └── DataDrivenApproachContent.js           # Details of the data driven approach page
-   │     ├── Blog/
-   │          ├── BlogCard.js                            # Blog card component - not used   
-   │          ├── BlogCardThree.js                       # Blog card component - not used
-   │          ├── BlogCardTwo.js                         # Blog card component - not used
-   │          ├── BlogDetailsContent.js                  # Details of the blog page
-   │          └── BlogSideBar.js                         # Blog sidebar component - not used
+   │                   
    │     ├── Common/
-   │          ├── BlogPost.js                            # Blog post component - not used
-   │          ├── Customers.js                           # Customers component - not used 
-   │          ├── CustomerStyleTwo.js                    # Customers component - not used
    │          ├── Funfacts.js                            # Funfacts component - 500+ GHG project etc.
    │          ├── GetStartedProject.js                   # Get started component 
    │          ├── PageBanner.js                          # Page banner component - used for each detail page top banner below navbar

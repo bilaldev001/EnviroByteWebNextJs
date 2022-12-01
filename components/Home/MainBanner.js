@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import BriefLogo from "../../public/images/projects/DataFrameWorkv2.svg";
+// import BriefLogo from "../../public/images/projects/DataFrameWorkv2.svg";
 const MainBanner = () => {
   return (
     <>
@@ -60,7 +60,7 @@ const MainBanner = () => {
                 </div>
                 <div className="col-lg-6 col-md-12">
                   {/* Main Image */}
-                    <BriefLogo width={900} height ={720} alt="logo" />
+
 
                 </div>
 

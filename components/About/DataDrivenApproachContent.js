@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import DataLogo from "../../public/images/projects/DataFrameWork.svg";
 
 const DataDrivenApproachContent = () => {
   return (
@@ -58,7 +59,7 @@ const DataDrivenApproachContent = () => {
             </div>
           </div>
           <div className="project-details-image">
-            <img src="/images/projects/DataFramework.svg" alt="image" />
+            <DataLogo alt="image" />
           </div>
         </div>
       </div>

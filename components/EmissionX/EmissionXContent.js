@@ -1,6 +1,6 @@
 import React from "react";
-import Link from "next/link";
-
+import CICDLogo from "../../public/images/emisssionx/CICD_EmissionX.svg";
+import IoTLogo from "../../public/images/datascience/IoT.svg";
 const EmissionXContent = () => {
   return (
     <>
@@ -89,6 +89,9 @@ const EmissionXContent = () => {
             <p></p>
 
             <p></p>
+            <div className="project-details-image">
+              <CICDLogo alt="image" />
+            </div>
           </div>
         </div>
       </div>

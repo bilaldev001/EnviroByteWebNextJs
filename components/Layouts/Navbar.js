@@ -201,13 +201,13 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                  <li className="nav-item">
+                  {/*<li className="nav-item">
                     <Link href="https://www.google.ca" activeClassName="active">
                       <a target="_blank">
                         Login
                       </a>
                     </Link>
-                  </li>
+                  </li>*/}
                 </ul>
               </div>
             </nav>

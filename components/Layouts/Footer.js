@@ -44,7 +44,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://ghg.mzcodelab.com/">
+                    <Link href="https://ghg.envirobyte.com/">
                       <a target="_blank">Emission Factor Hub</a>
                     </Link>
                   </li>

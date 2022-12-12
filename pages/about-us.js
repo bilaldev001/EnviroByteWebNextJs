@@ -11,14 +11,14 @@ const AboutUs = () => {
   return (
     <>
       <Head>
-        <title>EnviroByte Inc. | About Us</title>
+        <title>EnviroByte | About Us</title>
         <meta
           name="keywords"
           content={
-            "envirobyte Environment GHG Calgary calgary Alberta About Us"
+            "Alberta GHG Reporting, Life Cycle Assessment, Environmental Product Declaration"
           }
         />
-        <meta property="og:title" content="EnviroByte Inc. - About Us" />
+        <meta property="og:title" content="EnviroByte - About Us" />
         <meta property="og:PageType" content="website" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="https://www.envirobyte.com" />

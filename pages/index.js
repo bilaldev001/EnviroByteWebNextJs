@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>EnviroByte Inc. | Home</title>
+        <title>Home | EnviroByte</title>
         <meta
           name="keywords"
           content={"envirobyte Environment GHG Calgary calgary Alberta"}

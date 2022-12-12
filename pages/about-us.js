@@ -11,7 +11,7 @@ const AboutUs = () => {
   return (
     <>
       <Head>
-        <title>EnviroByte | About Us</title>
+        <title>About Us | EnviroByte</title>
         <meta
           name="keywords"
           content={
@@ -30,7 +30,7 @@ const AboutUs = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta
           name="description"
-          content="Envirobyte services are here to help you and your business...Official web site of EnviroByte, located in Calgary, Alberta, Canada."
+          content="EnviroByte uses CI/CD to automate the process of calculating GHG emissions for Alberta TIER, BC GHG regulation, ECCC GHGRP, ECCC NPRI."
         />
       </Head>
       <Navbar />

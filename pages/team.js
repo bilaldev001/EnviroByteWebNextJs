@@ -9,7 +9,7 @@ const Team = () => {
   return (
     <>
       <Head>
-        <title>EnviroByte | Team</title>
+        <title>Team | EnviroByte </title>
         <meta
           name="keywords"
           content={"envirobyte Environment GHG Calgary calgary Alberta Team"}

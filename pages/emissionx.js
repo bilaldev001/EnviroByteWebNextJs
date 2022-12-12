@@ -40,7 +40,7 @@ const EmissionX = () => {
         />
         <meta
           name="description"
-          content="EmissionX brings data science and software development techniques - CI/CD processes to GHG reporting. EmissionX offers the most flexibilities for various GHG reporting requirements with maximum transparency and auditability."
+          content="EmissionX™ brings data science and software development techniques - CI/CD processes to GHG reporting. EmissionX offers the most flexibilities for various GHG reporting requirements with maximum transparency and auditability."
         />
         <meta property="og:title" content="EnviroByte Inc. - EmissionX" />
         <meta property="og:PageType" content="website" />

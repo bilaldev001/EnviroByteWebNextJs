@@ -12,7 +12,7 @@ const Team = () => {
         <title>Team | EnviroByte </title>
         <meta
           name="keywords"
-          content={"envirobyte Environment GHG Calgary calgary Alberta Team"}
+          content={"PEMS, Predictive Emission Monitoring System, EnviroByte"}
         />
         <meta property="og:title" content="EnviroByte Inc. - Team" />
         <meta property="og:PageType" content="website" />

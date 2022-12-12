@@ -15,7 +15,9 @@ const Index = () => {
         <title>Home | EnviroByte</title>
         <meta
           name="keywords"
-          content={"envirobyte Environment GHG Calgary calgary Alberta"}
+          content={
+            "Alberta TIER, Sustainability, ESG, GHG, oil and gas, decarbonization, PEMS, EmissionX, SOC 2"
+          }
         />
         <meta property="og:title" content="EnviroByte Inc. - Home Page" />
         <meta property="og:PageType" content="website" />
@@ -29,7 +31,7 @@ const Index = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta
           name="description"
-          content="Envirobyte services are here to help you and your business...Official web site of EnviroByte, located in Calgary, Alberta, Canada."
+          content="Envirobyte developed scalable, cloud-based software solutions that help companies reduce their carbon footprint and improve their sustainability performance."
         />
       </Head>
 

@@ -192,6 +192,16 @@ const Navbar = () => {
                           </a>
                         </Link>
                       </li>
+                      <li className="nav-item">
+                        <Link
+                            href="https://air.envirobyte.com"
+                            activeClassName="active"
+                        >
+                          <a className="nav-link" target="_blank">
+                            Air Emission Factor Hub
+                          </a>
+                        </Link>
+                      </li>
                     </ul>
                   </li>
 

@@ -22,16 +22,13 @@ const Index = () => {
         <meta property="og:title" content="EnviroByte Inc. - Home Page" />
         <meta property="og:PageType" content="website" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="https://www.envirobyte.com" />
-        <meta
-          property="og:url"
-          content="https://www.envirobyte.com/pages/index.js"
-        />
+        <meta property="og:site_name" content="EnviroByte" />
+        <meta property="og:url" content="https://www.envirobyte.com/" />
         <meta property="og:locale" content="en" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta
           name="description"
-          content="Envirobyte developed scalable, cloud-based software solutions that help companies reduce their carbon footprint and improve their sustainability performance."
+          content="EnviroByte developed scalable, cloud-based software solutions that help companies reduce their carbon footprint and improve their sustainability performance."
         />
       </Head>
 

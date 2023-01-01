@@ -20,7 +20,10 @@ const TeamMemberContent = () => {
                     <a href="/bio-details" target="_blank">
                       <i className="fa fa-id-badge"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/briansloof/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/briansloof/"
+                      target="_blank"
+                    >
                       <i className="fab fa-linkedin"></i>
                     </a>
                     <a href="/contact" target="_blank">
@@ -44,7 +47,10 @@ const TeamMemberContent = () => {
                     <a href="/bio-details" target="_blank">
                       <i className="fa fa-id-badge"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/ghgoffsetter/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/ghgoffsetter/"
+                      target="_blank"
+                    >
                       <i className="fab fa-linkedin"></i>
                     </a>
                     <a href="/contact" target="_blank">
@@ -68,7 +74,10 @@ const TeamMemberContent = () => {
                     <a href="/bio-details" target="_blank">
                       <i className="fa fa-id-badge"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/pubkevinpoirier791/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/pubkevinpoirier791/"
+                      target="_blank"
+                    >
                       <i className="fab fa-linkedin"></i>
                     </a>
                     <a href="/contact" target="_blank">
@@ -92,7 +101,10 @@ const TeamMemberContent = () => {
                     <a href="/bio-details" target="_blank">
                       <i className="fa fa-id-badge"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/minxingsi/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/minxingsi/"
+                      target="_blank"
+                    >
                       <i className="fab fa-linkedin"></i>
                     </a>
                     <a href="/contact" target="_blank">
@@ -107,9 +119,9 @@ const TeamMemberContent = () => {
               </div>
             </div>
             <div className="section-title">
-              <br/>
-              <br/>
-              <br/>
+              <br />
+              <br />
+              <br />
               <span>Our Advisors</span>
               <h2>People who advise EnviroByte</h2>
             </div>
@@ -122,7 +134,10 @@ const TeamMemberContent = () => {
                     <a href="/bio-details" target="_blank">
                       <i className="fa fa-id-badge"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/perry-toms-4567666/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/perry-toms-4567666/"
+                      target="_blank"
+                    >
                       <i className="fab fa-linkedin"></i>
                     </a>
                     <a href="/contact" target="_blank">
@@ -145,7 +160,10 @@ const TeamMemberContent = () => {
                     <a href="/bio-details" target="_blank">
                       <i className="fa fa-id-badge"></i>
                     </a>
-                    <a href=" https://www.linkedin.com/in/john-parr-yyc/" target="_blank">
+                    <a
+                      href=" https://www.linkedin.com/in/john-parr-yyc/"
+                      target="_blank"
+                    >
                       <i className="fab fa-linkedin"></i>
                     </a>
                     <a href="/contact" target="_blank">

@@ -194,7 +194,7 @@ const Navbar = () => {
                       </li>
                       <li className="nav-item">
                         <Link
-                            href="https://air.envirobyte.com"
+                            href="https://airemission.envirobyte.com"
                             activeClassName="active"
                         >
                           <a className="nav-link" target="_blank">

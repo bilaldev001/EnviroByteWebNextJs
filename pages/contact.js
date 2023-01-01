@@ -34,11 +34,8 @@ const Contact = () => {
         <meta property="og:title" content="EnviroByte Inc. - Contact" />
         <meta property="og:PageType" content="website" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="https://www.envirobyte.com" />
-        <meta
-          property="og:url"
-          content="https://www.envirobyte.com/pages/contact.js"
-        />
+        <meta property="og:site_name" content="EnviroByte" />
+        <meta property="og:url" content="https://www.envirobyte.com/contact/" />
         <meta property="og:locale" content="en" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta

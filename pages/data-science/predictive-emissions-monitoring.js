@@ -26,14 +26,11 @@ const PredictiveEmissionsMonitoring = () => {
 
         			`}
         </Script>
-        <title>
-          Regulatory approval processes for PEMS in Alberta and in US -
-          EnviroByte
-        </title>
+        <title>Regulatory approval processes for PEMS in Alberta</title>
         <meta
           name="description"
-          content="PEMS (predictive emissions monitoring system) is used to monitor NOx and SO2 and is permitted under Alberta 2021 CEMS code and US EPA. We have extensive experiennce with PEMS development. PEMS can used as an alternative to CEMS. 
-		  The PEMS cost is about 50% of CEMS, and almost no maintenance is required. we develop PEMSs and provide regulatory approval services for PEMS in Alberta and in US."
+          content="PEMS (predictive emissions monitoring system) is used to monitor NOx and SO2 and is permitted under Alberta 2021 CEMS code and US EPA. We have extensive experiennce with PEMS development. 
+		  The PEMS cost is about 50% of CEMS, and almost no maintenance is required. we develop PEMSs and provide regulatory approval services for PEMS in Alberta"
         />
         <meta
           name="keywords"

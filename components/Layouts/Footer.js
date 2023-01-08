@@ -119,10 +119,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
+        {/*
         <div className="partner-shape-img1">
           <img src="/images/shape/partnar-shape-2.png" alt="image" />
         </div>
+        */}
       </footer>
       {/* End Top Footer Section */}
 

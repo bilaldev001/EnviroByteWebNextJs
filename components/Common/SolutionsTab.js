@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-
+import PredictiveLogo from "../../public/images/solution-tab/tab3.svg";
 const SolutionsTab = () => {
   return (
     <>
@@ -146,7 +146,8 @@ const SolutionsTab = () => {
 
                   <div className="col-lg-5">
                     <div className="tab-image-right">
-                      <img src="/images/projects/project1.png" alt="image" />
+                      {/*<img src="/images/projects/project1.png" alt="image" />*/}
+                      <PredictiveLogo alt="logo" />
                     </div>
                   </div>
                 </div>

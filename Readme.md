@@ -2,6 +2,8 @@
 2. 'banner-bg-img#' is in the style.css file, line 3461, banner-bg-img1 is in path '/images/page-title-bg.jpg', similarly,  banner-bg-img2 is in path '/images/page-title-bg-2.jpg' 
 3. Mainbanner the blue color is : four blue colors in style.scss line 1201, progressive transition 
 
+npm install
+npm run dev
 ## ✨ Code-base structure
 
 The project is coded using a simple and intuitive structure presented below:

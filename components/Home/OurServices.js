@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
+import DDRPLogo from "../../public/images/our_service/Data-Drived-Landing Page.svg";
 const OurServices = () => {
   return (
     <>
@@ -106,7 +106,8 @@ const OurServices = () => {
 
             <div className="col-lg-4 col-md-6">
               <div className="data-service-image">
-                <img src="/images/data-service.png" alt="image" />
+                {/*<img src="/images/data-service.png" alt="image" />*/}
+                <DDRPLogo height={500} alt="logo"/>
               </div>
             </div>
           </div>

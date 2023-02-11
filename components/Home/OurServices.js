@@ -107,7 +107,7 @@ const OurServices = () => {
             <div className="col-lg-4 col-md-6">
               <div className="data-service-image">
                 {/*<img src="/images/data-service.png" alt="image" />*/}
-                <DDRPLogo height={500} alt="logo"/>
+                <DDRPLogo height={425} alt="logo"/>
               </div>
             </div>
           </div>

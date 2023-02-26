@@ -26,7 +26,7 @@ const BioDetailsContent = () => {
                       organizational management related to planning and
                       enhancing adaptive capacity to adapt to climate change. He
                       serves as a subject matter expert and committee member for
-                      developing multiple ISO standards, including
+                      developing multiple ISO standards, including:
                     </p>
                     <text style={{ fontSize: "18px" }}>
                       <ul>
@@ -89,9 +89,7 @@ const BioDetailsContent = () => {
                       GHG’s and pollutants at the federal, provincial, and state
                       levels. Brian is a Professional Engineer registered with
                       the Association of Professional Engineers and
-                      Geoscientists of Alberta. Brian is a Professional Engineer
-                      registered with the Association of Professional Engineers
-                      and Geoscientists of Alberta. To date, Brian has
+                      Geoscientists of Alberta. To date, Brian has
                       participated in hundreds of verifications as a verifier,
                       lead verifier, as a per reviewer or as an auditor, in BC,
                       Alberta and Saskatchewan, for such industries as oil and
@@ -132,7 +130,7 @@ const BioDetailsContent = () => {
                       America, and in the Middle East. He has developed and led
                       training sessions and workshops on topics such as climate
                       change, sustainability planning, and environmental
-                      compliance.. Kevin has also been retained to deliver
+                      compliance. Kevin has also been retained to deliver
                       climate change adaptation and mitigation training to
                       planning and engineering departments in wastewater and
                       drinking water for clients in Belize, Waterloo, Oshawa,
@@ -231,12 +229,12 @@ const BioDetailsContent = () => {
                       Mr. John Parr is CFO and Co-Founder of GolfADay Ltd, which
                       is a platform to service a niche market in the North
                       American golf industry. Prior to his own startup, he held
-                      various executive roles with them over his 20 year career
+                      various executive roles over his 20 year career
                       at Canadian Natural Resources Limited, including VP,
                       Conventional Facilities & Pipelines, VP, Thermal Projects
-                      & Facilities, VP, Thermal Production. John has had
+                      & Facilities, and VP, Thermal Production. John has had
                       experience with all resource types from conventional oil
-                      and gas, to unconventional plays to in situ oil sands and
+                      and gas to unconventional plays to in situ oil sands and
                       oil sands mining. He was involved in all phases of
                       development from initial resource delineation, economic
                       evaluation of plays, engineering, procurement, drilling,

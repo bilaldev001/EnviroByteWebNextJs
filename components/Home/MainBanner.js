@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import DDSLogo from "../../public/images/main-banner-shape/DataDrivenDecision_Diagram.svg";
+import DDSLogo from "../../public/images/main-banner-shape/DataDriven.svg";
 const MainBanner = () => {
   return (
     <>

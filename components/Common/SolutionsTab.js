@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import PredictiveLogo from "../../public/images/solution-tab/tab3.svg";
+import ADALogo from "../../public/images/solution-tab/Envirobyte_AdvancedDataAnalytics_Graphic.svg";
 const SolutionsTab = () => {
   return (
     <>
@@ -56,7 +57,7 @@ const SolutionsTab = () => {
 
                   <div className="col-lg-5">
                     <div className="tab-image-right">
-                      <img src="/images/tab-solution.png" alt="image" />
+                      <ADALogo alt="logo" />
                     </div>
                   </div>
                 </div>

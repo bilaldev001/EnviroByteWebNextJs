@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-// import BriefLogo from "../../public/images/projects/DataFrameWorkv2.svg";
+import DDSLogo from "../../public/images/main-banner-shape/DataDrivenDecision_Diagram.svg";
 const MainBanner = () => {
   return (
     <>
@@ -58,9 +58,9 @@ const MainBanner = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6 col-md-12">
+                <div className="col-lg-6 col-md-12 align-items-center">
                   {/* Main Image */}
-
+                  <DDSLogo  width={700} height={600} alt="logo" />
 
                 </div>
 

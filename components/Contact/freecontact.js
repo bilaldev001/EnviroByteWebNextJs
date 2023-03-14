@@ -4,6 +4,7 @@ import React, {useState} from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import Contactlogo from '../../public/images/Envirobyte_ContactUs.svg'
 const MySwal = withReactContent(Swal)
 
 
@@ -35,7 +36,7 @@ function ContactForm() {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="contact-image">
-                            <img src="/images/contact.png" alt="image" />
+                            <Contactlogo alt = "logo"/>
                         </div>
                     </div>
 

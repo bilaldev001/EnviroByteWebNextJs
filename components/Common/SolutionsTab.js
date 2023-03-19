@@ -4,6 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import PredictiveLogo from "../../public/images/solution-tab/tab3.svg";
 import ADALogo from "../../public/images/solution-tab/Envirobyte_AdvancedDataAnalytics_Graphic.svg";
 import PMaintainceLogo from "../../public/images/solution-tab/Envirobyte_DataDrivenPredictive_Graphic.svg";
+import IOTAQMLogo from "../../public/images/solution-tab/IoT_AQM.svg";
 const SolutionsTab = () => {
   return (
     <>
@@ -68,7 +69,7 @@ const SolutionsTab = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5">
                     <div className="tab-image-left">
-                      <img src="/images/projects/project4.png" alt="image" />
+                      <IOTAQMLogo alt = "logo"/>
                     </div>
                   </div>
 

@@ -69,7 +69,7 @@ const SolutionsTab = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5">
                     <div className="tab-image-left">
-                      <IOTAQMLogo alt = "logo"/>
+                      <IOTAQMLogo width={450} height={500} alt = "logo"/>
                     </div>
                   </div>
 

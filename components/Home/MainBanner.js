@@ -60,7 +60,7 @@ const MainBanner = () => {
                 </div>
                 <div className="col-lg-6 col-md-12 align-items-center">
                   {/* Main Image */}
-                  <DDSLogo  width={700} height={600} alt="logo" />
+                  <DDSLogo  width={660} height={555} alt="logo" />
 
                 </div>
 

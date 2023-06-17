@@ -202,6 +202,16 @@ const Navbar = () => {
                           </a>
                         </Link>
                       </li>
+                      <li className="nav-item">
+                        <Link
+                            href="https://steamapp.envirobyte.com"
+                            activeClassName="active"
+                        >
+                          <a className="nav-link" target="_blank">
+                            Steam App
+                          </a>
+                        </Link>
+                      </li>
                     </ul>
                   </li>
 

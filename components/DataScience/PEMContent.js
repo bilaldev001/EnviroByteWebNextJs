@@ -24,10 +24,10 @@ const PEMContent = () => {
             </p>
             <br />
             <p>
-              OpenPEMS&trade; is a free and open source software (FOSS) that
-              trains models to predictive air emissions, such as NOx and SO2,
-              which are typically monitored by CEMSs. OpenPEMS&trade; is an open
-              source PEMS inspired by OpenAI's ethos of accessibility and
+              OpenPEMS&trade; is a free and open source predictive emissions
+              monitoring system that trains models to predictive air emissions,
+              such as NOx and SO2, which are typically monitored by CEMSs.
+              OpenPEMS&trade; is inspired by OpenAI's ethos of accessibility and
               empowerment. Our vision is to make the Artificial Intelligent (AI)
               and Machine Learning (ML) technologies accessible to a wider
               industrial audience, reducing costs associated with air emissions

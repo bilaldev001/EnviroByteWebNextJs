@@ -123,10 +123,11 @@ const SolutionsTab = () => {
                     <div className="tab-solution-content">
                       <h3>Free AI-Based Emission Monitoring</h3>
                       <p>
-                        OpenPEMS&trade; is a free and open source software
-                        (FOSS) that trains models to predictive air emissions,
-                        such as NOx and SO2, which are typically monitored by
-                        Continuous Emissions Monitoring Systems (CEMSs).
+                        OpenPEMS&trade; is a free and open source predictive
+                        emissions monitoring system (PEMS) that trains models to
+                        predictive air emissions, such as NOx and SO2, which are
+                        typically monitored by Continuous Emissions Monitoring
+                        Systems (CEMSs).
                       </p>
 
                       <ul className="tab-list">

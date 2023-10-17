@@ -126,7 +126,7 @@ const SolutionsTab = () => {
                         OpenPEMS&trade; is a free and open source software
                         (FOSS) that trains models to predictive air emissions,
                         such as NOx and SO2, which are typically monitored by
-                        Continuous Emissions Monitoring Systems (CEMSs)
+                        Continuous Emissions Monitoring Systems (CEMSs).
                       </p>
 
                       <ul className="tab-list">

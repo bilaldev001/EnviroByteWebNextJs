@@ -29,17 +29,13 @@ const PredictiveEmissionsMonitoring = () => {
         <title>Regulatory approval processes for PEMS in Alberta</title>
         <meta
           name="description"
-          content="PEMS (predictive emissions monitoring system) is used to monitor NOx and SO2 and is permitted under Alberta 2021 CEMS code and US EPA. We have extensive experiennce with PEMS development. 
-		  The PEMS cost is about 50% of CEMS, and almost no maintenance is required. we develop PEMSs and provide regulatory approval services for PEMS in Alberta"
+          content="We offer free predictive emissions monitoring systems, called OpenPEMS&trade; for industry to monitor and/or replace CEMS for its air emissions reporting."
         />
         <meta
           name="keywords"
           content={"PEMS, Predictive Emission Monitoring System"}
         />
-        <meta
-          property="og:title"
-          content="Predictive Emission Monitoring System"
-        />
+        <meta property="og:title" content="OpenPEMS&trade;" />
         <meta property="og:PageType" content="website" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="EnviroByte" />

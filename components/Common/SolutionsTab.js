@@ -15,7 +15,7 @@ const SolutionsTab = () => {
               <TabList>
                 <Tab>Advanced Data Analytics</Tab>
                 <Tab>IoT Air Quality Monitoring</Tab>
-                <Tab>Predictive Emissions Monitoring</Tab>
+                <Tab>OpenPEMS&trade;</Tab>
                 <Tab>Predictive Maintenance/Analytics</Tab>
               </TabList>
 
@@ -26,10 +26,13 @@ const SolutionsTab = () => {
                     <div className="tab-solution-content">
                       <h3>Advanced Data Analytics</h3>
                       <p>
-                        In this project, we extracted actual operating data from a public database- Petrinex (Canada’s
-                        Petroleum Information Network), which contains more than 35 million records for 18 in situ oil
-                        sands extraction schemes. We analyze fuel gas use, steam injection, solvent co-injection, oil
-                        production, flare, and vent volumes.
+                        In this project, we extracted actual operating data from
+                        a public database- Petrinex (Canada’s Petroleum
+                        Information Network), which contains more than 35
+                        million records for 18 in situ oil sands extraction
+                        schemes. We analyze fuel gas use, steam injection,
+                        solvent co-injection, oil production, flare, and vent
+                        volumes.
                       </p>
 
                       <ul className="tab-list">
@@ -69,7 +72,7 @@ const SolutionsTab = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5">
                     <div className="tab-image-left">
-                      <IOTAQMLogo width={450} height={500} alt = "logo"/>
+                      <IOTAQMLogo width={450} height={500} alt="logo" />
                     </div>
                   </div>
 
@@ -78,10 +81,12 @@ const SolutionsTab = () => {
                       <h3>Air emissions/quality monitoring by</h3>
                       <h3>cost-effective sensors</h3>
                       <p>
-                        We calibrated a low-cost particle sensor using machine learning techniques. The particle senor
-                        was used to monitor ambient air quality. The internet of thing (IoT) enabled low-cost sensors
-                        can be used to construct a high-resolution PM monitoring network and provide real-time emission
-                        monitoring data.
+                        We calibrated a low-cost particle sensor using machine
+                        learning techniques. The particle senor was used to
+                        monitor ambient air quality. The internet of thing (IoT)
+                        enabled low-cost sensors can be used to construct a
+                        high-resolution PM monitoring network and provide
+                        real-time emission monitoring data.
                       </p>
 
                       <ul className="tab-list">
@@ -116,10 +121,12 @@ const SolutionsTab = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
-                      <h3>AI-Based Emission Monitoring</h3>
+                      <h3>Free AI-Based Emission Monitoring</h3>
                       <p>
-                        EnviroByte helps facility operators with machine learning methods to develop their predictive
-                        emission models by themselves for emissions monitoring and reporting.
+                        OpenPEMS&trade; is a free and open source software
+                        (FOSS) that trains models to predictive air emissions,
+                        such as NOx and SO2, which are typically monitored by
+                        Continuous Emissions Monitoring Systems (CEMSs)
                       </p>
 
                       <ul className="tab-list">
@@ -168,10 +175,13 @@ const SolutionsTab = () => {
                     <div className="tab-solution-content">
                       <h3>Data-driven approaches for predictive analytics</h3>
                       <p>
-                        Data-driven discovery from Petrinex using unsupervised machine learning algorithms to discover
-                        steam consumption patterns for in situ oil sand operations to reduce GHG emission from
-                        extraction processes. The study showed that the cyclic steam stimulation (CSS) recovery method
-                        was less efficient than the steam assisted gravity drainage (SAGD) recovery method.
+                        Data-driven discovery from Petrinex using unsupervised
+                        machine learning algorithms to discover steam
+                        consumption patterns for in situ oil sand operations to
+                        reduce GHG emission from extraction processes. The study
+                        showed that the cyclic steam stimulation (CSS) recovery
+                        method was less efficient than the steam assisted
+                        gravity drainage (SAGD) recovery method.
                       </p>
 
                       <ul className="tab-list">

@@ -34,8 +34,18 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-md navbar-light">
               <Link href="/">
                 <a className="navbar-brand">
-                  <WhiteLogo className="white-logo" width={218} height={25} alt="logo" />
-                  <BlackLogo className="black-logo" width={218} height={30} alt="logo" />
+                  <WhiteLogo
+                    className="white-logo"
+                    width={218}
+                    height={25}
+                    alt="logo"
+                  />
+                  <BlackLogo
+                    className="black-logo"
+                    width={218}
+                    height={30}
+                    alt="logo"
+                  />
                 </a>
               </Link>
 
@@ -77,7 +87,10 @@ const Navbar = () => {
                       </li>
 
                       <li className="nav-item">
-                        <Link href="/data-driven-approach" activeClassName="active">
+                        <Link
+                          href="/data-driven-approach"
+                          activeClassName="active"
+                        >
                           <a className="nav-link">Data Driven Approach</a>
                         </Link>
                       </li>
@@ -93,10 +106,7 @@ const Navbar = () => {
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link
-                          href="/emissionx"
-                          activeClassName="active"
-                        >
+                        <Link href="/emissionx" activeClassName="active">
                           <a className="nav-link" target="_blank">
                             Emission
                           </a>
@@ -105,12 +115,10 @@ const Navbar = () => {
 
                       <li className="nav-item">
                         <Link
-                            href="/emissionx/life-cycle-assessment"
-                            activeClassName="active"
+                          href="/emissionx/life-cycle-assessment"
+                          activeClassName="active"
                         >
-                          <a className="nav-link">
-                            LCA
-                          </a>
+                          <a className="nav-link">LCA</a>
                         </Link>
                       </li>
 
@@ -119,12 +127,9 @@ const Navbar = () => {
                           href="/emissionx/climate-change"
                           activeClassName="active"
                         >
-                          <a className="nav-link">
-                            Climate Change
-                          </a>
+                          <a className="nav-link">Climate Change</a>
                         </Link>
                       </li>
-
                     </ul>
                   </li>
 
@@ -158,9 +163,7 @@ const Navbar = () => {
                           href="/data-science/predictive-emissions-monitoring"
                           activeClassName="active"
                         >
-                          <a className="nav-link">
-                            Predictive Emissions Monitoring
-                          </a>
+                          <a className="nav-link">OpenPEMS&trade;</a>
                         </Link>
                       </li>
                       <li className="nav-item">
@@ -194,8 +197,8 @@ const Navbar = () => {
                       </li>
                       <li className="nav-item">
                         <Link
-                            href="https://airemission.envirobyte.com"
-                            activeClassName="active"
+                          href="https://airemission.envirobyte.com"
+                          activeClassName="active"
                         >
                           <a className="nav-link" target="_blank">
                             Air Emission Factor Hub
@@ -204,8 +207,8 @@ const Navbar = () => {
                       </li>
                       <li className="nav-item">
                         <Link
-                            href="https://steamapp.envirobyte.com"
-                            activeClassName="active"
+                          href="https://steamapp.envirobyte.com"
+                          activeClassName="active"
                         >
                           <a className="nav-link" target="_blank">
                             Steam App

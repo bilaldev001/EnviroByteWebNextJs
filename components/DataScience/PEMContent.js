@@ -7,9 +7,7 @@ const PEMContent = () => {
     <div className="project-details-area ptb-100">
       <div className="container">
         <div className="projects-details-desc">
-          <h3>
-            Predictive Emission Monitoring Systme (PEMS) for NOx monitoring
-          </h3>
+          <h3>OpenPEMS&trade;</h3>
           <div className="row align-items-center">
             <p>
               The nitrogen oxides (NO<sub>x</sub>) has significant adverse
@@ -26,11 +24,23 @@ const PEMContent = () => {
             </p>
             <br />
             <p>
-              EnviroByte works closely with Minxing Si to provide predictive
-              emissions and analytics. Minxing Si was the first to introduce
-              open-source machine learning libraries for PEMS development and
-              conducted extensive research on machine learning for environmental
-              monitoring.
+              OpenPEMS&trade; is an open source PEMS inspired by OpenAI's ethos
+              of accessibility and empowerment. Our vision is to make the
+              Artificial Intelligent (AI) and Machine Learning (ML) technologies
+              accessible to a wider industrial audience, reducing costs
+              associated with air emissions monitoring. OpenPEMS&trade; is a
+              free and open source software (FOSS) that trains models to
+              predictive air emissions, such as NOx and SO2, which are typically
+              monitored by Continuous Emissions Monitoring Systems (CEMSs)
+            </p>
+            <br />
+            <p>
+              OpenPEMS&trade; was licensed by KeeWee Solutions Inc (KeeWee). Dr.
+              Minxing Si of KeeWee was the first to introduce open-source
+              machine learning libraries for PEMS development and conducted
+              extensive research on machine learning for environmental
+              monitoring. The PEMS developed by Dr. Si was the first PEMS that
+              was approved by Alberta Environment and Alberta Energy Regulator
             </p>
             <br />
             <p>
@@ -55,8 +65,8 @@ const PEMContent = () => {
             </div>
             <h3>Predictive Emissions for GHG monitoring</h3>
             <p>
-              Contact us to learn more about PEMS and how we transfer PEMS to
-              GHG monitoring
+              Contact us to learn more about OpenPEMS&trade; and how we transfer
+              PEMS to GHG monitoring
             </p>
           </div>
 

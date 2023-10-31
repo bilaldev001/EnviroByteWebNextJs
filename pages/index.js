@@ -30,7 +30,6 @@ const Index = () => {
           name="description"
           content="EnviroByte developed scalable, cloud-based software solutions that help companies reduce their carbon footprint and improve their sustainability performance."
         />
-          <meta property="og:image" content="https://www.envirobyte.com/Favicon_20221121.png"/>
       </Head>
 
       <Navbar />

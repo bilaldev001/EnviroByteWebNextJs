@@ -89,12 +89,12 @@ const BioDetailsContent = () => {
                       GHG’s and pollutants at the federal, provincial, and state
                       levels. Brian is a Professional Engineer registered with
                       the Association of Professional Engineers and
-                      Geoscientists of Alberta. To date, Brian has
-                      participated in hundreds of verifications as a verifier,
-                      lead verifier, as a per reviewer or as an auditor, in BC,
-                      Alberta and Saskatchewan, for such industries as oil and
-                      gas production, oil sands, mining, pulp and paper, cement,
-                      and power generation, to name a few.
+                      Geoscientists of Alberta. To date, Brian has participated
+                      in hundreds of verifications as a verifier, lead verifier,
+                      as a per reviewer or as an auditor, in BC, Alberta and
+                      Saskatchewan, for such industries as oil and gas
+                      production, oil sands, mining, pulp and paper, cement, and
+                      power generation, to name a few.
                     </p>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ const BioDetailsContent = () => {
               </div>
             </div>
           </div>
-          {/* <div className="services-details-overview">
+          <div className="services-details-overview">
             <div className="row align-items-center">
               <div className="col-lg-3 col-md-12">
                 <div className="services-details-image">
@@ -151,26 +151,40 @@ const BioDetailsContent = () => {
 
               <div className="col-lg-9 col-md-12">
                 <div className="services-details-desc">
-                  <h3>Louis Pasteur</h3>
-                  <p style={{ fontSize: "18px" }}>
+                  <h3>Minxing Si, P.Eng., Ph.D.</h3>
+                  {/* <p style={{ fontSize: "18px" }}>
                     Helping organizations adapt to climate change, reduce their
                     carbon footprint and capture market benefits.
-                  </p>
+                  </p> */}
 
                   <div className="features-text">
                     <p style={{ fontSize: "18px" }}>
-                      Passionate about our individual responsibility as stewards
-                      of the eco-system, Nelson is a channel to enable
-                      organizations to understand their role in climate change,
-                      how climate change will affect them and what they can do
-                      to be more resilient and even benefit from some of the
-                      opportunities.
+                      Minxing Si boasts over 15 years of extensive experience in
+                      GHG verification/assurance, sustainability reporting,
+                      climate change mitigation, risk assessment, and climate
+                      adaptation across Canada, the US, Asia, and Europe. Having
+                      successfully completed more than 500 GHG verification
+                      and/or ESG assurance projects. Minxing is a certified lead
+                      verifier under Environment Canada’s Clean Fuel Standard
+                      and California’s Low Carbon Fuel Standard. Minxing
+                      credited with developing the first approved Predictive
+                      Emissions Monitoring System (PEMS) for compliance
+                      reporting in Canada, specifically for Cenovus Energy in
+                      Alberta. Furthermore, Minxing brought PEMS to EnviroByte,
+                      transforming it into a free and open-source tool known as
+                      OpenPEMS&trade;. OpenPEMS&trade; draws inspiration from
+                      OpenAI's ethos, aiming to promote accessibility and
+                      empowerment. Our vision is to democratize Artificial
+                      Intelligence (AI) and Machine Learning (ML) technologies,
+                      making them accessible to a wider industrial audience,
+                      thereby reducing costs associated with air emissions
+                      monitoring.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
           <div className="services-details-overview">
             <div className="row align-items-center">
               <div className="col-lg-3 col-md-12">
@@ -229,8 +243,8 @@ const BioDetailsContent = () => {
                       Mr. John Parr is CFO and Co-Founder of GolfADay Ltd, which
                       is a platform to service a niche market in the North
                       American golf industry. Prior to his own startup, he held
-                      various executive roles over his 20 year career
-                      at Canadian Natural Resources Limited, including VP,
+                      various executive roles over his 20 year career at
+                      Canadian Natural Resources Limited, including VP,
                       Conventional Facilities & Pipelines, VP, Thermal Projects
                       & Facilities, and VP, Thermal Production. John has had
                       experience with all resource types from conventional oil

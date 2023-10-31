@@ -114,7 +114,7 @@ const TeamMemberContent = () => {
                 </div>
 
                 <div className="team-content">
-                  <h3>Louis Pasteur</h3>
+                  <h3>Minxing Si</h3>
                 </div>
               </div>
             </div>

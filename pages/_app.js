@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Component {...pageProps} />
-
+      <Analytics />
       {/* Go Top Button */}
       <GoTop />
     </>

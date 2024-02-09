@@ -9,18 +9,22 @@ const BriefEmissionX = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <div className="about-image">
-                <BriefLogo width={480} alt="logo" />
+              <div className="about-image flex justify-center items-center">
+                <BriefLogo
+                  width={480}
+                  alt="logo"
+                  className="w-full sm:w-[480px]"
+                />
               </div>
             </div>
 
             <div className="col-lg-6">
               <div className="about-content">
-                <span>
+                <span className="text-[#666666]">
                   A Scalable and Customizable Emissions Reporting Tool
                 </span>
-                <h2>EmissionX&trade;</h2>
-                <p>
+                <h2 className="text-[#191919]">EmissionX&trade;</h2>
+                <p className="text-[#666666]">
                   We build the products that we want to use ourselves. This is
                   why we design EmissionX with easy verification and assurance
                   in mind by integrating data science tools (e.g. Jupyter Lab)
@@ -29,20 +33,20 @@ const BriefEmissionX = () => {
                 </p>
 
                 <ul className="about-list">
-                  <li>
-                    <i className="flaticon-tick"></i>
+                  <li className="text-[#191919]">
+                    <i className="flaticon-tick text-[#191919]"></i>
                     Alberta TIER, BC GHG, SK OBPS, ECCC OBPS
                   </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
+                  <li className="text-[#191919]">
+                    <i className="flaticon-tick text-[#191919]"></i>
                     GHG Protocol
                   </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
+                  <li className="text-[#191919]">
+                    <i className="flaticon-tick text-[#191919]"></i>
                     US EPA GHGRP
                   </li>
-                  <li>
-                    <i className="flaticon-tick"></i>
+                  <li className="text-[#191919]">
+                    <i className="flaticon-tick text-[#191919]"></i>
                     ECCC NPRI, ECCC GHGRP
                   </li>
                 </ul>

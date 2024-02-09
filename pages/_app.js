@@ -3,6 +3,7 @@ import AOS from "aos";
 import "../node_modules/aos/dist/aos.css";
 import "../styles/bootstrap.min.css";
 import "../styles/flaticon.css";
+import "../styles/global.css";
 import "../styles/fontawesome.min.css";
 import "react-accessible-accordion/dist/fancy-example.css";
 import "react-tabs/style/react-tabs.css";

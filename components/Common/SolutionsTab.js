@@ -62,7 +62,7 @@ const SolutionsTab = () => {
 
                   <div className="col-lg-5">
                     <div className="tab-image-right">
-                      <ADALogo alt="logo" />
+                      <ADALogo alt="logo" className="w-full" />
                     </div>
                   </div>
                 </div>

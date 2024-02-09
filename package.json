@@ -16,6 +16,7 @@
         "fslightbox-react": "^1.6.2-2",
         "minimist": "^1.2.7",
         "next": "^12.3.1",
+        "next-themes": "^0.2.1",
         "nodemailer": "^6.7.2",
         "nodemailer-sendgrid-transport": "^0.2.0",
         "react": "^18.2.0",
@@ -26,5 +27,10 @@
         "sweetalert2": "^11.2.1",
         "sweetalert2-react-content": "^5.0.5",
         "swiper": "^8.4.4"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.17",
+        "postcss": "^8.4.35",
+        "tailwindcss": "^3.4.1"
     }
 }

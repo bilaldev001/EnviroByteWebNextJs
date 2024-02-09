@@ -7,17 +7,19 @@ const MainBanner = () => {
       <div className="main-banner-three">
         <div className="d-table">
           <div className="d-table-cell">
-            <div className="container-fluid">
+            <div className="container">
               <div className="row align-items-center">
                 <div className="col-lg-6 col-md-12">
-                  <div className="main-banner-content">
+                  <div className="main-banner-content max-w-[100%]">
                     <div
                       data-aos="zoom-in-left"
                       data-aos-delay="200"
                       data-aos-duration="1200"
                       data-aos-once="true"
                     >
-                      <h1>Data-driven Sustainability</h1>
+                      <h1 className="dark:text-[#191919] duration-200 text-4xl md:text-5xl lg:text-[5rem] xl:text-6xl font-extrabold leading-tighter tracking-tighter">
+                        Data-driven Sustainability
+                      </h1>
                     </div>
 
                     <div
@@ -26,7 +28,7 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                       data-aos-once="true"
                     >
-                      <p>
+                      <p className="dark:text-[#282828] duration-200 ">
                         EnviroByte applies data-driven methods with
                         environmental science, software engineering, and machine
                         learning to increase efficiency and effectiveness of
@@ -44,7 +46,7 @@ const MainBanner = () => {
                     >
                       <div className="banner-btn">
                         <Link legacyBehavior href="/about-us">
-                          <a className="default-btn-one">
+                          <a className="default-btn-one dark:bg-[#282828]">
                             About Us <span></span>
                           </a>
                         </Link>
@@ -60,11 +62,13 @@ const MainBanner = () => {
                 </div>
                 <div className="col-lg-6 col-md-12 align-items-center">
                   {/* Main Image */}
-                  <DDSLogo width={660} height={555} alt="logo" />
-
+                  <DDSLogo
+                    width={660}
+                    height={555}
+                    alt="logo"
+                    className="w-full"
+                  />
                 </div>
-
-
               </div>
             </div>
           </div>

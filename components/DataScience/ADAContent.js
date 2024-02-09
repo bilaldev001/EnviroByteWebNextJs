@@ -92,7 +92,7 @@ const ADAContent = () => {
             </div>
 
             <div className="single-info-box">
-              <Link href="/contact">
+              <Link legacyBehavior href="/contact">
                 <a className="default-btn" target="_blank">Contact us</a>
               </Link>
             </div>

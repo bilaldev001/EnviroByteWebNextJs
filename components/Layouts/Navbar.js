@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="main-nav">
           <div className="container">
             <nav className="navbar navbar-expand-md navbar-light">
-              <Link href="/">
+              <Link legacyBehavior href="/">
                 <a className="navbar-brand">
                   <WhiteLogo
                     className="white-logo"
@@ -67,13 +67,13 @@ const Navbar = () => {
               <div className={classOne} id="navbarSupportedContent">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                       <a className="nav-link">Home</a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="#" activeClassName="active">
+                    <Link legacyBehavior href="#" activeClassName="active">
                       <a className="nav-link">
                         About <i className="fas fa-chevron-down"></i>
                       </a>
@@ -81,13 +81,13 @@ const Navbar = () => {
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link href="/team" activeClassName="active">
+                        <Link legacyBehavior href="/team" activeClassName="active">
                           <a className="nav-link">Team</a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
-                        <Link
+                        <Link legacyBehavior
                           href="/data-driven-approach"
                           activeClassName="active"
                         >
@@ -98,7 +98,7 @@ const Navbar = () => {
                   </li>
 
                   <li className="nav-item">
-                    <Link href="#">
+                    <Link legacyBehavior href="#">
                       <a className="nav-link">
                         EmissionX <i className="fas fa-chevron-down"></i>
                       </a>
@@ -106,7 +106,7 @@ const Navbar = () => {
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link href="/emissionx" activeClassName="active">
+                        <Link legacyBehavior href="/emissionx" activeClassName="active">
                           <a className="nav-link" target="_blank">
                             Emission
                           </a>
@@ -114,7 +114,7 @@ const Navbar = () => {
                       </li>
 
                       <li className="nav-item">
-                        <Link
+                        <Link legacyBehavior
                           href="/emissionx/life-cycle-assessment"
                           activeClassName="active"
                         >
@@ -123,7 +123,7 @@ const Navbar = () => {
                       </li>
 
                       <li className="nav-item">
-                        <Link
+                        <Link legacyBehavior
                           href="/emissionx/climate-change"
                           activeClassName="active"
                         >
@@ -134,7 +134,7 @@ const Navbar = () => {
                   </li>
 
                   <li className="nav-item">
-                    <Link href="#">
+                    <Link legacyBehavior href="#">
                       <a className="nav-link">
                         Data Science <i className="fas fa-chevron-down"></i>
                       </a>
@@ -142,7 +142,7 @@ const Navbar = () => {
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link
+                        <Link legacyBehavior
                           href="/data-science/advanced-data-analytics"
                           activeClassName="active"
                         >
@@ -151,7 +151,7 @@ const Navbar = () => {
                       </li>
 
                       <li className="nav-item">
-                        <Link
+                        <Link legacyBehavior
                           href="/data-science/IoT-Air-Quality-Monitoring"
                           activeClassName="active"
                         >
@@ -159,7 +159,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link
+                        <Link legacyBehavior
                           href="/data-science/predictive-emissions-monitoring"
                           activeClassName="active"
                         >
@@ -167,7 +167,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link
+                        <Link legacyBehavior
                           href="/data-science/predictive-analytics"
                           activeClassName="active"
                         >
@@ -178,7 +178,7 @@ const Navbar = () => {
                   </li>
 
                   <li className="nav-item">
-                    <Link href="#">
+                    <Link legacyBehavior href="#">
                       <a className="nav-link">
                         App <i className="fas fa-chevron-down"></i>
                       </a>
@@ -186,7 +186,7 @@ const Navbar = () => {
 
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <Link
+                        <Link legacyBehavior
                           href="https://ghg.envirobyte.com"
                           activeClassName="active"
                         >
@@ -196,7 +196,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link
+                        <Link legacyBehavior
                           href="https://airemission.envirobyte.com"
                           activeClassName="active"
                         >
@@ -206,7 +206,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link
+                        <Link legacyBehavior
                           href="https://steamapp.envirobyte.com"
                           activeClassName="active"
                         >
@@ -219,13 +219,13 @@ const Navbar = () => {
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/contact" activeClassName="active">
+                    <Link legacyBehavior href="/contact" activeClassName="active">
                       <a className="nav-link">Contact Us</a>
                     </Link>
                   </li>
 
                   {/*<li className="nav-item">
-                    <Link href="https://www.google.ca" activeClassName="active">
+                    <Link legacyBehavior   href="https://www.google.ca" activeClassName="active">
                       <a target="_blank">
                         Login
                       </a>

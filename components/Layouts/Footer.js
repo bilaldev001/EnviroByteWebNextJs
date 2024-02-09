@@ -34,27 +34,27 @@ const Footer = () => {
 
                 <ul className="footer-quick-links">
                   <li>
-                    <Link href="/about-us">
+                    <Link legacyBehavior href="/about-us">
                       <a>About Us</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/team">
+                    <Link legacyBehavior href="/team">
                       <a>Team</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://ghg.envirobyte.com/">
+                    <Link legacyBehavior href="https://ghg.envirobyte.com/">
                       <a target="_blank">Emission Factor Hub</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://www.google.ca">
+                    <Link legacyBehavior href="https://www.google.ca">
                       <a target="_blank">Login</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact">
+                    <Link legacyBehavior href="/contact">
                       <a>Contact</a>
                     </Link>
                   </li>
@@ -70,27 +70,27 @@ const Footer = () => {
 
                 <ul className="footer-quick-links">
                   <li>
-                    <Link href="/data-science/predictive-emissions-monitoring">
+                    <Link legacyBehavior href="/data-science/predictive-emissions-monitoring">
                       <a target="_blank">AI Emissions Monitoring</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/emissionx">
+                    <Link legacyBehavior href="/emissionx">
                       <a target="_blank">Regulatory Reporting</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/emissionx/life-cycle-assessment">
+                    <Link legacyBehavior href="/emissionx/life-cycle-assessment">
                       <a target="_blank">Life Cycle Assessment</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/emissionx/climate-change">
+                    <Link legacyBehavior href="/emissionx/climate-change">
                       <a target="_blank">Climate Change Adapatation</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/emissionx/climate-change">
+                    <Link legacyBehavior href="/emissionx/climate-change">
                       <a target="_blank">Scenario Analysis</a>
                     </Link>
                   </li>
@@ -143,12 +143,12 @@ const Footer = () => {
             {/* <div className="col-lg-6 col-md-6">
               <ul>
                 <li>
-                  <Link href="/terms-condition">
+                  <Link legacyBehavior   href="/terms-condition">
                     <a>Terms & Conditions</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/privacy-policy">
+                  <Link legacyBehavior href="/privacy-policy">
                     <a>Privacy Policy</a>
                   </Link>
                 </li>

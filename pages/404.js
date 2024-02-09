@@ -17,7 +17,7 @@ const CoustomErorPage = () => {
                   name changed or is temporarily unavailable.
                 </p>
 
-                <Link href="/">
+                <Link legacyBehavior href="/">
                   <a className="default-btn-one">Return To Home Page</a>
                 </Link>
               </div>

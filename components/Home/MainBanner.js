@@ -43,13 +43,13 @@ const MainBanner = () => {
                       data-aos-once="true"
                     >
                       <div className="banner-btn">
-                        <Link href="/about-us">
+                        <Link legacyBehavior href="/about-us">
                           <a className="default-btn-one">
                             About Us <span></span>
                           </a>
                         </Link>
 
-                        <Link href="/contact">
+                        <Link legacyBehavior href="/contact">
                           <a className="default-btn">
                             Contact Us <span></span>
                           </a>
@@ -60,7 +60,7 @@ const MainBanner = () => {
                 </div>
                 <div className="col-lg-6 col-md-12 align-items-center">
                   {/* Main Image */}
-                  <DDSLogo  width={660} height={555} alt="logo" />
+                  <DDSLogo width={660} height={555} alt="logo" />
 
                 </div>
 

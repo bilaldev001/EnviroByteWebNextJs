@@ -18,7 +18,7 @@ const PageBanner = ({
                 <h2>{pageTitle}</h2>
                 <ul>
                   <li>
-                    <Link href={breadcrumbUrl}>
+                    <Link legacyBehavior href={breadcrumbUrl}>
                       <a>{breadcrumbTextOne}</a>
                     </Link>
                   </li>

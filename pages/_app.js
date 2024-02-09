@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
 
           				ga('create', 'G-RMCG4QY4VP', 'auto');
           				ga('send', 'pageview');
-        			`}
+       			`}
         </Script>
         <title>EnviroByte</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />

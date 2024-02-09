@@ -19,7 +19,7 @@ const OurServices = () => {
                     <i className="flaticon-big-data"></i>
                   </div>
                   <h3>
-                    <Link href="/emissionx/climate-change">
+                    <Link legacyBehavior href="/emissionx/climate-change">
                       <a target="_blank">
                         GHG and Air Emissions
                         <i className="flaticon-right"></i>
@@ -33,7 +33,7 @@ const OurServices = () => {
                     <i className="flaticon-science"></i>
                   </div>
                   <h3>
-                    <Link href="/emissionx/life-cycle-assessment">
+                    <Link legacyBehavior href="/emissionx/life-cycle-assessment">
                       <a target="_blank">
                         Life Cycle Assessment
                         <i className="flaticon-right"></i>
@@ -47,7 +47,7 @@ const OurServices = () => {
                     <i className="flaticon-document"></i>
                   </div>
                   <h3>
-                    <Link href="/emissionx/climate-change">
+                    <Link legacyBehavior href="/emissionx/climate-change">
                       <a target="_blank">
                         Climate Change Adaptation
                         <i className="flaticon-right"></i>
@@ -65,7 +65,7 @@ const OurServices = () => {
                     <i className="flaticon-data-analytics"></i>
                   </div>
                   <h3>
-                    <Link href="/emissionx/climate-change">
+                    <Link legacyBehavior href="/emissionx/climate-change">
                       <a target="_blank">
                         Climate Change Risk Assessment
                         <i className="flaticon-right"></i>
@@ -79,7 +79,7 @@ const OurServices = () => {
                     <i className="flaticon-chart"></i>
                   </div>
                   <h3>
-                    <Link href="/emissionx/climate-change">
+                    <Link legacyBehavior href="/emissionx/climate-change">
                       <a target="_blank">
                         Climate Change Mitigation
                         <i className="flaticon-right"></i>
@@ -93,7 +93,7 @@ const OurServices = () => {
                     <i className="flaticon-data"></i>
                   </div>
                   <h3>
-                    <Link href="/emissionx/climate-change">
+                    <Link legacyBehavior href="/emissionx/climate-change">
                       <a target="_blank">
                         TCFD Scenario Analysis
                         <i className="flaticon-right"></i>
@@ -107,7 +107,7 @@ const OurServices = () => {
             <div className="col-lg-4 col-md-6">
               <div className="data-service-image">
                 {/*<img src="/images/data-service.png" alt="image" />*/}
-                <DDRPLogo height={425} alt="logo"/>
+                <DDRPLogo height={425} alt="logo" />
               </div>
             </div>
           </div>

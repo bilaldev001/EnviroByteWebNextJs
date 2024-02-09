@@ -47,7 +47,7 @@ const BriefEmissionX = () => {
                   </li>
                 </ul>
 
-                <Link href="/emissionx">
+                <Link legacyBehavior href="/emissionx">
                   <a className="default-btn">
                     Read More <span></span>
                   </a>

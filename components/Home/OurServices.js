@@ -7,8 +7,10 @@ const OurServices = () => {
       <div className="data-service-section pb-100">
         <div className="container">
           <div className="section-title">
-            <span>Be the Change</span>
-            <h2>Data-driven Reporting and Planning</h2>
+            <span className="text-[#666666]">Be the Change</span>
+            <h2 className="text-[#191919]">
+              Data-driven Reporting and Planning
+            </h2>
           </div>
 
           <div className="row align-items-center justify-content-center">

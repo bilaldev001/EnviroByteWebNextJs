@@ -2,12 +2,26 @@ import React from "react";
 import Link from "../../utils/ActiveLink";
 import WhiteLogo from "../../public/images/logo/whitemark.svg";
 import BlackLogo from "../../public/images/logo/blackmarkv2.svg";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true);
   const toggleNavbar = () => {
     setMenu(!menu);
   };
+
+  const [top, setTop] = React.useState(true);
+
+  const scrollHandler = () => {
+    window.pageYOffset > 170 ? setTop(false) : setTop(true);
+  };
+
+  React.useEffect(() => {
+    scrollHandler();
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, [top]);
+
   React.useEffect(() => {
     let elementId = document.getElementById("navbar");
     document.addEventListener("scroll", () => {
@@ -20,29 +34,36 @@ const Navbar = () => {
   });
 
   const classOne = menu
-    ? "collapse navbar-collapse mean-menu"
-    : "collapse navbar-collapse show";
+    ? "collapse sm:visible navbar-collapse mean-menu"
+    : "collapse sm:visible navbar-collapse show";
   const classTwo = menu
     ? "navbar-toggler navbar-toggler-right collapsed"
     : "navbar-toggler navbar-toggler-right";
 
   return (
     <>
-      <div id="navbar" className="navbar-area">
+      <div
+        id="navbar"
+        className={`navbar-area fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out  ${
+          !top
+            ? "bg-[#ffffff] dark:bg-[#000000a8] backdrop-blur-sm shadow-lg"
+            : ""
+        }`}
+      >
         <div className="main-nav">
           <div className="container">
             <nav className="navbar navbar-expand-md navbar-light">
               <Link legacyBehavior href="/">
-                <a className="navbar-brand">
+                <a className="navbar-brand mr-0">
                   <WhiteLogo
                     className="white-logo"
-                    width={218}
-                    height={25}
+                    width={150}
+                    height={30}
                     alt="logo"
                   />
                   <BlackLogo
                     className="black-logo"
-                    width={218}
+                    width={170}
                     height={30}
                     alt="logo"
                   />
@@ -51,7 +72,7 @@ const Navbar = () => {
 
               <button
                 onClick={toggleNavbar}
-                className={classTwo}
+                className={`${classTwo} dark:bg-transparent bg-white`}
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
@@ -79,7 +100,11 @@ const Navbar = () => {
                       </a>
                     </Link>
 
-                    <ul className="dropdown-menu">
+                    <ul
+                      className={`dropdown-menu ${
+                        !menu ? "shadow-none m-0" : ""
+                      }`}
+                    >
                       <li className="nav-item">
                         <Link legacyBehavior href="/team" activeClassName="active">
                           <a className="nav-link">Team</a>
@@ -104,7 +129,11 @@ const Navbar = () => {
                       </a>
                     </Link>
 
-                    <ul className="dropdown-menu">
+                    <ul
+                      className={`dropdown-menu ${
+                        !menu ? "shadow-none m-0" : ""
+                      }`}
+                    >
                       <li className="nav-item">
                         <Link legacyBehavior href="/emissionx" activeClassName="active">
                           <a className="nav-link" target="_blank">
@@ -140,7 +169,11 @@ const Navbar = () => {
                       </a>
                     </Link>
 
-                    <ul className="dropdown-menu">
+                    <ul
+                      className={`dropdown-menu ${
+                        !menu ? "shadow-none m-0" : ""
+                      }`}
+                    >
                       <li className="nav-item">
                         <Link legacyBehavior
                           href="/data-science/advanced-data-analytics"
@@ -184,7 +217,11 @@ const Navbar = () => {
                       </a>
                     </Link>
 
-                    <ul className="dropdown-menu">
+                    <ul
+                      className={`dropdown-menu ${
+                        !menu ? "shadow-none m-0" : ""
+                      }`}
+                    >
                       <li className="nav-item">
                         <Link legacyBehavior
                           href="https://ghg.envirobyte.com"
@@ -233,6 +270,7 @@ const Navbar = () => {
                   </li>*/}
                 </ul>
               </div>
+              {menu && <ThemeSwitcher />}
             </nav>
           </div>
         </div>

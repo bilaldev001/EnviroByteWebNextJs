@@ -1,28 +1,40 @@
-// pages/api/auth/signup.js
-const pool = require('../db');
-import {hashPassword} from '../../../middleware/password'
-export default async function handler(req, res) {
-  if (req.method === 'POST') {
-    try {
-      const { username, email, password } = req.body;
-      const hashedPassword = await hashPassword(password);
+import prisma from '../../../prisma/db';
+import { hashPassword } from '../../../middleware/password';
 
-      const existingUser = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
-      if (existingUser.rows.length > 0) {
-       return res.status(400).json({ success: false, message: 'Email already exists' });
-      }
-      const result = await pool.query(
-        'INSERT INTO users (username, email, password) VALUES ($1, $2, $3) RETURNING *',
-        [username, email, hashedPassword]
-      );
 
-      const newUser = result.rows[0];
-      res.status(201).json({ success: true, user: newUser });
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ success: false, message: 'Internal server error' });
-    }
-  } else {
-    res.status(405).json({ success: false, message: 'Method Not Allowed' });
+export default async function POST(req,res) {
+  const { username, email, password } = req.body;
+  const hashedPassword = await hashPassword(password);
+  let existingUser;
+  try {
+   existingUser = await prisma.user.findUnique({
+      where: {
+        email: email,
+      },
+    });
+  }catch(err){
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' });
   }
+  if (existingUser) {
+      return res.status(409).json({ message: 'User with this email already exists' });
+    }
+    let user 
+  try {
+    user = await prisma.user.create({
+      data: {
+        username,
+        email,
+        password: hashedPassword,
+      },
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+  res.status(201).json({ message: 'User registered successfully', user });
+
 }
+
+
+

@@ -12,10 +12,21 @@ datasource db {
 
 
 model user {
-  id        Int      @id @default(autoincrement())
-  username  String   @db.VarChar(255)
-  email     String   @unique @db.VarChar(255)
-  password  String   @db.VarChar(255)
-  createdAt    DateTime   @default(now())
-  updatedAt    DateTime   @updatedAt
+  id        Int        @id @default(autoincrement())
+  username  String     @db.VarChar(255)
+  email     String     @unique @db.VarChar(255)
+  password  String     @db.VarChar(255)
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+model blogView {
+  id        Int       @id @default(autoincrement())
+  ipAddress String
+  count     Int       @default(1)
+  createdAt DateTime  @default(now())
+}
+model subscriber {
+  id     Int    @id @default(autoincrement())
+  email    String
 }

@@ -5609,3 +5609,62 @@ Custom Input Field
 .error-form {
   border: 1px solid tomato !important;
 }
+
+/*================================================
+Blogs
+=================================================*/
+.blog-card-container .blog-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.375;
+  letter-spacing: -0.01em;
+}
+.blog-card-container .blog-description {
+  color: #737b9a;
+  margin: 10px 0 !important;
+  font-size: 15px;
+}
+.blog-card-container .tags {
+  background-color: #00b0ee;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+/*================================================
+Pagination
+=================================================*/
+
+.page-link {
+  border: 0px;
+  border-radius: 50%;
+  padding: 0.5rem 0.85rem;
+  background-color: #737b9a;
+  border-radius: 50px;
+  margin-right: 8px;
+}
+.page-link:hover {
+  background-color: #00b0ee;
+  color: white;
+}
+
+.page-item:last-child .page-link,
+.page-item:first-child .page-link {
+  border-radius: 50px;
+}
+.pagination {
+  gap: 10px;
+}
+.page-item.active .page-link {
+  background: none;
+  border-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  background-color: #00b0ee;
+  border-radius: 50%;
+  border: 1px solid #00b0ee;
+}
+.page-item.disabled > .page-link {
+  color: #737b9a !important;
+  background-color: #efefef;
+}

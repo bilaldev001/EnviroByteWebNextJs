@@ -92,6 +92,11 @@ const Navbar = () => {
                       <a className="nav-link">Home</a>
                     </Link>
                   </li>
+                  <li className="nav-item">
+                    <Link legacyBehavior href="/blog">
+                      <a className="nav-link">Blog</a>
+                    </Link>
+                  </li>
 
                   <li className="nav-item">
                     <Link legacyBehavior href="#" activeClassName="active">
@@ -304,25 +309,25 @@ const Navbar = () => {
                   </li>
 
                   {/*<li className="nav-item">
-                    <Link legacyBehavior   href="https://www.google.ca" activeClassName="active">
-                      <a target="_blank">
-                        Login
-                      </a>
-                    </Link>
-                  </li>*/}
+                      <Link legacyBehavior   href="https://www.google.ca" activeClassName="active">
+                        <a target="_blank">
+                          Login
+                        </a>
+                      </Link>
+                    </li>*/}
                 </ul>
               </div>
               {menu && <ThemeSwitcher />}
               {/* <div className="nav-item">
-                <Link legacyBehavior href="/contact" activeClassName="active">
-                  <a className="nav-link">Sign In</a>
-                </Link>
-              </div>
-              <div className="nav-item">
-                <Link legacyBehavior href="/contact" activeClassName="active">
-                  <a className="nav-link">Sign Up</a>
-                </Link>
-              </div> */}
+                  <Link legacyBehavior href="/contact" activeClassName="active">
+                    <a className="nav-link">Sign In</a>
+                  </Link>
+                </div>
+                <div className="nav-item">
+                  <Link legacyBehavior href="/contact" activeClassName="active">
+                    <a className="nav-link">Sign Up</a>
+                  </Link>
+                </div> */}
             </nav>
           </div>
         </div>

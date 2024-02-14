@@ -44,7 +44,7 @@ const SignupForm = () => {
         </h1>
       </div>
       {/* Form */}
-      <div className="max-w-sm mx-auto">
+      <div className="container max-w-sm mx-auto">
         <Formik
           initialValues={initialValues}
           validationSchema={errorSchema}

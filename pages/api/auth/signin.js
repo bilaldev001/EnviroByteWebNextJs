@@ -1,10 +1,8 @@
-import createToken from '../../../middleware/createToken';
-import { comparePasswords } from '../../../middleware/password'
-import prisma from '../../../prisma/db';
+import createToken from "../../../middleware/createToken";
+import { comparePasswords } from "../../../middleware/password";
+import prisma from "../../../prisma/db";
 
-
-
-export default async function POST(req,res,next) {
+export default async function POST(req, res, next) {
   const { email, password } = req.body;
   let existingUser;
   try {
@@ -14,36 +12,38 @@ export default async function POST(req,res,next) {
       },
     });
   } catch (err) {
-    console.error(error);
-    res.status(500).json({ message: 'Internal Server Error' });
+    console.error(err);
+    res.status(500).json({ message: "Internal Server Error" });
   }
   if (!existingUser) {
-    return res.status(401).json({ message: 'Invalid email' });
+    return res.status(401).json({ message: "Invalid email" });
   }
-  let passwordMatch
+  let passwordMatch;
   try {
-    passwordMatch = await comparePasswords(password,existingUser.password);
+    passwordMatch = await comparePasswords(password, existingUser.password);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: 'Internal Server Error' });
+    res.status(500).json({ message: "Internal Server Error" });
   }
   if (!passwordMatch) {
-    return res.status(401).json({ message: 'Invalid Password' });
+    return res.status(401).json({ message: "Invalid Password" });
   }
-let token;
+  let token;
   try {
-     token = createToken({
-      userId: existingUser.id,
-      email: existingUser.email,
-    }, next);
+    token = createToken(
+      {
+        userId: existingUser.id,
+        email: existingUser.email,
+      },
+      next
+    );
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: 'Error create=ing token' });
+    res.status(500).json({ message: "Error create=ing token" });
   }
-  res.setHeader('Set-Cookie', `access_token=${token}; Max-Age=3600; HttpOnly`);
+  res.setHeader("Set-Cookie", `access_token=${token}; Max-Age=3600; HttpOnly`);
   res.status(200).json({
     user: existingUser,
-    message: 'User signin successfully',
+    message: "User signin successfully",
   });
 }
-

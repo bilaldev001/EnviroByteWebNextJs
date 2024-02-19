@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/router";
 import axios from "axios";
 import TextField from "../Shared/InputField";
+import Spinner from "../Utils/Spinner";
+import { toast } from "react-toastify";
 
 const SigninForm = () => {
+  const [isLoading, setLoading] = useState(false);
   const router = useRouter();
   // Login Form Initial Values
   const initialValues = {
@@ -26,11 +29,17 @@ const SigninForm = () => {
         email: values?.email,
         password: values?.password,
       };
-      console.log(formData);
+      setLoading(true);
       const response = await axios.post("/api/auth/signin", formData);
-      console.log(response);
+      toast.success(response?.data?.message);
+      setLoading(false);
+      resetForm({
+        values: "",
+      });
     } catch (error) {
-      console.log(error);
+      console.log(error.response?.data?.message);
+      toast.error(error.response?.data?.message);
+      setLoading(false);
     }
   };
 
@@ -64,7 +73,7 @@ const SigninForm = () => {
                 placeholder="Enter your password"
               />
               <button className="signin-btn default-btn w-full rounded">
-                Sign In <span></span>
+                {isLoading ? <Spinner /> : "Sign In"} <span></span>
               </button>
             </Form>
           )}

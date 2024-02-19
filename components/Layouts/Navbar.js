@@ -93,7 +93,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link legacyBehavior href="/blog">
+                    <Link legacyBehavior href="/blogs">
                       <a className="nav-link">Blog</a>
                     </Link>
                   </li>

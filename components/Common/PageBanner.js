@@ -10,19 +10,24 @@ const PageBanner = ({
 }) => {
   return (
     <>
-      <div className="page-title-area" style={{ backgroundImage: `url(${bgImage})` }}>
+      <div
+        className="page-title-area"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      >
         <div className="d-table">
           <div className="d-table-cell">
             <div className="container">
               <div className="page-title-content">
                 <h2>{pageTitle}</h2>
                 <ul>
-                  <li>
-                    <Link legacyBehavior href={breadcrumbUrl}>
-                      <a>{breadcrumbTextOne}</a>
-                    </Link>
-                  </li>
-                  <li>{breadcrumbTextTwo}</li>
+                  {breadcrumbTextOne && (
+                    <li>
+                      <Link legacyBehavior href={breadcrumbUrl}>
+                        <a>{breadcrumbTextOne}</a>
+                      </Link>
+                    </li>
+                  )}
+                  {breadcrumbTextTwo && <li>{breadcrumbTextTwo}</li>}
                 </ul>
               </div>
             </div>

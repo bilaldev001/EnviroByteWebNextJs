@@ -1,16 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { truncateString } from "../Utils/TruncateText";
 
 const BlogCard = ({ data }) => {
   return (
-    <div className="blog-card-container">
+    <Link href={`/blogs/${data.id}`} className="blog-card-container">
       <Image
         src={"https://preview.cruip.com/open-pro/images/news-inner-image.jpg"}
         alt={data?.title}
-        width="100"
-        height="100"
-        className="w-full h-[250px]  rounded"
+        width={100}
+        height={100}
+        className="w-full h-[250px] rounded"
+        quality={100}
+        loading="lazy"
       />
       <div className="flex align-items-center ">
         {data?.tags?.length &&
@@ -37,7 +40,7 @@ const BlogCard = ({ data }) => {
         <h5 className="mx-3">Dummy User</h5>
         <p>{new Date().toLocaleDateString()}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 

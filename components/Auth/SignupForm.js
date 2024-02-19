@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/router";
 import TextField from "../Shared/InputField";
+import axios from "axios";
+import Spinner from "../Utils/Spinner";
+import { toast } from "react-toastify";
 
 const SignupForm = () => {
   const router = useRouter();
+  const [isLoading, setLoading] = useState(false);
+
   // Sign Up Form Initial Values
   const initialValues = {
     name: "",
@@ -21,17 +26,24 @@ const SignupForm = () => {
   });
 
   // Form Submission
-  const handleSubmit = (values, { resetForm }) => {
+  const handleSubmit = async (values, { resetForm }) => {
     try {
       let formData = {
-        name: values?.name,
+        username: values?.name,
         email: values?.email,
         password: values?.password,
       };
-      console.log(formData);
-      // const response= await axios.post("")
+      setLoading(true);
+      const response = await axios.post("/api/auth/signup", formData);
+      toast.success(response?.data?.message);
+      setLoading(false);
+      resetForm({
+        values: "",
+      });
     } catch (error) {
-      console.log(error);
+      console.log(error.response?.data?.message);
+      toast.error(error.response?.data?.message);
+      setLoading(false);
     }
   };
 
@@ -43,6 +55,7 @@ const SignupForm = () => {
           Welcome back. We exist to make entrepreneurism easier.
         </h1>
       </div>
+
       {/* Form */}
       <div className="container max-w-sm mx-auto">
         <Formik
@@ -71,7 +84,7 @@ const SignupForm = () => {
                 placeholder="Enter your password"
               />
               <button className="signin-btn default-btn w-full rounded">
-                Sign Up <span></span>
+                {isLoading ? <Spinner /> : "Sign Up"} <span></span>
               </button>
             </Form>
           )}

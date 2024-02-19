@@ -1,18 +1,21 @@
+import { useRouter } from "next/router";
 import React from "react";
-import Navbar from "../components/Layouts/Navbar";
-import PageBanner from "../components/Common/PageBanner";
-import AboutUsContent from "../components/About/AboutUsContent";
-import FunFacts from "../components/Common/FunFacts";
-import GetStartedProject from "../components/Common/GetStartedProject";
-import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
-import BlogsComponent from "../components/Blogs/BlogsComponent";
+import Navbar from "../../components/Layouts/Navbar";
+import PageBanner from "../../components/Common/PageBanner";
+import Footer from "../../components/Layouts/Footer";
+import DummyBlogs from "../../components/Blogs/DummyBlogs.json";
 
-const Blogs = () => {
+const BlogDetails = () => {
+  const router = useRouter();
+  const { id } = router.query;
+
+  const blogData = DummyBlogs.data.find((data) => data?.id == id);
+
   return (
-    <>
+    <div>
       <Head>
-        <title>Blogs | EnviroByte</title>
+        <title>{blogData?.title} | EnviroByte</title>
         <meta
           name="keywords"
           content={
@@ -32,18 +35,16 @@ const Blogs = () => {
         />
       </Head>
       <Navbar />
-
       <PageBanner
-        pageTitle="Blogs"
-        breadcrumbTextOne="Home"
-        breadcrumbTextTwo="Blogs"
+        pageTitle={blogData?.title}
+        breadcrumbTextOne=""
+        breadcrumbTextTwo=""
         breadcrumbUrl="/"
-        bgImage=""
+        bgImage="https://preview.cruip.com/open-pro/images/news-single.jpg"
       />
-      <BlogsComponent />
       <Footer />
-    </>
+    </div>
   );
 };
 
-export default Blogs;
+export default BlogDetails;

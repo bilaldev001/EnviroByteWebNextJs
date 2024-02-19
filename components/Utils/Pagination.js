@@ -13,7 +13,8 @@ function Pagination({ totalPages, currentPage, setCurrentPage }) {
         breakLabel="..."
         nextLabel=" Next"
         onPageChange={handlePageClick}
-        pageRangeDisplayed={4}
+        pageRangeDisplayed={2}
+        marginPagesDisplayed={2}
         pageCount={totalPages}
         initialPage={currentPage}
         previousLabel="Prev"

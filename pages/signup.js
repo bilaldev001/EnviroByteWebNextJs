@@ -4,6 +4,7 @@ import Script from "next/script";
 import Navbar from "../components/Layouts/Navbar";
 import PageBanner from "../components/Common/PageBanner";
 import SignupForm from "../components/Auth/SignupForm";
+import ToastContainer from "../components/Shared/Toast";
 
 const SignUp = () => {
   return (
@@ -35,7 +36,7 @@ const SignUp = () => {
         <meta property="og:locale" content="en" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
-
+      <ToastContainer />
       <Navbar />
       <PageBanner
         pageTitle="Sign Up"

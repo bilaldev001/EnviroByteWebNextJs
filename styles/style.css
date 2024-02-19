@@ -5624,11 +5624,42 @@ Blogs
   margin: 10px 0 !important;
   font-size: 15px;
 }
+.blog-card-container .blog-img {
+  height: 250px;
+  width: 100%;
+}
+
 .blog-card-container .tags {
   background-color: #00b0ee;
   color: white;
   padding: 3px 10px;
   border-radius: 50px;
+}
+
+.news-letter-container {
+  background-color: #00b0ee;
+  min-height: 150px;
+  border-radius: 4px;
+  margin-top: 50px;
+}
+.news-letter-input {
+  height: 45px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 0 10px;
+  outline: none;
+  background: transparent;
+}
+.news-letter-input::placeholder {
+  color: #fff;
+}
+.subscribe-btn {
+  background-color: white;
+  color: #00b0ee;
+  border-radius: 4px;
+  height: 45px;
+  padding: 0 10px;
+  font-weight: 600;
 }
 
 /*================================================

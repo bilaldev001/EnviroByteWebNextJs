@@ -9,7 +9,7 @@ const CustomInput = ({ label, ...props }) => {
       {label && (
         <label
           htmlFor={field.name}
-          className="block text-gray-800 text-sm font-medium mb-2"
+          className="block text-gray-800 text-sm font-medium mb-2 dark:text-white"
         >
           {label}
         </label>

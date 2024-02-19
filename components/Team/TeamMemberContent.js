@@ -3,11 +3,11 @@ import React from "react";
 const TeamMemberContent = () => {
   return (
     <>
-      <div className="team-section pt-100 pb-70">
+      <div className="team-section pt-100 pb-70  dark:bg-[#282828]">
         <div className="container">
           <div className="section-title">
-            <span>Our Experts</span>
-            <h2>People who started EnviroByte</h2>
+            <span className="dark:text-white">Our Experts</span>
+            <h2 className="dark:text-white">People who started EnviroByte</h2>
           </div>
 
           <div className="row">
@@ -32,8 +32,8 @@ const TeamMemberContent = () => {
                   </div>
                 </div>
 
-                <div className="team-content">
-                  <h3>Brian Sloof</h3>
+                <div className="team-content dark:bg-[#4D4D4D]">
+                  <h3 className="dark:text-white">Brian Sloof</h3>
                 </div>
               </div>
             </div>
@@ -59,8 +59,8 @@ const TeamMemberContent = () => {
                   </div>
                 </div>
 
-                <div className="team-content">
-                  <h3>Nelson Lee</h3>
+                <div className="team-content dark:bg-[#4D4D4D]">
+                  <h3 className="dark:text-white">Nelson Lee</h3>
                 </div>
               </div>
             </div>
@@ -86,8 +86,8 @@ const TeamMemberContent = () => {
                   </div>
                 </div>
 
-                <div className="team-content">
-                  <h3>Kevin Poirier</h3>
+                <div className="team-content dark:bg-[#4D4D4D]">
+                  <h3 className="dark:text-white">Kevin Poirier</h3>
                 </div>
               </div>
             </div>
@@ -113,8 +113,8 @@ const TeamMemberContent = () => {
                   </div>
                 </div>
 
-                <div className="team-content">
-                  <h3>Minxing Si</h3>
+                <div className="team-content dark:bg-[#4D4D4D]">
+                  <h3 className="dark:text-white">Minxing Si</h3>
                 </div>
               </div>
             </div>
@@ -122,8 +122,8 @@ const TeamMemberContent = () => {
               <br />
               <br />
               <br />
-              <span>Our Advisors</span>
-              <h2>People who advise EnviroByte</h2>
+              <span className="dark:text-white">Our Advisors</span>
+              <h2 className="dark:text-white">People who advise EnviroByte</h2>
             </div>
             <div className="col-lg-3 col-sm-3">
               <div className="single-team-item">
@@ -145,8 +145,8 @@ const TeamMemberContent = () => {
                     </a>
                   </div>
                 </div>
-                <div className="team-content">
-                  <h3>Perry Toms</h3>
+                <div className="team-content dark:bg-[#4D4D4D]">
+                  <h3 className="dark:text-white">Perry Toms</h3>
                 </div>
               </div>
             </div>
@@ -172,8 +172,8 @@ const TeamMemberContent = () => {
                   </div>
                 </div>
 
-                <div className="team-content">
-                  <h3>John Parr</h3>
+                <div className="team-content dark:bg-[#4D4D4D]">
+                  <h3 className="dark:text-white">John Parr</h3>
                 </div>
               </div>
             </div>

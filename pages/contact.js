@@ -1,11 +1,7 @@
 import React from "react";
-import Navbar from "../components/Layouts/Navbar";
 import PageBanner from "../components/Common/PageBanner";
-// import ContactInfo from "../components/Contact/ContactInfo";
-// import ContactForm from "../components/Contact/ContactForm";
 import ContactForm from "../components/Contact/freecontact";
-// import SubscribeStyleThree from "../components/Common/SubscribeStyleThree";
-import Footer from "../components/Layouts/Footer";
+import withMainLayout from "../components/Layouts";
 import Head from "next/head";
 import Script from "next/script";
 
@@ -43,7 +39,6 @@ const Contact = () => {
           content="Envirobyte services are here to help you and your business...Official web site of EnviroByte, located in Calgary, Alberta, Canada."
         />
       </Head>
-      <Navbar />
 
       <PageBanner
         pageTitle="Contact Us"
@@ -52,12 +47,9 @@ const Contact = () => {
         breadcrumbUrl="/"
         bgImage=""
       />
-
       <ContactForm />
-
-      <Footer />
     </>
   );
 };
 
-export default Contact;
+export default withMainLayout(Contact);

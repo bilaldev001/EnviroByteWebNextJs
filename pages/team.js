@@ -4,10 +4,11 @@ import PageBanner from "../components/Common/PageBanner";
 import TeamMemberContent from "../components/Team/TeamMemberContent";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
+import withMainLayout from "../components/Layouts";
 
 const Team = () => {
   return (
-    <>
+    <div>
       <Head>
         <title>Team | EnviroByte </title>
         <meta
@@ -29,7 +30,6 @@ const Team = () => {
           content="EmissionX, developed by EnviroByte, can be used as Predictive Emission Monitoring Systems (PEMSs) that provide real-time data on emissions from industrial facilities."
         />
       </Head>
-      <Navbar />
 
       <PageBanner
         pageTitle="Team"
@@ -40,10 +40,8 @@ const Team = () => {
       />
 
       <TeamMemberContent />
-
-      <Footer />
-    </>
+    </div>
   );
 };
 
-export default Team;
+export default withMainLayout(Team);

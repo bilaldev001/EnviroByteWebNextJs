@@ -4,7 +4,7 @@ import DDRPLogo from "../../public/images/our_service/Data-Drived-Landing Page.s
 const OurServices = () => {
   return (
     <>
-      <div className="data-service-section pb-100 dark:bg-[#282828]">
+      <div className="data-service-section pb-100 dark:bg-[#282828] transition">
         <div className="container">
           <div className="section-title">
             <span className="text-[#666666] ">Be the Change</span>

@@ -46,8 +46,6 @@ const Index = () => {
         <FunFacts />
 
         <SolutionsTab />
-
-        <Footer />
       </>
     </div>
   );

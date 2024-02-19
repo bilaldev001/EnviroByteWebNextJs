@@ -8,7 +8,7 @@ const BlogsComponent = () => {
   const [currentPage, setCurrentPage] = useState(0);
 
   return (
-    <div className="bg-[#ffffff] dark:bg-[#282828]">
+    <div className="bg-[#ffffff] dark:bg-[#282828] transition">
       <div className="pt-100 pb-70 container mx-auto">
         {/* Heading */}
         <div className="section-title">

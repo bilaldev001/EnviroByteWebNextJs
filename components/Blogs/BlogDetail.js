@@ -20,9 +20,9 @@ const BlogDetail = (props) => {
     }
   };
   return (
-    <div className="bg-[#ffffff] dark:bg-[#282828]">
+    <div className="bg-[#ffffff] dark:bg-[#282828] transition">
       <div className="container mx-auto pt-100 pb-70">
-        <div className="pb-70 bg-[#ffffff] dark:bg-[#282828]">
+        <div className="pb-70 bg-[#ffffff] dark:bg-[#282828] transition">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-start gap-2 flex-wrap text-xs font-medium">
               {blogData?.tags?.length &&

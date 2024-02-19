@@ -3,11 +3,13 @@ import React from "react";
 const TeamMemberContent = () => {
   return (
     <>
-      <div className="team-section pt-100 pb-70">
+      <div className="team-section pt-100 pb-70 dark:bg-[#282828] transition">
         <div className="container">
           <div className="section-title">
             <span>Our Experts</span>
-            <h2>People who started EnviroByte</h2>
+            <h2 className="dark:text-[#ffffff]">
+              People who started EnviroByte
+            </h2>
           </div>
 
           <div className="row">
@@ -123,7 +125,9 @@ const TeamMemberContent = () => {
               <br />
               <br />
               <span>Our Advisors</span>
-              <h2>People who advise EnviroByte</h2>
+              <h2 className="dark:text-[#ffffff]">
+                People who advise EnviroByte
+              </h2>
             </div>
             <div className="col-lg-3 col-sm-3">
               <div className="single-team-item">

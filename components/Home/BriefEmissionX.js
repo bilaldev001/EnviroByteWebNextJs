@@ -5,7 +5,7 @@ import BriefLogo from "../../public/images/emisssionx/Brieflogo-2.svg";
 const BriefEmissionX = () => {
   return (
     <>
-      <div className="about-section ptb-100 dark:bg-[#282828]">
+      <div className="about-section ptb-100 dark:bg-[#282828] transition">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">

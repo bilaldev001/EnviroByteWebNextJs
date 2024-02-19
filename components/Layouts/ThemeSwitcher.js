@@ -13,7 +13,6 @@ export const ThemeSwitcher = () => {
   if (!mounted) {
     return null;
   }
-  console.log(theme);
   const toggleTheme = () => {
     switch (theme) {
       case "dark":

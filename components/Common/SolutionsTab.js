@@ -8,7 +8,7 @@ import IOTAQMLogo from "../../public/images/solution-tab/IoT_AQM.svg";
 const SolutionsTab = () => {
   return (
     <>
-      <div className="tab-section ptb-100 dark:bg-[#282828]">
+      <div className="tab-section ptb-100 dark:bg-[#282828] transition">
         <div className="container">
           <div className="solutions-list-tab">
             <Tabs>

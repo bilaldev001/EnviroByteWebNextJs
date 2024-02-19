@@ -1,14 +1,12 @@
 import React from "react";
 import Head from "next/head";
-import Navbar from "../../components/Layouts/Navbar";
 import PageBanner from "../../components/Common/PageBanner";
-import Footer from "../../components/Layouts/Footer";
 import BlogsComponent from "../../components/Blogs/BlogsComponent";
-import ToastContainer from "../../components/Shared/Toast";
+import withMainLayout from "../../components/Layouts";
 
 const Blogs = () => {
   return (
-    <>
+    <div>
       <Head>
         <title>Blogs | EnviroByte</title>
         <meta
@@ -29,8 +27,6 @@ const Blogs = () => {
           content="EnviroByte uses CI/CD to automate the process of calculating GHG emissions for Alberta TIER, BC GHG regulation, ECCC GHGRP, ECCC NPRI."
         />
       </Head>
-      <ToastContainer />
-      <Navbar />
       <PageBanner
         pageTitle="Blogs"
         breadcrumbTextOne="Home"
@@ -39,9 +35,8 @@ const Blogs = () => {
         bgImage=""
       />
       <BlogsComponent />
-      <Footer />
-    </>
+    </div>
   );
 };
 
-export default Blogs;
+export default withMainLayout(Blogs);

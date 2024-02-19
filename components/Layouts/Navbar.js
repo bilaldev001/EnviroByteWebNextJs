@@ -13,7 +13,7 @@ const Navbar = () => {
   const [top, setTop] = React.useState(true);
 
   const scrollHandler = () => {
-    window.pageYOffset > 170 ? setTop(false) : setTop(true);
+    window.pageYOffset > 70 ? setTop(false) : setTop(true);
   };
 
   React.useEffect(() => {
@@ -25,7 +25,7 @@ const Navbar = () => {
   React.useEffect(() => {
     let elementId = document.getElementById("navbar");
     document.addEventListener("scroll", () => {
-      if (window.scrollY > 170) {
+      if (window.scrollY > 70) {
         elementId.classList.add("is-sticky");
       } else {
         elementId.classList.remove("is-sticky");
@@ -44,7 +44,7 @@ const Navbar = () => {
     <>
       <div
         id="navbar"
-        className={`navbar-area fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out  ${
+        className={`navbar-area fixed w-full z-30 xl:bg-opacity-90 transition duration-300 ease-in-out  ${
           !top
             ? "bg-[#ffffff] dark:bg-[#000000a8] backdrop-blur-sm shadow-lg"
             : ""
@@ -52,7 +52,7 @@ const Navbar = () => {
       >
         <div className="main-nav">
           <div className="container">
-            <nav className="navbar navbar-expand-md navbar-light">
+            <nav className="navbar navbar-expand-xl navbar-light">
               <Link legacyBehavior href="/">
                 <a className="navbar-brand mr-0">
                   <WhiteLogo
@@ -296,7 +296,7 @@ const Navbar = () => {
                       <a className="nav-link">Sign in</a>
                     </Link>
                   </li>
-                  <li className="nav-item ">
+                  <li className="mx-[12px]">
                     <Link
                       legacyBehavior
                       href="/signup"

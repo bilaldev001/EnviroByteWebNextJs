@@ -23,7 +23,7 @@ const BlogCard = ({ data }) => {
             </div>
           ))}
       </div>
-      <h3 className="blog-title" title={data?.title}>
+      <h3 className="blog-title dark:text-[#ffffff]" title={data?.title}>
         {truncateString(data?.title, 35)}
       </h3>
       <p className="blog-description text-justify" title={data?.body}>
@@ -37,7 +37,7 @@ const BlogCard = ({ data }) => {
           height={100}
           className="w-[50px] h-[50px] rounded-full"
         />
-        <h5 className="mx-3">Dummy User</h5>
+        <h5 className="mx-3 dark:text-[#ffffff]">Dummy User</h5>
         <p>{new Date().toLocaleDateString()}</p>
       </div>
     </Link>

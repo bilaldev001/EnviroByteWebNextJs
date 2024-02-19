@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
 import React from "react";
 import Head from "next/head";
-import Navbar from "../../components/Layouts/Navbar";
 import PageBanner from "../../components/Common/PageBanner";
-import Footer from "../../components/Layouts/Footer";
 import DummyBlogs from "../../components/Blogs/DummyBlogs.json";
+import BlogDetail from "../../components/Blogs/BlogDetail";
+import withMainLayout from "../../components/Layouts";
 
 const BlogDetails = () => {
   const router = useRouter();
@@ -34,17 +34,16 @@ const BlogDetails = () => {
           content="EnviroByte uses CI/CD to automate the process of calculating GHG emissions for Alberta TIER, BC GHG regulation, ECCC GHGRP, ECCC NPRI."
         />
       </Head>
-      <Navbar />
       <PageBanner
         pageTitle={blogData?.title}
-        breadcrumbTextOne=""
-        breadcrumbTextTwo=""
+        breadcrumbTextOne="Home"
+        breadcrumbTextTwo="Blog"
         breadcrumbUrl="/"
-        bgImage="https://preview.cruip.com/open-pro/images/news-single.jpg"
+        // bgImage="https://preview.cruip.com/open-pro/images/news-single.jpg"
       />
-      <Footer />
+      <BlogDetail blogData={blogData} />
     </div>
   );
 };
 
-export default BlogDetails;
+export default withMainLayout(BlogDetails);

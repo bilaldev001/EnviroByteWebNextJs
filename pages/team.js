@@ -1,8 +1,7 @@
 import React from "react";
-import Navbar from "../components/Layouts/Navbar";
 import PageBanner from "../components/Common/PageBanner";
 import TeamMemberContent from "../components/Team/TeamMemberContent";
-import Footer from "../components/Layouts/Footer";
+import withMainLayout from "../components/Layouts";
 import Head from "next/head";
 import withMainLayout from "../components/Layouts";
 
@@ -38,10 +37,10 @@ const Team = () => {
         breadcrumbUrl="/"
         bgImage=""
       />
-
       <TeamMemberContent />
     </div>
   );
 };
 
+export default withMainLayout(Team);
 export default withMainLayout(Team);

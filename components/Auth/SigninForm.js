@@ -78,7 +78,7 @@ const SigninForm = () => {
             </Form>
           )}
         </Formik>
-        <p className="text-center mt-3 text-gray-800 text-md">
+        <p className="text-center mt-3 text-gray-800 text-md dark:text-white">
           Don't you have an account?{" "}
           <span
             className="underline text-blue-400 cursor-pointer"

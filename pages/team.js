@@ -43,4 +43,3 @@ const Team = () => {
 };
 
 export default withMainLayout(Team);
-export default withMainLayout(Team);

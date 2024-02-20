@@ -86,7 +86,7 @@ const Navbar = () => {
               </button>
 
               <div className={classOne} id="navbarSupportedContent">
-                <ul className="navbar-nav lg:flex lg:items-center">
+                <ul className="navbar-nav xl:flex align-items-xl-center align-items-start">
                   <li className="nav-item">
                     <Link legacyBehavior href="/">
                       <a className="nav-link">Home</a>
@@ -296,7 +296,7 @@ const Navbar = () => {
                       <a className="nav-link">Sign in</a>
                     </Link>
                   </li>
-                  <li className="mx-[12px]">
+                  <li className="xl:mx-[12px]">
                     <Link
                       legacyBehavior
                       href="/signup"

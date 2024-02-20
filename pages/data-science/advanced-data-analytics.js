@@ -5,10 +5,11 @@ import ADAContent from "../../components/DataScience/ADAContent";
 import Footer from "../../components/Layouts/Footer";
 import Head from "next/head";
 import Script from "next/script";
+import withMainLayout from "../../components/Layouts";
 
 const AdvancedDataAnalytics = () => {
   return (
-    <>
+    <div>
       <Head>
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <Script id="google-analytics" strategy="afterInteractive">
@@ -66,9 +67,8 @@ const AdvancedDataAnalytics = () => {
       />
 
       <ADAContent />
-      <Footer />
-    </>
+    </div>
   );
 };
 
-export default AdvancedDataAnalytics;
+export default withMainLayout(AdvancedDataAnalytics);

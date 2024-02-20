@@ -4,10 +4,10 @@ import ADALogo from "../../public/images/datascience/ADA2.svg";
 
 const ADAContent = () => {
   return (
-    <div className="project-details-area ptb-100">
+    <div className="project-details-area ptb-100 dark:bg-[#282828]">
       <div className="container">
         <div className="projects-details-desc">
-          <h3>
+          <h3 className="dark:text-[#ffffff]">
             Fuel Consumption Analysis for Canadian In Situ Oil Sands Extraction
           </h3>
           <div className="row align-items-center">
@@ -72,28 +72,30 @@ const ADAContent = () => {
           <br />
           <div className="project-details-info">
             <div className="single-info-box">
-              <h4>Language</h4>
+              <h4 className="dark:text-[#ffffff]">Language</h4>
               <span>Python, R</span>
             </div>
 
             <div className="single-info-box">
-              <h4>Application</h4>
+              <h4 className="dark:text-[#ffffff]">Application</h4>
               <span>GHG, Carbon Management</span>
             </div>
 
             <div className="single-info-box">
-              <h4>Data Sources</h4>
+              <h4 className="dark:text-[#ffffff]">Data Sources</h4>
               <span>Petrinex</span>
             </div>
 
             <div className="single-info-box">
-              <h4>Program</h4>
+              <h4 className="dark:text-[#ffffff]">Program</h4>
               <span>Alberta TIER</span>
             </div>
 
             <div className="single-info-box">
               <Link legacyBehavior href="/contact">
-                <a className="default-btn" target="_blank">Contact us</a>
+                <a className="default-btn" target="_blank">
+                  Contact us
+                </a>
               </Link>
             </div>
           </div>

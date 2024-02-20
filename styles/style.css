@@ -3631,6 +3631,10 @@ Projects Details Area CSS
   margin-bottom: 30px;
 }
 
+.dark .project-details-image.emissionxcontent svg g path:first-child {
+  fill: #282828;
+}
+
 .project-details-emissionximage {
   margin-bottom: auto;
   margin-left: 8%;

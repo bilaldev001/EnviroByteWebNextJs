@@ -5,6 +5,7 @@ import ClimateChangeContent from "../../components/EmissionX/ClimateChangeConten
 import Footer from "../../components/Layouts/Footer";
 import Head from "next/head";
 import Script from "next/script";
+import withMainLayout from "../../components/Layouts";
 
 const ClimateChange = () => {
   return (
@@ -46,7 +47,6 @@ const ClimateChange = () => {
           content="EmissionX™, developed by EnviroByte, provides climate change adaptation and mitigation assessment by leveraging big data techniques and machine learning algorithms"
         />
       </Head>
-      <Navbar />
 
       <PageBanner
         pageTitle="Climate Change"
@@ -57,10 +57,8 @@ const ClimateChange = () => {
       />
 
       <ClimateChangeContent />
-
-      <Footer />
     </>
   );
 };
 
-export default ClimateChange;
+export default withMainLayout(ClimateChange);

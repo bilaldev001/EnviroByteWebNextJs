@@ -4,10 +4,10 @@ import PEMLogo from "../../public/images/datascience/PEM.svg";
 
 const PEMContent = () => {
   return (
-    <div className="project-details-area ptb-100">
+    <div className="project-details-area ptb-100 dark:bg-[#282828]">
       <div className="container">
         <div className="projects-details-desc">
-          <h3>OpenPEMS&trade;</h3>
+          <h3 className="dark:text-[#ffffff]">OpenPEMS&trade;</h3>
           <div className="row align-items-center">
             <p>
               The nitrogen oxides (NO<sub>x</sub>) has significant adverse
@@ -63,7 +63,9 @@ const PEMContent = () => {
             <div className="project-details-image-wrapleft">
               <PEMLogo alt="image" width="900" />
             </div>
-            <h3>Predictive Emissions for GHG monitoring</h3>
+            <h3 className="dark:text-[#ffffff]">
+              Predictive Emissions for GHG monitoring
+            </h3>
             <p>
               Contact us to learn more about OpenPEMS&trade; and how we transfer
               PEMS to GHG monitoring
@@ -76,22 +78,22 @@ const PEMContent = () => {
 
           <div className="project-details-info">
             <div className="single-info-box">
-              <h4>Language</h4>
+              <h4 className="dark:text-[#ffffff]">Language</h4>
               <span>Python, R</span>
             </div>
 
             <div className="single-info-box">
-              <h4>Application</h4>
+              <h4 className="dark:text-[#ffffff]">Application</h4>
               <span>Emission Monitoring</span>
             </div>
 
             <div className="single-info-box">
-              <h4>Data Sources</h4>
+              <h4 className="dark:text-[#ffffff]">Data Sources</h4>
               <span>Measurement/PI</span>
             </div>
 
             <div className="single-info-box">
-              <h4>Algorithm</h4>
+              <h4 className="dark:text-[#ffffff]">Algorithm</h4>
               <span>Neural Network, Gradient Boosting</span>
             </div>
 

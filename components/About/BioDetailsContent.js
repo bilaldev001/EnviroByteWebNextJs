@@ -3,7 +3,7 @@ import React from "react";
 const BioDetailsContent = () => {
   return (
     <>
-      <div className="services-details-area ptb-100">
+      <div className="services-details-area ptb-100 dark:bg-[#282828]">
         <div className="container">
           <div className="services-details-overview">
             <div className="row align-items-center">
@@ -15,7 +15,7 @@ const BioDetailsContent = () => {
 
               <div className="col-lg-9 col-md-12">
                 <div className="services-details-desc">
-                  <h3>Nelson Lee, P.Eng.</h3>
+                  <h3 className="dark:text-[#ffffff]">Nelson Lee, P.Eng.</h3>
 
                   <div className="features-text">
                     <p style={{ fontSize: "18px" }}>
@@ -72,7 +72,7 @@ const BioDetailsContent = () => {
 
               <div className="col-lg-9 col-md-12">
                 <div className="services-details-desc">
-                  <h3>Brain Sloof, P.Eng.</h3>
+                  <h3 className="dark:text-[#ffffff]">Brain Sloof, P.Eng.</h3>
 
                   <div className="features-text">
                     <p style={{ fontSize: "18px" }}>
@@ -111,7 +111,7 @@ const BioDetailsContent = () => {
 
               <div className="col-lg-9 col-md-12">
                 <div className="services-details-desc">
-                  <h3>Kevin Poirier, P.Eng.</h3>
+                  <h3 className="dark:text-[#ffffff]">Kevin Poirier, P.Eng.</h3>
 
                   <div className="features-text">
                     <p style={{ fontSize: "18px" }}>
@@ -151,7 +151,9 @@ const BioDetailsContent = () => {
 
               <div className="col-lg-9 col-md-12">
                 <div className="services-details-desc">
-                  <h3>Minxing Si, P.Eng., Ph.D.</h3>
+                  <h3 className="dark:text-[#ffffff]">
+                    Minxing Si, P.Eng., Ph.D.
+                  </h3>
                   {/* <p style={{ fontSize: "18px" }}>
                     Helping organizations adapt to climate change, reduce their
                     carbon footprint and capture market benefits.
@@ -195,7 +197,7 @@ const BioDetailsContent = () => {
 
               <div className="col-lg-9 col-md-12">
                 <div className="services-details-desc">
-                  <h3>Perry E. Toms</h3>
+                  <h3 className="dark:text-[#ffffff]">Perry E. Toms</h3>
                   <div className="features-text">
                     <p style={{ fontSize: "18px" }}>
                       Mr. Perry Toms brings his decades of experience in
@@ -237,7 +239,9 @@ const BioDetailsContent = () => {
 
               <div className="col-lg-9 col-md-12">
                 <div className="services-details-desc">
-                  <h3>John Parr, P. Eng. ( Retired )</h3>
+                  <h3 className="dark:text-[#ffffff]">
+                    John Parr, P. Eng. ( Retired )
+                  </h3>
                   <div className="features-text">
                     <p style={{ fontSize: "18px" }}>
                       Mr. John Parr is CFO and Co-Founder of GolfADay Ltd, which

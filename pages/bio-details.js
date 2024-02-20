@@ -3,12 +3,11 @@ import Navbar from "../components/Layouts/Navbar";
 import PageBanner from "../components/Common/PageBanner";
 import BioDetail from "../components/About/BioDetailsContent";
 import Footer from "../components/Layouts/Footer";
+import withMainLayout from "../components/Layouts";
 
 const BioDetails = () => {
   return (
-    <>
-      <Navbar />
-
+    <div>
       <PageBanner
         pageTitle="Bio Details"
         breadcrumbTextOne="Home"
@@ -18,10 +17,8 @@ const BioDetails = () => {
       />
 
       <BioDetail />
-
-      <Footer />
-    </>
+    </div>
   );
 };
 
-export default BioDetails;
+export default withMainLayout(BioDetails);

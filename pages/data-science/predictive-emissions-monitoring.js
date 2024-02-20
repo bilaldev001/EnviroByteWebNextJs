@@ -5,6 +5,7 @@ import PEMContent from "../../components/DataScience/PEMContent";
 import Footer from "../../components/Layouts/Footer";
 import Head from "next/head";
 import Script from "next/script";
+import withMainLayout from "../../components/Layouts";
 
 const PredictiveEmissionsMonitoring = () => {
   return (
@@ -46,7 +47,6 @@ const PredictiveEmissionsMonitoring = () => {
         <meta property="og:locale" content="en" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
-      <Navbar />
 
       <PageBanner
         pageTitle="Predictive Emissions Monitoring"
@@ -57,10 +57,8 @@ const PredictiveEmissionsMonitoring = () => {
       />
 
       <PEMContent />
-
-      <Footer />
     </>
   );
 };
 
-export default PredictiveEmissionsMonitoring;
+export default withMainLayout(PredictiveEmissionsMonitoring);

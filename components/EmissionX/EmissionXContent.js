@@ -4,10 +4,10 @@ import IoTLogo from "../../public/images/datascience/IoT.svg";
 const EmissionXContent = () => {
   return (
     <>
-      <div className="project-details-area ptb-100">
+      <div className="project-details-area ptb-100 dark:bg-[#282828]">
         <div className="container">
           <div className="projects-details-desc">
-            <h3>Why We Do This</h3>
+            <h3 className="dark:text-[#ffffff]">Why We Do This</h3>
             <img
               src="/images/emisssionx/EmissionX_Blue.svg"
               align="right"
@@ -18,12 +18,12 @@ const EmissionXContent = () => {
 
             <p>
               On May 30, 2007, Steve Jobs and Bill Gates joined together for an
-              interview at the
+              interview at the{" "}
               <a
                 href="https://podcasts.apple.com/us/podcast/steve-jobs-at-the-d-all-things-digital-conference-video/id529997900"
                 target="_blank"
+                className="dark:text-[#ffffff]"
               >
-                {" "}
                 D5 conference
               </a>
               . Gates explained why and how Apple and Microsoft developed their
@@ -36,6 +36,7 @@ const EmissionXContent = () => {
               <a
                 href="https://www.youtube.com/watch?v=wvhW8cp15tk"
                 target="_blank"
+                className="dark:text-[#ffffff]"
               >
                 {" "}
                 See the video
@@ -60,17 +61,17 @@ const EmissionXContent = () => {
               jurisdictions, facilities, and industries.
             </p>
             <p>
-              We designed EmissionX&trade; with easy verification and assurance in mind
-              by integrating data science tools (e.g., Jupyter Lab) with CI/CD
-              processes, offering the most flexibility, transparency, and
+              We designed EmissionX&trade; with easy verification and assurance
+              in mind by integrating data science tools (e.g., Jupyter Lab) with
+              CI/CD processes, offering the most flexibility, transparency, and
               customization. This not only leads to smoother verifications and
               audits, but also provides reporting companies with the freedom to
               do their own, in-house, analysis and dashboard reporting.
             </p>
 
             <text>
-              EmissionX&trade; is programed for many different regulatory and voluntary
-              reporting frameworks, including but not limited to:
+              EmissionX&trade; is programed for many different regulatory and
+              voluntary reporting frameworks, including but not limited to:
               <p></p>
               <ul>
                 <li>
@@ -89,7 +90,7 @@ const EmissionXContent = () => {
             <p></p>
 
             <p></p>
-            <div className="project-details-image">
+            <div className="project-details-image emissionxcontent">
               <CICDLogo alt="image" />
             </div>
           </div>

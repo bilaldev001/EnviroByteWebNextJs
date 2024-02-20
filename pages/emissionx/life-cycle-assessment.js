@@ -5,6 +5,7 @@ import LCAContent from "../../components/EmissionX/LCAContent";
 import Footer from "../../components/Layouts/Footer";
 import Head from "next/head";
 import Script from "next/script";
+import withMainLayout from "../../components/Layouts";
 
 const LifeCycleAssessment = () => {
   return (
@@ -46,7 +47,6 @@ const LifeCycleAssessment = () => {
           content="EmissionX, developed by EnviroByte, is a cloud-based software solution that quantifies carbon intensity (CI) for products using LCAs."
         />
       </Head>
-      <Navbar />
 
       <PageBanner
         pageTitle="Life Cycle Assessment"
@@ -57,10 +57,8 @@ const LifeCycleAssessment = () => {
       />
 
       <LCAContent />
-
-      <Footer />
     </>
   );
 };
 
-export default LifeCycleAssessment;
+export default withMainLayout(LifeCycleAssessment);

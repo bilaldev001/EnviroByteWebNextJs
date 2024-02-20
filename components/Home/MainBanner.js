@@ -21,7 +21,7 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                       data-aos-once="true"
                     >
-                      <h1 className="dark:text-[#191919] duration-200 text-4xl md:text-5xl lg:text-[5rem] xl:text-6xl font-extrabold leading-tighter tracking-tighter">
+                      <h1 className="text-4xl md:text-5xl lg:text-[5rem] xl:text-6xl font-extrabold leading-tighter tracking-tighter">
                         Data-driven Sustainability
                       </h1>
                     </div>
@@ -32,7 +32,7 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                       data-aos-once="true"
                     >
-                      <p className="dark:text-[#282828] duration-200 ">
+                      <p>
                         EnviroByte applies data-driven methods with
                         environmental science, software engineering, and machine
                         learning to increase efficiency and effectiveness of
@@ -50,7 +50,7 @@ const MainBanner = () => {
                     >
                       <div className="banner-btn">
                         <Link legacyBehavior href="/about-us">
-                          <a className="default-btn-one dark:bg-[#282828] transition">
+                          <a className="default-btn-one  transition">
                             About Us <span></span>
                           </a>
                         </Link>

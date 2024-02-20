@@ -6,6 +6,22 @@ import NewsLetter from "./NewsLetter";
 
 const BlogsComponent = () => {
   const [currentPage, setCurrentPage] = useState(0);
+  const [clickCount, setClickCount] = useState(0);
+
+  useEffect(() => {
+    const storedCount = localStorage.getItem("clickCount");
+    if (storedCount) {
+      setClickCount(parseInt(storedCount, 10));
+    }
+  }, []);
+
+  const handleBlogClick = () => {
+    setClickCount((prevCount) => {
+      const newCount = prevCount + 1;
+      localStorage.setItem("clickCount", newCount.toString());
+      return newCount;
+    });
+  };
 
   return (
     <div className="bg-[#ffffff] dark:bg-[#282828] transition">
@@ -18,7 +34,7 @@ const BlogsComponent = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
           {DummyBlogs.data.length &&
             DummyBlogs.data.map((data, index) => (
-              <BlogCard data={data} key={index} />
+              <BlogCard data={data} key={index} onBlogClick={handleBlogClick} />
             ))}
         </div>
 

@@ -4,10 +4,10 @@ import PMALogo from "../../public/images/datascience/PMA2.svg";
 
 const PMAContent = () => {
   return (
-    <div className="project-details-area ptb-100">
+    <div className="project-details-area ptb-100 dark:bg-[#282828]">
       <div className="container">
         <div className="projects-details-desc">
-          <h3>
+          <h3 className="dark:text-[#ffffff]">
             Unsupervised machine learning on Canadian oil sands operations
           </h3>
           <div className="row align-items-center">
@@ -74,22 +74,22 @@ const PMAContent = () => {
 
           <div className="project-details-info">
             <div className="single-info-box">
-              <h4>Language</h4>
+              <h4 className="dark:text-[#ffffff]">Language</h4>
               <span>Python</span>
             </div>
 
             <div className="single-info-box">
-              <h4>Application</h4>
+              <h4 className="dark:text-[#ffffff]">Application</h4>
               <span>Data Analytics</span>
             </div>
 
             <div className="single-info-box">
-              <h4>Data Sources</h4>
+              <h4 className="dark:text-[#ffffff]">Data Sources</h4>
               <span>Petrinex</span>
             </div>
 
             <div className="single-info-box">
-              <h4>Algorithm</h4>
+              <h4 className="dark:text-[#ffffff]">Algorithm</h4>
               <span>Association Rules</span>
             </div>
 

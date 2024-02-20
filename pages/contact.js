@@ -8,6 +8,7 @@ import ContactForm from "../components/Contact/freecontact";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
 import Script from "next/script";
+import withMainLayout from "../components/Layouts";
 
 const Contact = () => {
   return (
@@ -43,7 +44,6 @@ const Contact = () => {
           content="Envirobyte services are here to help you and your business...Official web site of EnviroByte, located in Calgary, Alberta, Canada."
         />
       </Head>
-      <Navbar />
 
       <PageBanner
         pageTitle="Contact Us"
@@ -54,10 +54,8 @@ const Contact = () => {
       />
 
       <ContactForm />
-
-      <Footer />
     </>
   );
 };
 
-export default Contact;
+export default withMainLayout(Contact);

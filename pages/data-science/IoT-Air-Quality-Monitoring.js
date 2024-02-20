@@ -5,6 +5,7 @@ import IoTContent from "../../components/DataScience/IoTContent";
 import Footer from "../../components/Layouts/Footer";
 import Head from "next/head";
 import Script from "next/script";
+import withMainLayout from "../../components/Layouts";
 
 const IoTAirQualityMonitoring = () => {
   return (
@@ -51,7 +52,6 @@ const IoTAirQualityMonitoring = () => {
         <meta property="og:locale" content="en" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
-      <Navbar />
 
       <PageBanner
         pageTitle="IoT Air Quality Monitoring"
@@ -62,9 +62,8 @@ const IoTAirQualityMonitoring = () => {
       />
 
       <IoTContent />
-      <Footer />
     </>
   );
 };
 
-export default IoTAirQualityMonitoring;
+export default withMainLayout(IoTAirQualityMonitoring);

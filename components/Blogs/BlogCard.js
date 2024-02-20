@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { truncateString } from "../Utils/TruncateText";
 
-const BlogCard = ({ data }) => {
+const BlogCard = ({ data, onBlogClick }) => {
   const tagColor = (tag) => {
     switch (tag) {
       case "history":
@@ -19,7 +19,11 @@ const BlogCard = ({ data }) => {
     }
   };
   return (
-    <Link href={`/blogs/${data.id}`} className="blog-card-container">
+    <Link
+      href={`/blogs/${data.id}`}
+      className="blog-card-container"
+      onClick={onBlogClick}
+    >
       <Image
         src={"https://preview.cruip.com/open-pro/images/news-inner-image.jpg"}
         alt={data?.title}

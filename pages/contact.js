@@ -4,7 +4,6 @@ import ContactForm from "../components/Contact/freecontact";
 import withMainLayout from "../components/Layouts";
 import Head from "next/head";
 import Script from "next/script";
-import withMainLayout from "../components/Layouts";
 
 const Contact = () => {
   return (

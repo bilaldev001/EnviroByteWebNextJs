@@ -3,7 +3,6 @@ import PageBanner from "../components/Common/PageBanner";
 import TeamMemberContent from "../components/Team/TeamMemberContent";
 import withMainLayout from "../components/Layouts";
 import Head from "next/head";
-import withMainLayout from "../components/Layouts";
 
 const Team = () => {
   return (

@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/router";
 import TextField from "../Shared/InputField";
-import axios from "axios";
 import Spinner from "../Utils/Spinner";
-import { toast } from "react-toastify";
+import { useDispatch, useSelector } from "react-redux";
+import { registerUser } from "../Redux/slices/AuthSlice";
 
 const SignupForm = () => {
   const router = useRouter();
-  const [isLoading, setLoading] = useState(false);
+  const disptach = useDispatch();
+  const loading = useSelector((state) => state?.auth?.loading);
 
   // Sign Up Form Initial Values
   const initialValues = {
@@ -27,24 +28,12 @@ const SignupForm = () => {
 
   // Form Submission
   const handleSubmit = async (values, { resetForm }) => {
-    try {
-      let formData = {
-        username: values?.name,
-        email: values?.email,
-        password: values?.password,
-      };
-      setLoading(true);
-      const response = await axios.post("/api/auth/signup", formData);
-      toast.success(response?.data?.message);
-      setLoading(false);
-      resetForm({
-        values: "",
-      });
-    } catch (error) {
-      console.log(error.response?.data?.message);
-      toast.error(error.response?.data?.message);
-      setLoading(false);
-    }
+    let formData = {
+      username: values?.name,
+      email: values?.email,
+      password: values?.password,
+    };
+    disptach(registerUser({ formData, router }));
   };
 
   return (
@@ -84,7 +73,7 @@ const SignupForm = () => {
                 placeholder="Enter your password"
               />
               <button className="signin-btn default-btn w-full rounded">
-                {isLoading ? <Spinner /> : "Sign Up"} <span></span>
+                {loading ? <Spinner /> : "Sign Up"} <span></span>
               </button>
             </Form>
           )}

@@ -1,9 +1,10 @@
-import Image from "next/image";
 import React, { useEffect, useState, Fragment, useRef } from "react";
 import DummyBlogs from "./DummyBlogs.json";
 import BlogCard from "./BlogCard";
 import { Dialog, Transition } from "@headlessui/react";
 import Link from "next/link";
+import axios from "axios";
+import { useRouter } from "next/router";
 
 const tagColor = (tag) => {
   switch (tag) {
@@ -22,30 +23,39 @@ const tagColor = (tag) => {
 
 const BlogDetail = (props) => {
   const { blogData } = props;
-  const [clickCount, setClickCount] = useState(0);
-  const [hasSubscription, setHasSubscription] = useState(false);
-  const [open, setOpen] = useState(true);
-  const cancelButtonRef = useRef(
-    clickCount > 3 && !hasSubscription ? true : null
-  );
+  const [validation, setValidation] = useState();
+  const router = useRouter();
 
   useEffect(() => {
-    const storedCount = localStorage.getItem("clickCount");
-    if (storedCount) {
-      setClickCount(parseInt(storedCount, 10));
+    const handleSubmit = async () => {
+      try {
+        const response = await axios.post("/api/blogs");
+        setValidation(response?.data?.validation);
+      } catch (error) {
+        setValidation(false);
+        console.error(error);
+      }
+    };
+
+    if (router.isReady) {
+      handleSubmit();
     }
-  }, []);
+  }, [router.query]);
 
   const handleNavigation = () => {
-    setOpen(false);
-    router.push("/about");
+    setValidation(false);
+    router.push("/signup");
   };
 
   return (
     <div className="bg-[#ffffff] dark:bg-[#282828] transition">
       <div
         className={`container mx-auto pt-100 pb-70 ${
-          clickCount > 3 ? "blur-md invert brightness-50" : ""
+          !validation === undefined
+            ? ""
+            : validation === false
+            ? "blur-md invert brightness-50"
+            : ""
         }`}
       >
         <div className="pb-70 bg-[#ffffff] dark:bg-[#282828] transition">
@@ -66,9 +76,7 @@ const BlogDetail = (props) => {
           </div>
           <div className="d-flex justify-start items-start gap-4">
             <div className="md:w-[40%]">
-              <Image
-                width={100}
-                height={100}
+              <img
                 src={blogData?.bImage}
                 className="w-full h-[250px] rounded"
                 alt="title"
@@ -82,11 +90,9 @@ const BlogDetail = (props) => {
               </h1>
               <p className="blog-description text-justify">{blogData?.body}</p>
               <div className="flex align-items-center mt-3">
-                <Image
+                <img
                   src="https://preview.cruip.com/open-pro/images/news-author-06.jpg"
                   alt="user-img"
-                  width={100}
-                  height={100}
                   className="w-[50px] h-[50px] rounded-full"
                 />
                 <h5 className="mx-3 dark:text-[#ffffff]">Dummy User</h5>
@@ -105,11 +111,22 @@ const BlogDetail = (props) => {
               .map((data, index) => <BlogCard data={data} key={index} />)}
         </div>
       </div>
-      <Transition.Root show={open} as={Fragment}>
+      <Transition.Root
+        show={
+          validation === undefined ? false : validation === false ? true : false
+        }
+        as={Fragment}
+      >
         <Dialog
           as="div"
           className="relative z-10"
-          initialFocus={cancelButtonRef}
+          initialFocus={
+            validation === undefined
+              ? false
+              : validation === false
+              ? true
+              : false
+          }
           onClose={() => {}}
           static
         >

@@ -13,7 +13,6 @@ const withMainLayout = (WrappedComponent) => {
 
     return (
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-        <ToastContainer />
         <Navbar />
         <WrappedComponent {...props} />
         {isFooterVisible && <Footer />}

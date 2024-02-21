@@ -15,7 +15,7 @@ const CustomInput = ({ label, ...props }) => {
         </label>
       )}
       <input
-        className={`custom-form-input w-full text-gray-800 dark:text-[#ffffff] focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 ${
+        className={`custom-form-input w-full text-gray-800  focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 ${
           meta.touched && meta.error && "border border-error error-form"
         }`}
         {...field}

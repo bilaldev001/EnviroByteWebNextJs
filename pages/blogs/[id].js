@@ -15,7 +15,7 @@ const BlogDetails = () => {
   return (
     <div>
       <Head>
-        <title>{blogData?.title} | EnviroByte</title>
+        <title>Blog | EnviroByte</title>
         <meta
           name="keywords"
           content={

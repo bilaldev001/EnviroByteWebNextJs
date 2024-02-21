@@ -5,10 +5,12 @@ import DataLogo from "../../public/images/projects/DataFrameWork.svg";
 const DataDrivenApproachContent = () => {
   return (
     <>
-      <div className="project-details-area ptb-100">
+      <div className="project-details-area ptb-100 dark:bg-[#282828] transition">
         <div className="container">
           <div className="projects-details-desc">
-            <h3>Data-Driven Sustainability Framework</h3>
+            <h3 className="dark:text-[#ffffff]">
+              Data-Driven Sustainability Framework
+            </h3>
             <p>
               Data-driven sustainability is the process of making decisions that
               are centered on sustainability and are informed by the collecting,

@@ -7,12 +7,12 @@ import FunFacts from "../components/Common/FunFacts";
 import SolutionsTab from "../components/Common/SolutionsTab";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
-import { ThemeProvider } from "../utils/theme";
+import withMainLayout from "../components/Layouts";
 
 const Index = () => {
   return (
     <div className={"duration-200 --font-inter font-inter"}>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <>
         <Head>
           <title>Home | EnviroByte</title>
           <meta
@@ -37,8 +37,6 @@ const Index = () => {
           />
         </Head>
 
-        <Navbar />
-
         <MainBanner />
 
         <BriefEmissionX />
@@ -48,11 +46,9 @@ const Index = () => {
         <FunFacts />
 
         <SolutionsTab />
-
-        <Footer />
-      </ThemeProvider>
+      </>
     </div>
   );
 };
 
-export default Index;
+export default withMainLayout(Index);

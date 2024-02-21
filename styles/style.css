@@ -398,8 +398,6 @@ Navbar Area CSS
 
 .main-nav .navbar .navbar-nav .nav-item {
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -435,7 +433,6 @@ Navbar Area CSS
 .main-nav .navbar .navbar-nav .nav-item.active a {
   color: #00b0ee;
 }
-
 
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
@@ -683,6 +680,19 @@ Navbar Area CSS
   margin-top: 5px;
 }
 
+.main-nav .navbar .navbar-nav .nav-item .nav-link.signup-btn {
+  background-color: #00b0ee;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .main-nav .navbar .other-option .default-btn.seo-btn {
   padding: 10px 25px;
   font-size: 15px;
@@ -832,7 +842,12 @@ Main Banner Area CSS
   position: relative;
   z-index: 1;
   height: 900px;
-  background: linear-gradient(to bottom, #4b43c5, #385bd5, #2270e2, #0c84ec, #1397f3);
+  background: linear-gradient(to bottom,
+      #4b43c5,
+      #385bd5,
+      #2270e2,
+      #0c84ec,
+      #1397f3);
 }
 
 .main-banner-area .container-fluid {
@@ -1240,7 +1255,12 @@ Main Banner Two Area CSS
   position: relative;
   z-index: 1;
   height: 800px;
-  background: linear-gradient(to bottom, #370b6f, #00429b, #006dba, #0095ce, #2dbcdc);
+  background: linear-gradient(to bottom,
+      #370b6f,
+      #00429b,
+      #006dba,
+      #0095ce,
+      #2dbcdc);
 }
 
 .main-banner-two .container-fluid {
@@ -1344,7 +1364,12 @@ Main Banner Three Area CSS
   position: relative;
   z-index: 1;
   height: 950px;
-  background: linear-gradient(to bottom, #4b43c5, #385bd5, #2270e2, #0c84ec, #1397f3);
+  background: linear-gradient(to bottom,
+      #4b43c5,
+      #385bd5,
+      #2270e2,
+      #0c84ec,
+      #1397f3);
 }
 
 .main-banner-three .banner-image {
@@ -1443,7 +1468,12 @@ Main Banner Four Area CSS
   position: relative;
   z-index: 1;
   height: 900px;
-  background: linear-gradient(to bottom, #4b43c5, #385bd5, #2270e2, #0c84ec, #1397f3);
+  background: linear-gradient(to bottom,
+      #4b43c5,
+      #385bd5,
+      #2270e2,
+      #0c84ec,
+      #1397f3);
 }
 
 .main-banner-four .main-banner-content {
@@ -1578,7 +1608,7 @@ Data Services Section CSS
 }
 
 .data-services-item .single-data-service-box h3 a {
-  color: #0e3496;
+  /* color: #0e3496; */
   display: block;
 }
 
@@ -1744,7 +1774,7 @@ Tabs Solutions Section CSS
 
 .solutions-list-tab .react-tabs__tab-panel .tab-solution-content h3 {
   font-size: 38px;
-  color: #0e3496;
+  /* color: #0e3496; */
   margin: 0 0 14px 0;
 }
 
@@ -3601,6 +3631,10 @@ Projects Details Area CSS
   margin-bottom: 30px;
 }
 
+.dark .project-details-image.emissionxcontent svg g path:first-child {
+  fill: #282828;
+}
+
 .project-details-emissionximage {
   margin-bottom: auto;
   margin-left: 8%;
@@ -3987,11 +4021,12 @@ Coming Soon Area CSS
   width: 100%;
   height: 56px;
   border: none;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 5px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1),
+    0px 0px 0px 5px rgba(255, 255, 255, 0.3);
   border-radius: 40px;
   padding: 15px 25px;
   outline: 0 !important;
-  background: #F1F2F3;
+  background: #f1f2f3;
 }
 
 .coming-soon-content form .submit-btn {
@@ -4565,18 +4600,18 @@ blockquote::after,
   margin-bottom: 5px;
 }
 
-.comments-area .comment-respond input[type=date],
-.comments-area .comment-respond input[type=time],
-.comments-area .comment-respond input[type=datetime-local],
-.comments-area .comment-respond input[type=week],
-.comments-area .comment-respond input[type=month],
-.comments-area .comment-respond input[type=text],
-.comments-area .comment-respond input[type=email],
-.comments-area .comment-respond input[type=url],
-.comments-area .comment-respond input[type=password],
-.comments-area .comment-respond input[type=search],
-.comments-area .comment-respond input[type=tel],
-.comments-area .comment-respond input[type=number],
+.comments-area .comment-respond input[type="date"],
+.comments-area .comment-respond input[type="time"],
+.comments-area .comment-respond input[type="datetime-local"],
+.comments-area .comment-respond input[type="week"],
+.comments-area .comment-respond input[type="month"],
+.comments-area .comment-respond input[type="text"],
+.comments-area .comment-respond input[type="email"],
+.comments-area .comment-respond input[type="url"],
+.comments-area .comment-respond input[type="password"],
+.comments-area .comment-respond input[type="search"],
+.comments-area .comment-respond input[type="tel"],
+.comments-area .comment-respond input[type="number"],
 .comments-area .comment-respond textarea {
   display: block;
   width: 100%;
@@ -4588,18 +4623,18 @@ blockquote::after,
   border-radius: 10px;
 }
 
-.comments-area .comment-respond input[type=date]:focus,
-.comments-area .comment-respond input[type=time]:focus,
-.comments-area .comment-respond input[type=datetime-local]:focus,
-.comments-area .comment-respond input[type=week]:focus,
-.comments-area .comment-respond input[type=month]:focus,
-.comments-area .comment-respond input[type=text]:focus,
-.comments-area .comment-respond input[type=email]:focus,
-.comments-area .comment-respond input[type=url]:focus,
-.comments-area .comment-respond input[type=password]:focus,
-.comments-area .comment-respond input[type=search]:focus,
-.comments-area .comment-respond input[type=tel]:focus,
-.comments-area .comment-respond input[type=number]:focus,
+.comments-area .comment-respond input[type="date"]:focus,
+.comments-area .comment-respond input[type="time"]:focus,
+.comments-area .comment-respond input[type="datetime-local"]:focus,
+.comments-area .comment-respond input[type="week"]:focus,
+.comments-area .comment-respond input[type="month"]:focus,
+.comments-area .comment-respond input[type="text"]:focus,
+.comments-area .comment-respond input[type="email"]:focus,
+.comments-area .comment-respond input[type="url"]:focus,
+.comments-area .comment-respond input[type="password"]:focus,
+.comments-area .comment-respond input[type="search"]:focus,
+.comments-area .comment-respond input[type="tel"]:focus,
+.comments-area .comment-respond input[type="number"]:focus,
 .comments-area .comment-respond textarea:focus {
   border-color: #00b0ee;
 }
@@ -4992,3 +5027,120 @@ Go Top CSS
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*================================================
+Custom Input Field
+=================================================*/
+.custom-form-input {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  border-radius: 0.25rem;
+  padding-right: 1rem;
+  background: transparent;
+}
+
+.error-form {
+  border: 1px solid tomato !important;
+}
+
+/*================================================
+Blogs
+=================================================*/
+.blog-card-container .blog-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.375;
+  letter-spacing: -0.01em;
+}
+
+.blog-card-container .blog-description {
+  color: #737b9a;
+  margin: 10px 0 !important;
+  font-size: 15px;
+}
+
+.blog-card-container .blog-img {
+  height: 250px;
+  width: 100%;
+}
+
+.blog-card-container .tags {
+  background-color: #00b0ee;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+.news-letter-container {
+  background-color: #00b0ee;
+  min-height: 150px;
+  border-radius: 4px;
+  margin-top: 50px;
+}
+
+.news-letter-input {
+  height: 45px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 0 10px;
+  outline: none;
+  background: transparent;
+}
+
+.news-letter-input::placeholder {
+  color: #fff;
+}
+
+.subscribe-btn {
+  background-color: white;
+  color: #00b0ee;
+  border-radius: 4px;
+  height: 45px;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+/*================================================
+Pagination
+=================================================*/
+
+.page-link {
+  border: 0px;
+  border-radius: 50%;
+  padding: 0.5rem 0.85rem;
+  background-color: #737b9a;
+  border-radius: 50px;
+  margin-right: 8px;
+}
+
+.page-link:hover {
+  background-color: #00b0ee;
+  color: white;
+}
+
+.page-item:last-child .page-link,
+.page-item:first-child .page-link {
+  border-radius: 50px;
+}
+
+.pagination {
+  gap: 10px;
+}
+
+.page-item.active .page-link {
+  background: none;
+  border-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  background-color: #00b0ee;
+  border-radius: 50%;
+  border: 1px solid #00b0ee;
+}
+
+.page-item.disabled>.page-link {
+  color: #737b9a !important;
+  background-color: #efefef;
+}

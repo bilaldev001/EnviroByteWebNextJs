@@ -5,6 +5,7 @@ import PMAContent from "../../components/DataScience/PMAContent";
 import Footer from "../../components/Layouts/Footer";
 import Head from "next/head";
 import Script from "next/script";
+import withMainLayout from "../../components/Layouts";
 
 const PredictiveAnalytics = () => {
   return (
@@ -46,7 +47,6 @@ const PredictiveAnalytics = () => {
           content="Envirobyte services are here to help you and your business...Official web site of EnviroByte, located in Calgary, Alberta, Canada."
         />
       </Head>
-      <Navbar />
 
       <PageBanner
         pageTitle="Predictive Analytics"
@@ -57,10 +57,8 @@ const PredictiveAnalytics = () => {
       />
 
       <PMAContent />
-
-      <Footer />
     </>
   );
 };
 
-export default PredictiveAnalytics;
+export default withMainLayout(PredictiveAnalytics);

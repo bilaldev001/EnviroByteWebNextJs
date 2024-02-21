@@ -13,7 +13,7 @@ const Navbar = () => {
   const [top, setTop] = React.useState(true);
 
   const scrollHandler = () => {
-    window.pageYOffset > 170 ? setTop(false) : setTop(true);
+    window.pageYOffset > 70 ? setTop(false) : setTop(true);
   };
 
   React.useEffect(() => {
@@ -25,7 +25,7 @@ const Navbar = () => {
   React.useEffect(() => {
     let elementId = document.getElementById("navbar");
     document.addEventListener("scroll", () => {
-      if (window.scrollY > 170) {
+      if (window.scrollY > 70) {
         elementId.classList.add("is-sticky");
       } else {
         elementId.classList.remove("is-sticky");
@@ -44,7 +44,7 @@ const Navbar = () => {
     <>
       <div
         id="navbar"
-        className={`navbar-area fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out  ${
+        className={`navbar-area fixed w-full z-30 xl:bg-opacity-90 transition duration-300 ease-in-out  ${
           !top
             ? "bg-[#ffffff] dark:bg-[#000000a8] backdrop-blur-sm shadow-lg"
             : ""
@@ -52,7 +52,7 @@ const Navbar = () => {
       >
         <div className="main-nav">
           <div className="container">
-            <nav className="navbar navbar-expand-md navbar-light">
+            <nav className="navbar navbar-expand-xl navbar-light">
               <Link legacyBehavior href="/">
                 <a className="navbar-brand mr-0">
                   <WhiteLogo
@@ -86,10 +86,15 @@ const Navbar = () => {
               </button>
 
               <div className={classOne} id="navbarSupportedContent">
-                <ul className="navbar-nav">
+                <ul className="navbar-nav xl:flex align-items-xl-center align-items-start">
                   <li className="nav-item">
                     <Link legacyBehavior href="/">
                       <a className="nav-link">Home</a>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link legacyBehavior href="/blogs">
+                      <a className="nav-link">Blog</a>
                     </Link>
                   </li>
 
@@ -106,13 +111,18 @@ const Navbar = () => {
                       }`}
                     >
                       <li className="nav-item">
-                        <Link legacyBehavior href="/team" activeClassName="active">
+                        <Link
+                          legacyBehavior
+                          href="/team"
+                          activeClassName="active"
+                        >
                           <a className="nav-link">Team</a>
                         </Link>
                       </li>
 
                       <li className="nav-item">
-                        <Link legacyBehavior
+                        <Link
+                          legacyBehavior
                           href="/data-driven-approach"
                           activeClassName="active"
                         >
@@ -135,7 +145,11 @@ const Navbar = () => {
                       }`}
                     >
                       <li className="nav-item">
-                        <Link legacyBehavior href="/emissionx" activeClassName="active">
+                        <Link
+                          legacyBehavior
+                          href="/emissionx"
+                          activeClassName="active"
+                        >
                           <a className="nav-link" target="_blank">
                             Emission
                           </a>
@@ -143,7 +157,8 @@ const Navbar = () => {
                       </li>
 
                       <li className="nav-item">
-                        <Link legacyBehavior
+                        <Link
+                          legacyBehavior
                           href="/emissionx/life-cycle-assessment"
                           activeClassName="active"
                         >
@@ -152,7 +167,8 @@ const Navbar = () => {
                       </li>
 
                       <li className="nav-item">
-                        <Link legacyBehavior
+                        <Link
+                          legacyBehavior
                           href="/emissionx/climate-change"
                           activeClassName="active"
                         >
@@ -175,7 +191,8 @@ const Navbar = () => {
                       }`}
                     >
                       <li className="nav-item">
-                        <Link legacyBehavior
+                        <Link
+                          legacyBehavior
                           href="/data-science/advanced-data-analytics"
                           activeClassName="active"
                         >
@@ -184,7 +201,8 @@ const Navbar = () => {
                       </li>
 
                       <li className="nav-item">
-                        <Link legacyBehavior
+                        <Link
+                          legacyBehavior
                           href="/data-science/IoT-Air-Quality-Monitoring"
                           activeClassName="active"
                         >
@@ -192,7 +210,8 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link legacyBehavior
+                        <Link
+                          legacyBehavior
                           href="/data-science/predictive-emissions-monitoring"
                           activeClassName="active"
                         >
@@ -200,7 +219,8 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link legacyBehavior
+                        <Link
+                          legacyBehavior
                           href="/data-science/predictive-analytics"
                           activeClassName="active"
                         >
@@ -223,7 +243,8 @@ const Navbar = () => {
                       }`}
                     >
                       <li className="nav-item">
-                        <Link legacyBehavior
+                        <Link
+                          legacyBehavior
                           href="https://ghg.envirobyte.com"
                           activeClassName="active"
                         >
@@ -233,7 +254,8 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link legacyBehavior
+                        <Link
+                          legacyBehavior
                           href="https://airemission.envirobyte.com"
                           activeClassName="active"
                         >
@@ -243,7 +265,8 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link legacyBehavior
+                        <Link
+                          legacyBehavior
                           href="https://steamapp.envirobyte.com"
                           activeClassName="active"
                         >
@@ -256,21 +279,55 @@ const Navbar = () => {
                   </li>
 
                   <li className="nav-item">
-                    <Link legacyBehavior href="/contact" activeClassName="active">
+                    <Link
+                      legacyBehavior
+                      href="/contact"
+                      activeClassName="active"
+                    >
                       <a className="nav-link">Contact Us</a>
+                    </Link>
+                  </li>
+                  <li className="nav-item ">
+                    <Link
+                      legacyBehavior
+                      href="/signin"
+                      activeClassName="active"
+                    >
+                      <a className="nav-link">Sign in</a>
+                    </Link>
+                  </li>
+                  <li className="xl:mx-[12px]">
+                    <Link
+                      legacyBehavior
+                      href="/signup"
+                      activeClassName="active"
+                    >
+                      <a className="nav-link default-btn signup-btn flex items-center justify-center px-3 lg:px-4 w-full lg:w-fit">
+                        Sign up <span></span>
+                      </a>
                     </Link>
                   </li>
 
                   {/*<li className="nav-item">
-                    <Link legacyBehavior   href="https://www.google.ca" activeClassName="active">
-                      <a target="_blank">
-                        Login
-                      </a>
-                    </Link>
-                  </li>*/}
+                      <Link legacyBehavior   href="https://www.google.ca" activeClassName="active">
+                        <a target="_blank">
+                          Login
+                        </a>
+                      </Link>
+                    </li>*/}
                 </ul>
               </div>
               {menu && <ThemeSwitcher />}
+              {/* <div className="nav-item">
+                  <Link legacyBehavior href="/contact" activeClassName="active">
+                    <a className="nav-link">Sign In</a>
+                  </Link>
+                </div>
+                <div className="nav-item">
+                  <Link legacyBehavior href="/contact" activeClassName="active">
+                    <a className="nav-link">Sign Up</a>
+                  </Link>
+                </div> */}
             </nav>
           </div>
         </div>

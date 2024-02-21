@@ -14,11 +14,11 @@ const FunFacts = () => {
               data-aos-once="true"
             >
               <div className="single-fun-fact">
-                <h3>
+                <h3 className="dark:text-[#191919]">
                   500
                   <span className="sign-icon">+</span>
                 </h3>
-                <p>GHG Project</p>
+                <p className="dark:text-[#191919]">GHG Project</p>
               </div>
             </div>
 
@@ -30,11 +30,11 @@ const FunFacts = () => {
               data-aos-once="true"
             >
               <div className="single-fun-fact">
-                <h3>
+                <h3 className="dark:text-[#191919]">
                   10
                   <span className="sign-icon">+</span>
                 </h3>
-                <p>Life Cycle Assessment</p>
+                <p className="dark:text-[#191919]">Life Cycle Assessment</p>
               </div>
             </div>
 
@@ -46,13 +46,11 @@ const FunFacts = () => {
               data-aos-once="true"
             >
               <div className="single-fun-fact">
-                <h3>
+                <h3 className="dark:text-[#191919]">
                   20
                   <span className="sign-icon">+</span>
                 </h3>
-                <p>
-                  Climate Change Adaptation
-                </p>
+                <p className="dark:text-[#191919]">Climate Change Adaptation</p>
               </div>
             </div>
 
@@ -64,11 +62,11 @@ const FunFacts = () => {
               data-aos-once="true"
             >
               <div className="single-fun-fact">
-                <h3>
+                <h3 className="dark:text-[#191919]">
                   120
                   <span className="sign-icon">+</span>
                 </h3>
-                <p>Big Data</p>
+                <p className="dark:text-[#191919]">Big Data</p>
               </div>
             </div>
           </div>

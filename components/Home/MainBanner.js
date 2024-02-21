@@ -1,7 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import DDSLogo from "../../public/images/main-banner-shape/DataDriven.svg";
+import { useTheme } from "next-themes";
+
 const MainBanner = () => {
+  const theme = useTheme();
+  console.log(theme.theme);
   return (
     <>
       <div className="main-banner-three">
@@ -17,7 +21,7 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                       data-aos-once="true"
                     >
-                      <h1 className="dark:text-[#191919] duration-200 text-4xl md:text-5xl lg:text-[5rem] xl:text-6xl font-extrabold leading-tighter tracking-tighter">
+                      <h1 className="text-4xl md:text-5xl lg:text-[5rem] xl:text-6xl font-extrabold leading-tighter tracking-tighter">
                         Data-driven Sustainability
                       </h1>
                     </div>
@@ -28,7 +32,7 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                       data-aos-once="true"
                     >
-                      <p className="dark:text-[#282828] duration-200 ">
+                      <p>
                         EnviroByte applies data-driven methods with
                         environmental science, software engineering, and machine
                         learning to increase efficiency and effectiveness of
@@ -46,7 +50,7 @@ const MainBanner = () => {
                     >
                       <div className="banner-btn">
                         <Link legacyBehavior href="/about-us">
-                          <a className="default-btn-one dark:bg-[#282828]">
+                          <a className="default-btn-one  transition">
                             About Us <span></span>
                           </a>
                         </Link>
@@ -76,7 +80,14 @@ const MainBanner = () => {
 
         {/* Shape Images */}
         <div className="creative-shape">
-          <img src="/images/main-banner-shape/home-shape-3.png" alt="Image" />
+          <img
+            src={`/images/main-banner-shape/${
+              theme.theme === "light"
+                ? "home-shape-3.png"
+                : "home-shape-3-dark.png"
+            } `}
+            alt="Image"
+          />
         </div>
         <div className="shape-img1">
           <img

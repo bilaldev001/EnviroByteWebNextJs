@@ -5,10 +5,11 @@ import Footer from "../components/Layouts/Footer";
 import DataDrivenApproachContent from "../components/About/DataDrivenApproachContent";
 import Head from "next/head";
 import Script from "next/script";
+import withMainLayout from "../components/Layouts";
 
 const DataDrivenApproach = () => {
   return (
-    <>
+    <div>
       <Head>
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <Script id="google-analytics" strategy="afterInteractive">
@@ -52,7 +53,6 @@ const DataDrivenApproach = () => {
           content="EmissionX™ with easy verification and assurance in mind to meet SOC 2 requirements for various environmental reporting, such as Corporate Sustainability (ESG) reporting."
         />
       </Head>
-      <Navbar />
 
       <PageBanner
         pageTitle="Data Driven Approach"
@@ -63,10 +63,8 @@ const DataDrivenApproach = () => {
       />
 
       <DataDrivenApproachContent />
-
-      <Footer />
-    </>
+    </div>
   );
 };
 
-export default DataDrivenApproach;
+export default withMainLayout(DataDrivenApproach);

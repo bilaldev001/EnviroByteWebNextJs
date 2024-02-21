@@ -41,7 +41,6 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:image" content="/Favicon_20221121.png" />
       </Head>
-
       <Component {...pageProps} />
       <Analytics />
       {/* Go Top Button */}

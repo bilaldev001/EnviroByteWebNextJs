@@ -8,7 +8,7 @@ import IOTAQMLogo from "../../public/images/solution-tab/IoT_AQM.svg";
 const SolutionsTab = () => {
   return (
     <>
-      <div className="tab-section ptb-100">
+      <div className="tab-section ptb-100 dark:bg-[#282828] transition">
         <div className="container">
           <div className="solutions-list-tab">
             <Tabs>
@@ -24,7 +24,9 @@ const SolutionsTab = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
-                      <h3>Advanced Data Analytics</h3>
+                      <h3 className="dark:text-[#ffffff]">
+                        Advanced Data Analytics
+                      </h3>
                       <p>
                         In this project, we extracted actual operating data from
                         a public database- Petrinex (Canada’s Petroleum
@@ -51,7 +53,10 @@ const SolutionsTab = () => {
                       </ul>
 
                       <div className="tab-btn">
-                        <Link legacyBehavior href="/data-science/advanced-data-analytics">
+                        <Link
+                          legacyBehavior
+                          href="/data-science/advanced-data-analytics"
+                        >
                           <a className="default-btn">
                             Read More <span></span>
                           </a>
@@ -78,7 +83,9 @@ const SolutionsTab = () => {
 
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
-                      <h3>Air emissions/quality monitoring by</h3>
+                      <h3 className="dark:text-[#ffffff]">
+                        Air emissions/quality monitoring by
+                      </h3>
                       <h3>cost-effective sensors</h3>
                       <p>
                         We calibrated a low-cost particle sensor using machine
@@ -105,7 +112,10 @@ const SolutionsTab = () => {
                       </ul>
 
                       <div className="tab-btn">
-                        <Link legacyBehavior href="/data-science/IoT-Air-Quality-Monitoring">
+                        <Link
+                          legacyBehavior
+                          href="/data-science/IoT-Air-Quality-Monitoring"
+                        >
                           <a className="default-btn">
                             Read More <span></span>
                           </a>
@@ -146,7 +156,10 @@ const SolutionsTab = () => {
                       </ul>
 
                       <div className="tab-btn">
-                        <Link legacyBehavior href="/data-science/predictive-emissions-monitoring">
+                        <Link
+                          legacyBehavior
+                          href="/data-science/predictive-emissions-monitoring"
+                        >
                           <a className="default-btn">
                             Read More <span></span>
                           </a>
@@ -201,7 +214,10 @@ const SolutionsTab = () => {
                       </ul>
 
                       <div className="tab-btn">
-                        <Link legacyBehavior href="/data-science/predictive-analytics">
+                        <Link
+                          legacyBehavior
+                          href="/data-science/predictive-analytics"
+                        >
                           <a className="default-btn">
                             Read More <span></span>
                           </a>

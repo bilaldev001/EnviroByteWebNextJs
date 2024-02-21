@@ -7,6 +7,7 @@ import GetStartedProject from "../components/Common/GetStartedProject";
 import Head from "next/head";
 import Footer from "../components/Layouts/Footer";
 import Script from "next/script";
+import withMainLayout from "../components/Layouts";
 
 const EmissionX = () => {
   return (
@@ -53,7 +54,6 @@ const EmissionX = () => {
         <meta property="og:locale" content="en" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
-      <Navbar />
 
       <PageBanner
         pageTitle="EmissionX"
@@ -70,10 +70,8 @@ const EmissionX = () => {
       {/* <div className="pb-100">
         <GetStartedProject />
       </div> */}
-
-      <Footer />
     </>
   );
 };
 
-export default EmissionX;
+export default withMainLayout(EmissionX);

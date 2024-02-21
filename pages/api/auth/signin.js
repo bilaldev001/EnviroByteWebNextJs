@@ -13,7 +13,7 @@ export default async function POST(req, res, next) {
     });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: "Internal Server Error" });
+    res.status(500).json({ message: 'Internal Server Error' });
   }
   if (!existingUser) {
     return res.status(401).json({ message: "Invalid email" });

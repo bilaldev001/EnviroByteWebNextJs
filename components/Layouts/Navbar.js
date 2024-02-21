@@ -4,6 +4,16 @@ import WhiteLogo from "../../public/images/logo/whitemark.svg";
 import BlackLogo from "../../public/images/logo/blackmarkv2.svg";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
+const about = [
+  {
+    name: "Team",
+    href: "/team",
+  },
+  {
+    name: "Data Driven Approach",
+    href: "/data-driven-approach",
+  },
+];
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true);
   const toggleNavbar = () => {
@@ -63,7 +73,7 @@ const Navbar = () => {
                   />
                   <BlackLogo
                     className="black-logo"
-                    width={170}
+                    width={150}
                     height={30}
                     alt="logo"
                   />
@@ -98,7 +108,7 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                  <li className="nav-item">
+                  <li className="nav-item relative">
                     <Link legacyBehavior href="#" activeClassName="active">
                       <a className="nav-link">
                         About <i className="fas fa-chevron-down"></i>
@@ -106,29 +116,21 @@ const Navbar = () => {
                     </Link>
 
                     <ul
-                      className={`dropdown-menu ${
+                      className={`dropdown-menu px-4 sm:px-0 ${
                         !menu ? "shadow-none m-0" : ""
                       }`}
                     >
-                      <li className="nav-item">
-                        <Link
-                          legacyBehavior
-                          href="/team"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">Team</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          legacyBehavior
-                          href="/data-driven-approach"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">Data Driven Approach</a>
-                        </Link>
-                      </li>
+                      {about.map((data, index) => (
+                        <li className="nav-item" key={index}>
+                          <Link
+                            legacyBehavior
+                            href={data.href}
+                            activeClassName="active"
+                          >
+                            <a className="nav-link">{data.name}</a>
+                          </Link>
+                        </li>
+                      ))}
                     </ul>
                   </li>
 

@@ -12,6 +12,7 @@ export default async function POST(req, res) {
                 email: email,
             },
      } )
+     
      if(existingData){
       return  res.status(409).json({ message: 'you already subscribed' });
 

@@ -14,7 +14,7 @@ export default async function POST(req,res,next) {
       },
     });
   } catch (err) {
-    console.error(error);
+    console.error(err);
     res.status(500).json({ message: 'Internal Server Error' });
   }
   if (!existingUser) {

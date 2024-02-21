@@ -445,9 +445,12 @@ Navbar Area CSS
   border-bottom: 10px solid white;
 }
 
+.dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu::after {
+  border-bottom: 10px solid #282828;
+}
+
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-  background: #ffffff;
   position: absolute;
   border: none;
   top: 80px;
@@ -455,7 +458,6 @@ Navbar Area CSS
   transform: translateX(-50%);
   width: max-content;
   z-index: 99;
-  display: block;
   opacity: 0;
   visibility: hidden;
   border-radius: 1rem;
@@ -471,10 +473,13 @@ Navbar Area CSS
   padding: 0;
 }
 
+.dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+  color: #666666 !important;
+}
+
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
   text-transform: none;
   padding: 8px 15px;
-  padding-left: 0;
   margin: 0;
   position: relative;
   color: #0e3496;

@@ -5,6 +5,7 @@ import PageBanner from "../../components/Common/PageBanner";
 import DummyBlogs from "../../components/Blogs/DummyBlogs.json";
 import BlogDetail from "../../components/Blogs/BlogDetail";
 import withMainLayout from "../../components/Layouts";
+import ToastContainer from "../../components/Shared/Toast";
 
 const BlogDetails = () => {
   const router = useRouter();
@@ -34,6 +35,7 @@ const BlogDetails = () => {
           content="EnviroByte uses CI/CD to automate the process of calculating GHG emissions for Alberta TIER, BC GHG regulation, ECCC GHGRP, ECCC NPRI."
         />
       </Head>
+      <ToastContainer />
       <PageBanner
         pageTitle={blogData?.title}
         breadcrumbTextOne="Home"

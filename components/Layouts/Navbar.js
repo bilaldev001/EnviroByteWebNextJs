@@ -3,8 +3,8 @@ import Link from "../../utils/ActiveLink";
 import WhiteLogo from "../../public/images/logo/whitemark.svg";
 import BlackLogo from "../../public/images/logo/blackmarkv2.svg";
 import { ThemeSwitcher } from "./ThemeSwitcher";
-import { useDispatch, useSelector } from "react-redux";
 import { logoutUser } from "../Redux/slices/AuthSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const about = [
   {
@@ -15,6 +15,57 @@ const about = [
     name: "Data Driven Approach",
     href: "/data-driven-approach",
   },
+];
+const emission = [
+  {
+    name: "Emission",
+    href: "/emissionx",
+    target: "_blank",
+  },
+  {
+    name: "Life Cycle Assessment",
+    href: "/emissionx/life-cycle-assessment",
+  },
+  {
+    name: "Climate Change",
+    href: "/emissionx/climate-change",
+  },
+];
+const dataScienceLinks = [
+  {
+    name: "Advanced Data Analytics",
+    href: "/data-science/advanced-data-analytics",
+  },
+  {
+    name: "IoT Air Quality Monitoring",
+    href: "/data-science/IoT-Air-Quality-Monitoring",
+  },
+  {
+    name: "OpenPEMS™",
+    href: "/data-science/predictive-emissions-monitoring",
+  },
+  {
+    name: "Predictive Analytics",
+    href: "/data-science/predictive-analytics",
+  },
+];
+const externalLinks = [
+  {
+    name: "Emission Factor Hub",
+    href: "https://ghg.envirobyte.com",
+    target: "_blank",
+  },
+  {
+    name: "Air Emission Factor Hub",
+    href: "https://airemission.envirobyte.com",
+    target: "_blank",
+  },
+  {
+    name: "Steam App",
+    href: "https://steamapp.envirobyte.com",
+    target: "_blank",
+  },
+  // Add more items as needed
 ];
 const Navbar = () => {
   const isAuthenticated = useSelector((state) => state?.auth?.isAuthenticated);
@@ -62,7 +113,7 @@ const Navbar = () => {
     <>
       <div
         id="navbar"
-        className={`navbar-area fixed w-full z-30 xl:bg-opacity-90 transition duration-300 ease-in-out  ${
+        className={`navbar-area fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out  ${
           !top
             ? "bg-[#ffffff] dark:bg-[#000000a8] backdrop-blur-sm shadow-lg"
             : ""
@@ -70,7 +121,7 @@ const Navbar = () => {
       >
         <div className="main-nav">
           <div className="container">
-            <nav className="navbar navbar-expand-xl navbar-light">
+            <nav className="navbar navbar-expand-md navbar-light">
               <Link legacyBehavior href="/">
                 <a className="navbar-brand mr-0">
                   <WhiteLogo
@@ -104,7 +155,7 @@ const Navbar = () => {
               </button>
 
               <div className={classOne} id="navbarSupportedContent">
-                <ul className="navbar-nav xl:flex align-items-xl-center align-items-start">
+                <ul className="navbar-nav md:flex align-items-md-center align-items-start">
                   <li className="nav-item">
                     <Link legacyBehavior href="/">
                       <a className="nav-link">Home</a>
@@ -121,30 +172,106 @@ const Navbar = () => {
                   <li className="nav-item relative">
                     <Link legacyBehavior href="#" activeClassName="active">
                       <a className="nav-link">
-                        About <i className="fas fa-chevron-down"></i>
+                        Features <i className="fas fa-chevron-down"></i>
                       </a>
                     </Link>
 
                     <ul
-                      className={`dropdown-menu px-4 sm:px-0 ${
+                      className={`dropdown-menu px-4 sm:px-0 grid sm:grid-cols-2 md:mt-0 mt-3 sm:divide-x gap-3 dark:bg-[#282828] bg-[#ffffff] ${
                         !menu ? "shadow-none m-0" : ""
                       }`}
                     >
-                      {about.map((data, index) => (
-                        <li className="nav-item" key={index}>
-                          <Link
-                            legacyBehavior
-                            href={data.href}
-                            activeClassName="active"
-                          >
-                            <a className="nav-link">{data.name}</a>
-                          </Link>
-                        </li>
-                      ))}
+                      <div className="flex flex-col gap-3">
+                        <div>
+                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#ffffff]">
+                            EmissionX
+                          </h3>
+
+                          {emission.map((data, index) => (
+                            <li className="nav-item" key={index}>
+                              <Link
+                                legacyBehavior
+                                href={data.href}
+                                activeClassName="active"
+                              >
+                                <a
+                                  className="nav-link pl-[16px]"
+                                  target={data.target}
+                                >
+                                  {data.name}
+                                </a>
+                              </Link>
+                            </li>
+                          ))}
+                        </div>
+                        <div>
+                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#ffffff]">
+                            Data Science
+                          </h3>
+
+                          {dataScienceLinks.map((data, index) => (
+                            <li className="nav-item" key={index}>
+                              <Link
+                                legacyBehavior
+                                href={data.href}
+                                activeClassName="active"
+                              >
+                                <a
+                                  className="nav-link pl-[16px]"
+                                  target={data.target}
+                                >
+                                  {data.name}
+                                </a>
+                              </Link>
+                            </li>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="sm:pl-3 flex flex-col gap-3">
+                        <div>
+                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#ffffff]">
+                            App
+                          </h3>
+                          {externalLinks.map((data, index) => (
+                            <li className="nav-item" key={index}>
+                              <Link
+                                legacyBehavior
+                                href={data.href}
+                                activeClassName="active"
+                              >
+                                <a
+                                  className="nav-link pl-[16px]"
+                                  target={data.target}
+                                >
+                                  {data.name}
+                                </a>
+                              </Link>
+                            </li>
+                          ))}
+                        </div>
+                        <div>
+                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#ffffff]">
+                            About
+                          </h3>
+                          {about.map((data, index) => (
+                            <li className="nav-item" key={index}>
+                              <Link
+                                legacyBehavior
+                                href={data.href}
+                                activeClassName="active"
+                              >
+                                <a className="nav-link pl-[16px]">
+                                  {data.name}
+                                </a>
+                              </Link>
+                            </li>
+                          ))}
+                        </div>
+                      </div>
                     </ul>
                   </li>
 
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link legacyBehavior href="#">
                       <a className="nav-link">
                         EmissionX <i className="fas fa-chevron-down"></i>
@@ -288,7 +415,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
 
                   <li className="nav-item">
                     <Link
@@ -301,7 +428,7 @@ const Navbar = () => {
                   </li>
                   {isAuthenticated ? (
                     <>
-                      <li className="xl:mx-[12px]" onClick={handleLogout}>
+                      <li className="md:mx-[12px]" onClick={handleLogout}>
                         <a className="nav-link default-btn signup-btn flex items-center justify-center px-3 lg:px-4 w-full lg:w-fit cursor-pointer">
                           Sign Out <span></span>
                         </a>
@@ -318,7 +445,7 @@ const Navbar = () => {
                           <a className="nav-link">Sign in</a>
                         </Link>
                       </li>
-                      <li className="xl:mx-[12px]">
+                      <li className="md:mx-[12px]">
                         <Link
                           legacyBehavior
                           href="/signup"

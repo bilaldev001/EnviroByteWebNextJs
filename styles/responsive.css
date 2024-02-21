@@ -913,18 +913,6 @@
   }
 }
 
-@media only screen and (min-width:1200px) and (max-width:1280px) {
-
-  .main-nav .navbar .navbar-nav .nav-item a {
-    margin: 0 12px;
-  }
-
-  .navbar .themebutton {
-    right: -3rem !important;
-  }
-
-}
-
 @media only screen and (min-width:1200px) {
   .dark .navbar-area.is-sticky .navbar-nav .dropdown-menu .nav-item a {
     color: #0e3496 !important;
@@ -935,7 +923,11 @@
   }
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:768px) {
+  .main-nav .navbar .navbar-nav .nav-item .dropdown-menu::after {
+    display: none !important;
+  }
+
   .navbar-area {
     background-color: #ffffff !important;
   }

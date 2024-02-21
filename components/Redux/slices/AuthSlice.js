@@ -38,11 +38,28 @@ export const loginUser = createAsyncThunk(
   }
 );
 
+// Login User
+export const blogCount = createAsyncThunk(
+  "blogs",
+  async ({ setValidation }, thunkAPI) => {
+    try {
+      let response = await axios.post(`/api/blogs`);
+      setValidation(response.data.validation);
+      return response.data;
+    } catch (error) {
+      console.log(error);
+      let message = error.response?.data?.message;
+      return thunkAPI.rejectWithValue(message);
+    }
+  }
+);
+
 let initialState = {
   user: null,
   isAuthenticated: false,
   error: null,
   loading: false,
+  blogCountData: null,
 };
 
 export const AuthSlice = createSlice({
@@ -84,6 +101,19 @@ export const AuthSlice = createSlice({
       .addCase(loginUser.rejected, (state, action) => {
         state.user = null;
         state.isAuthenticated = false;
+        state.error = action.payload;
+        state.loading = false;
+      })
+      .addCase(blogCount.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(blogCount.fulfilled, (state, action) => {
+        state.blogCountData = action.payload;
+        state.error = null;
+        state.loading = false;
+      })
+      .addCase(blogCount.rejected, (state, action) => {
+        state.blogCountData = { validation: false };
         state.error = action.payload;
         state.loading = false;
       });

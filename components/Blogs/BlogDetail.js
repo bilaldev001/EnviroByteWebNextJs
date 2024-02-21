@@ -5,6 +5,8 @@ import { Dialog, Transition } from "@headlessui/react";
 import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/router";
+import { useDispatch, useSelector } from "react-redux";
+import { blogCount } from "../Redux/slices/AuthSlice";
 
 const tagColor = (tag) => {
   switch (tag) {
@@ -23,18 +25,14 @@ const tagColor = (tag) => {
 
 const BlogDetail = (props) => {
   const { blogData } = props;
-  const [validation, setValidation] = useState();
   const router = useRouter();
-
+  const dispatch = useDispatch();
+  const blogCountData = useSelector((state) => state?.auth?.blogCountData);
+  const [validation, setValidation] = useState(blogCountData?.validation);
+  console.log(validation);
   useEffect(() => {
     const handleSubmit = async () => {
-      try {
-        const response = await axios.post("/api/blogs");
-        setValidation(response?.data?.validation);
-      } catch (error) {
-        setValidation(false);
-        console.error(error);
-      }
+      dispatch(blogCount(setValidation));
     };
 
     if (router.isReady) {

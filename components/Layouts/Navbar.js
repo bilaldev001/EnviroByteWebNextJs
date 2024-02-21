@@ -3,6 +3,8 @@ import Link from "../../utils/ActiveLink";
 import WhiteLogo from "../../public/images/logo/whitemark.svg";
 import BlackLogo from "../../public/images/logo/blackmarkv2.svg";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import { useDispatch, useSelector } from "react-redux";
+import { logoutUser } from "../Redux/slices/AuthSlice";
 
 const about = [
   {
@@ -15,6 +17,8 @@ const about = [
   },
 ];
 const Navbar = () => {
+  const isAuthenticated = useSelector((state) => state?.auth?.isAuthenticated);
+  const dispatch = useDispatch();
   const [menu, setMenu] = React.useState(true);
   const toggleNavbar = () => {
     setMenu(!menu);
@@ -24,6 +28,10 @@ const Navbar = () => {
 
   const scrollHandler = () => {
     window.pageYOffset > 70 ? setTop(false) : setTop(true);
+  };
+
+  const handleLogout = () => {
+    dispatch(logoutUser());
   };
 
   React.useEffect(() => {
@@ -102,11 +110,13 @@ const Navbar = () => {
                       <a className="nav-link">Home</a>
                     </Link>
                   </li>
-                  <li className="nav-item">
-                    <Link legacyBehavior href="/blogs">
-                      <a className="nav-link">Blog</a>
-                    </Link>
-                  </li>
+                  {isAuthenticated && (
+                    <li className="nav-item">
+                      <Link legacyBehavior href="/blogs">
+                        <a className="nav-link">Blog</a>
+                      </Link>
+                    </li>
+                  )}
 
                   <li className="nav-item relative">
                     <Link legacyBehavior href="#" activeClassName="active">
@@ -289,26 +299,38 @@ const Navbar = () => {
                       <a className="nav-link">Contact Us</a>
                     </Link>
                   </li>
-                  <li className="nav-item ">
-                    <Link
-                      legacyBehavior
-                      href="/signin"
-                      activeClassName="active"
-                    >
-                      <a className="nav-link">Sign in</a>
-                    </Link>
-                  </li>
-                  <li className="xl:mx-[12px]">
-                    <Link
-                      legacyBehavior
-                      href="/signup"
-                      activeClassName="active"
-                    >
-                      <a className="nav-link default-btn signup-btn flex items-center justify-center px-3 lg:px-4 w-full lg:w-fit">
-                        Sign up <span></span>
-                      </a>
-                    </Link>
-                  </li>
+                  {isAuthenticated ? (
+                    <>
+                      <li className="xl:mx-[12px]" onClick={handleLogout}>
+                        <a className="nav-link default-btn signup-btn flex items-center justify-center px-3 lg:px-4 w-full lg:w-fit cursor-pointer">
+                          Sign Out <span></span>
+                        </a>
+                      </li>
+                    </>
+                  ) : (
+                    <>
+                      <li className="nav-item ">
+                        <Link
+                          legacyBehavior
+                          href="/signin"
+                          activeClassName="active"
+                        >
+                          <a className="nav-link">Sign in</a>
+                        </Link>
+                      </li>
+                      <li className="xl:mx-[12px]">
+                        <Link
+                          legacyBehavior
+                          href="/signup"
+                          activeClassName="active"
+                        >
+                          <a className="nav-link default-btn signup-btn flex items-center justify-center px-3 lg:px-4 w-full lg:w-fit">
+                            Sign up <span></span>
+                          </a>
+                        </Link>
+                      </li>
+                    </>
+                  )}
 
                   {/*<li className="nav-item">
                       <Link legacyBehavior   href="https://www.google.ca" activeClassName="active">

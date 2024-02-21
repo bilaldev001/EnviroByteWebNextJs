@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/router";
-import axios from "axios";
 import TextField from "../Shared/InputField";
 import Spinner from "../Utils/Spinner";
-import { toast } from "react-toastify";
+import { useDispatch, useSelector } from "react-redux";
+
+import { loginUser } from "../Redux/slices/AuthSlice";
 
 const SigninForm = () => {
-  const [isLoading, setLoading] = useState(false);
   const router = useRouter();
+  const disptach = useDispatch();
+  const loading = useSelector((state) => state?.auth?.loading);
+
   // Login Form Initial Values
   const initialValues = {
     email: "",
@@ -24,23 +27,11 @@ const SigninForm = () => {
 
   // Form Submission
   const handleSubmit = async (values, { resetForm }) => {
-    try {
-      let formData = {
-        email: values?.email,
-        password: values?.password,
-      };
-      setLoading(true);
-      const response = await axios.post("/api/auth/signin", formData);
-      toast.success(response?.data?.message);
-      setLoading(false);
-      resetForm({
-        values: "",
-      });
-    } catch (error) {
-      console.log(error.response?.data?.message);
-      toast.error(error.response?.data?.message);
-      setLoading(false);
-    }
+    let formData = {
+      email: values?.email,
+      password: values?.password,
+    };
+    disptach(loginUser({ formData, router }));
   };
 
   return (
@@ -73,7 +64,7 @@ const SigninForm = () => {
                 placeholder="Enter your password"
               />
               <button className="signin-btn default-btn w-full rounded">
-                {isLoading ? <Spinner /> : "Sign In"} <span></span>
+                {loading ? <Spinner /> : "Sign In"} <span></span>
               </button>
             </Form>
           )}

@@ -18,7 +18,7 @@ const BlogsComponent = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
           {DummyBlogs.data.length &&
             DummyBlogs.data.map((data, index) => (
-              <BlogCard data={data} key={index} onBlogClick={handleBlogClick} />
+              <BlogCard data={data} key={index} />
             ))}
         </div>
 

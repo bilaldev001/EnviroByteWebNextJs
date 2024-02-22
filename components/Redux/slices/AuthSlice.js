@@ -41,10 +41,10 @@ export const loginUser = createAsyncThunk(
 // Login User
 export const blogCount = createAsyncThunk(
   "blogs",
-  async ({ setValidation }, thunkAPI) => {
+  async (setValidation, thunkAPI) => {
     try {
       let response = await axios.post(`/api/blogs`);
-      setValidation(response.data.validation);
+      setValidation(response?.data?.validation);
       return response.data;
     } catch (error) {
       console.log(error);

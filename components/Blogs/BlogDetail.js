@@ -29,12 +29,10 @@ const BlogDetail = (props) => {
   const dispatch = useDispatch();
   const blogCountData = useSelector((state) => state?.auth?.blogCountData);
   const [validation, setValidation] = useState(blogCountData?.validation);
-  console.log(validation);
   useEffect(() => {
     const handleSubmit = async () => {
       dispatch(blogCount(setValidation));
     };
-
     if (router.isReady) {
       handleSubmit();
     }

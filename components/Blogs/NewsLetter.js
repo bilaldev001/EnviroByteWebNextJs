@@ -10,8 +10,11 @@ const NewsLetter = () => {
     e.preventDefault();
     try {
       console.log(email);
+      let data = {
+        email,
+      };
       setLoading(true);
-      const response = await axios.post("/api/newsletter", email);
+      const response = await axios.post("/api/newsletter", data);
       setLoading(false);
       toast.success(response?.data?.message);
     } catch (error) {

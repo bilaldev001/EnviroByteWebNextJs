@@ -8,14 +8,14 @@ const BlogsComponent = () => {
   const [currentPage, setCurrentPage] = useState(0);
 
   return (
-    <div className="bg-[#ffffff] dark:bg-[#282828] transition">
+    <div className="bg-[#ffffff] dark:bg-[#151719] transition">
       <div className="pt-100 pb-70 container mx-auto">
         {/* Heading */}
         <div className="section-title">
           <h2 className="dark:text-[#ffffff]">Latest Articles</h2>
         </div>
         {/* Blogs Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
           {DummyBlogs.data.length &&
             DummyBlogs.data.map((data, index) => (
               <BlogCard data={data} key={index} />

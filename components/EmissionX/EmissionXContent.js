@@ -4,7 +4,7 @@ import IoTLogo from "../../public/images/datascience/IoT.svg";
 const EmissionXContent = () => {
   return (
     <>
-      <div className="project-details-area ptb-100 dark:bg-[#282828]">
+      <div className="project-details-area ptb-100 dark:bg-[#151719]">
         <div className="container">
           <div className="projects-details-desc">
             <h3 className="dark:text-[#ffffff]">Why We Do This</h3>
@@ -16,7 +16,7 @@ const EmissionXContent = () => {
               height="400"
             />
 
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               On May 30, 2007, Steve Jobs and Bill Gates joined together for an
               interview at the{" "}
               <a
@@ -29,7 +29,7 @@ const EmissionXContent = () => {
               . Gates explained why and how Apple and Microsoft developed their
               products, he said:
             </p>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               “Steve gave a speech once, which was one of my favorites where he
               talked about, in a certain sense, we build the products that we
               want to use ourselves.”
@@ -42,7 +42,7 @@ const EmissionXContent = () => {
                 See the video
               </a>
             </p>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Our team has been performing GHG reporting and verifications for
               over 10 years, and in that time have become frustrated and left
               wondering about the software that was being used for regulatory
@@ -51,7 +51,7 @@ const EmissionXContent = () => {
               Technology Innovation and Emissions Reduction (TIER), and other
               GHG reporting programs.
             </p>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               The black box nature of some software presents challenges for
               reporters, verifiers, and auditors to do their jobs. This results
               in the reporting company investing greater amounts of manpower and
@@ -60,7 +60,7 @@ const EmissionXContent = () => {
               reporting software does not consider the differences between
               jurisdictions, facilities, and industries.
             </p>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               We designed EmissionX&trade; with easy verification and assurance
               in mind by integrating data science tools (e.g., Jupyter Lab) with
               CI/CD processes, offering the most flexibility, transparency, and
@@ -69,7 +69,7 @@ const EmissionXContent = () => {
               do their own, in-house, analysis and dashboard reporting.
             </p>
 
-            <text>
+            <text className="dark:text-[#9BA9B4]">
               EmissionX&trade; is programed for many different regulatory and
               voluntary reporting frameworks, including but not limited to:
               <p></p>

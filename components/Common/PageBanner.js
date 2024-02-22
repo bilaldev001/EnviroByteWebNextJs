@@ -11,7 +11,7 @@ const PageBanner = ({
   return (
     <>
       <div
-        className="page-title-area"
+        className="page-title-area dark:bg-[#25282C] transition"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <div className="d-table">

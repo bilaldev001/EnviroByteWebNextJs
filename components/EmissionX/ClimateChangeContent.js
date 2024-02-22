@@ -4,17 +4,17 @@ import Link from "next/link";
 const ClimateChangeContent = () => {
   return (
     <>
-      <div className="project-details-area ptb-100 dark:bg-[#282828]">
+      <div className="project-details-area ptb-100 dark:bg-[#151719]">
         <div className="container">
           <div className="projects-details-desc">
             <h3 className="dark:text-[#ffffff]">Climate Change Adaptation</h3>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Adaptation involves changing human and natural systems to respond
               to the future impacts of climate change. In other words,
               adaptation is an attempt to address the effects of a problem.
             </p>
 
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               We begin by raising awareness of the need for climate adaptation.
               Preliminary climate change vulnerability or risk assessments are
               the first step for your organization. We will then discuss your
@@ -28,12 +28,12 @@ const ClimateChangeContent = () => {
               transition to a more climate-conscious business.
             </p>
             <h3 className="dark:text-[#ffffff]">Climate Change Mitigation</h3>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Mitigation strategy is one that aim to reduce greenhouse gas
               emissions that contribute to climate change. In other words,
               mitigation helps to address the cause of the problem.
             </p>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Our climate change mitigation services help clients by working on
               emissions reduction opportunities. We assist clients in converting
               well-thought-out solutions into practical implementation. We are
@@ -44,7 +44,7 @@ const ClimateChangeContent = () => {
               Lens Assessment Guidelines that Infrastructure Canada developed in
               2019 and 2020, or even voluntary programs.
             </p>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Our GHG offset project development and benefits analysis help to
               monetize efforts to mitigate GHG emissions. With third-party
               validation, verification, and agreed-upon services for reporting
@@ -55,13 +55,13 @@ const ClimateChangeContent = () => {
             <h3 className="dark:text-[#ffffff]">
               Climate change risk assessment
             </h3>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Climate risk assessments identify the likelihood of future climate
               hazards and their potential impacts on cities and their
               communities. This is fundamental for informing the prioritization
               of climate action and investment in adaptation.
             </p>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               We can assist clients in conducting climate change risk
               assessments that adhere to international standards such as ISO
               14090:2019 Adaptation to Climate Change: Principles, Requirements,
@@ -77,7 +77,7 @@ const ClimateChangeContent = () => {
             <h3 className="dark:text-[#ffffff]">
               Task-Force on Climate-Related Financial Disclosures
             </h3>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Disclosure is the keyword of the 2020s. The Financial Stability
               Board established the Task-Force on Climate-Related Financial
               Disclosures. With guidance from over 30 business leaders, TCFD
@@ -87,7 +87,7 @@ const ClimateChangeContent = () => {
               transitional risk assessment and management processes for your
               business and throughout your value chain.
             </p>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               TCFD has led Securities Commissions around the world to plan for
               and implement mandatory disclosure programs. The US government,
               the world’s largest procurer of goods and services, will soon

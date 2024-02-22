@@ -4,14 +4,14 @@ import ADALogo from "../../public/images/datascience/ADA2.svg";
 
 const ADAContent = () => {
   return (
-    <div className="project-details-area ptb-100 dark:bg-[#282828]">
+    <div className="project-details-area ptb-100 dark:bg-[#151719]">
       <div className="container">
         <div className="projects-details-desc">
           <h3 className="dark:text-[#ffffff]">
             Fuel Consumption Analysis for Canadian In Situ Oil Sands Extraction
           </h3>
           <div className="row align-items-center">
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Greenhouse gas (GHG) emissions from the oil and gas (O&G) sector
               account for approximately 10% of global anthropogenic GHG
               emissions, and emission mitigation has an important role in
@@ -23,7 +23,7 @@ const ADAContent = () => {
               extraction.
             </p>
             <br />
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               A better understanding of fuel use and greenhouse gas (GHG)
               emissions resulting from Canadian oil sands (bitumen) extraction
               can help to meet the global carbon budget and design effective
@@ -34,7 +34,7 @@ const ADAContent = () => {
               to control GHG emissions.
             </p>
             <br />
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               In this project, we extracted actual operating data from a public
               database- Petrinex (Canada’s Petroleum Information Network), which
               contains more than 35 million records for 18 in situ oil sands
@@ -60,10 +60,10 @@ const ADAContent = () => {
           </div>
           <div className="project-details-image">
             <ADALogo alt="image" />
-            <figcaption className="text-center">
+            <figcaption className="text-center dark:text-[#9BA9B4] mt-3">
               Scheme-specific emissions intensity between 2015 and 2019.
             </figcaption>
-            <figcaption className="text-center">
+            <figcaption className="text-center dark:text-[#9BA9B4]">
               X represents the arithmetic mean of the EIs over the five years.
               The length between the upper bar and the lower bar represents
               three times the interquartile range.
@@ -73,22 +73,24 @@ const ADAContent = () => {
           <div className="project-details-info">
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Language</h4>
-              <span>Python, R</span>
+              <span className="dark:text-[#9BA9B4]">Python, R</span>
             </div>
 
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Application</h4>
-              <span>GHG, Carbon Management</span>
+              <span className="dark:text-[#9BA9B4]">
+                GHG, Carbon Management
+              </span>
             </div>
 
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Data Sources</h4>
-              <span>Petrinex</span>
+              <span className="dark:text-[#9BA9B4]">Petrinex</span>
             </div>
 
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Program</h4>
-              <span>Alberta TIER</span>
+              <span className="dark:text-[#9BA9B4]">Alberta TIER</span>
             </div>
 
             <div className="single-info-box">

@@ -145,6 +145,11 @@ p:last-child {
   padding-bottom: 12px;
 }
 
+.dark tspan,
+text {
+  fill: #9BA9B4;
+}
+
 .default-btn span {
   position: absolute;
   display: block;
@@ -443,10 +448,11 @@ Navbar Area CSS
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid white;
+  transition: 0.4s border-bottom ease-in-out;
 }
 
 .dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu::after {
-  border-bottom: 10px solid #282828;
+  border-bottom: 10px solid #151719;
 }
 
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
@@ -474,7 +480,7 @@ Navbar Area CSS
 }
 
 .dark .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
-  color: #666666 !important;
+  color: #9BA9B4 !important;
 }
 
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
@@ -1545,7 +1551,7 @@ About Section CSS
 .about-content p {
   font-weight: 400;
   margin: 0 0 0 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .about-content .about-list {
@@ -1652,7 +1658,7 @@ Data Services Section CSS
   bottom: 0;
   width: 100%;
   height: 0;
-  border-radius: 5px;
+  border-radius: 25px 0px 25px 0px;
   background-color: #00b0ee;
   z-index: -1;
   transition: 0.6s;
@@ -1763,10 +1769,7 @@ Tabs Solutions Section CSS
   margin-left: 0;
   margin-bottom: 30px;
   cursor: pointer;
-  display: block;
-  border-radius: 2px;
-  color: #0e3496;
-  box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+  border-radius: 8px;
   font-family: "Dosis", sans-serif;
   padding-right: 20px;
   padding-top: 20px;
@@ -1798,7 +1801,7 @@ Tabs Solutions Section CSS
 
 .solutions-list-tab .react-tabs__tab-panel .tab-solution-content p {
   margin: 0 0 0 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .solutions-list-tab .react-tabs__tab-panel .tab-solution-content .tab-list {
@@ -1809,7 +1812,6 @@ Tabs Solutions Section CSS
 
 .solutions-list-tab .react-tabs__tab-panel .tab-solution-content .tab-list li {
   font-size: 15px;
-  color: #737b9a;
   font-weight: 600;
   list-style-type: none;
   padding-bottom: 10px;
@@ -3548,6 +3550,8 @@ Team Section CSS
 /*================================================
 Services Details CSS
 =================================================*/
+
+
 .services-details-overview {
   margin-bottom: 60px;
 }
@@ -3650,7 +3654,7 @@ Projects Details Area CSS
 }
 
 .dark .project-details-image.emissionxcontent svg g path:first-child {
-  fill: #282828;
+  fill: #151719;
 }
 
 .project-details-emissionximage {
@@ -3669,15 +3673,15 @@ Projects Details Area CSS
 }
 
 .projects-details-desc p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .projects-details-desc ol {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .projects-details-desc text {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .projects-details-desc .features-text {
@@ -3723,7 +3727,6 @@ Projects Details Area CSS
 
 .projects-details-desc .project-details-info .single-info-box span {
   display: block;
-  color: #737b9a;
   font-size: 15px;
 }
 
@@ -5077,7 +5080,7 @@ Blogs
 .blog-card-container .blog-description {
   color: #737b9a;
   margin: 10px 0 !important;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .blog-card-container .blog-img {

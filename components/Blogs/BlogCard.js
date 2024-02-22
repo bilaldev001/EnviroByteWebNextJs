@@ -43,7 +43,7 @@ const BlogCard = ({ data }) => {
       <h3 className="blog-title dark:text-[#ffffff]" title={data?.title}>
         {truncateString(data?.title, 35)}
       </h3>
-      <p className="blog-description text-justify" title={data?.body}>
+      <p className="blog-description text-justify tracking-tight	 text-[18px]" title={data?.body}>
         {truncateString(data?.body, 200)}
       </p>
       <div className="flex align-items-center ">

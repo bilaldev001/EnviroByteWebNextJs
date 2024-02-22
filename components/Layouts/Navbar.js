@@ -177,7 +177,7 @@ const Navbar = () => {
                     </Link>
 
                     <ul
-                      className={`dropdown-menu px-4 sm:px-0 grid sm:grid-cols-2 md:mt-0 mt-3 sm:divide-x gap-3 dark:bg-[#282828] bg-[#ffffff] ${
+                      className={`dropdown-menu px-4 sm:px-0 grid sm:grid-cols-2 md:mt-0 mt-3 sm:divide-x gap-3 dark:bg-[#151719] bg-[#ffffff] ${
                         !menu ? "shadow-none m-0" : ""
                       }`}
                     >
@@ -428,7 +428,10 @@ const Navbar = () => {
                   </li>
                   {isAuthenticated ? (
                     <>
-                      <li className="md:mx-[12px]" onClick={handleLogout}>
+                      <li
+                        className="md:mx-[12px] flex items-center justify-center"
+                        onClick={handleLogout}
+                      >
                         <a className="nav-link default-btn signup-btn flex items-center justify-center px-3 lg:px-4 w-full lg:w-fit cursor-pointer">
                           Sign Out <span></span>
                         </a>
@@ -445,7 +448,7 @@ const Navbar = () => {
                           <a className="nav-link">Sign in</a>
                         </Link>
                       </li>
-                      <li className="md:mx-[12px]">
+                      <li className="md:mx-[12px] flex items-center justify-center">
                         <Link
                           legacyBehavior
                           href="/signup"

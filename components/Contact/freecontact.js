@@ -10,7 +10,7 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("mjvdqlly");
   if (state.succeeded) {
     return (
-      <div className="contact-section ptb-100 dark:bg-[#282828]">
+      <div className="contact-section ptb-100 dark:bg-[#151719]">
         <div className="container">
           <div className="row align-items-center text-center lg:text-left">
             <div className="col-lg-6">
@@ -33,12 +33,12 @@ function ContactForm() {
     );
   }
   return (
-    <div className="contact-section ptb-100 dark:bg-[#282828]">
+    <div className="contact-section ptb-100 dark:bg-[#151719]">
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px]">
         <h1 className=" text-gray-800 dark:text-[#ffffff] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] mb-3">
           How can we help you?
         </h1>
-        <p className="text-[20px]">
+        <p className="text-[20px] dark:text-[#9BA9B4]">
           We have custom plans to power your business. Tell us your needs, and
           we’ll contact you shortly.
         </p>

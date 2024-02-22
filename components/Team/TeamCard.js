@@ -2,7 +2,7 @@ import React from "react";
 
 const TeamCard = ({ data }) => {
   return (
-    <div className="shadow-teamCard dark:bg-[#4c4c4c] p-4 rounded-2xl flex flex-col items-center mb-4 group hover:transform hover:translate-y-[-5px] transition duration-500">
+    <div className="shadow-teamCard dark:bg-[#25282C] p-4 rounded-2xl flex flex-col items-center mb-4 group hover:transform hover:translate-y-[-5px] transition duration-500">
       <div className="team-image">
         <img
           src={data?.image}

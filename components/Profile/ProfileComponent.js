@@ -27,7 +27,7 @@ const ProfileComponent = () => {
               </TabList>
             </div>
             <div className="col-span-2">
-              <TabPanel>
+              <TabPanel className="rounded-lg">
                 {/* Tabs item 1 */}
                 <EditAccountForm />
               </TabPanel>

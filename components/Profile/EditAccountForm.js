@@ -33,7 +33,7 @@ const EditAccountForm = () => {
   };
 
   return (
-    <div className="contact-section transition">
+    <div className="contact-section transition rounded-lg">
       <div className="dark:bg-[#25282C] bg-[#ffffff] rounded-lg p-4">
         {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px]">
           <h1 className=" text-gray-800 dark:text-[#ffffff] font-[800] text-3xl md:text-[40px]">

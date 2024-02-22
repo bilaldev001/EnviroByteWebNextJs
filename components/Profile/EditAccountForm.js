@@ -5,22 +5,24 @@ import { useRouter } from "next/router";
 import TextField from "../Shared/InputField";
 import Spinner from "../Utils/Spinner";
 import { useDispatch, useSelector } from "react-redux";
+import { updateUser } from "../Redux/slices/AuthSlice";
 
 const EditAccountForm = () => {
-  const router = useRouter();
   const disptach = useDispatch();
   const loading = useSelector((state) => state?.auth?.loading);
   const userData = useSelector((state) => state?.auth?.user?.user);
+  const userId = useSelector((state) => state?.auth?.user?.user?.id);
+
   // Form Initial Values
   const initialValues = {
-    username: userData.username,
+    username: userData?.username,
     password: "",
   };
 
   // Error Schema
   const errorSchema = Yup.object().shape({
     username: Yup.string().required("Name is required"),
-    password: Yup.string().required("Password  is required"),
+    password: Yup.string(),
   });
 
   // Form Submission
@@ -29,47 +31,45 @@ const EditAccountForm = () => {
       username: values?.username,
       password: values?.password,
     };
-    // disptach(loginUser({ formData, router }));
+    disptach(updateUser({ formData, userId }));
   };
 
   return (
-    <div className="contact-section transition rounded-lg">
-      <div className="dark:bg-[#25282C] bg-[#ffffff] rounded-lg p-4">
-        {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px]">
-          <h1 className=" text-gray-800 dark:text-[#ffffff] font-[800] text-3xl md:text-[40px]">
-            It happens. Don't worry
-          </h1>
-        </div> */}
-        <Formik
-          initialValues={initialValues}
-          validationSchema={errorSchema}
-          onSubmit={handleSubmit}
-        >
-          {(formik) => (
-            <Form className="w-full">
-              <div className="grid grid-cols-2 gap-3">
-                <TextField
-                  type="text"
-                  label="Name"
-                  name="username"
-                  placeholder="Enter your name"
-                />
-                <TextField
-                  type="password"
-                  label="Password"
-                  name="password"
-                  placeholder="Enter your password"
-                />
-              </div>
-              <div className="flex justify-end">
-                <button className="signin-btn default-btn rounded">
-                  {loading ? <Spinner /> : "Confirm"} <span></span>
-                </button>
-              </div>
-            </Form>
-          )}
-        </Formik>
-      </div>
+    <div className="dark:bg-[#25282C] bg-[#ffffff] rounded-lg p-4">
+      <h1 className=" text-gray-800 dark:text-[#ffffff] font-[700] text-2xl mb-4">
+        Edit Account
+      </h1>
+      <Formik
+        initialValues={initialValues}
+        validationSchema={errorSchema}
+        onSubmit={handleSubmit}
+      >
+        {() => (
+          <Form className="w-full">
+            <div className="grid grid-cols-2 gap-3">
+              <TextField
+                type="text"
+                label="Name"
+                name="username"
+                placeholder="Enter your name"
+                autocomplete={true}
+              />
+              <TextField
+                type="password"
+                label="Password"
+                name="password"
+                placeholder="Enter your password"
+                autocomplete={false}
+              />
+            </div>
+            <div className="flex justify-end">
+              <button type="submit" className="signin-btn default-btn rounded">
+                {loading ? <Spinner /> : "Confirm"} <span></span>
+              </button>
+            </div>
+          </Form>
+        )}
+      </Formik>
     </div>
   );
 };

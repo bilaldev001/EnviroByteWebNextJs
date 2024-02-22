@@ -6,7 +6,7 @@ const ProfileComponent = () => {
   const [tabIndex, setTabIndex] = useState(0);
 
   return (
-    <div className="contact-section ptb-100 dark:bg-[#151719]">
+    <div className="ptb-100 dark:bg-[#151719]">
       <div className="container">
         <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
           <div className="grid grid-cols-3 gap-4">

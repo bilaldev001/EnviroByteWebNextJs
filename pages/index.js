@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Layouts/Navbar";
 import MainBanner from "../components/Home/MainBanner";
 import BriefEmissionX from "../components/Home/BriefEmissionX";
@@ -8,9 +8,23 @@ import SolutionsTab from "../components/Common/SolutionsTab";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
 import withMainLayout from "../components/Layouts";
+import { ThemeProvider } from "../utils/theme";
+import { getPostMeta } from '../middleware/post';
 
-const Index = () => {
+
+const Index =  () => {
+  
+    const fetchData = async () => {
+      try {
+      await getPostMeta();
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData();
   return (
+
+ 
     <div className={"duration-200 --font-inter font-inter"}>
       <>
         <Head>

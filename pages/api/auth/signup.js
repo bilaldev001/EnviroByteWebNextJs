@@ -1,7 +1,6 @@
 import prisma from '../../../prisma/db';
 import { hashPassword } from '../../../middleware/password';
 
-
 export default async function POST(req,res) {
   const { username, email, password } = req.body; 
   const hashedPassword = await hashPassword(password);

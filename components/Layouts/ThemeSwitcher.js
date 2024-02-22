@@ -29,7 +29,7 @@ export const ThemeSwitcher = () => {
   return (
     <button
       onClick={() => toggleTheme()}
-      className="pl-5 absolute right-16 md:right-0 md:sticky themebutton"
+      className="pl-5 absolute right-[7rem] md:right-0 md:sticky themebutton"
     >
       {theme === "light" ? (
         <svg

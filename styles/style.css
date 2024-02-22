@@ -427,7 +427,7 @@ Navbar Area CSS
 }
 
 .main-nav .navbar .navbar-nav .nav-item a i {
-  font-size: 10px;
+  /* font-size: 10px; */
   position: relative;
   top: -1px;
   margin-left: 1px;

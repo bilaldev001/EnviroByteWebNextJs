@@ -139,20 +139,27 @@ const Navbar = () => {
                 </a>
               </Link>
 
-              <button
-                onClick={toggleNavbar}
-                className={`${classTwo} dark:bg-transparent bg-white`}
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="icon-bar top-bar"></span>
-                <span className="icon-bar middle-bar"></span>
-                <span className="icon-bar bottom-bar"></span>
-              </button>
+              <div className="flex items-center gap-3">
+                <Link legacyBehavior href="/profile" activeClassName="active">
+                  <a className="md:hidden">
+                    <i className="fa-solid fa-circle-user fa-2xl text-[2rem]"></i>
+                  </a>
+                </Link>
+                <button
+                  onClick={toggleNavbar}
+                  className={`${classTwo} dark:bg-transparent bg-white`}
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="icon-bar top-bar"></span>
+                  <span className="icon-bar middle-bar"></span>
+                  <span className="icon-bar bottom-bar"></span>
+                </button>
+              </div>
 
               <div className={classOne} id="navbarSupportedContent">
                 <ul className="navbar-nav md:flex align-items-md-center align-items-start">
@@ -436,6 +443,17 @@ const Navbar = () => {
                           Sign Out <span></span>
                         </a>
                       </li>
+                      <li className="nav-item">
+                        <Link
+                          legacyBehavior
+                          href="/profile"
+                          activeClassName="active"
+                        >
+                          <a className="md:block hidden">
+                            <i className="fa-solid fa-circle-user fa-2xl text-[2rem]"></i>
+                          </a>
+                        </Link>
+                      </li>
                     </>
                   ) : (
                     <>
@@ -461,27 +479,10 @@ const Navbar = () => {
                       </li>
                     </>
                   )}
-
-                  {/*<li className="nav-item">
-                      <Link legacyBehavior   href="https://www.google.ca" activeClassName="active">
-                        <a target="_blank">
-                          Login
-                        </a>
-                      </Link>
-                    </li>*/}
                 </ul>
               </div>
+
               {menu && <ThemeSwitcher />}
-              {/* <div className="nav-item">
-                  <Link legacyBehavior href="/contact" activeClassName="active">
-                    <a className="nav-link">Sign In</a>
-                  </Link>
-                </div>
-                <div className="nav-item">
-                  <Link legacyBehavior href="/contact" activeClassName="active">
-                    <a className="nav-link">Sign Up</a>
-                  </Link>
-                </div> */}
             </nav>
           </div>
         </div>

@@ -4,9 +4,9 @@ import BlogCard from "./BlogCard";
 import DummyBlogs from "./DummyBlogs.json";
 import NewsLetter from "./NewsLetter";
 
-const BlogsComponent = () => {
-  const [currentPage, setCurrentPage] = useState(0);
 
+const BlogsComponent2 = ({ posts }) => {
+  const [currentPage, setCurrentPage] = useState(0);
   return (
     <div className="bg-[#ffffff] dark:bg-[#282828] transition">
       <div className="pt-100 pb-70 container mx-auto">
@@ -16,13 +16,12 @@ const BlogsComponent = () => {
         </div>
         {/* Blogs Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-          {DummyBlogs.data.length &&
-            DummyBlogs.data.map((data, index) => (
-              <BlogCard data={data} key={index} />
-            ))}
+        {posts?.map((post, index) => (
+            <BlogCard data={post} key={index} />
+          ))}
         </div>
 
-        {/* Pagination Component */}
+        {/* Pagination Component */}  
         <Pagination
           itemsPerPage={DummyBlogs?.limit}
           totalPages={DummyBlogs?.total / 10}
@@ -37,4 +36,6 @@ const BlogsComponent = () => {
   );
 };
 
-export default BlogsComponent;
+
+
+export default BlogsComponent2;

@@ -43,9 +43,9 @@ export const updateUser = createAsyncThunk(
   "user/update",
   async ({ formData, userId }, thunkAPI) => {
     try {
-      let response = await axios.patch(`/api/user/${userId}`, formData);
+      let response = await axios.put(`/api/user/${userId}`, formData);
       toast.success(response?.data?.message);
-      return response.data;
+      return response?.data?.updatedUser;
     } catch (error) {
       console.log(error);
       let message = error.response?.data?.message;

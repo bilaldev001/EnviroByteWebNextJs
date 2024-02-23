@@ -5,6 +5,7 @@ import BlackLogo from "../../public/images/logo/blackmarkv2.svg";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { logoutUser } from "../Redux/slices/AuthSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { useRouter } from "next/router";
 
 const about = [
   {
@@ -71,6 +72,7 @@ const Navbar = () => {
   const isAuthenticated = useSelector((state) => state?.auth?.isAuthenticated);
   const dispatch = useDispatch();
   const [menu, setMenu] = React.useState(true);
+  const router = useRouter();
   const toggleNavbar = () => {
     setMenu(!menu);
   };
@@ -82,6 +84,7 @@ const Navbar = () => {
   };
 
   const handleLogout = () => {
+    router.push("/");
     dispatch(logoutUser());
   };
 

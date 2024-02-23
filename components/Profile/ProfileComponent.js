@@ -15,19 +15,31 @@ const ProfileComponent = () => {
               <TabList className="bg-[#ffffff] rounded-lg py-4 px-3 dark:bg-[#25282C] shadow-teamCard">
                 <Tab
                   selectedClassName="bg-[#0e3496] dark:bg-[#ffffff] dark:text-[#0e3496] text-[#ffffff] font-semibold"
-                  className=" outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#0e3496] dark:text-[#ffffff] px-4 py-3"
+                  className={`outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#0e3496] ${
+                    tabIndex === 0
+                      ? "dark:text-[#023496]"
+                      : "dark:text-[#ffffff]"
+                  } px-4 py-3`}
                 >
                   Edit Account
                 </Tab>
                 <Tab
                   selectedClassName="bg-[#0e3496] dark:bg-[#ffffff] dark:text-[#0e3496] text-[#ffffff] font-semibold"
-                  className="outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#0e3496] dark:text-[#ffffff] px-4 py-3"
+                  className={`outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#0e3496] ${
+                    tabIndex === 1
+                      ? "dark:text-[#023496]"
+                      : "dark:text-[#ffffff]"
+                  } px-4 py-3`}
                 >
                   Change Password
                 </Tab>
                 <Tab
                   selectedClassName="bg-[#0e3496] dark:bg-[#ffffff] dark:text-[#0e3496] text-[#ffffff] font-semibold"
-                  className="outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#0e3496] dark:text-[#ffffff] px-4 py-3"
+                  className={`outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#0e3496] ${
+                    tabIndex === 2
+                      ? "dark:text-[#023496]"
+                      : "dark:text-[#ffffff]"
+                  } px-4 py-3`}
                 >
                   Preferred Content
                 </Tab>

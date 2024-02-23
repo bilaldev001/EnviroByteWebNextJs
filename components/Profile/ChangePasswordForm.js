@@ -43,7 +43,6 @@ const ChangePasswordForm = () => {
     let formData = {
       oldPassword: values?.oldPassword,
       newPassword: values?.newPassword,
-      confirmPassword: values?.confirmPassword,
     };
     disptach(updateUser({ formData, userId }));
   };
@@ -68,7 +67,7 @@ const ChangePasswordForm = () => {
                     label="Old Password"
                     name="oldPassword"
                     placeholder="Enter your old password"
-                    autocomplete={false}
+                    autoComplete={false}
                     righticon={
                       <Image
                         fluid
@@ -89,7 +88,7 @@ const ChangePasswordForm = () => {
                 label="New Password"
                 name="newPassword"
                 placeholder="Enter your new password"
-                autocomplete={false}
+                autoComplete={false}
                 righticon={
                   <Image
                     fluid
@@ -108,7 +107,7 @@ const ChangePasswordForm = () => {
                 label="Confirm Password"
                 name="confirmPassword"
                 placeholder="Confirm your password"
-                autocomplete={false}
+                autoComplete={false}
                 righticon={
                   <Image
                     fluid

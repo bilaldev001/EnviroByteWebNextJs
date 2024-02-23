@@ -51,14 +51,14 @@ const EditAccountForm = () => {
                 name="email"
                 placeholder=""
                 readOnly
-                autocomplete={true}
+                autoComplete={false}
               />
               <TextField
                 type="text"
                 label="Name"
                 name="username"
                 placeholder="Enter your name"
-                autocomplete={true}
+                autoComplete={false}
               />
             </div>
             <div className="flex justify-end">

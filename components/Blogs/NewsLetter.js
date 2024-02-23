@@ -23,8 +23,10 @@ const NewsLetter = () => {
   return (
     <div className="container news-letter-container flex flex-col md:flex-row lg:flex-row items-center">
       <div className="section-title w-full md:w-[50%] mt-0 container">
-        <h2 className="md:text-start text-white mt-4">Stay in the loop</h2>
-        <p className="md:text-start text-white">
+        <h1 className="md:text-start text-white mt-4 text-[32px] mb-2">
+          Stay in the loop
+        </h1>
+        <p className="md:text-start text-white text-[18px]">
           Join our newsletter to get top news before anyone else.
         </p>
       </div>
@@ -32,7 +34,7 @@ const NewsLetter = () => {
         <form className="w-full" onSubmit={handleSubmit}>
           <input
             type="email"
-            className="news-letter-input w-full md:w-[60%]"
+            className="news-letter-input w-full md:w-[60%] text-white"
             placeholder="Your best email"
             required
             value={email}

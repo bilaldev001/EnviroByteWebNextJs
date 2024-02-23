@@ -4,12 +4,12 @@ import PEMLogo from "../../public/images/datascience/PEM.svg";
 
 const PEMContent = () => {
   return (
-    <div className="project-details-area ptb-100 dark:bg-[#282828]">
+    <div className="project-details-area ptb-100 dark:bg-[#151719]">
       <div className="container">
         <div className="projects-details-desc">
           <h3 className="dark:text-[#ffffff]">OpenPEMS&trade;</h3>
           <div className="row align-items-center">
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               The nitrogen oxides (NO<sub>x</sub>) has significant adverse
               environmental and health effects, contributing to acid rain and
               smog and forming fine particles (PM) and ozone in the ambient air
@@ -23,7 +23,7 @@ const PEMContent = () => {
               system (PEMS).
             </p>
             <br />
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               OpenPEMS&trade; is a free and open source predictive emissions
               monitoring system that trains models to predictive air emissions,
               such as NOx and SO2, which are typically monitored by CEMSs.
@@ -34,7 +34,7 @@ const PEMContent = () => {
               monitoring.
             </p>
             <br />
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               OpenPEMS&trade; was licensed by KeeWee Solutions Inc (KeeWee). Dr.
               Minxing Si of KeeWee was the first to introduce open-source
               machine learning libraries for PEMS development and conducted
@@ -43,7 +43,7 @@ const PEMContent = () => {
               was approved by Alberta Environment and Alberta Energy Regulator.
             </p>
             <br />
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               PEMS is used for environmental monitoring worldwide, the major
               regulatory frameworks for PEMS were developed by the United States
               Environmental Protection Agency (US EPA) and the European Union.
@@ -54,7 +54,7 @@ const PEMContent = () => {
               Regulations (CFR 40), Part 60, 61, 63, and 75.
             </p>
             <br />
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               In Canada, PEMS is an accepted alternative monitoring method to
               CEMS at federal and provincial levels. For example, Alberta 2021
               CEMS code outlines the requirements of PEMS.
@@ -66,35 +66,35 @@ const PEMContent = () => {
             <h3 className="dark:text-[#ffffff]">
               Predictive Emissions for GHG monitoring
             </h3>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Contact us to learn more about OpenPEMS&trade; and how we transfer
               PEMS to GHG monitoring
             </p>
           </div>
 
-          <p></p>
+          <p className="dark:text-[#9BA9B4]"></p>
 
-          <p></p>
+          <p className="dark:text-[#9BA9B4]"></p>
 
           <div className="project-details-info">
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Language</h4>
-              <span>Python, R</span>
+              <span className="dark:text-[#9BA9B4]">Python, R</span>
             </div>
 
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Application</h4>
-              <span>Emission Monitoring</span>
+              <span className="dark:text-[#9BA9B4]">Emission Monitoring</span>
             </div>
 
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Data Sources</h4>
-              <span>Measurement/PI</span>
+              <span className="dark:text-[#9BA9B4]">Measurement/PI</span>
             </div>
 
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Algorithm</h4>
-              <span>Neural Network, Gradient Boosting</span>
+              <span className="dark:text-[#9BA9B4]">Neural Network, Gradient Boosting</span>
             </div>
 
             <div className="single-info-box">

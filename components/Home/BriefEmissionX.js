@@ -5,7 +5,7 @@ import BriefLogo from "../../public/images/emisssionx/Brieflogo-2.svg";
 const BriefEmissionX = () => {
   return (
     <>
-      <div className="about-section ptb-100 dark:bg-[#282828] transition">
+      <div className="about-section ptb-100 dark:bg-[#151719] transition">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -20,13 +20,13 @@ const BriefEmissionX = () => {
 
             <div className="col-lg-6">
               <div className="about-content">
-                <span className="text-[#666666]">
+                <span className="text-[#666666] dark:text-[#9BA9B4]">
                   A Scalable and Customizable Emissions Reporting Tool
                 </span>
-                <h2 className="text-[#191919] dark:text-[#ffffff] dark:text-[#ffffff]">
+                <h2 className="text-[#191919] dark:text-[#ffffff]">
                   EmissionX&trade;
                 </h2>
-                <p className="text-[#666666]">
+                <p className="text-[#666666] dark:text-[#9BA9B4]">
                   We build the products that we want to use ourselves. This is
                   why we design EmissionX with easy verification and assurance
                   in mind by integrating data science tools (e.g. Jupyter Lab)

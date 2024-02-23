@@ -44,7 +44,7 @@ const BlogDetail = (props) => {
   };
 
   return (
-    <div className="bg-[#ffffff] dark:bg-[#282828] transition">
+    <div className="bg-[#ffffff] dark:bg-[#151719] transition">
       <div
         className={`container mx-auto pt-100 pb-70 ${
           !validation === undefined
@@ -54,7 +54,7 @@ const BlogDetail = (props) => {
             : ""
         }`}
       >
-        <div className="pb-70 bg-[#ffffff] dark:bg-[#282828] transition">
+        <div className="pb-70 bg-[#ffffff] dark:bg-[#151719] transition">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-start gap-2 flex-wrap text-xs font-medium">
               {blogData?.tags?.length &&
@@ -84,7 +84,9 @@ const BlogDetail = (props) => {
               <h1 className="text-[2rem] text-[#0e3496] mb-2 dark:text-[#ffffff]">
                 {blogData?.title}
               </h1>
-              <p className="blog-description text-justify">{blogData?.body}</p>
+              <p className="blog-description text-justify tracking-tight	 text-[18px]">
+                {blogData?.body}
+              </p>
               <div className="flex align-items-center mt-3">
                 <img
                   src="https://preview.cruip.com/open-pro/images/news-author-06.jpg"
@@ -149,8 +151,8 @@ const BlogDetail = (props) => {
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-[#ffffff] dark:bg-[#282828] text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                  <div className="bg-[#ffffff] dark:bg-[#282828]">
+                <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-[#ffffff] dark:bg-[#151719] text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                  <div className="bg-[#ffffff] dark:bg-[#151719]">
                     <div className="p-4">
                       <Dialog.Title
                         as="h2"
@@ -165,7 +167,7 @@ const BlogDetail = (props) => {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-gray-50 dark:bg-[#282828] px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                  <div className="bg-gray-50 dark:bg-[#151719] px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
                     <Link
                       href="/signup"
                       type="button"

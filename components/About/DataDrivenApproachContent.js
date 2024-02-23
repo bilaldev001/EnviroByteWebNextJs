@@ -5,13 +5,13 @@ import DataLogo from "../../public/images/projects/DataFrameWork.svg";
 const DataDrivenApproachContent = () => {
   return (
     <>
-      <div className="project-details-area ptb-100 dark:bg-[#282828] transition">
+      <div className="project-details-area ptb-100 dark:bg-[#151719] transition">
         <div className="container">
           <div className="projects-details-desc">
             <h3 className="dark:text-[#ffffff]">
               Data-Driven Sustainability Framework
             </h3>
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Data-driven sustainability is the process of making decisions that
               are centered on sustainability and are informed by the collecting,
               processing, and analysis of data. The data is then visualized to
@@ -23,10 +23,10 @@ const DataDrivenApproachContent = () => {
             </p>
 
             <div className="features-text">
-              <text>
+              <text className="dark:text-[#9BA9B4]">
                 The three major stages to follow when using a data-driven
                 sustainability strategy are:
-                <p></p>
+                <p className="dark:text-[#9BA9B4]"></p>
                 <ul>
                   <li>
                     Establish industry-specific sustainability objectives: It is
@@ -48,7 +48,7 @@ const DataDrivenApproachContent = () => {
             </div>
 
             <div className="features-text">
-              <p>
+              <p className="dark:text-[#9BA9B4]">
                 A growing amount of pressure is being placed on organizations to
                 manage their sustainability performance as a result of reliable
                 data gathering, reporting, and analytics. In order to empower

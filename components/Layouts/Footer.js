@@ -128,7 +128,7 @@ const Footer = () => {
       {/* End Top Footer Section */}
 
       {/* Bottom Footer Section */}
-      <div className="copyright-area">
+      <div className="copyright-area dark:bg-[#0b0c0d] transition">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6">

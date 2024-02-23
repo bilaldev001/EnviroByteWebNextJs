@@ -4,14 +4,14 @@ import IoTLogo from "../../public/images/datascience/IoT.svg";
 
 const IoTContent = () => {
   return (
-    <div className="project-details-area ptb-100 dark:bg-[#282828]">
+    <div className="project-details-area ptb-100 dark:bg-[#151719]">
       <div className="container">
         <div className="projects-details-desc">
           <h3 className="dark:text-[#ffffff]">
             Machine learning approach to calibration low-cost IoT sensors
           </h3>
           <div className="row align-items-center">
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Particle sensing technology has shown great potential for
               monitoring particulate matter (PM) with very few temporal and
               spatial restrictions because of its low-cost, compact size, and
@@ -19,7 +19,7 @@ const IoTContent = () => {
               PM monitoring in ambient conditions has been questionable.
             </p>
             <br />
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               We calibrated a low-cost sensor in ambient conditions using
               machine-learning methods. The sensor is Plantower PMS 5003, and it
               measured outdoor fine particle (PM<sub>2.5</sub>) concentrations
@@ -31,7 +31,7 @@ const IoTContent = () => {
               Hybrid Ambient Real-time Particulate (SHARP)
             </p>
             <br />
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Field evaluation showed that the Pearson r between the low-cost
               sensor and the SHARP instrument was 0.78. Fligner and Killeen
               (F-K) test indicated a statistically significant difference
@@ -50,13 +50,13 @@ const IoTContent = () => {
             <br />
           </div>
 
-          <p></p>
+          <p className="dark:text-[#9BA9B4]"></p>
 
-          <p></p>
+          <p className="dark:text-[#9BA9B4]"></p>
 
           <div className="project-details-image">
             <IoTLogo alt="image" />
-            <figcaption className="text-center">
+            <figcaption className="text-center dark:text-[#9BA9B4] mt-3">
               Comparison of the Hourly PM2.5 Values between the Low-Cost PM
               Sensor and SHARP.
             </figcaption>
@@ -68,22 +68,26 @@ const IoTContent = () => {
           <div className="project-details-info">
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Language</h4>
-              <span>Python, R</span>
+              <span className="dark:text-[#9BA9B4]">Python, R</span>
             </div>
 
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Application</h4>
-              <span>Air Quality/Emission Monitoring, Internet of Things</span>
+              <span className="dark:text-[#9BA9B4]">
+                Air Quality/Emission Monitoring, Internet of Things
+              </span>
             </div>
 
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Data Sources</h4>
-              <span>Sensor</span>
+              <span className="dark:text-[#9BA9B4]">Sensor</span>
             </div>
 
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Algorithm</h4>
-              <span>Neural Network, Gradient Boosting</span>
+              <span className="dark:text-[#9BA9B4]">
+                Neural Network, Gradient Boosting
+              </span>
             </div>
 
             <div className="single-info-box">

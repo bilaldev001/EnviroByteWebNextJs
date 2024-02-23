@@ -38,10 +38,10 @@ const TeamMemberContent = () => {
   ];
   return (
     <>
-      <div className="team-section pt-100 pb-70 dark:bg-[#282828] transition">
+      <div className="team-section pt-100 pb-70 dark:bg-[#151719] transition">
         <div className="container">
           <div className="section-title">
-            <span>Our Experts</span>
+            <span className="dark:text-[#9BA9B4]">Our Experts</span>
             <h2 className="dark:text-[#ffffff]">
               People who started EnviroByte
             </h2>
@@ -55,13 +55,13 @@ const TeamMemberContent = () => {
             ))}
 
             <div className="section-title pt-5">
-              <span>Our Advisors</span>
+              <span className="dark:text-[#9BA9B4]">Our Advisors</span>
               <h2 className="dark:text-[#ffffff]">
                 People who advise EnviroByte
               </h2>
             </div>
             {Advisors.map((data, index) => (
-              <div key={index} className="col-lg-3 col-sm-3">
+              <div key={index} className="col-xl-3 col-md-4 col-sm-6 col-12">
                 <TeamCard data={data} />
               </div>
             ))}

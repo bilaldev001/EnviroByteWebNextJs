@@ -4,14 +4,14 @@ import PMALogo from "../../public/images/datascience/PMA2.svg";
 
 const PMAContent = () => {
   return (
-    <div className="project-details-area ptb-100 dark:bg-[#282828]">
+    <div className="project-details-area ptb-100 dark:bg-[#151719]">
       <div className="container">
         <div className="projects-details-desc">
           <h3 className="dark:text-[#ffffff]">
             Unsupervised machine learning on Canadian oil sands operations
           </h3>
           <div className="row align-items-center">
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               Canada’s in situ oil sands can help meet the global oil demand.
               Because of the energy-intensive extraction processes, in situ oil
               sands operations also play a critical role in meeting the global
@@ -22,7 +22,7 @@ const PMAContent = () => {
               carbon intensive.
             </p>
             <br />
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               We can help in situ oil sands industry to measure energy
               efficiency and GHG emission. Our team understand the data-driven
               approaches are critical to the Canadian oil and gas data warehouse
@@ -32,7 +32,7 @@ const PMAContent = () => {
               operations to reduce GHG emission from the extraction process.
             </p>
             <br />
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               For example, we applied machine learning methods for data-driven
               discovery to a public database, Petrinex, containing operating
               data from 2015 to 2019 extracted from over 35 million records for
@@ -49,7 +49,7 @@ const PMAContent = () => {
               and low SOR (<i>p</i> &lt; 0.005).
             </p>
             <br />
-            <p>
+            <p className="dark:text-[#9BA9B4]">
               We also discovered that on average, between 2015 and 2019, in situ
               oil sands extractions produced 21 m<sup>3</sup> of solution gas/1
               m<sup>3</sup> of bitumen, with a median of 14 m<sup>3</sup>/m
@@ -62,35 +62,35 @@ const PMAContent = () => {
             </p>
           </div>
 
-          <p></p>
+          <p className="dark:text-[#9BA9B4]"></p>
           <div className="project-details-image">
             <PMALogo alt="image" />
-            <figcaption className="text-center">
+            <figcaption className="text-center dark:text-[#9BA9B4] mt-3">
               Average solution gas produced between 2016 and 2019 by in situ
               production regions.
             </figcaption>
           </div>
-          <p></p>
+          <p className="dark:text-[#9BA9B4]"></p>
 
           <div className="project-details-info">
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Language</h4>
-              <span>Python</span>
+              <span className="dark:text-[#9BA9B4]">Python</span>
             </div>
 
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Application</h4>
-              <span>Data Analytics</span>
+              <span className="dark:text-[#9BA9B4]">Data Analytics</span>
             </div>
 
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Data Sources</h4>
-              <span>Petrinex</span>
+              <span className="dark:text-[#9BA9B4]">Petrinex</span>
             </div>
 
             <div className="single-info-box">
               <h4 className="dark:text-[#ffffff]">Algorithm</h4>
-              <span>Association Rules</span>
+              <span className="dark:text-[#9BA9B4]">Association Rules</span>
             </div>
 
             <div className="single-info-box">

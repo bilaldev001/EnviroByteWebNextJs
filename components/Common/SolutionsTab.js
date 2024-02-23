@@ -8,15 +8,23 @@ import IOTAQMLogo from "../../public/images/solution-tab/IoT_AQM.svg";
 const SolutionsTab = () => {
   return (
     <>
-      <div className="tab-section ptb-100 dark:bg-[#282828] transition">
+      <div className="tab-section ptb-100 dark:bg-[#151719] transition">
         <div className="container">
           <div className="solutions-list-tab">
             <Tabs>
               <TabList>
-                <Tab>Advanced Data Analytics</Tab>
-                <Tab>IoT Air Quality Monitoring</Tab>
-                <Tab>OpenPEMS&trade;</Tab>
-                <Tab>Predictive Maintenance/Analytics</Tab>
+                <Tab className="rounded-pill transition duration-200 shadow-teamCard dark:shadow-[#00b0ee26] text-[#0e3496] dark:text-[#00B0EE] flex justify-center items-center">
+                  Advanced Data Analytics
+                </Tab>
+                <Tab className="rounded-pill transition duration-200 shadow-teamCard dark:shadow-[#00b0ee26] text-[#0e3496] dark:text-[#00B0EE] flex justify-center items-center">
+                  IoT Air Quality Monitoring
+                </Tab>
+                <Tab className="rounded-pill transition duration-200 shadow-teamCard dark:shadow-[#00b0ee26] text-[#0e3496] dark:text-[#00B0EE] flex justify-center items-center">
+                  OpenPEMS&trade;
+                </Tab>
+                <Tab className="rounded-pill transition duration-200 shadow-teamCard dark:shadow-[#00b0ee26] text-[#0e3496] dark:text-[#00B0EE] flex justify-center items-center">
+                  Predictive Maintenance/Analytics
+                </Tab>
               </TabList>
 
               <TabPanel>
@@ -27,7 +35,7 @@ const SolutionsTab = () => {
                       <h3 className="dark:text-[#ffffff]">
                         Advanced Data Analytics
                       </h3>
-                      <p>
+                      <p className="dark:text-[#9BA9B4]">
                         In this project, we extracted actual operating data from
                         a public database- Petrinex (Canada’s Petroleum
                         Information Network), which contains more than 35
@@ -38,15 +46,15 @@ const SolutionsTab = () => {
                       </p>
 
                       <ul className="tab-list">
-                        <li>
+                        <li className="dark:text-[#9BA9B4] text-[#737b9a]">
                           <i className="flaticon-tick-1"></i>
                           Data mining for in situ oil extraction
                         </li>
-                        <li>
+                        <li className="dark:text-[#9BA9B4] text-[#737b9a]">
                           <i className="flaticon-tick-1"></i>
                           Fuel consumption benchmarking
                         </li>
-                        <li>
+                        <li className="dark:text-[#9BA9B4] text-[#737b9a]">
                           <i className="flaticon-tick-1"></i>
                           Carbon/emission intensity benchmarking
                         </li>
@@ -86,8 +94,10 @@ const SolutionsTab = () => {
                       <h3 className="dark:text-[#ffffff]">
                         Air emissions/quality monitoring by
                       </h3>
-                      <h3>cost-effective sensors</h3>
-                      <p>
+                      <h3 className="dark:text-[#ffffff]">
+                        cost-effective sensors
+                      </h3>
+                      <p className="dark:text-[#9BA9B4]">
                         We calibrated a low-cost particle sensor using machine
                         learning techniques. The particle senor was used to
                         monitor ambient air quality. The internet of thing (IoT)
@@ -97,15 +107,15 @@ const SolutionsTab = () => {
                       </p>
 
                       <ul className="tab-list">
-                        <li>
+                        <li className="dark:text-[#9BA9B4] text-[#737b9a]">
                           <i className="flaticon-tick-1"></i>
                           Air emissions monitoring
                         </li>
-                        <li>
+                        <li className="dark:text-[#9BA9B4] text-[#737b9a]">
                           <i className="flaticon-tick-1"></i>
                           Sensor calibration using machine learning methods
                         </li>
-                        <li>
+                        <li className="dark:text-[#9BA9B4] text-[#737b9a]">
                           <i className="flaticon-tick-1"></i>
                           Neural network and gradient boosting
                         </li>
@@ -131,8 +141,10 @@ const SolutionsTab = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
-                      <h3>Free AI-Based Emission Monitoring</h3>
-                      <p>
+                      <h3 className="dark:text-[#ffffff]">
+                        Free AI-Based Emission Monitoring
+                      </h3>
+                      <p className="dark:text-[#9BA9B4]">
                         OpenPEMS&trade; is a free and open source predictive
                         emissions monitoring system (PEMS) that trains models to
                         predictive air emissions, such as NOx and SO2, which are
@@ -141,15 +153,15 @@ const SolutionsTab = () => {
                       </p>
 
                       <ul className="tab-list">
-                        <li>
+                        <li className="dark:text-[#9BA9B4] text-[#737b9a]">
                           <i className="flaticon-tick-1"></i>
                           Predictive emission monitoring system
                         </li>
-                        <li>
+                        <li className="dark:text-[#9BA9B4] text-[#737b9a]">
                           <i className="flaticon-tick-1"></i>
                           Machine learning methods for emission monitoring
                         </li>
-                        <li>
+                        <li className="dark:text-[#9BA9B4] text-[#737b9a]">
                           <i className="flaticon-tick-1"></i>
                           Emission monitoring and reporting
                         </li>
@@ -187,8 +199,10 @@ const SolutionsTab = () => {
 
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
-                      <h3>Data-driven approaches for predictive analytics</h3>
-                      <p>
+                      <h3 className="dark:text-[#ffffff]">
+                        Data-driven approaches for predictive analytics
+                      </h3>
+                      <p className="dark:text-[#9BA9B4]">
                         Data-driven discovery from Petrinex using unsupervised
                         machine learning algorithms to discover steam
                         consumption patterns for in situ oil sand operations to
@@ -199,15 +213,15 @@ const SolutionsTab = () => {
                       </p>
 
                       <ul className="tab-list">
-                        <li>
+                        <li className="dark:text-[#9BA9B4] text-[#737b9a]">
                           <i className="flaticon-tick-1"></i>
                           Data-driven for in situ oil sand operations
                         </li>
-                        <li>
+                        <li className="dark:text-[#9BA9B4] text-[#737b9a]">
                           <i className="flaticon-tick-1"></i>
                           Steam consumption patterns
                         </li>
-                        <li>
+                        <li className="dark:text-[#9BA9B4] text-[#737b9a]">
                           <i className="flaticon-tick-1"></i>
                           SOR and carbon intensity
                         </li>

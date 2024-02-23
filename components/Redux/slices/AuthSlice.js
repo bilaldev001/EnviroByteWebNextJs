@@ -38,6 +38,23 @@ export const loginUser = createAsyncThunk(
   }
 );
 
+// Update User
+export const updateUser = createAsyncThunk(
+  "user/update",
+  async ({ formData, userId }, thunkAPI) => {
+    try {
+      let response = await axios.patch(`/api/user/${userId}`, formData);
+      toast.success(response?.data?.message);
+      return response.data;
+    } catch (error) {
+      console.log(error);
+      let message = error.response?.data?.message;
+      toast.error(message);
+      return thunkAPI.rejectWithValue(message);
+    }
+  }
+);
+
 // Login User
 export const blogCount = createAsyncThunk(
   "blogs",
@@ -114,6 +131,19 @@ export const AuthSlice = createSlice({
       })
       .addCase(blogCount.rejected, (state, action) => {
         state.blogCountData = { validation: false };
+        state.error = action.payload;
+        state.loading = false;
+      })
+      .addCase(updateUser.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(updateUser.fulfilled, (state, action) => {
+        state.user = action.payload;
+        state.isAuthenticated = true;
+        state.error = null;
+        state.loading = false;
+      })
+      .addCase(updateUser.rejected, (state, action) => {
         state.error = action.payload;
         state.loading = false;
       });

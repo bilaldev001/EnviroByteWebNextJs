@@ -139,7 +139,6 @@ export const AuthSlice = createSlice({
       })
       .addCase(updateUser.fulfilled, (state, action) => {
         state.user = action.payload;
-        state.isAuthenticated = true;
         state.error = null;
         state.loading = false;
       })

@@ -16,20 +16,18 @@ const EditAccountForm = () => {
   // Form Initial Values
   const initialValues = {
     username: userData?.username,
-    password: "",
+    email: userData?.email,
   };
 
   // Error Schema
   const errorSchema = Yup.object().shape({
     username: Yup.string().required("Name is required"),
-    password: Yup.string(),
   });
 
   // Form Submission
   const handleSubmit = async (values) => {
     let formData = {
       username: values?.username,
-      password: values?.password,
     };
     disptach(updateUser({ formData, userId }));
   };
@@ -46,20 +44,21 @@ const EditAccountForm = () => {
       >
         {() => (
           <Form className="w-full">
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-x-4">
+              <TextField
+                type="email"
+                label="Email"
+                name="email"
+                placeholder=""
+                readOnly
+                autocomplete={true}
+              />
               <TextField
                 type="text"
                 label="Name"
                 name="username"
                 placeholder="Enter your name"
                 autocomplete={true}
-              />
-              <TextField
-                type="password"
-                label="Password"
-                name="password"
-                placeholder="Enter your password"
-                autocomplete={false}
               />
             </div>
             <div className="flex justify-end">

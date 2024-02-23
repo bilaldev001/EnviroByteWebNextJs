@@ -1,7 +1,7 @@
 import React from "react";
 import { ErrorMessage, useField } from "formik";
 
-const CustomInput = ({ label, ...props }) => {
+const CustomInput = ({ label, righticon, ...props }) => {
   const [field, meta] = useField(props);
 
   return (
@@ -14,13 +14,17 @@ const CustomInput = ({ label, ...props }) => {
           {label}
         </label>
       )}
-      <input
-        className={`custom-form-input w-full text-gray-800 dark:text-[#ffffff] focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 ${
-          meta.touched && meta.error && "border border-error error-form"
-        }`}
-        {...field}
-        {...props}
-      />
+      <div className="flex items-center">
+        <input
+          className={`custom-form-input w-full text-gray-800 dark:text-[#ffffff] focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 ${
+            meta.touched && meta.error && "border border-error error-form"
+          }`}
+          {...field}
+          {...props}
+        />
+        {righticon}
+      </div>
+
       <ErrorMessage
         component="p"
         name={field.name}

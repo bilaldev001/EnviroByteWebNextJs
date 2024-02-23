@@ -8,23 +8,28 @@ import SolutionsTab from "../components/Common/SolutionsTab";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
 import withMainLayout from "../components/Layouts";
-import { ThemeProvider } from "../utils/theme";
-import { getPostMeta } from '../middleware/post';
+
+async function fetchData() {
+  try {
+    const response = await fetch('http://localhost:3000/api/blogs/getBlogs');
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    throw error;
+  }
+}
 
 
 const Index =  () => {
-  
-    const fetchData = async () => {
-      try {
-      await getPostMeta();
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-    fetchData();
-  return (
 
- 
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  return (
     <div className={"duration-200 --font-inter font-inter"}>
       <>
         <Head>

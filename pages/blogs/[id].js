@@ -2,17 +2,19 @@ import { useRouter } from "next/router";
 import React from "react";
 import Head from "next/head";
 import PageBanner from "../../components/Common/PageBanner";
-import DummyBlogs from "../../components/Blogs/DummyBlogs.json";
 import BlogDetail from "../../components/Blogs/BlogDetail";
 import withMainLayout from "../../components/Layouts";
 import ToastContainer from "../../components/Shared/Toast";
+import grayMatter from 'gray-matter';
+import { getPostContent } from '../.././middleware/post';
 
-const BlogDetails = () => {
+
+const BlogDetails = ({blogDatam}) => {
+  console.log(posts)
   const router = useRouter();
   const { id } = router.query;
 
-  const blogData = DummyBlogs.data.find((data) => data?.id == id);
-
+  const blogData = posts.data.find((data) => data?.id == id);
   return (
     <div>
       <Head>
@@ -47,5 +49,44 @@ const BlogDetails = () => {
     </div>
   );
 };
+
+export async function getStaticPaths() {
+  // Fetch the list of IDs from your API or wherever your data comes from
+  const response = await fetch('http://localhost:3000/api/blogs/getBlogs');
+  const data = await response.json();
+
+  const paths = data.newFilesPath.map((file) => ({
+    params: { id: file.filePath }, // Assuming your IDs are file paths
+  }));
+
+  return { paths, fallback: false };
+}
+export async function getStaticProps({ params }) {
+  try {
+    const fileName = params.id;
+    const content = await getPostContent(fileName);
+    if (!content) {
+      console.error(`Failed to fetch content for ${fileName}`);
+      return {
+        notFound: true,
+      };
+    }
+    const { data: frontmatter } = grayMatter(content);
+
+    return {
+      props: {
+        blogData: {
+          content,
+          frontmatter,
+        },
+      },
+    };
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    return {
+      notFound: true,
+    };
+  }
+}
 
 export default withMainLayout(BlogDetails);

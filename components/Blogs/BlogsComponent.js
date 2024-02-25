@@ -5,7 +5,7 @@ import DummyBlogs from "./DummyBlogs.json";
 import NewsLetter from "./NewsLetter";
 
 
-const BlogsComponent2 = ({ posts }) => {
+const BlogsComponent= ({ posts}) => {
   const [currentPage, setCurrentPage] = useState(0);
   return (
     <div className="bg-[#ffffff] dark:bg-[#151719] transition">
@@ -17,7 +17,7 @@ const BlogsComponent2 = ({ posts }) => {
         {/* Blogs Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
         {posts?.map((post, index) => (
-            <BlogCard data={post} key={index} />
+            <BlogCard data={post} key={index}/>
           ))}
         </div>
 
@@ -38,4 +38,4 @@ const BlogsComponent2 = ({ posts }) => {
 
 
 
-export default BlogsComponent2;
+export default BlogsComponent;

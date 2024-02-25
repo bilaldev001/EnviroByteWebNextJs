@@ -54,6 +54,7 @@ export default async function handler(req, res) {
         if (!existingUser) {
             return res.status(404).json({ message: 'User not found' });
         }
+        let updatedUser;
     
         if(oldPassword && newPassword){
             let passwordMatch;
@@ -69,7 +70,7 @@ export default async function handler(req, res) {
             }
             const hashedPassword = await hashPassword(newPassword);
             try {
-                await prisma.user.update({
+                updatedUser =  await prisma.user.update({
                     where: {
                         id: parseInt(id, 10),
                     },
@@ -82,10 +83,9 @@ export default async function handler(req, res) {
                 res.status(500).json({ message: 'Internal Server Error' });
                 return;
             }
-            res.status(201).json({ message:'password update successfully' });
+            res.status(201).json({updatedUser, message:'user update successfully' });
 
         }
-        let updatedUser;
         try {
             updatedUser = await prisma.user.update({
                 where: {
@@ -99,7 +99,7 @@ export default async function handler(req, res) {
             return;
         }
     
-        res.status(201).json({ message:'user update successfully' });
+        res.status(201).json({updatedUser, message:'user update successfully' });
     }
     
     else if (req.method === 'DELETE') {

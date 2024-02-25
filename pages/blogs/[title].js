@@ -9,12 +9,7 @@ import grayMatter from 'gray-matter';
 import { getPostContent } from '../.././middleware/post';
 
 
-const BlogDetails = ({blogDatam}) => {
-  console.log(posts)
-  const router = useRouter();
-  const { id } = router.query;
-
-  const blogData = posts.data.find((data) => data?.id == id);
+const BlogDetails = ({posts}) => {
   return (
     <div>
       <Head>
@@ -38,55 +33,85 @@ const BlogDetails = ({blogDatam}) => {
         />
       </Head>
       <ToastContainer />
-      <PageBanner
-        pageTitle={blogData?.title}
+       <PageBanner
+        pageTitle={posts?.frontmatter?.title}
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Blog"
         breadcrumbUrl="/"
-        // bgImage="https://preview.cruip.com/open-pro/images/news-single.jpg"
+        bgImage="https://preview.cruip.com/open-pro/images/news-single.jpg"
       />
-      <BlogDetail blogData={blogData} />
+      <BlogDetail blogData={posts} /> 
     </div>
   );
 };
 
+
+
 export async function getStaticPaths() {
-  // Fetch the list of IDs from your API or wherever your data comes from
-  const response = await fetch('http://localhost:3000/api/blogs/getBlogs');
+  const response = await fetch('http://localhost:3000/api/blogs/getBlogs')
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
   const data = await response.json();
 
-  const paths = data.newFilesPath.map((file) => ({
-    params: { id: file.filePath }, // Assuming your IDs are file paths
-  }));
-
-  return { paths, fallback: false };
+if (!data || data.newFilesPath.length === 0) {
+  return {
+    notFound: true,
+  };
 }
-export async function getStaticProps({ params }) {
-  try {
-    const fileName = params.id;
-    const content = await getPostContent(fileName);
-    if (!content) {
-      console.error(`Failed to fetch content for ${fileName}`);
-      return {
-        notFound: true,
-      };
-    }
-    const { data: frontmatter } = grayMatter(content);
+const posts = await Promise.all(data.newFilesPath.map(async (file) => {
+  const fileName = file.filePath;
+  const content = await getPostContent(fileName);
 
-    return {
-      props: {
-        blogData: {
-          content,
-          frontmatter,
-        },
-      },
-    };
-  } catch (error) {
-    console.error('Error fetching data:', error);
+  if (!content) {
+    console.error(`Failed to fetch content for ${fileName}`);
+    return null;
+  }
+  const { data: frontmatter } = grayMatter(content);
+  return {
+    content,
+    frontmatter,
+  };
+}));
+const titles = posts.map(post => post.frontmatter.title);
+  return {
+    paths: titles.map(title => ({ params: { title } })),
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({params}) {
+  const response = await fetch('http://localhost:3000/api/blogs/getBlogs')
+  if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+
+  if (!data || data.newFilesPath.length === 0) {
     return {
       notFound: true,
     };
   }
-}
+  const posts = await Promise.all(data.newFilesPath.map(async (file) => {
+    const fileName = file.filePath;
+    const content = await getPostContent(fileName);
 
+    if (!content) {
+      console.error(`Failed to fetch content for ${fileName}`);
+      return null;
+    }
+    const { data: frontmatter } = grayMatter(content);
+    return {
+      content,
+      frontmatter,
+    };
+  }));
+  const validPosts = posts.filter((post) => post !== null);
+  const filterPost = validPosts.find(post=>post.frontmatter.title === params.title)
+  return {
+    props: {
+      posts: filterPost,
+    },
+  };
+}
 export default withMainLayout(BlogDetails);

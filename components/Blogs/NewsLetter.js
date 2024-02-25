@@ -21,12 +21,12 @@ const NewsLetter = () => {
     }
   };
   return (
-    <div className="container news-letter-container flex flex-col md:flex-row lg:flex-row items-center">
-      <div className="section-title w-full md:w-[50%] mt-0 container">
-        <h1 className="md:text-start text-white mt-4 text-[32px] mb-2">
+    <div className="container news-letter-container flex flex-col md:flex-row lg:flex-row items-center py-[64px] px-[48px] mt-0">
+      <div className="section-title w-full md:w-[50%] m-0 container">
+        <h1 className="md:text-start text-white text-[32px] mb-2">
           Stay in the loop
         </h1>
-        <p className="md:text-start text-white text-[18px]">
+        <p className="md:text-start text-white text-[18px] leading-7">
           Join our newsletter to get top news before anyone else.
         </p>
       </div>

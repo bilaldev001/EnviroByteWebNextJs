@@ -281,152 +281,6 @@ const Navbar = () => {
                     </ul>
                   </li>
 
-                  {/* <li className="nav-item">
-                    <Link legacyBehavior href="#">
-                      <a className="nav-link">
-                        EmissionX <i className="fas fa-chevron-down"></i>
-                      </a>
-                    </Link>
-
-                    <ul
-                      className={`dropdown-menu ${
-                        !menu ? "shadow-none m-0" : ""
-                      }`}
-                    >
-                      <li className="nav-item">
-                        <Link
-                          legacyBehavior
-                          href="/emissionx"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link" target="_blank">
-                            Emission
-                          </a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          legacyBehavior
-                          href="/emissionx/life-cycle-assessment"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">LCA</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          legacyBehavior
-                          href="/emissionx/climate-change"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">Climate Change</a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link legacyBehavior href="#">
-                      <a className="nav-link">
-                        Data Science <i className="fas fa-chevron-down"></i>
-                      </a>
-                    </Link>
-
-                    <ul
-                      className={`dropdown-menu ${
-                        !menu ? "shadow-none m-0" : ""
-                      }`}
-                    >
-                      <li className="nav-item">
-                        <Link
-                          legacyBehavior
-                          href="/data-science/advanced-data-analytics"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">Advanced Data Analytics</a>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          legacyBehavior
-                          href="/data-science/IoT-Air-Quality-Monitoring"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">IoT Air Quality Monitoring</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          legacyBehavior
-                          href="/data-science/predictive-emissions-monitoring"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">OpenPEMS&trade;</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          legacyBehavior
-                          href="/data-science/predictive-analytics"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link">Predictive Analytics</a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link legacyBehavior href="#">
-                      <a className="nav-link">
-                        App <i className="fas fa-chevron-down"></i>
-                      </a>
-                    </Link>
-
-                    <ul
-                      className={`dropdown-menu ${
-                        !menu ? "shadow-none m-0" : ""
-                      }`}
-                    >
-                      <li className="nav-item">
-                        <Link
-                          legacyBehavior
-                          href="https://ghg.envirobyte.com"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link" target="_blank">
-                            Emission Factor Hub
-                          </a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          legacyBehavior
-                          href="https://airemission.envirobyte.com"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link" target="_blank">
-                            Air Emission Factor Hub
-                          </a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          legacyBehavior
-                          href="https://steamapp.envirobyte.com"
-                          activeClassName="active"
-                        >
-                          <a className="nav-link" target="_blank">
-                            Steam App
-                          </a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </li> */}
-
                   <li className="nav-item">
                     <Link
                       legacyBehavior
@@ -436,6 +290,11 @@ const Navbar = () => {
                       <a className="nav-link">Contact Us</a>
                     </Link>
                   </li>
+                </ul>
+              </div>
+
+              <div className={classOne} id="navbarSupportedContent">
+                <ul className="navbar-nav md:flex align-items-md-center align-items-start">
                   {isAuthenticated ? (
                     <>
                       <li

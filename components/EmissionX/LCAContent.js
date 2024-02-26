@@ -7,7 +7,7 @@ const EmissionXContent = () => {
       <div className="project-details-area ptb-100 dark:bg-[#151719]">
         <div className="container">
           <div className="projects-details-desc">
-            <h3 className="dark:text-[#ffffff]">
+            <h3 className="dark:text-[#D9E3EA]">
               Environmental Product Declaration (EPD)
             </h3>
             <p className="dark:text-[#9BA9B4]">

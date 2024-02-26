@@ -4,16 +4,16 @@ import Link from "next/link";
 const GetStartedProject = () => {
   return (
     <>
-      <div className="productive-section pt-100">
+      <div className="productive-section ptb-100 dark:bg-[#151719]">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="productive-content">
                 <span>Let’s Get Started</span>
-                <h3>
+                <h3 className="dark:text-[#D9E3EA]">
                   Are you ready for a better, more productive emission reporting{" "}
                 </h3>
-                <p>
+                <p className="text-[#666666] dark:text-[#9BA9B4]">
                   We build the products that we want to use ourselves. This is
                   why we design EmissionX with easy verification and assurance
                   in mind by integrating data science tools (e.g. Jupyter Lab)

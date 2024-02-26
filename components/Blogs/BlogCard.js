@@ -2,11 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { truncateString } from "../Utils/TruncateText";
-import grayMatter from 'gray-matter';
-
+import grayMatter from "gray-matter";
 
 const BlogCard = ({ data }) => {
-  var {content: parsedContent } = grayMatter(data);
+  var { content: parsedContent } = grayMatter(data);
   const tagColor = (tag) => {
     switch (tag) {
       case "history":
@@ -22,7 +21,10 @@ const BlogCard = ({ data }) => {
     }
   };
   return (
-    <Link href={`/blogs/${data?.frontmatter?.title}`} className="blog-card-container">
+    <Link
+      href={`/blogs/${data?.frontmatter?.title}`}
+      className="blog-card-container"
+    >
       <img
         src={"https://preview.cruip.com/open-pro/images/news-inner-image.jpg"}
         alt={data?.title}
@@ -43,11 +45,14 @@ const BlogCard = ({ data }) => {
             </div>
           ))}
       </div>
-      <h3 className="blog-title dark:text-[#ffffff]" title={data?.frontmatter?.title}>
-        {truncateString(data?.frontmatter?.title,20)}
+      <h3
+        className="blog-title dark:text-[#D9E3EA]"
+        title={data?.frontmatter?.title}
+      >
+        {truncateString(data?.frontmatter?.title, 20)}
       </h3>
       <p className="blog-description text-justify" title={parsedContent}>
-        {truncateString(parsedContent,100)}
+        {truncateString(parsedContent, 100)}
       </p>
       <div className="flex align-items-center ">
         <img
@@ -55,12 +60,11 @@ const BlogCard = ({ data }) => {
           alt="user-img"
           className="w-[50px] h-[50px] rounded-full"
         />
-        <h5 className="mx-3 dark:text-[#ffffff]">Dummy User</h5>
+        <h5 className="mx-3 dark:text-[#D9E3EA]">Dummy User</h5>
         <p>{new Date().toLocaleDateString()}</p>
       </div>
     </Link>
   );
 };
-
 
 export default BlogCard;

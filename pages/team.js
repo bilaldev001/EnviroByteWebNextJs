@@ -34,7 +34,8 @@ const Team = () => {
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Our Team Member"
         breadcrumbUrl="/"
-        bgImage=""
+        subHeading="Developers are trusted to create an engaging experience for their companies, so we build tools to help them."
+        bgImage="https://preview.cruip.com/open-pro/images/about-hero.jpg"
       />
       <TeamMemberContent />
     </div>

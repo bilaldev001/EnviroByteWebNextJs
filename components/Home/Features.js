@@ -32,7 +32,7 @@ export default function Features() {
                     viewBox="0 0 540 520"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g className="fill-current text-[#00b0ee]">
+                    <g className="fill-current text-purple-600">
                       <circle className="pulse" cx="270" cy="260" r="64" />
                       <circle
                         className="pulse pulse-1"
@@ -59,14 +59,14 @@ export default function Features() {
               {/* Content */}
               <div
                 className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-anchor="[data-aos-id-features-home]"
               >
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-[#666666] dark:text-[#9BA9B4] mb-2 text-[16px]">
                     Lighting fast workflow
                   </div>
-                  <h3 className="h3 mb-3 text-2xl sm:text-3xl font-bold text-[#191919] dark:text-[#ffffff]">
+                  <h3 className="h3 mb-3 text-2xl sm:text-3xl font-bold text-[#191919] dark:text-[#D9E3EA]">
                     Say hello to research data
                   </h3>
                   <p className="text-[18px] text-[#666666] dark:text-[#9BA9B4] mb-4">

@@ -29,10 +29,10 @@ const SolutionsTab = () => {
 
               <TabPanel>
                 {/* Tabs item 1 */}
-                <div className="row align-items-center dark:bg-[#25282C] py-8 md:py-16 px-6 md:pl-16 shadow-teamCard">
+                <div className="row align-items-center mx-0 dark:bg-[#25282C] py-8 md:py-16 px-6 md:pl-16 shadow-teamCard">
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
-                      <h3 className="dark:text-[#ffffff]">
+                      <h3 className="dark:text-[#D9E3EA]">
                         Advanced Data Analytics
                       </h3>
                       <p className="dark:text-[#9BA9B4]">
@@ -82,7 +82,7 @@ const SolutionsTab = () => {
               </TabPanel>
               {/* Tabs item 2 */}
               <TabPanel>
-                <div className="row align-items-center dark:bg-[#25282C] py-8 md:py-16 px-6 md:pl-16 shadow-teamCard">
+                <div className="row align-items-center mx-0 dark:bg-[#25282C] py-8 md:py-16 px-6 md:pl-16 shadow-teamCard">
                   <div className="col-lg-5">
                     <div className="tab-image-left">
                       <IOTAQMLogo width={450} height={500} alt="logo" />
@@ -91,10 +91,10 @@ const SolutionsTab = () => {
 
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
-                      <h3 className="dark:text-[#ffffff]">
+                      <h3 className="dark:text-[#D9E3EA]">
                         Air emissions/quality monitoring by
                       </h3>
-                      <h3 className="dark:text-[#ffffff]">
+                      <h3 className="dark:text-[#D9E3EA]">
                         cost-effective sensors
                       </h3>
                       <p className="dark:text-[#9BA9B4]">
@@ -138,10 +138,10 @@ const SolutionsTab = () => {
 
               {/* Tabs item 3 */}
               <TabPanel>
-                <div className="row align-items-center dark:bg-[#25282C] py-8 md:py-16 px-6 md:pl-16 shadow-teamCard">
+                <div className="row align-items-center mx-0 dark:bg-[#25282C] py-8 md:py-16 px-6 md:pl-16 shadow-teamCard">
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
-                      <h3 className="dark:text-[#ffffff]">
+                      <h3 className="dark:text-[#D9E3EA]">
                         Free AI-Based Emission Monitoring
                       </h3>
                       <p className="dark:text-[#9BA9B4]">
@@ -190,7 +190,7 @@ const SolutionsTab = () => {
               </TabPanel>
               {/* Tabs item 4 */}
               <TabPanel>
-                <div className="row align-items-center dark:bg-[#25282C] py-8 md:py-16 px-6 md:pl-16 shadow-teamCard">
+                <div className="row align-items-center mx-0 dark:bg-[#25282C] py-8 md:py-16 px-6 md:pl-16 shadow-teamCard">
                   <div className="col-lg-5">
                     <div className="tab-image-left">
                       <PMaintainceLogo alt="logo" />
@@ -199,7 +199,7 @@ const SolutionsTab = () => {
 
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
-                      <h3 className="dark:text-[#ffffff]">
+                      <h3 className="dark:text-[#D9E3EA]">
                         Data-driven approaches for predictive analytics
                       </h3>
                       <p className="dark:text-[#9BA9B4]">

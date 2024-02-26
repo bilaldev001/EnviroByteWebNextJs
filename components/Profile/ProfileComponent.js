@@ -18,7 +18,7 @@ const ProfileComponent = () => {
                   className={`outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#0e3496] ${
                     tabIndex === 0
                       ? "dark:text-[#023496]"
-                      : "dark:text-[#ffffff]"
+                      : "dark:text-[#D9E3EA]"
                   } px-4 py-3`}
                 >
                   Edit Account
@@ -28,7 +28,7 @@ const ProfileComponent = () => {
                   className={`outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#0e3496] ${
                     tabIndex === 1
                       ? "dark:text-[#023496]"
-                      : "dark:text-[#ffffff]"
+                      : "dark:text-[#D9E3EA]"
                   } px-4 py-3`}
                 >
                   Change Password
@@ -38,7 +38,7 @@ const ProfileComponent = () => {
                   className={`outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#0e3496] ${
                     tabIndex === 2
                       ? "dark:text-[#023496]"
-                      : "dark:text-[#ffffff]"
+                      : "dark:text-[#D9E3EA]"
                   } px-4 py-3`}
                 >
                   Preferred Content

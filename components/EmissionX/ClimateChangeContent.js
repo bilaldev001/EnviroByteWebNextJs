@@ -7,7 +7,7 @@ const ClimateChangeContent = () => {
       <div className="project-details-area ptb-100 dark:bg-[#151719]">
         <div className="container">
           <div className="projects-details-desc">
-            <h3 className="dark:text-[#ffffff]">Climate Change Adaptation</h3>
+            <h3 className="dark:text-[#D9E3EA]">Climate Change Adaptation</h3>
             <p className="dark:text-[#9BA9B4]">
               Adaptation involves changing human and natural systems to respond
               to the future impacts of climate change. In other words,
@@ -27,7 +27,7 @@ const ClimateChangeContent = () => {
               effective and detailed training on these actions for a smooth
               transition to a more climate-conscious business.
             </p>
-            <h3 className="dark:text-[#ffffff]">Climate Change Mitigation</h3>
+            <h3 className="dark:text-[#D9E3EA]">Climate Change Mitigation</h3>
             <p className="dark:text-[#9BA9B4]">
               Mitigation strategy is one that aim to reduce greenhouse gas
               emissions that contribute to climate change. In other words,
@@ -52,7 +52,7 @@ const ClimateChangeContent = () => {
               climate mitigation actions, we can ensure a smooth transition from
               thinking about sustainability to really making a difference.
             </p>
-            <h3 className="dark:text-[#ffffff]">
+            <h3 className="dark:text-[#D9E3EA]">
               Climate change risk assessment
             </h3>
             <p className="dark:text-[#9BA9B4]">
@@ -74,7 +74,7 @@ const ClimateChangeContent = () => {
               planning and implementing climate change adaptation.
             </p>
 
-            <h3 className="dark:text-[#ffffff]">
+            <h3 className="dark:text-[#D9E3EA]">
               Task-Force on Climate-Related Financial Disclosures
             </h3>
             <p className="dark:text-[#9BA9B4]">

@@ -9,7 +9,7 @@ export default function Target() {
           {/* Section header */}
           <div className=" text-center pb-12 md:pb-20">
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl text-[#191919] dark:text-[#ffffff] font-bold"
+              className="text-2xl sm:text-3xl md:text-4xl text-[#191919] dark:text-[#D9E3EA] font-bold"
               data-aos="fade-up"
             >
               From the big picture to every tiny detail, we got you covered.

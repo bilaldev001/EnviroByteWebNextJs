@@ -42,7 +42,7 @@ const TeamMemberContent = () => {
         <div className="container">
           <div className="section-title">
             <span className="dark:text-[#9BA9B4]">Our Experts</span>
-            <h2 className="dark:text-[#ffffff]">
+            <h2 className="dark:text-[#D9E3EA]">
               People who started EnviroByte
             </h2>
           </div>
@@ -56,7 +56,7 @@ const TeamMemberContent = () => {
 
             <div className="section-title pt-5">
               <span className="dark:text-[#9BA9B4]">Our Advisors</span>
-              <h2 className="dark:text-[#ffffff]">
+              <h2 className="dark:text-[#D9E3EA]">
                 People who advise EnviroByte
               </h2>
             </div>

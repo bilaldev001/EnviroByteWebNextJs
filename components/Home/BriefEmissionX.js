@@ -23,7 +23,7 @@ const BriefEmissionX = () => {
                 <span className="text-[#666666] dark:text-[#9BA9B4]">
                   A Scalable and Customizable Emissions Reporting Tool
                 </span>
-                <h2 className="text-[#191919] dark:text-[#ffffff]">
+                <h2 className="text-[#191919] dark:text-[#D9E3EA]">
                   EmissionX&trade;
                 </h2>
                 <p className="text-[#666666] dark:text-[#9BA9B4]">
@@ -35,20 +35,20 @@ const BriefEmissionX = () => {
                 </p>
 
                 <ul className="about-list">
-                  <li className="text-[#191919] dark:text-[#ffffff]">
-                    <i className="flaticon-tick text-[#191919] dark:text-[#ffffff]"></i>
+                  <li className="text-[#191919] dark:text-[#D9E3EA]">
+                    <i className="flaticon-tick text-[#191919] dark:text-[#D9E3EA]"></i>
                     Alberta TIER, BC GHG, SK OBPS, ECCC OBPS
                   </li>
-                  <li className="text-[#191919] dark:text-[#ffffff]">
-                    <i className="flaticon-tick text-[#191919] dark:text-[#ffffff]"></i>
+                  <li className="text-[#191919] dark:text-[#D9E3EA]">
+                    <i className="flaticon-tick text-[#191919] dark:text-[#D9E3EA]"></i>
                     GHG Protocol
                   </li>
-                  <li className="text-[#191919] dark:text-[#ffffff]">
-                    <i className="flaticon-tick text-[#191919] dark:text-[#ffffff]"></i>
+                  <li className="text-[#191919] dark:text-[#D9E3EA]">
+                    <i className="flaticon-tick text-[#191919] dark:text-[#D9E3EA]"></i>
                     US EPA GHGRP
                   </li>
-                  <li className="text-[#191919] dark:text-[#ffffff]">
-                    <i className="flaticon-tick text-[#191919] dark:text-[#ffffff]"></i>
+                  <li className="text-[#191919] dark:text-[#D9E3EA]">
+                    <i className="flaticon-tick text-[#191919] dark:text-[#D9E3EA]"></i>
                     ECCC NPRI, ECCC GHGRP
                   </li>
                 </ul>

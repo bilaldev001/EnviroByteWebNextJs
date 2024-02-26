@@ -7,7 +7,7 @@ const EmissionXContent = () => {
       <div className="project-details-area ptb-100 dark:bg-[#151719]">
         <div className="container">
           <div className="projects-details-desc">
-            <h3 className="dark:text-[#ffffff]">Why We Do This</h3>
+            <h3 className="dark:text-[#D9E3EA]">Why We Do This</h3>
             <img
               src="/images/emisssionx/EmissionX_Blue.svg"
               align="right"
@@ -22,7 +22,7 @@ const EmissionXContent = () => {
               <a
                 href="https://podcasts.apple.com/us/podcast/steve-jobs-at-the-d-all-things-digital-conference-video/id529997900"
                 target="_blank"
-                className="dark:text-[#ffffff]"
+                className="dark:text-[#D9E3EA]"
               >
                 D5 conference
               </a>
@@ -36,7 +36,7 @@ const EmissionXContent = () => {
               <a
                 href="https://www.youtube.com/watch?v=wvhW8cp15tk"
                 target="_blank"
-                className="dark:text-[#ffffff]"
+                className="dark:text-[#D9E3EA]"
               >
                 {" "}
                 See the video

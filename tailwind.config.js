@@ -42,6 +42,17 @@ module.exports = {
           800: "#285E61",
           900: "#234E52",
         },
+        purple: {
+          100: "#F4F4FF",
+          200: "#E2E1FF",
+          300: "#CBCCFF",
+          400: "#ABABFF",
+          500: "#8D8DFF",
+          600: "#5D5DFF",
+          700: "#4B4ACF",
+          800: "#38379C",
+          900: "#262668",
+        },
       },
       boxShadow: {
         xs: "0 0 0 1px rgba(0, 0, 0, 0.16)",
@@ -64,10 +75,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ["var(--font-inter)", "sans-serif"],
-        "architects-daughter": [
-          "var(--font-architects-daughter)",
-          "sans-serif",
-        ],
+        "architects-daughter": ["Architects Daughter", "cursive"],
       },
       fontSize: {
         xs: "0.75rem",

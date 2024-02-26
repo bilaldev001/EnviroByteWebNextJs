@@ -10,7 +10,7 @@ const OurServices = () => {
             <span className="text-[#666666] dark:text-[#9BA9B4]">
               Be the Change
             </span>
-            <h2 className="text-[#191919] dark:text-[#ffffff]">
+            <h2 className="text-[#191919] dark:text-[#D9E3EA]">
               Data-driven Reporting and Planning
             </h2>
           </div>
@@ -24,7 +24,7 @@ const OurServices = () => {
                   </div>
                   <h3>
                     <Link legacyBehavior href="/emissionx/climate-change">
-                      <a className="dark:text-[#ffffff]" target="_blank">
+                      <a className="dark:text-[#D9E3EA]" target="_blank">
                         GHG and Air Emissions
                         <i className="flaticon-right"></i>
                       </a>
@@ -41,7 +41,7 @@ const OurServices = () => {
                       legacyBehavior
                       href="/emissionx/life-cycle-assessment"
                     >
-                      <a className="dark:text-[#ffffff]" target="_blank">
+                      <a className="dark:text-[#D9E3EA]" target="_blank">
                         Life Cycle Assessment
                         <i className="flaticon-right"></i>
                       </a>
@@ -55,7 +55,7 @@ const OurServices = () => {
                   </div>
                   <h3>
                     <Link legacyBehavior href="/emissionx/climate-change">
-                      <a className="dark:text-[#ffffff]" target="_blank">
+                      <a className="dark:text-[#D9E3EA]" target="_blank">
                         Climate Change Adaptation
                         <i className="flaticon-right"></i>
                       </a>
@@ -73,7 +73,7 @@ const OurServices = () => {
                   </div>
                   <h3>
                     <Link legacyBehavior href="/emissionx/climate-change">
-                      <a className="dark:text-[#ffffff]" target="_blank">
+                      <a className="dark:text-[#D9E3EA]" target="_blank">
                         Climate Change Risk Assessment
                         <i className="flaticon-right"></i>
                       </a>
@@ -87,7 +87,7 @@ const OurServices = () => {
                   </div>
                   <h3>
                     <Link legacyBehavior href="/emissionx/climate-change">
-                      <a className="dark:text-[#ffffff]" target="_blank">
+                      <a className="dark:text-[#D9E3EA]" target="_blank">
                         Climate Change Mitigation
                         <i className="flaticon-right"></i>
                       </a>
@@ -101,7 +101,7 @@ const OurServices = () => {
                   </div>
                   <h3>
                     <Link legacyBehavior href="/emissionx/climate-change">
-                      <a className="dark:text-[#ffffff]" target="_blank">
+                      <a className="dark:text-[#D9E3EA]" target="_blank">
                         TCFD Scenario Analysis
                         <i className="flaticon-right"></i>
                       </a>

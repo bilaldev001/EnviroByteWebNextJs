@@ -20,7 +20,7 @@ function ContactForm() {
             </div>
 
             <div className="col-lg-6">
-              <h2 className="font-[800] text-3xl md:text-[40px] lg:text-[3rem] mb-3 dark:text-[#ffffff]">
+              <h2 className="font-[800] text-3xl md:text-[40px] lg:text-[3rem] mb-3 dark:text-[#D9E3EA]">
                 Thank you for contacting us!
               </h2>
               <span className="text-[20px]">
@@ -35,7 +35,7 @@ function ContactForm() {
   return (
     <div className="contact-section ptb-100 dark:bg-[#151719]">
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px]">
-        <h1 className=" text-gray-800 dark:text-[#ffffff] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] mb-3">
+        <h1 className=" text-gray-800 dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] mb-3">
           How can we help you?
         </h1>
         <p className="text-[20px] dark:text-[#9BA9B4]">
@@ -58,7 +58,7 @@ function ContactForm() {
                   type="text"
                   name="name"
                   placeholder="Enter your name"
-                  className="custom-form-input w-full text-gray-800 dark:text-[#ffffff] focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 false"
+                  className="custom-form-input w-full text-gray-800 dark:text-[#D9E3EA] focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 false"
                   required
                 />
                 <ValidationError
@@ -80,7 +80,7 @@ function ContactForm() {
                   type="text"
                   name="email"
                   placeholder="Enter your email address"
-                  className="custom-form-input w-full text-gray-800 dark:text-[#ffffff] focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 false"
+                  className="custom-form-input w-full text-gray-800 dark:text-[#D9E3EA] focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 false"
                   required
                 />
                 <ValidationError
@@ -105,7 +105,7 @@ function ContactForm() {
                   cols="30"
                   rows="6"
                   placeholder="Write your message..."
-                  className="custom-form-input w-full text-gray-800 dark:text-[#ffffff] focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 false"
+                  className="custom-form-input w-full text-gray-800 dark:text-[#D9E3EA] focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 false"
                   required
                 />
                 <ValidationError

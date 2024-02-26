@@ -4,7 +4,7 @@ import DDRPLogo from "../../public/images/our_service/Data-Drived-Landing Page.s
 const OurServices = () => {
   return (
     <>
-      <div className="data-service-section pb-100 dark:bg-[#151719] transition">
+      <div className="data-service-section ptb-100 dark:bg-[#151719] transition">
         <div className="container">
           <div className="section-title">
             <span className="text-[#666666] dark:text-[#9BA9B4]">
@@ -18,7 +18,7 @@ const OurServices = () => {
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-4 col-md-6">
               <div className="data-services-item">
-                <div className="single-data-service-box">
+                <div className="single-data-service-box shadow-teamCard dark:shadow-[#00b0ee26]">
                   <div className="icon">
                     <i className="flaticon-big-data"></i>
                   </div>
@@ -32,7 +32,7 @@ const OurServices = () => {
                   </h3>
                 </div>
 
-                <div className="single-data-service-box">
+                <div className="single-data-service-box shadow-teamCard dark:shadow-[#00b0ee26]">
                   <div className="icon">
                     <i className="flaticon-science"></i>
                   </div>
@@ -49,7 +49,7 @@ const OurServices = () => {
                   </h3>
                 </div>
 
-                <div className="single-data-service-box">
+                <div className="single-data-service-box shadow-teamCard dark:shadow-[#00b0ee26]">
                   <div className="icon">
                     <i className="flaticon-document"></i>
                   </div>
@@ -67,7 +67,7 @@ const OurServices = () => {
 
             <div className="col-lg-4 col-md-6">
               <div className="data-services-item">
-                <div className="single-data-service-box">
+                <div className="single-data-service-box shadow-teamCard dark:shadow-[#00b0ee26]">
                   <div className="icon">
                     <i className="flaticon-data-analytics"></i>
                   </div>
@@ -81,7 +81,7 @@ const OurServices = () => {
                   </h3>
                 </div>
 
-                <div className="single-data-service-box">
+                <div className="single-data-service-box shadow-teamCard dark:shadow-[#00b0ee26]">
                   <div className="icon">
                     <i className="flaticon-chart"></i>
                   </div>
@@ -95,7 +95,7 @@ const OurServices = () => {
                   </h3>
                 </div>
 
-                <div className="single-data-service-box">
+                <div className="single-data-service-box shadow-teamCard dark:shadow-[#00b0ee26]">
                   <div className="icon">
                     <i className="flaticon-data"></i>
                   </div>

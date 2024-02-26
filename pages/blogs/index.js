@@ -3,8 +3,10 @@ import Head from "next/head";
 import PageBanner from "../../components/Common/PageBanner";
 import BlogsComponent from "../../components/Blogs/BlogsComponent";
 import withMainLayout from "../../components/Layouts";
+import { getPostContent } from '../../middleware/post';
+import grayMatter from 'gray-matter'; 
 
-const Blogs = () => {
+const Blogs = ({posts}) => {
   return (
     <div>
       <Head>
@@ -34,9 +36,43 @@ const Blogs = () => {
         breadcrumbUrl="/"
         bgImage=""
       />
-      <BlogsComponent />
+      <BlogsComponent posts={posts} />
     </div>
   );
 };
 
+export async function getStaticProps() {
+    const response = await fetch('http://localhost:3000/api/blogs/getBlogs')
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+
+    if (!data || data.newFilesPath.length === 0) {
+      return {
+        notFound: true,
+      };
+    }
+    const posts = await Promise.all(data.newFilesPath.map(async (file) => {
+      const fileName = file.filePath;
+      const content = await getPostContent(fileName);
+  
+      if (!content) {
+        console.error(`Failed to fetch content for ${fileName}`);
+        return null;
+      }
+      const { data: frontmatter } = grayMatter(content);
+      return {
+        content,
+        frontmatter,
+      };
+    }));
+    const validPosts = posts.filter((post) => post !== null);
+  
+    return {
+      props: {
+        posts: validPosts,
+      },
+    };
+  }
 export default withMainLayout(Blogs);

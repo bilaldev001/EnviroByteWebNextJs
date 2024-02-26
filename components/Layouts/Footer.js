@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import WhiteLogo from "../../public/images/logo/whitemark.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,11 +9,16 @@ const Footer = () => {
       {/* Top Footer Section */}
       <footer className="footer-section ptb-100">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-6">
+          <div className="grid md:grid-cols-12 gap-8 xl:gap-20 mb-8 md:mb-12">
+            <div className="md:col-span-4 lg:col-span-5">
               <div className="single-footer-widget">
                 <div className="footer-heading">
-                  <h3>About Us</h3>
+                  <WhiteLogo
+                    className="white-logo"
+                    width={150}
+                    height={30}
+                    alt="logo"
+                  />
                 </div>
                 <p>
                   At EnviroByte, we build the products that we want to use
@@ -26,8 +32,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-2 col-md-6 col-sm-6">
-              <div className="single-footer-widget">
+            <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="single-footer-widget md:col-span-1 lg:col-span-1">
                 <div className="footer-heading">
                   <h3>Important Links</h3>
                 </div>
@@ -49,7 +55,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="https://www.google.ca">
+                    <Link legacyBehavior href="/signin">
                       <a target="_blank">Login</a>
                     </Link>
                   </li>
@@ -60,17 +66,17 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-
-            <div className="col-lg-2 col-md-6 col-sm-6">
-              <div className="single-footer-widget">
+              <div className="single-footer-widget md:col-span-1 lg:col-span-1">
                 <div className="footer-heading">
                   <h3>Featured Service</h3>
                 </div>
 
                 <ul className="footer-quick-links">
                   <li>
-                    <Link legacyBehavior href="/data-science/predictive-emissions-monitoring">
+                    <Link
+                      legacyBehavior
+                      href="/data-science/predictive-emissions-monitoring"
+                    >
                       <a target="_blank">AI Emissions Monitoring</a>
                     </Link>
                   </li>
@@ -80,7 +86,10 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="/emissionx/life-cycle-assessment">
+                    <Link
+                      legacyBehavior
+                      href="/emissionx/life-cycle-assessment"
+                    >
                       <a target="_blank">Life Cycle Assessment</a>
                     </Link>
                   </li>
@@ -96,10 +105,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-footer-widget">
+              <div className="single-footer-widget md:col-span-1 lg:col-span-1">
                 <div className="footer-heading">
                   <h3>Contact Info</h3>
                 </div>

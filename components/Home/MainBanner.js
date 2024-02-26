@@ -64,13 +64,13 @@ const MainBanner = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6 col-md-12 align-items-center">
+                <div className="col-lg-6 col-md-12 flex items-center justify-center">
                   {/* Main Image */}
                   <DDSLogo
                     width={660}
                     height={555}
                     alt="logo"
-                    className="w-full"
+                    className="lg:w-full md:w-1/2 w-2/3"
                   />
                 </div>
               </div>

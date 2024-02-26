@@ -13,23 +13,23 @@ const SolutionsTab = () => {
           <div className="solutions-list-tab">
             <Tabs>
               <TabList>
-                <Tab className="rounded-pill transition duration-200 shadow-teamCard dark:shadow-[#00b0ee26] text-[#0e3496] dark:text-[#00B0EE] flex justify-center items-center">
+                <Tab className="rounded-pill transition duration-200 shadow-teamCard text-[#0e3496] dark:text-gray-400 dark:bg-gray-800/50 flex justify-center items-center">
                   Advanced Data Analytics
                 </Tab>
-                <Tab className="rounded-pill transition duration-200 shadow-teamCard dark:shadow-[#00b0ee26] text-[#0e3496] dark:text-[#00B0EE] flex justify-center items-center">
+                <Tab className="rounded-pill transition duration-200 shadow-teamCard text-[#0e3496] dark:text-gray-400 dark:bg-gray-800/50 flex justify-center items-center">
                   IoT Air Quality Monitoring
                 </Tab>
-                <Tab className="rounded-pill transition duration-200 shadow-teamCard dark:shadow-[#00b0ee26] text-[#0e3496] dark:text-[#00B0EE] flex justify-center items-center">
+                <Tab className="rounded-pill transition duration-200 shadow-teamCard text-[#0e3496] dark:text-gray-400 dark:bg-gray-800/50 flex justify-center items-center">
                   OpenPEMS&trade;
                 </Tab>
-                <Tab className="rounded-pill transition duration-200 shadow-teamCard dark:shadow-[#00b0ee26] text-[#0e3496] dark:text-[#00B0EE] flex justify-center items-center">
+                <Tab className="rounded-pill transition duration-200 shadow-teamCard text-[#0e3496] dark:text-gray-400 dark:bg-gray-800/50 flex justify-center items-center">
                   Predictive Maintenance/Analytics
                 </Tab>
               </TabList>
 
               <TabPanel>
                 {/* Tabs item 1 */}
-                <div className="row align-items-center">
+                <div className="row align-items-center dark:bg-[#25282C] py-8 md:py-16 px-6 md:pl-16 shadow-teamCard">
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
                       <h3 className="dark:text-[#ffffff]">
@@ -82,7 +82,7 @@ const SolutionsTab = () => {
               </TabPanel>
               {/* Tabs item 2 */}
               <TabPanel>
-                <div className="row align-items-center">
+                <div className="row align-items-center dark:bg-[#25282C] py-8 md:py-16 px-6 md:pl-16 shadow-teamCard">
                   <div className="col-lg-5">
                     <div className="tab-image-left">
                       <IOTAQMLogo width={450} height={500} alt="logo" />
@@ -138,7 +138,7 @@ const SolutionsTab = () => {
 
               {/* Tabs item 3 */}
               <TabPanel>
-                <div className="row align-items-center">
+                <div className="row align-items-center dark:bg-[#25282C] py-8 md:py-16 px-6 md:pl-16 shadow-teamCard">
                   <div className="col-lg-7">
                     <div className="tab-solution-content">
                       <h3 className="dark:text-[#ffffff]">
@@ -190,7 +190,7 @@ const SolutionsTab = () => {
               </TabPanel>
               {/* Tabs item 4 */}
               <TabPanel>
-                <div className="row align-items-center">
+                <div className="row align-items-center dark:bg-[#25282C] py-8 md:py-16 px-6 md:pl-16 shadow-teamCard">
                   <div className="col-lg-5">
                     <div className="tab-image-left">
                       <PMaintainceLogo alt="logo" />

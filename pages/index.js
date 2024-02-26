@@ -8,23 +8,30 @@ import SolutionsTab from "../components/Common/SolutionsTab";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
 import withMainLayout from "../components/Layouts";
-import { ThemeProvider } from "../utils/theme";
-import { getPostMeta } from '../middleware/post';
+import Process from "../components/Home/Process";
+import NewsLetter from "../components/Blogs/NewsLetter";
+import Target from "../components/Home/Target";
+import Features from "../components/Home/Features";
 
+async function fetchData() {
+  try {
+    const response = await fetch("http://localhost:3000/api/blogs/getBlogs");
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    throw error;
+  }
+}
 
-const Index =  () => {
-  
-    const fetchData = async () => {
-      try {
-      await getPostMeta();
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+const Index = () => {
+  useEffect(() => {
     fetchData();
-  return (
+  }, []);
 
- 
+  return (
     <div className={"duration-200 --font-inter font-inter"}>
       <>
         <Head>
@@ -55,11 +62,21 @@ const Index =  () => {
 
         <BriefEmissionX />
 
+        <Process />
+
+        <Features />
+
         <OurServices />
+
+        <Target />
 
         <FunFacts />
 
         <SolutionsTab />
+
+        <div className="pb-[70px] dark:bg-[#151719] transition">
+          <NewsLetter />
+        </div>
       </>
     </div>
   );

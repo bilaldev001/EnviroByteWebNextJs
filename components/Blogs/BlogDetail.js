@@ -7,6 +7,8 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
 import { blogCount } from "../Redux/slices/AuthSlice";
+import grayMatter from 'gray-matter';
+
 
 const tagColor = (tag) => {
   switch (tag) {
@@ -24,7 +26,9 @@ const tagColor = (tag) => {
 };
 
 const BlogDetail = (props) => {
+
   const { blogData } = props;
+  var {content: parsedContent } = grayMatter(blogData);
   const router = useRouter();
   const dispatch = useDispatch();
   const blogCountData = useSelector((state) => state?.auth?.blogCountData);
@@ -49,7 +53,7 @@ const BlogDetail = (props) => {
         className={`container mx-auto pt-100 pb-70 ${
           !validation === undefined
             ? ""
-            : validation === false
+            : validation === true
             ? "blur-md invert brightness-50"
             : ""
         }`}
@@ -57,8 +61,8 @@ const BlogDetail = (props) => {
         <div className="pb-70 bg-[#ffffff] dark:bg-[#151719] transition">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-start gap-2 flex-wrap text-xs font-medium">
-              {blogData?.tags?.length &&
-                blogData?.tags.map((data, index) => (
+              {blogData?.frontmatter?.tags?.length &&
+                blogData?.frontmatter?.tags.map((data, index) => (
                   <div
                     key={index}
                     className={`inline-flex text-center py-1 px-3 rounded-full transition duration-150 ease-in-out ${tagColor(
@@ -73,7 +77,7 @@ const BlogDetail = (props) => {
           <div className="d-flex justify-start items-start gap-4">
             <div className="md:w-[40%]">
               <img
-                src={blogData?.bImage}
+                src={blogData?.frontmatter?.image}
                 className="w-full h-[250px] rounded"
                 alt="title"
                 quality={100}
@@ -82,10 +86,10 @@ const BlogDetail = (props) => {
             </div>
             <div className="md:w-[60%]">
               <h1 className="text-[2rem] text-[#0e3496] mb-2 dark:text-[#ffffff]">
-                {blogData?.title}
+                {blogData?.frontmatter?.title}
               </h1>
               <p className="blog-description text-justify tracking-tight	 text-[18px]">
-                {blogData?.body}
+                {parsedContent}
               </p>
               <div className="flex align-items-center mt-3">
                 <img
@@ -102,12 +106,12 @@ const BlogDetail = (props) => {
         <h1 className="text-3xl border-y py-3 mb-3 dark:text-[#ffffff] dark:border-gray-700">
           More
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
           {DummyBlogs.data.length &&
             DummyBlogs.data
               .slice(0, 3)
               .map((data, index) => <BlogCard data={data} key={index} />)}
-        </div>
+        </div> */}
       </div>
       <Transition.Root
         show={

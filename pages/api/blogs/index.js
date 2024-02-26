@@ -13,7 +13,7 @@ export default async function POST(req, res) {
 
     if (existingRecord && existingRecord.count === 3) {
       return res.status(404).json({
-        message: "you are not able to view blogs please login firts",
+        message: "you are not able to view blogs please login first",
         validation: false,
       });
     }

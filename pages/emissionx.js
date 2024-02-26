@@ -55,13 +55,13 @@ const EmissionX = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
 
-      <PageBanner
+      {/* <PageBanner
         pageTitle="EmissionX"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="EmissionX"
         breadcrumbUrl="/"
         bgImage=""
-      />
+      /> */}
 
       <EmissionXContent />
 

@@ -10,7 +10,7 @@ const TeamCard = ({ data }) => {
           className="rounded-circle xl:h-[14rem] xl:w-[14rem] lg:w-[12rem] lg:h-[12rem] w-[12rem] h-[12rem] group-hover:transform group-hover:scale-110 transition duration-500"
         />
       </div>
-      <h3 className="text-[24px] text-center py-[25px] dark:text-[#D9E3EA]">
+      <h3 className="text-[24px] text-center py-[25px] dark:text-[#D9E3EA] text-[#191919]">
         {data.name}
       </h3>
       <div className="team-social flex items-center gap-[10px] ">

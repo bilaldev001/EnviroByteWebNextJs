@@ -34,7 +34,7 @@ export default async function GET(req, res) {
               });
             })
           );
-       return res.status(201).json({ message: 'file addedd successfully' });
+       return res.status(201).json({ message: 'file added successfully' });
 
     }
     let newFilesPath;

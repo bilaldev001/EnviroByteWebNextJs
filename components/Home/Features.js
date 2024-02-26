@@ -63,10 +63,10 @@ export default function Features() {
                 data-aos-anchor="[data-aos-id-features-home]"
               >
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-[#666666] dark:text-[#9BA9B4] mb-2 text-[16px]">
+                  <div className="font-architects-daughter text-purple-600 mb-2 text-[16px]">
                     Lighting fast workflow
                   </div>
-                  <h3 className="h3 mb-3 text-2xl sm:text-3xl font-bold text-[#191919] dark:text-[#D9E3EA]">
+                  <h3 className="h3 mb-3 text-2xl sm:text-3xl font-extrabold text-[#191919] dark:text-[#D9E3EA]">
                     Say hello to research data
                   </h3>
                   <p className="text-[18px] text-[#666666] dark:text-[#9BA9B4] mb-4">

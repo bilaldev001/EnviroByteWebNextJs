@@ -48,13 +48,13 @@ const LifeCycleAssessment = () => {
         />
       </Head>
 
-      <PageBanner
+      {/* <PageBanner
         pageTitle="Life Cycle Assessment"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Life Cycle Assessment"
         breadcrumbUrl="/"
         bgImage=""
-      />
+      /> */}
 
       <LCAContent />
     </>

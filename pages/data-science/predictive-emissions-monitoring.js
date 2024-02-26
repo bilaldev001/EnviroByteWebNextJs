@@ -48,13 +48,13 @@ const PredictiveEmissionsMonitoring = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
 
-      <PageBanner
+      {/* <PageBanner
         pageTitle="Predictive Emissions Monitoring"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Predictive Emissions Monitoring"
         breadcrumbUrl="/"
         bgImage="banner-bg-img3"
-      />
+      /> */}
 
       <PEMContent />
     </>

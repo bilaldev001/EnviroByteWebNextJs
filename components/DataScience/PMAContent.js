@@ -4,10 +4,13 @@ import PMALogo from "../../public/images/datascience/PMA2.svg";
 
 const PMAContent = () => {
   return (
-    <div className="project-details-area ptb-100 dark:bg-[#151719]">
+    <div className="project-details-area pt-[10rem] pb-100 dark:bg-[#151719]">
       <div className="container">
         <div className="projects-details-desc">
-          <h3 className="dark:text-[#D9E3EA]">
+          <h1 className=" text-[#191919] dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
+            Predictive Analytics
+          </h1>
+          <h3 className="dark:text-[#D9E3EA] text-[#191919]">
             Unsupervised machine learning on Canadian oil sands operations
           </h3>
           <div className="row align-items-center">
@@ -74,22 +77,26 @@ const PMAContent = () => {
 
           <div className="project-details-info">
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA]">Language</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Language</h4>
               <span className="dark:text-[#9BA9B4]">Python</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA]">Application</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#191919]">
+                Application
+              </h4>
               <span className="dark:text-[#9BA9B4]">Data Analytics</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA]">Data Sources</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#191919]">
+                Data Sources
+              </h4>
               <span className="dark:text-[#9BA9B4]">Petrinex</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA]">Algorithm</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Algorithm</h4>
               <span className="dark:text-[#9BA9B4]">Association Rules</span>
             </div>
 

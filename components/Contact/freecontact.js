@@ -33,9 +33,9 @@ function ContactForm() {
     );
   }
   return (
-    <div className="contact-section ptb-100 dark:bg-[#151719]">
+    <div className="contact-section pb-100 pt-[10rem] dark:bg-[#151719]">
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px]">
-        <h1 className=" text-gray-800 dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] mb-3">
+        <h1 className=" text-[#191919] dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] mb-3">
           How can we help you?
         </h1>
         <p className="text-[20px] dark:text-[#9BA9B4]">

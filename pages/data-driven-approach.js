@@ -54,13 +54,13 @@ const DataDrivenApproach = () => {
         />
       </Head>
 
-      <PageBanner
+      {/* <PageBanner
         pageTitle="Data Driven Approach"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Data Driven Approach"
         breadcrumbUrl="/"
         bgImage=""
-      />
+      /> */}
 
       <DataDrivenApproachContent />
     </div>

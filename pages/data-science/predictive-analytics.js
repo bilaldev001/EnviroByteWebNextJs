@@ -48,13 +48,13 @@ const PredictiveAnalytics = () => {
         />
       </Head>
 
-      <PageBanner
+      {/* <PageBanner
         pageTitle="Predictive Analytics"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Predictive Analytics"
         breadcrumbUrl="/"
         bgImage="banner-bg-img3"
-      />
+      /> */}
 
       <PMAContent />
     </>

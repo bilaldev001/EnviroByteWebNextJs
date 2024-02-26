@@ -63,8 +63,9 @@ export async function getStaticProps() {
       }
       const { data: frontmatter } = grayMatter(content);
       return {
+        ...frontmatter,
         content,
-        frontmatter,
+        id: file.id,
       };
     }));
     const validPosts = posts.filter((post) => post !== null);

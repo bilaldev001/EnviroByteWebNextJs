@@ -23,16 +23,18 @@ const PageBanner = ({
                   {pageTitle}
                 </h2>
                 <p className="text-xl text-[#9BA9B4]">{subHeading}</p>
-                <ul>
-                  {breadcrumbTextOne && (
-                    <li>
-                      <Link legacyBehavior href={breadcrumbUrl}>
-                        <a>{breadcrumbTextOne}</a>
-                      </Link>
-                    </li>
-                  )}
-                  {breadcrumbTextTwo && <li>{breadcrumbTextTwo}</li>}
-                </ul>
+                {!subHeading && (
+                  <ul>
+                    {breadcrumbTextOne && (
+                      <li>
+                        <Link legacyBehavior href={breadcrumbUrl}>
+                          <a>{breadcrumbTextOne}</a>
+                        </Link>
+                      </li>
+                    )}
+                    {breadcrumbTextTwo && <li>{breadcrumbTextTwo}</li>}
+                  </ul>
+                )}
               </div>
             </div>
           </div>

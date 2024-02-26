@@ -8,13 +8,13 @@ import withMainLayout from "../components/Layouts";
 const BioDetails = () => {
   return (
     <div>
-      <PageBanner
+      {/* <PageBanner
         pageTitle="Bio Details"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Team Details"
         breadcrumbUrl="/"
         bgImage=""
-      />
+      /> */}
 
       <BioDetail />
     </div>

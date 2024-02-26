@@ -29,7 +29,7 @@ const MainBanner = () => {
                   data-aos-duration="1200"
                   data-aos-once="true"
                 >
-                  <p className="text-center dark:text-[#9BA9B4]">
+                  <p className="text-center home-banner-text dark:text-[#9BA9B4]">
                     EnviroByte applies data-driven methods with environmental
                     science, software engineering, and machine learning to
                     increase efficiency and effectiveness of sustainability

@@ -94,17 +94,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", scrollHandler);
   }, [top]);
 
-  React.useEffect(() => {
-    let elementId = document.getElementById("navbar");
-    document.addEventListener("scroll", () => {
-      if (window.scrollY > 70) {
-        elementId.classList.add("is-sticky");
-      } else {
-        elementId.classList.remove("is-sticky");
-      }
-    });
-  });
-
   const classOne = menu
     ? "collapse sm:visible navbar-collapse mean-menu"
     : "collapse sm:visible navbar-collapse show";
@@ -116,10 +105,10 @@ const Navbar = () => {
     <>
       <div
         id="navbar"
-        className={`navbar-area fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out  ${
+        className={`navbar-area fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out is-sticky ${
           !top
             ? "bg-[#ffffff] dark:bg-[#000000a8] backdrop-blur-sm shadow-lg"
-            : ""
+            : "bg-[#ffffff] dark:bg-transparent"
         }`}
       >
         <div className="main-nav">

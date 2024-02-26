@@ -37,13 +37,13 @@ const SignIn = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
       <ToastContainer />
-      <PageBanner
+      {/* <PageBanner
         pageTitle="Sign In"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Sign In"
         breadcrumbUrl="/"
         bgImage=""
-      />
+      /> */}
       {/* Form Component */}
       <SigninForm />
     </div>

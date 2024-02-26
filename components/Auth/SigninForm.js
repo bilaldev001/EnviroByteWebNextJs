@@ -7,6 +7,7 @@ import Spinner from "../Utils/Spinner";
 import { useDispatch, useSelector } from "react-redux";
 
 import { loginUser } from "../Redux/slices/AuthSlice";
+import GoogleSignIn from "./GoogleSignIn";
 
 const SigninForm = () => {
   const router = useRouter();
@@ -35,13 +36,14 @@ const SigninForm = () => {
   };
 
   return (
-    <div className="contact-section ptb-100 bg-[#ffffff] dark:bg-[#151719] transition">
+    <div className="ptb-100 bg-[#ffffff] dark:bg-[#151719] transition">
       {/* Page header */}
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px]">
         <h1 className=" text-gray-800 dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem]">
           Welcome back. We exist to make entrepreneurism easier.
         </h1>
       </div>
+      <GoogleSignIn />
       {/* Form */}
       <div className="container max-w-sm mx-auto">
         <Formik

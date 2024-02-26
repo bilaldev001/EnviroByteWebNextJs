@@ -38,11 +38,11 @@ const TeamMemberContent = () => {
   ];
   return (
     <>
-      <div className="team-section pt-100 pb-70 dark:bg-[#151719] transition">
+      <div className="team-section pt-[10rem] pb-70 dark:bg-[#151719] transition">
         <div className="container">
           <div className="section-title">
             <span className="dark:text-[#9BA9B4]">Our Experts</span>
-            <h2 className="dark:text-[#D9E3EA]">
+            <h2 className="dark:text-[#D9E3EA] text-[#191919]">
               People who started EnviroByte
             </h2>
           </div>
@@ -56,7 +56,7 @@ const TeamMemberContent = () => {
 
             <div className="section-title pt-5">
               <span className="dark:text-[#9BA9B4]">Our Advisors</span>
-              <h2 className="dark:text-[#D9E3EA]">
+              <h2 className="dark:text-[#D9E3EA] text-[#191919]">
                 People who advise EnviroByte
               </h2>
             </div>

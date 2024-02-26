@@ -4,10 +4,13 @@ import IoTLogo from "../../public/images/datascience/IoT.svg";
 
 const IoTContent = () => {
   return (
-    <div className="project-details-area ptb-100 dark:bg-[#151719]">
+    <div className="project-details-area pt-[10rem] pb-100 dark:bg-[#151719]">
       <div className="container">
         <div className="projects-details-desc">
-          <h3 className="dark:text-[#D9E3EA]">
+          <h1 className="  dark:text-[#D9E3EA] text-[#191919] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
+            IoT Air Quality Monitoring
+          </h1>
+          <h3 className="dark:text-[#D9E3EA] text-[#191919]">
             Machine learning approach to calibration low-cost IoT sensors
           </h3>
           <div className="row align-items-center">
@@ -67,24 +70,28 @@ const IoTContent = () => {
 
           <div className="project-details-info">
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA]">Language</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Language</h4>
               <span className="dark:text-[#9BA9B4]">Python, R</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA]">Application</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#191919]">
+                Application
+              </h4>
               <span className="dark:text-[#9BA9B4]">
                 Air Quality/Emission Monitoring, Internet of Things
               </span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA]">Data Sources</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#191919]">
+                Data Sources
+              </h4>
               <span className="dark:text-[#9BA9B4]">Sensor</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA]">Algorithm</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Algorithm</h4>
               <span className="dark:text-[#9BA9B4]">
                 Neural Network, Gradient Boosting
               </span>

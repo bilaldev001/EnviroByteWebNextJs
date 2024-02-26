@@ -40,13 +40,13 @@ const Contact = () => {
         />
       </Head>
 
-      <PageBanner
+      {/* <PageBanner
         pageTitle="Contact Us"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Contact Us"
         breadcrumbUrl="/"
         bgImage=""
-      />
+      /> */}
       <ContactForm />
     </>
   );

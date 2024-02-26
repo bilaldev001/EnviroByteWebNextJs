@@ -11,7 +11,7 @@ export default function OurServices() {
             <div className="font-architects-daughter text-xl text-purple-600 mb-2">
               Be the Change
             </div>
-            <h2 className="h2 mb-3 dark:text-[#D9E3EA] font-bold">
+            <h2 className="h2 mb-3 dark:text-[#D9E3EA] text-[#191919] font-extrabold">
               Data-driven Reporting and Planning
             </h2>
           </div>
@@ -33,7 +33,7 @@ export default function OurServices() {
 
               <Link legacyBehavior href="/emissionx/climate-change">
                 <a
-                  className="text-[24px] mb-2 dark:text-[#D9E3EA] text-center font-bold"
+                  className="text-[24px] mb-2 dark:text-[#D9E3EA] text-[#191919] text-center font-bold"
                   target="_blank"
                 >
                   GHG and Air Emissions
@@ -58,7 +58,7 @@ export default function OurServices() {
               </div>
               <Link legacyBehavior href="/emissionx/life-cycle-assessment">
                 <a
-                  className="text-[24px] mb-2 dark:text-[#D9E3EA] text-center font-bold"
+                  className="text-[24px] mb-2 dark:text-[#D9E3EA] text-[#191919] text-center font-bold"
                   target="_blank"
                 >
                   Life Cycle Assessment
@@ -83,7 +83,7 @@ export default function OurServices() {
               </div>
               <Link legacyBehavior href="/emissionx/climate-change">
                 <a
-                  className="text-[24px] mb-2 dark:text-[#D9E3EA] text-center font-bold"
+                  className="text-[24px] mb-2 dark:text-[#D9E3EA] text-[#191919] text-center font-bold"
                   target="_blank"
                 >
                   Climate Change Adaptation
@@ -108,7 +108,7 @@ export default function OurServices() {
               </div>
               <Link legacyBehavior href="/emissionx/climate-change">
                 <a
-                  className="text-[24px] mb-2 dark:text-[#D9E3EA] text-center font-bold"
+                  className="text-[24px] mb-2 dark:text-[#D9E3EA] text-[#191919] text-center font-bold"
                   target="_blank"
                 >
                   Climate Change Risk Assessment
@@ -133,7 +133,7 @@ export default function OurServices() {
               </div>
               <Link legacyBehavior href="/emissionx/climate-change">
                 <a
-                  className="text-[24px] mb-2 dark:text-[#D9E3EA] text-center font-bold"
+                  className="text-[24px] mb-2 dark:text-[#D9E3EA] text-[#191919] text-center font-bold"
                   target="_blank"
                 >
                   Climate Change Mitigation
@@ -158,7 +158,7 @@ export default function OurServices() {
               </div>
               <Link legacyBehavior href="/emissionx/climate-change">
                 <a
-                  className="text-[24px] mb-2 dark:text-[#D9E3EA] text-center font-bold"
+                  className="text-[24px] mb-2 dark:text-[#D9E3EA] text-[#191919] text-center font-bold"
                   target="_blank"
                 >
                   TCFD Scenario Analysis

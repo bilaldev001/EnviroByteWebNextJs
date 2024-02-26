@@ -57,13 +57,13 @@ const AdvancedDataAnalytics = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
 
-      <PageBanner
+      {/* <PageBanner
         pageTitle="Advanced Data Analytics"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Advanced Data Analytics"
         breadcrumbUrl="/"
         bgImage=""
-      />
+      /> */}
 
       <ADAContent />
     </div>

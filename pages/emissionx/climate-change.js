@@ -48,13 +48,13 @@ const ClimateChange = () => {
         />
       </Head>
 
-      <PageBanner
+      {/* <PageBanner
         pageTitle="Climate Change"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Climate Change"
         breadcrumbUrl="/"
         bgImage=""
-      />
+      /> */}
 
       <ClimateChangeContent />
     </>

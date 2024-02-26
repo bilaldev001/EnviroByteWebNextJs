@@ -53,13 +53,13 @@ const IoTAirQualityMonitoring = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
 
-      <PageBanner
+      {/* <PageBanner
         pageTitle="IoT Air Quality Monitoring"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="IoT Air Quality Monitoring"
         breadcrumbUrl="/"
         bgImage=""
-      />
+      /> */}
 
       <IoTContent />
     </>

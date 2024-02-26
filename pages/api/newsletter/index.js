@@ -14,13 +14,13 @@ export default async function POST(req, res) {
      if(existingData){
       return  res.status(409).json({ message: 'you already subscribed' });
 
-     }
+     }     
         await prisma.subscriber.create({
             data: {
                 email,
             },
         });
-        await sendEmail({
+    await sendEmail({
             email:email,
             subject: 'subscribe our news Letter ',
             message:'Thank you to subscribe our news Letter'
@@ -30,19 +30,5 @@ export default async function POST(req, res) {
         res.status(500).json({ message: 'Internal Server Error' });
 
     }
-    await prisma.subscriber.create({
-      data: {
-        email,
-      },
-    });
-    await sendEmail({
-      email: email,
-      subject: "subscribe our news Letter ",
-      message: "Thank you to subscribe our news Letter",
-    });
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({ message: "Internal Server Error" });
+    res.status(201).json({ message: 'you added on our blogs newsletter' });
   }
-  res.status(200).json({ message: "Thank you to subscribe our news Letter" });
-}

@@ -8,10 +8,10 @@ const DataDrivenApproachContent = () => {
       <div className="project-details-area pt-[10rem] pb-100 dark:bg-[#151719] transition">
         <div className="container">
           <div className="projects-details-desc">
-            <h1 className=" text-[#191919] dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
+            <h1 className=" text-[#393953] dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
               Data Driven Approach
             </h1>
-            <h3 className="dark:text-[#D9E3EA] text-[#191919]">
+            <h3 className="dark:text-[#D9E3EA] text-[#393953]">
               Data-Driven Sustainability Framework
             </h3>
             <p className="dark:text-[#9BA9B4]">

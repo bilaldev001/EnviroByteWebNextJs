@@ -9,7 +9,7 @@ export default function Target() {
           {/* Section header */}
           <div className=" text-center pb-12 md:pb-20">
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl text-[#191919] dark:text-[#D9E3EA] font-extrabold"
+              className="text-2xl sm:text-3xl md:text-4xl text-[#393953] dark:text-[#D9E3EA] font-extrabold"
               data-aos="fade-up"
             >
               From the big picture to every tiny detail, we got you covered.
@@ -52,7 +52,7 @@ export default function Target() {
                     data-aos-delay="200"
                     data-aos-anchor="[data-aos-id-target]"
                   >
-                    <h4 className="h4 mb-2 font-bold text-[#191919] dark:text-white">
+                    <h4 className="h4 mb-2 font-bold text-[#393953] dark:text-white">
                       <span className="text-purple-600">.</span> For developers
                     </h4>
                     <p className="text-lg text-gray-400">
@@ -67,7 +67,7 @@ export default function Target() {
                     data-aos-delay="400"
                     data-aos-anchor="[data-aos-id-target]"
                   >
-                    <h4 className="h4 mb-2 font-bold text-[#191919] dark:text-white">
+                    <h4 className="h4 mb-2 font-bold text-[#393953] dark:text-white">
                       <span className="text-teal-500">.</span> For designers
                     </h4>
                     <p className="text-lg text-gray-400">
@@ -82,7 +82,7 @@ export default function Target() {
                     data-aos-delay="600"
                     data-aos-anchor="[data-aos-id-target]"
                   >
-                    <h4 className="h4 mb-2 font-bold text-[#191919] dark:text-white">
+                    <h4 className="h4 mb-2 font-bold text-[#393953] dark:text-white">
                       <span className="text-pink-500">.</span> For teams
                     </h4>
                     <p className="text-lg text-gray-400">

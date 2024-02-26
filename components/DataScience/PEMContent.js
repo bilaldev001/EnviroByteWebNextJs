@@ -7,10 +7,10 @@ const PEMContent = () => {
     <div className="project-details-area pt-[10rem] pb-100 dark:bg-[#151719]">
       <div className="container">
         <div className="projects-details-desc">
-          <h1 className=" text-[#191919] dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
+          <h1 className=" text-[#393953] dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
             Predictive Emissions Monitoring
           </h1>
-          <h3 className="dark:text-[#D9E3EA] text-[#191919]">
+          <h3 className="dark:text-[#D9E3EA] text-[#393953]">
             OpenPEMS&trade;
           </h3>
           <div className="row align-items-center">
@@ -68,7 +68,7 @@ const PEMContent = () => {
             <div className="project-details-image-wrapleft">
               <PEMLogo alt="image" width="900" />
             </div>
-            <h3 className="dark:text-[#D9E3EA] text-[#191919]">
+            <h3 className="dark:text-[#D9E3EA] text-[#393953]">
               Predictive Emissions for GHG monitoring
             </h3>
             <p className="dark:text-[#9BA9B4]">
@@ -83,26 +83,26 @@ const PEMContent = () => {
 
           <div className="project-details-info">
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Language</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">Language</h4>
               <span className="dark:text-[#9BA9B4]">Python, R</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">
                 Application
               </h4>
               <span className="dark:text-[#9BA9B4]">Emission Monitoring</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">
                 Data Sources
               </h4>
               <span className="dark:text-[#9BA9B4]">Measurement/PI</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Algorithm</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">Algorithm</h4>
               <span className="dark:text-[#9BA9B4]">
                 Neural Network, Gradient Boosting
               </span>

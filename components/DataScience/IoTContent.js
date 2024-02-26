@@ -7,10 +7,10 @@ const IoTContent = () => {
     <div className="project-details-area pt-[10rem] pb-100 dark:bg-[#151719]">
       <div className="container">
         <div className="projects-details-desc">
-          <h1 className="  dark:text-[#D9E3EA] text-[#191919] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
+          <h1 className="  dark:text-[#D9E3EA] text-[#393953] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
             IoT Air Quality Monitoring
           </h1>
-          <h3 className="dark:text-[#D9E3EA] text-[#191919]">
+          <h3 className="dark:text-[#D9E3EA] text-[#393953]">
             Machine learning approach to calibration low-cost IoT sensors
           </h3>
           <div className="row align-items-center">
@@ -70,12 +70,12 @@ const IoTContent = () => {
 
           <div className="project-details-info">
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Language</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">Language</h4>
               <span className="dark:text-[#9BA9B4]">Python, R</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">
                 Application
               </h4>
               <span className="dark:text-[#9BA9B4]">
@@ -84,14 +84,14 @@ const IoTContent = () => {
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">
                 Data Sources
               </h4>
               <span className="dark:text-[#9BA9B4]">Sensor</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Algorithm</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">Algorithm</h4>
               <span className="dark:text-[#9BA9B4]">
                 Neural Network, Gradient Boosting
               </span>

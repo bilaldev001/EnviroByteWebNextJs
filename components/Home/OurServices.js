@@ -10,7 +10,7 @@ const OurServices = () => {
             <span className="text-[#666666] dark:text-[#9BA9B4]">
               Be the Change
             </span>
-            <h2 className="text-[#191919] dark:text-[#D9E3EA]">
+            <h2 className="text-[#393953] dark:text-[#D9E3EA]">
               Data-driven Reporting and Planning
             </h2>
           </div>

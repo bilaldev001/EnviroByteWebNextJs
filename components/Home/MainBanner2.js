@@ -18,7 +18,7 @@ const MainBanner = () => {
                   data-aos-duration="1200"
                   data-aos-once="true"
                 >
-                  <h1 className="text-[40px] md:text-[52px] font-extrabold leading-tighter tracking-tighter text-[#191919] dark:text-[#D9E3EA]">
+                  <h1 className="text-[40px] md:text-[52px] font-extrabold leading-tighter tracking-tighter text-[#393953] dark:text-[#D9E3EA]">
                     Data-driven Sustainability
                   </h1>
                 </div>

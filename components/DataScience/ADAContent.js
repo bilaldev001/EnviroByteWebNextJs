@@ -7,10 +7,10 @@ const ADAContent = () => {
     <div className="project-details-area pt-[10rem] pb-100 dark:bg-[#151719]">
       <div className="container">
         <div className="projects-details-desc">
-          <h1 className=" text-[#191919] dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
+          <h1 className=" text-[#393953] dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
             Advanced Data Analytics
           </h1>
-          <h3 className="dark:text-[#D9E3EA] text-[#191919]">
+          <h3 className="dark:text-[#D9E3EA] text-[#393953]">
             Fuel Consumption Analysis for Canadian In Situ Oil Sands Extraction
           </h3>
           <div className="row align-items-center">
@@ -75,24 +75,28 @@ const ADAContent = () => {
           <br />
           <div className="project-details-info">
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Language</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">Language</h4>
               <span className="dark:text-[#9BA9B4]">Python, R</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Application</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">
+                Application
+              </h4>
               <span className="dark:text-[#9BA9B4]">
                 GHG, Carbon Management
               </span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Data Sources</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">
+                Data Sources
+              </h4>
               <span className="dark:text-[#9BA9B4]">Petrinex</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Program</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">Program</h4>
               <span className="dark:text-[#9BA9B4]">Alberta TIER</span>
             </div>
 

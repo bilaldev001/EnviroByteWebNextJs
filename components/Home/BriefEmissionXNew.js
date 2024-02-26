@@ -31,7 +31,7 @@ export default function BriefEmissionX() {
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2">
                     A Scalable and Customizable Emissions Reporting Tool
                   </div>
-                  <h2 className="h3 mb-3 text-[#191919] dark:text-[#D9E3EA] font-extrabold">
+                  <h2 className="h3 mb-3 text-[#393953] dark:text-[#D9E3EA] font-extrabold">
                     EmissionX&trade;
                   </h2>
                   <p className="text-xl text-[#666666] dark:text-[#9BA9B4] mb-4">

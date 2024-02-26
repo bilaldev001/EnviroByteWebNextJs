@@ -7,10 +7,10 @@ const AboutUsContent = () => {
       <div className="project-details-area pt-[10rem] pb-100 dark:bg-[#151719]">
         <div className="container">
           <div className="projects-details-desc">
-            <h1 className=" text-[#191919] dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
+            <h1 className=" text-[#393953] dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
               About Us
             </h1>
-            <h3 className="dark:text-[#D9E3EA] text-[#191919]">
+            <h3 className="dark:text-[#D9E3EA] text-[#393953]">
               Valuable Services are What We're Dedicated to
             </h3>
             <p className="text-[#666666] dark:text-[#9BA9B4]">
@@ -22,7 +22,9 @@ const AboutUsContent = () => {
             </p>
 
             <div className="features-text">
-              <h4 className="dark:text-[#D9E3EA] text-[#D9E3EA]">Core Development</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#D9E3EA]">
+                Core Development
+              </h4>
               <p className="text-[#666666] dark:text-[#9BA9B4]">
                 EnviroByte applies data-driven approaches and developed tools to
                 increase efficiency and effectiveness of sustainability
@@ -37,7 +39,9 @@ const AboutUsContent = () => {
             </div>
 
             <div className="features-text">
-              <h4 className="dark:text-[#D9E3EA] text-[#191919]">Our Solutions</h4>
+              <h4 className="dark:text-[#D9E3EA] text-[#393953]">
+                Our Solutions
+              </h4>
               <p className="text-[#666666] dark:text-[#9BA9B4]">
                 Our solutions are implemented with modern software development
                 practices, namely CI and CD, which is a combination of software
@@ -51,7 +55,7 @@ const AboutUsContent = () => {
             </div>
             <div className="features-text">
               <text>
-                <h4 className="dark:text-[#D9E3EA] text-[#191919]">
+                <h4 className="dark:text-[#D9E3EA] text-[#393953]">
                   Explore our data driven Reporting and Planning
                 </h4>
                 <ul>

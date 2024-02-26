@@ -6,7 +6,7 @@ export default function Process() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2
-              className="h2 mb-4 font-extrabold text-[#191919] dark:text-[#D9E3EA] text-2xl sm:text-3xl md:text-4xl"
+              className="h2 mb-4 font-extrabold text-[#393953] dark:text-[#D9E3EA] text-2xl sm:text-3xl md:text-4xl"
               data-aos="fade-up"
             >
               Built exclusively for you
@@ -65,7 +65,7 @@ export default function Process() {
                   strokeLinecap="square"
                 />
               </svg>
-              <h4 className="text-[50px] mb-2 font-bold text-[#191919]  dark:text-[#D9E3EA]">
+              <h4 className="text-[50px] mb-2 font-bold text-[#393953]  dark:text-[#D9E3EA]">
                 500<sup>+</sup>
               </h4>
               <p className="text-lg dark:text-[#9BA9B4] text-center">
@@ -116,7 +116,7 @@ export default function Process() {
                   />
                 </g>
               </svg>
-              <h4 className="text-[50px] mb-2 font-bold text-[#191919]  dark:text-[#D9E3EA]">
+              <h4 className="text-[50px] mb-2 font-bold text-[#393953]  dark:text-[#D9E3EA]">
                 10<sup>+</sup>
               </h4>
               <p className="text-lg dark:text-[#9BA9B4] text-center">
@@ -167,7 +167,7 @@ export default function Process() {
                   strokeLinecap="square"
                 />
               </svg>
-              <h4 className="text-[50px] mb-2 font-bold text-[#191919]  dark:text-[#D9E3EA]">
+              <h4 className="text-[50px] mb-2 font-bold text-[#393953]  dark:text-[#D9E3EA]">
                 20<sup>+</sup>
               </h4>
               <p className="text-lg dark:text-[#9BA9B4] text-center">
@@ -207,7 +207,7 @@ export default function Process() {
                   strokeWidth="2"
                 />
               </svg>
-              <h4 className="text-[50px] mb-2 font-bold text-[#191919]  dark:text-[#D9E3EA]">
+              <h4 className="text-[50px] mb-2 font-bold text-[#393953]  dark:text-[#D9E3EA]">
                 120<sup>+</sup>
               </h4>
               <p className="text-lg dark:text-[#9BA9B4] text-center">

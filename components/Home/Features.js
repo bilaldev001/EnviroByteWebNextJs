@@ -66,7 +66,7 @@ export default function Features() {
                   <div className="font-architects-daughter text-purple-600 mb-2 text-[16px]">
                     Lighting fast workflow
                   </div>
-                  <h3 className="h3 mb-3 text-2xl sm:text-3xl font-extrabold text-[#191919] dark:text-[#D9E3EA]">
+                  <h3 className="h3 mb-3 text-2xl sm:text-3xl font-extrabold text-[#393953] dark:text-[#D9E3EA]">
                     Say hello to research data
                   </h3>
                   <p className="text-[18px] text-[#666666] dark:text-[#9BA9B4] mb-4">

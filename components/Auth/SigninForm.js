@@ -36,14 +36,17 @@ const SigninForm = () => {
   };
 
   return (
-    <div className="ptb-100 bg-[#ffffff] dark:bg-[#151719] transition">
+    <div className="ptb-100 bg-[#ffffff] dark:bg-[#151719] transition min-h-[100vh] flex flex-column justify-center">
       {/* Page header */}
-      <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px]">
-        <h1 className=" text-gray-800 dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem]">
+      <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px] auth-page-header">
+        <h1 className=" text-gray-800 dark:text-[#D9E3EA] font-[800] text-2xl md:text-[40px] lg:text-[3.25rem] px-2">
           Welcome back. We exist to make entrepreneurism easier.
         </h1>
       </div>
-      <GoogleSignIn />
+      <GoogleSignIn
+        btnText="Sign In with Google"
+        text="Or, sign in with your email"
+      />
       {/* Form */}
       <div className="container max-w-sm mx-auto">
         <Formik
@@ -65,6 +68,17 @@ const SigninForm = () => {
                 name="password"
                 placeholder="Enter your password"
               />
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center ">
+                  <input type="checkbox" className="" />
+                  <label className="text-gray-800 text-sm font-medium ms-1 dark:text-white">
+                    Keep me signed in
+                  </label>
+                </div>
+                <p className="text-[#5d5dff] cursor-pointer">
+                  Forgot Password?
+                </p>
+              </div>
               <button className="signin-btn default-btn w-full rounded">
                 {loading ? <Spinner /> : "Sign In"} <span></span>
               </button>
@@ -74,7 +88,7 @@ const SigninForm = () => {
         <p className="text-center mt-3 text-gray-800 text-md dark:text-white">
           Don't you have an account?{" "}
           <span
-            className="underline text-blue-400 cursor-pointer"
+            className="underline text-[#5d5dff] cursor-pointer"
             onClick={() => router.push("/signup")}
           >
             Sign up

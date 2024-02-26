@@ -20,7 +20,7 @@ const CustomInput = ({ label, righticon, ...props }) => {
         }`}
       >
         <input
-          className={`custom-form-input w-full text-gray-800 dark:text-[#ffffff] px-0 outline-none border-none`}
+          className={`custom-form-input w-full text-gray-800 dark:text-[#D9E3EA] px-0 outline-none border-none`}
           {...field}
           {...props}
         />

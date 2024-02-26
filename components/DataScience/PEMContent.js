@@ -7,7 +7,7 @@ const PEMContent = () => {
     <div className="project-details-area ptb-100 dark:bg-[#151719]">
       <div className="container">
         <div className="projects-details-desc">
-          <h3 className="dark:text-[#ffffff]">OpenPEMS&trade;</h3>
+          <h3 className="dark:text-[#D9E3EA]">OpenPEMS&trade;</h3>
           <div className="row align-items-center">
             <p className="dark:text-[#9BA9B4]">
               The nitrogen oxides (NO<sub>x</sub>) has significant adverse
@@ -63,7 +63,7 @@ const PEMContent = () => {
             <div className="project-details-image-wrapleft">
               <PEMLogo alt="image" width="900" />
             </div>
-            <h3 className="dark:text-[#ffffff]">
+            <h3 className="dark:text-[#D9E3EA]">
               Predictive Emissions for GHG monitoring
             </h3>
             <p className="dark:text-[#9BA9B4]">
@@ -78,23 +78,25 @@ const PEMContent = () => {
 
           <div className="project-details-info">
             <div className="single-info-box">
-              <h4 className="dark:text-[#ffffff]">Language</h4>
+              <h4 className="dark:text-[#D9E3EA]">Language</h4>
               <span className="dark:text-[#9BA9B4]">Python, R</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#ffffff]">Application</h4>
+              <h4 className="dark:text-[#D9E3EA]">Application</h4>
               <span className="dark:text-[#9BA9B4]">Emission Monitoring</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#ffffff]">Data Sources</h4>
+              <h4 className="dark:text-[#D9E3EA]">Data Sources</h4>
               <span className="dark:text-[#9BA9B4]">Measurement/PI</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#ffffff]">Algorithm</h4>
-              <span className="dark:text-[#9BA9B4]">Neural Network, Gradient Boosting</span>
+              <h4 className="dark:text-[#D9E3EA]">Algorithm</h4>
+              <span className="dark:text-[#9BA9B4]">
+                Neural Network, Gradient Boosting
+              </span>
             </div>
 
             <div className="single-info-box">

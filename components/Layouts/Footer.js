@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import WhiteLogo from "../../public/images/logo/whitemark.svg";
-
+import BlackLogo from "../../public/images/logo/blackmarkv2.svg";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <>
       {/* Top Footer Section */}
-      <footer className="footer-section ptb-100">
+      <footer className="py-[64px] dark:bg-[#151719]">
         <div className="container">
           <div className="grid md:grid-cols-12 gap-8 xl:gap-20 mb-8 md:mb-12">
             <div className="md:col-span-4 lg:col-span-5">
@@ -19,8 +19,14 @@ const Footer = () => {
                     height={30}
                     alt="logo"
                   />
+                  <BlackLogo
+                    className="black-logo"
+                    width={150}
+                    height={30}
+                    alt="logo"
+                  />
                 </div>
-                <p>
+                <p className="dark:text-[#9BA9B4]">
                   At EnviroByte, we build the products that we want to use
                   ourselves. After over 10 years working with black box
                   software, we are tired of the GHG/air reporting tools that the
@@ -125,28 +131,19 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        {/*
-        <div className="partner-shape-img1">
-          <img src="/images/shape/partnar-shape-2.png" alt="image" />
-        </div>
-        */}
-      </footer>
-      {/* End Top Footer Section */}
+        <div className="copyright-area dark:bg-[#151719] bg-transparent transition py-0">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-6">
+                <p className="text-[#666466] dark:text-[#9BA9B4]">
+                  &copy; {currentYear} EnviroByte. All Rights Reserved by
+                  <a href="/team" target="_blank">
+                    SmartPeople
+                  </a>
+                </p>
+              </div>
 
-      {/* Bottom Footer Section */}
-      <div className="copyright-area dark:bg-[#0b0c0d] transition">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6 col-md-6">
-              <p>
-                &copy; {currentYear} EnviroByte. All Rights Reserved by
-                <a href="/team" target="_blank">
-                  SmartPeople
-                </a>
-              </p>
-            </div>
-
-            {/* <div className="col-lg-6 col-md-6">
+              {/* <div className="col-lg-6 col-md-6">
               <ul>
                 <li>
                   <Link legacyBehavior   href="/terms-condition">
@@ -160,9 +157,18 @@ const Footer = () => {
                 </li>
               </ul>
             </div> */}
+            </div>
           </div>
         </div>
-      </div>
+        {/*
+        <div className="partner-shape-img1">
+          <img src="/images/shape/partnar-shape-2.png" alt="image" />
+        </div>
+        */}
+      </footer>
+      {/* End Top Footer Section */}
+
+      {/* Bottom Footer Section */}
       {/* End Bottom Footer Section */}
     </>
   );

@@ -7,7 +7,7 @@ const IoTContent = () => {
     <div className="project-details-area ptb-100 dark:bg-[#151719]">
       <div className="container">
         <div className="projects-details-desc">
-          <h3 className="dark:text-[#ffffff]">
+          <h3 className="dark:text-[#D9E3EA]">
             Machine learning approach to calibration low-cost IoT sensors
           </h3>
           <div className="row align-items-center">
@@ -67,24 +67,24 @@ const IoTContent = () => {
 
           <div className="project-details-info">
             <div className="single-info-box">
-              <h4 className="dark:text-[#ffffff]">Language</h4>
+              <h4 className="dark:text-[#D9E3EA]">Language</h4>
               <span className="dark:text-[#9BA9B4]">Python, R</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#ffffff]">Application</h4>
+              <h4 className="dark:text-[#D9E3EA]">Application</h4>
               <span className="dark:text-[#9BA9B4]">
                 Air Quality/Emission Monitoring, Internet of Things
               </span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#ffffff]">Data Sources</h4>
+              <h4 className="dark:text-[#D9E3EA]">Data Sources</h4>
               <span className="dark:text-[#9BA9B4]">Sensor</span>
             </div>
 
             <div className="single-info-box">
-              <h4 className="dark:text-[#ffffff]">Algorithm</h4>
+              <h4 className="dark:text-[#D9E3EA]">Algorithm</h4>
               <span className="dark:text-[#9BA9B4]">
                 Neural Network, Gradient Boosting
               </span>

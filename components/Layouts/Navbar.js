@@ -193,7 +193,7 @@ const Navbar = () => {
                     >
                       <div className="flex flex-col gap-3">
                         <div>
-                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#ffffff]">
+                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA]">
                             EmissionX
                           </h3>
 
@@ -215,7 +215,7 @@ const Navbar = () => {
                           ))}
                         </div>
                         <div>
-                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#ffffff]">
+                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA]">
                             Data Science
                           </h3>
 
@@ -239,7 +239,7 @@ const Navbar = () => {
                       </div>
                       <div className="sm:pl-3 flex flex-col gap-3">
                         <div>
-                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#ffffff]">
+                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA]">
                             App
                           </h3>
                           {externalLinks.map((data, index) => (
@@ -260,7 +260,7 @@ const Navbar = () => {
                           ))}
                         </div>
                         <div>
-                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#ffffff]">
+                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA]">
                             About
                           </h3>
                           {about.map((data, index) => (

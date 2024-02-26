@@ -16,7 +16,7 @@ const TeamMemberDetailView = ({ member }) => {
 
         <div className="lg:col-span-2 col-span-3">
           <div className="services-details-desc">
-            <h3 className="dark:text-[#ffffff] leading-[20px]">
+            <h3 className="dark:text-[#D9E3EA] leading-[20px]">
               {member.name}
             </h3>
 

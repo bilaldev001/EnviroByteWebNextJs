@@ -40,7 +40,7 @@ const SignupForm = () => {
     <div className="contact-section ptb-100 bg-[#ffffff] dark:bg-[#151719]">
       {/* Page header */}
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px]">
-        <h1 className=" text-gray-800 dark:text-[#ffffff] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem]">
+        <h1 className=" text-gray-800 dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem]">
           Welcome back. We exist to make entrepreneurism easier.
         </h1>
       </div>

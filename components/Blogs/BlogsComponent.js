@@ -11,7 +11,7 @@ const BlogsComponent = ({ posts }) => {
       <div className="pt-100 pb-70 container mx-auto">
         {/* Heading */}
         <div className="section-title">
-          <h2 className="dark:text-[#ffffff]">Latest Articles</h2>
+          <h2 className="dark:text-[#D9E3EA]">Latest Articles</h2>
         </div>
         {/* Blogs Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">

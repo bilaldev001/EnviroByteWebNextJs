@@ -7,8 +7,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
 import { blogCount } from "../Redux/slices/AuthSlice";
-import grayMatter from 'gray-matter';
-
+import grayMatter from "gray-matter";
 
 const tagColor = (tag) => {
   switch (tag) {
@@ -26,9 +25,8 @@ const tagColor = (tag) => {
 };
 
 const BlogDetail = (props) => {
-
   const { blogData } = props;
-  var {content: parsedContent } = grayMatter(blogData);
+  var { content: parsedContent } = grayMatter(blogData);
   const router = useRouter();
   const dispatch = useDispatch();
   const blogCountData = useSelector((state) => state?.auth?.blogCountData);
@@ -85,7 +83,7 @@ const BlogDetail = (props) => {
               />
             </div>
             <div className="md:w-[60%]">
-              <h1 className="text-[2rem] text-[#0e3496] mb-2 dark:text-[#ffffff]">
+              <h1 className="text-[2rem] text-[#0e3496] mb-2 dark:text-[#D9E3EA]">
                 {blogData?.frontmatter?.title}
               </h1>
               <p className="blog-description text-justify tracking-tight	 text-[18px]">
@@ -97,13 +95,13 @@ const BlogDetail = (props) => {
                   alt="user-img"
                   className="w-[50px] h-[50px] rounded-full"
                 />
-                <h5 className="mx-3 dark:text-[#ffffff]">Dummy User</h5>
+                <h5 className="mx-3 dark:text-[#D9E3EA]">Dummy User</h5>
                 <p>{new Date().toLocaleDateString()}</p>
               </div>
             </div>
           </div>
         </div>
-        <h1 className="text-3xl border-y py-3 mb-3 dark:text-[#ffffff] dark:border-gray-700">
+        <h1 className="text-3xl border-y py-3 mb-3 dark:text-[#D9E3EA] dark:border-gray-700">
           More
         </h1>
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
@@ -160,7 +158,7 @@ const BlogDetail = (props) => {
                     <div className="p-4">
                       <Dialog.Title
                         as="h2"
-                        className="text-xl font-semibold leading-6 text-gray-900 dark:text-[#ffffff] text-center"
+                        className="text-xl font-semibold leading-6 text-gray-900 dark:text-[#D9E3EA] text-center"
                       >
                         You've reached the limit
                       </Dialog.Title>

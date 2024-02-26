@@ -6,6 +6,7 @@ import FunFacts from "../components/Common/FunFacts";
 import GetStartedProject from "../components/Common/GetStartedProject";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
+import withMainLayout from "../components/Layouts";
 
 const AboutUs = () => {
   return (
@@ -33,7 +34,6 @@ const AboutUs = () => {
           content="EnviroByte uses CI/CD to automate the process of calculating GHG emissions for Alberta TIER, BC GHG regulation, ECCC GHGRP, ECCC NPRI."
         />
       </Head>
-      <Navbar />
 
       <PageBanner
         pageTitle="About Us"
@@ -47,13 +47,9 @@ const AboutUs = () => {
 
       <FunFacts />
 
-      <div className="pb-100">
-        <GetStartedProject />
-      </div>
-
-      <Footer />
+      <GetStartedProject />
     </>
   );
 };
 
-export default AboutUs;
+export default withMainLayout(AboutUs);

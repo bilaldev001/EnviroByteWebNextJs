@@ -34,7 +34,7 @@ const EditAccountForm = () => {
 
   return (
     <div className="dark:bg-[#25282C] bg-[#ffffff] rounded-lg p-4">
-      <h1 className=" text-gray-800 dark:text-[#ffffff] font-[700] text-2xl mb-4">
+      <h1 className=" text-gray-800 dark:text-[#D9E3EA] font-[700] text-2xl mb-4">
         Edit Account
       </h1>
       <Formik

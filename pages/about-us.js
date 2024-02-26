@@ -7,6 +7,7 @@ import GetStartedProject from "../components/Common/GetStartedProject";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
 import withMainLayout from "../components/Layouts";
+import Process from "../components/Home/Process";
 
 const AboutUs = () => {
   return (
@@ -35,17 +36,18 @@ const AboutUs = () => {
         />
       </Head>
 
-      <PageBanner
+      {/* <PageBanner
         pageTitle="About Us"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="About Us"
         breadcrumbUrl="/"
         bgImage=""
-      />
+      /> */}
 
       <AboutUsContent />
 
-      <FunFacts />
+      <Process/>
+      {/* <FunFacts /> */}
 
       <GetStartedProject />
     </>

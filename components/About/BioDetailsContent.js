@@ -51,7 +51,10 @@ const teamMembers = [
 const BioDetailsContent = () => {
   return (
     <>
-      <div className="services-details-area ptb-100 dark:bg-[#151719]">
+      <div className="services-details-area pt-[10rem] pb-100 dark:bg-[#151719]">
+        <h1 className=" text-[#191919] dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem] text-center mb-[48px]">
+          Bio Details
+        </h1>
         <div className="container divide-y-2 grid lg:grid-cols-1 sm:grid-cols-2 grid-cols-1 gap-5">
           {teamMembers.map((member, index) => (
             <div key={index} className="services-details-overview mb-0 pt-5">

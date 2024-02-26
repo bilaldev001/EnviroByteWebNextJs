@@ -51,7 +51,7 @@ const BlogDetail = (props) => {
         className={`container mx-auto pt-100 pb-70 ${
           !validation === undefined
             ? ""
-            : validation === false
+            : validation === true
             ? "blur-md invert brightness-50"
             : ""
         }`}

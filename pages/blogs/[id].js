@@ -55,7 +55,7 @@ export async function getStaticPaths() {
 
   return {
     paths: data.newFilesPath.map((file) => ({
-      params: { id: String(file.id) },
+      params: { id:file.id },
     })),
     fallback: false,
   };

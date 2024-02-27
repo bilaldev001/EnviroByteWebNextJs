@@ -1,11 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { truncateString } from "../Utils/TruncateText";
-import grayMatter from "gray-matter";
 
 const BlogCard = ({ data }) => {
-  var { content: parsedContent } = grayMatter(data);
   const tagColor = (tag) => {
     switch (tag) {
       case "history":
@@ -49,19 +46,19 @@ const BlogCard = ({ data }) => {
         className="blog-title dark:text-[#D9E3EA]"
         title={data?.title}
       >
-        {truncateString(data?.title, 20)}
+        {truncateString(data?.title, 70)}
       </h3>
-      <p className="blog-description text-justify" title={parsedContent}>
+      {/* <p className="blog-description text-justify" title={parsedContent}>
         {truncateString(parsedContent, 100)}
-      </p>
-      <div className="flex align-items-center ">
+      </p> */}
+      <div className="flex align-items-center mt-2 ">
         <img
           src="https://preview.cruip.com/open-pro/images/news-author-06.jpg"
           alt="user-img"
-          className="w-[50px] h-[50px] rounded-full"
+          className="w-[30px] h-[30px] rounded-full"
         />
-        <h5 className="mx-3 dark:text-[#D9E3EA]">Dummy User</h5>
-        <p>{new Date().toLocaleDateString()}</p>
+        <h5 className="mx-3 dark:text-[#D9E3EA]">{data?.author || ""}</h5>
+        <p>{new Date(data?.createdAt).toLocaleDateString()}</p>
       </div>
     </Link>
   );

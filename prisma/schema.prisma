@@ -31,5 +31,10 @@ model subscriber {
 model mdxFile {
   id        String   @id @default(uuid())
   filePath  String    @unique
+  title    String 
+  tags    String[]
+  categories    String[]
+  image    String? 
+  author   String? 
   createdAt DateTime  @default(now())
 }

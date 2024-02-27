@@ -30,6 +30,7 @@
         "next-cookie": "^2.8.0",
         "next-themes": "^0.2.1",
         "node-cron": "^3.0.3",
+        "node-fetch": "^3.3.2",
         "nodemailer": "^6.7.2",
         "nodemailer-sendgrid-transport": "^0.2.0",
         "pg": "^8.11.3",

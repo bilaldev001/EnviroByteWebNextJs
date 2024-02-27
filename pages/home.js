@@ -10,23 +10,9 @@ import MainBanner from "../components/Home/MainBanner2";
 import BriefEmissionX from "../components/Home/BriefEmissionXNew";
 import OurServices from "../components/Home/OurServicesNew";
 
-async function fetchData() {
-  try {
-    const response = await fetch("http://localhost:3000/api/blogs/getBlogs");
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const data = await response.json();
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    throw error;
-  }
-}
 
 const Index = () => {
-  useEffect(() => {
-    fetchData();
-  }, []);
+
 
   return (
     <div className={"duration-200 --font-inter font-inter"}>
@@ -61,7 +47,7 @@ const Index = () => {
 
         <BriefEmissionX />
 
-        <OurServices/>
+        <OurServices />
 
         <Features />
 

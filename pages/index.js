@@ -13,24 +13,7 @@ import NewsLetter from "../components/Blogs/NewsLetter";
 import Target from "../components/Home/Target";
 import Features from "../components/Home/Features";
 
-async function fetchData() {
-  try {
-    const response = await fetch("http://localhost:3000/api/blogs/getBlogs");
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const data = await response.json();
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    throw error;
-  }
-}
-
 const Index = () => {
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   return (
     <div className={"duration-200 --font-inter font-inter"}>
       <>

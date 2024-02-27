@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
 import { blogCount } from "../Redux/slices/AuthSlice";
 import grayMatter from "gray-matter";
+import ImageDisplay from "../Utils/Image";
 
 const tagColor = (tag) => {
   switch (tag) {
@@ -29,9 +30,13 @@ const BlogDetail = (props) => {
   const router = useRouter();
   const dispatch = useDispatch();
   const blogCountData = useSelector((state) => state?.auth?.blogCountData);
-  const [validation, setValidation] = useState(blogCountData?.validation);
+  const isAuthenticated = useSelector((state) => state?.auth?.isAuthenticated);
+  const [validation, setValidation] = useState(
+    blogCountData?.validation || isAuthenticated
+  );
+
   useEffect(() => {
-    const handleSubmit = async () => {
+    const handleSubmit = () => {
       dispatch(blogCount(setValidation));
     };
     if (router.isReady) {
@@ -43,16 +48,13 @@ const BlogDetail = (props) => {
     setValidation(false);
     router.push("/signup");
   };
+  console.log(validation);
 
   return (
     <div className="bg-[#ffffff] dark:bg-[#151719] transition">
       <div
-        className={`container mx-auto pt-100 pb-70 ${
-          !validation === undefined
-            ? ""
-            : validation === true
-            ? "blur-md invert brightness-50"
-            : ""
+        className={`container mx-auto pt-[10rem] pb-70 ${
+          validation === true ? "" : "blur-md invert brightness-50"
         }`}
       >
         <div className="pb-70 bg-[#ffffff] dark:bg-[#151719] transition">
@@ -73,8 +75,8 @@ const BlogDetail = (props) => {
           </div>
           <div className="d-flex justify-start items-start gap-4">
             <div className="md:w-[40%]">
-              <img
-                src={blogData?.image}
+              <ImageDisplay
+                src={blogData?.image || "noimage"}
                 className="w-full h-[250px] rounded"
                 alt="title"
                 quality={100}
@@ -110,22 +112,11 @@ const BlogDetail = (props) => {
               .map((data, index) => <BlogCard data={data} key={index} />)}
         </div> */}
       </div>
-      <Transition.Root
-        show={
-          validation === undefined ? false : validation === false ? true : false
-        }
-        as={Fragment}
-      >
+      <Transition.Root show={validation === true ? false : true} as={Fragment}>
         <Dialog
           as="div"
           className="relative z-10"
-          initialFocus={
-            validation === undefined
-              ? false
-              : validation === false
-              ? true
-              : false
-          }
+          initialFocus={validation === true ? false : true}
           onClose={() => {}}
           static
         >

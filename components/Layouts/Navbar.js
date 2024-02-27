@@ -11,10 +11,12 @@ const about = [
   {
     name: "Team",
     href: "/team",
+    icon: <i className="flaticon-science"></i>,
   },
   {
     name: "Data Driven Approach",
     href: "/data-driven-approach",
+    icon: <i className="flaticon-document"></i>,
   },
 ];
 const emission = [
@@ -22,32 +24,39 @@ const emission = [
     name: "Emission",
     href: "/emissionx",
     target: "_blank",
+    icon: <i className="flaticon-big-data"></i>,
   },
   {
     name: "Life Cycle Assessment",
     href: "/emissionx/life-cycle-assessment",
+    icon: <i className="flaticon-science"></i>,
   },
   {
     name: "Climate Change",
     href: "/emissionx/climate-change",
+    icon: <i className="flaticon-document"></i>,
   },
 ];
 const dataScienceLinks = [
   {
     name: "Advanced Data Analytics",
     href: "/data-science/advanced-data-analytics",
+    icon: <i className="flaticon-data"></i>,
   },
   {
     name: "IoT Air Quality Monitoring",
     href: "/data-science/IoT-Air-Quality-Monitoring",
+    icon: <i className="flaticon-big-data"></i>,
   },
   {
     name: "OpenPEMS™",
     href: "/data-science/predictive-emissions-monitoring",
+    icon: <i className="flaticon-science"></i>,
   },
   {
     name: "Predictive Analytics",
     href: "/data-science/predictive-analytics",
+    icon: <i className="flaticon-document"></i>,
   },
 ];
 const externalLinks = [
@@ -55,16 +64,19 @@ const externalLinks = [
     name: "Emission Factor Hub",
     href: "https://ghg.envirobyte.com",
     target: "_blank",
+    icon: <i className="flaticon-big-data"></i>,
   },
   {
     name: "Air Emission Factor Hub",
     href: "https://airemission.envirobyte.com",
     target: "_blank",
+    icon: <i className="flaticon-data"></i>,
   },
   {
     name: "Steam App",
     href: "https://steamapp.envirobyte.com",
     target: "_blank",
+    icon: <i className="flaticon-document"></i>,
   },
   // Add more items as needed
 ];
@@ -160,14 +172,11 @@ const Navbar = () => {
                       <a className="nav-link">Home</a>
                     </Link>
                   </li>
-                  {isAuthenticated && (
-                    <li className="nav-item">
-                      <Link legacyBehavior href="/blogs">
-                        <a className="nav-link">Blog</a>
-                      </Link>
-                    </li>
-                  )}
-
+                  <li className="nav-item">
+                    <Link legacyBehavior href="/blogs">
+                      <a className="nav-link">Blog</a>
+                    </Link>
+                  </li>
                   <li className="nav-item relative">
                     <Link legacyBehavior href="#" activeClassName="active">
                       <a className="nav-link">
@@ -182,7 +191,7 @@ const Navbar = () => {
                     >
                       <div className="flex flex-col gap-3">
                         <div>
-                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA]">
+                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA] text-[#393953]">
                             EmissionX
                           </h3>
 
@@ -197,14 +206,14 @@ const Navbar = () => {
                                   className="nav-link pl-[16px]"
                                   target={data.target}
                                 >
-                                  {data.name}
+                                  {data.icon} {data.name}
                                 </a>
                               </Link>
                             </li>
                           ))}
                         </div>
                         <div>
-                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA]">
+                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA] text-[#393953]">
                             Data Science
                           </h3>
 
@@ -219,7 +228,7 @@ const Navbar = () => {
                                   className="nav-link pl-[16px]"
                                   target={data.target}
                                 >
-                                  {data.name}
+                                  {data.icon} {data.name}
                                 </a>
                               </Link>
                             </li>
@@ -228,7 +237,7 @@ const Navbar = () => {
                       </div>
                       <div className="sm:pl-3 flex flex-col gap-3">
                         <div>
-                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA]">
+                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA] text-[#393953]">
                             App
                           </h3>
                           {externalLinks.map((data, index) => (
@@ -242,14 +251,14 @@ const Navbar = () => {
                                   className="nav-link pl-[16px]"
                                   target={data.target}
                                 >
-                                  {data.name}
+                                  {data.icon} {data.name}
                                 </a>
                               </Link>
                             </li>
                           ))}
                         </div>
                         <div>
-                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA]">
+                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA] text-[#393953]">
                             About
                           </h3>
                           {about.map((data, index) => (
@@ -260,7 +269,7 @@ const Navbar = () => {
                                 activeClassName="active"
                               >
                                 <a className="nav-link pl-[16px]">
-                                  {data.name}
+                                  {data.icon} {data.name}
                                 </a>
                               </Link>
                             </li>

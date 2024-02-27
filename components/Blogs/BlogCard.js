@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { truncateString } from "../Utils/TruncateText";
 import grayMatter from "gray-matter";
+import ImageDisplay from "../Utils/Image";
 
 const BlogCard = ({ data }) => {
   var { content: parsedContent } = grayMatter(data);
@@ -21,11 +21,8 @@ const BlogCard = ({ data }) => {
     }
   };
   return (
-    <Link
-      href={`/blogs/${data?.id}`}
-      className="blog-card-container"
-    >
-      <img
+    <Link href={`/blogs/${data?.id}`} className="blog-card-container">
+      <ImageDisplay
         src={"https://preview.cruip.com/open-pro/images/news-inner-image.jpg"}
         alt={data?.title}
         className="w-full h-[250px] rounded"
@@ -46,7 +43,7 @@ const BlogCard = ({ data }) => {
           ))}
       </div>
       <h3
-        className="blog-title dark:text-[#D9E3EA]"
+        className="blog-title dark:text-[#D9E3EA] text-[#393953]"
         title={data?.title}
       >
         {truncateString(data?.title, 20)}
@@ -60,7 +57,7 @@ const BlogCard = ({ data }) => {
           alt="user-img"
           className="w-[50px] h-[50px] rounded-full"
         />
-        <h5 className="mx-3 dark:text-[#D9E3EA]">Dummy User</h5>
+        <h5 className="mx-3 dark:text-[#D9E3EA] text-[#393953]">Dummy User</h5>
         <p>{new Date().toLocaleDateString()}</p>
       </div>
     </Link>

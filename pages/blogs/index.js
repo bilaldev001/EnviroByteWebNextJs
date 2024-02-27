@@ -7,6 +7,7 @@ import { getPostContent } from '../../middleware/post';
 import grayMatter from 'gray-matter'; 
 
 const Blogs = ({posts}) => {
+  
   return (
     <div>
       <Head>

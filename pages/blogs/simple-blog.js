@@ -8,7 +8,8 @@ export const metadata = {
   description: "Page description",
 };
 
-const Blog = () => {
+const Blog = ({ posts }) => {
+
   return (
     <section className="relative dark:bg-[#151719]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -27,11 +28,11 @@ const Blog = () => {
           {/* Main content */}
           <div className="md:flex md:justify-between">
             {/* Articles container */}
-            {/* <div className="md:grow -mt-4">
-              {allPosts.map((post, postIndex) => (
+            <div className="md:grow -mt-4">
+              {posts.map((post, postIndex) => (
                 <PostItem key={postIndex} {...post} />
               ))}
-            </div> */}
+            </div>
 
             {/* Sidebar */}
             <aside className="relative mt-12 md:mt-0 md:w-64 md:ml-12 lg:ml-20 md:shrink-0">
@@ -45,4 +46,25 @@ const Blog = () => {
   );
 };
 
+export async function getStaticProps() {
+  const response = await fetch(`${process.env.BACKEND_URL}/api/blogs/getBlogs`);
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+  const data = await response.json();
+
+  if (!data || data?.newFilesPath?.length === 0) {
+    return {
+      notFound: true,
+    };
+  }
+
+  const validPosts = data?.newFilesPath?.filter((post) => post !== null);
+
+  return {
+    props: {
+      posts: validPosts,
+    },
+  };
+}
 export default withSimpleLayout(Blog);

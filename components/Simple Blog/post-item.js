@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import ImageDisplay from "../Utils/Image";
 
 export default function PostItem({ ...props }) {
   return (
@@ -7,12 +7,17 @@ export default function PostItem({ ...props }) {
       <div>
         <header>
           <h2 className="h4 mb-2">
-            <Link href={`/blog/${props.slug}`} className="hover:underline">
+            <Link
+              href={`/blogs/${props.id}`}
+              className="hover:underline text-[#191919] dark:text-[#D9E3EA] font-bold"
+            >
               {props.title}
             </Link>
           </h2>
         </header>
-        <div className="text-lg text-gray-600 mb-4">{props.summary}</div>
+        <div className="text-lg text-gray-600 dark:text-[#9BA9B4] mb-4">
+          {props?.description}
+        </div>
         <footer className="text-sm">
           <div className="flex items-center">
             <div className="flex shrink-0 mr-3">
@@ -20,26 +25,29 @@ export default function PostItem({ ...props }) {
                 <span className="absolute inset-0 -m-px" aria-hidden="true">
                   <span className="absolute inset-0 -m-px bg-white rounded-full"></span>
                 </span>
-                <Image
-                  className="relative rounded-full"
-                  src={props.authorImg}
-                  width={32}
-                  height={32}
+                <ImageDisplay
+                  className="relative rounded-full w-[32px] h-[32px]"
+                  src={props.authorImg || "error"}
                   alt={props.author}
                 />
               </a>
             </div>
             <div>
-              <span className="text-gray-600">By </span>
-              <a className="font-medium hover:underline" href="#0">
-                {props.author}
+              <span className="text-gray-600 dark:text-[#9BA9B4]">By </span>
+              <a
+                className="hover:underline text-[#191919] dark:text-[#D9E3EA] font-semibold"
+                href="#0"
+              >
+                {props.author || "Author Name"}
               </a>
-              <span className="text-gray-600"> </span>
+              <span className="text-gray-600 dark:text-[#9BA9B4]">
+                · {new Date(props?.createdAt).toLocaleDateString()}
+              </span>
             </div>
           </div>
         </footer>
       </div>
-      <Link href={`/blog/${props.slug}`} className="block shrink-0 ml-6">
+      <Link href={`/blogs/${props.id}`} className="block shrink-0 ml-6">
         <span className="sr-only">Read more</span>
         <svg
           className="w-4 h-4 fill-current text-blue-600"

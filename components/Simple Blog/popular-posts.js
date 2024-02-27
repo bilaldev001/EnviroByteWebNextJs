@@ -23,7 +23,7 @@ export default function PopularPosts() {
               </a>
             </h3>
             <div className="text-sm text-gray-800">
-              <span className="text-gray-600">By </span>
+              <span className="text-gray-600 dark:text-[#9BA9B4]">By </span>
               <a
                 className="hover:underline text-[#191919] dark:text-[#D9E3EA] font-semibold"
                 href="#0"
@@ -51,7 +51,7 @@ export default function PopularPosts() {
               </a>
             </h3>
             <div className="text-sm text-gray-800">
-              <span className="text-gray-600">By </span>
+              <span className="text-gray-600 dark:text-[#9BA9B4]">By </span>
               <a
                 className="hover:underline text-[#191919] dark:text-[#D9E3EA] font-semibold"
                 href="#0"
@@ -79,7 +79,7 @@ export default function PopularPosts() {
               </a>
             </h3>
             <div className="text-sm text-gray-800">
-              <span className="text-gray-600">By </span>
+              <span className="text-gray-600 dark:text-[#9BA9B4]">By </span>
               <a
                 className="hover:underline text-[#191919] dark:text-[#D9E3EA] font-semibold"
                 href="#0"
@@ -107,7 +107,7 @@ export default function PopularPosts() {
               </a>
             </h3>
             <div className="text-sm text-gray-800">
-              <span className="text-gray-600">By </span>
+              <span className="text-gray-600 dark:text-[#9BA9B4]">By </span>
               <a
                 className="hover:underline text-[#191919] dark:text-[#D9E3EA] font-semibold"
                 href="#0"
@@ -135,7 +135,7 @@ export default function PopularPosts() {
               </a>
             </h3>
             <div className="text-sm text-gray-800">
-              <span className="text-gray-600">By </span>
+              <span className="text-gray-600 dark:text-[#9BA9B4]">By </span>
               <a
                 className="hover:underline text-[#191919] dark:text-[#D9E3EA] font-semibold"
                 href="#0"

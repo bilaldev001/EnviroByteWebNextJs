@@ -47,7 +47,7 @@ const BlogDetails = ({post}) => {
 
 
 export async function getStaticPaths() {
-  const response = await fetch('http://localhost:3000/api/blogs/getBlogs')
+  const response = await fetch(`${process.env.BACKEND_URL}/api/blogs/getBlogs`)
   if (!response.ok) {
     throw new Error(`HTTP error! Status: ${response.status}`);
   }
@@ -63,7 +63,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({params}) {
-  const response = await fetch(`http://localhost:3000/api/blogs/${params.id}`)
+  const response = await fetch(`${process.env.BACKEND_URL}/api/blogs/${params.id}`)
   if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }

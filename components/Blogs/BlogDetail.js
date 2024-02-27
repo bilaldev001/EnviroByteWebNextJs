@@ -48,7 +48,6 @@ const BlogDetail = (props) => {
     setValidation(false);
     router.push("/signup");
   };
-  console.log(validation);
 
   return (
     <div className="bg-[#ffffff] dark:bg-[#151719] transition">
@@ -96,8 +95,8 @@ const BlogDetail = (props) => {
                   alt="user-img"
                   className="w-[50px] h-[50px] rounded-full"
                 />
-                <h5 className="mx-3 dark:text-[#D9E3EA]">Dummy User</h5>
-                <p>{new Date().toLocaleDateString()}</p>
+                <h5 className="mx-3 dark:text-[#D9E3EA]">{blogData?.author || ""}</h5>
+                <p>{new Date(blogData?.date).toLocaleDateString()}</p>
               </div>
             </div>
           </div>

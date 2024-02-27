@@ -26,7 +26,6 @@ const tagColor = (tag) => {
 
 const BlogDetail = (props) => {
   const { blogData } = props;
-  var { content: parsedContent } = grayMatter(blogData);
   const router = useRouter();
   const dispatch = useDispatch();
   const blogCountData = useSelector((state) => state?.auth?.blogCountData);
@@ -59,8 +58,8 @@ const BlogDetail = (props) => {
         <div className="pb-70 bg-[#ffffff] dark:bg-[#151719] transition">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-start gap-2 flex-wrap text-xs font-medium">
-              {blogData?.frontmatter?.tags?.length &&
-                blogData?.frontmatter?.tags.map((data, index) => (
+              {blogData?.tags?.length &&
+                blogData?.tags.map((data, index) => (
                   <div
                     key={index}
                     className={`inline-flex text-center py-1 px-3 rounded-full transition duration-150 ease-in-out ${tagColor(
@@ -75,7 +74,7 @@ const BlogDetail = (props) => {
           <div className="d-flex justify-start items-start gap-4">
             <div className="md:w-[40%]">
               <img
-                src={blogData?.frontmatter?.image}
+                src={blogData?.image}
                 className="w-full h-[250px] rounded"
                 alt="title"
                 quality={100}
@@ -84,10 +83,10 @@ const BlogDetail = (props) => {
             </div>
             <div className="md:w-[60%]">
               <h1 className="text-[2rem] text-[#0e3496] mb-2 dark:text-[#D9E3EA]">
-                {blogData?.frontmatter?.title}
+                {blogData?.title}
               </h1>
               <p className="blog-description text-justify tracking-tight	 text-[18px]">
-                {parsedContent}
+                {blogData.content}
               </p>
               <div className="flex align-items-center mt-3">
                 <img

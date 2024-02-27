@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Script from "next/script";
-import PageBanner from "../components/Common/PageBanner";
 import SignupForm from "../components/Auth/SignupForm";
 import ToastContainer from "../components/Shared/Toast";
 import withMainLayout from "../components/Layouts";
@@ -37,14 +36,6 @@ const SignUp = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
       <ToastContainer />
-      <PageBanner
-        pageTitle="Sign Up"
-        breadcrumbTextOne="Home"
-        breadcrumbTextTwo="Sign Up"
-        breadcrumbUrl="/"
-        bgImage=""
-      />
-
       {/* Form Component */}
       <SignupForm />
     </div>

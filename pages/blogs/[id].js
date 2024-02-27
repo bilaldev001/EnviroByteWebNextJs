@@ -6,10 +6,10 @@ import BlogDetail from "../../components/Blogs/BlogDetail";
 import withMainLayout from "../../components/Layouts";
 import ToastContainer from "../../components/Shared/Toast";
 import grayMatter from 'gray-matter';
-import { getPostContent } from '../.././middleware/post';
+import { getPostContent } from '../../middleware/post';
 
 
-const BlogDetails = ({posts}) => {
+const BlogDetails = ({post}) => {
   return (
     <div>
       <Head>
@@ -40,11 +40,10 @@ const BlogDetails = ({posts}) => {
         breadcrumbUrl="/"
         bgImage="https://preview.cruip.com/open-pro/images/news-single.jpg"
       /> */}
-      <BlogDetail blogData={posts} /> 
+      <BlogDetail blogData={post} /> 
     </div>
   );
 };
-
 
 
 export async function getStaticPaths() {
@@ -54,64 +53,39 @@ export async function getStaticPaths() {
   }
   const data = await response.json();
 
-if (!data || data.newFilesPath.length === 0) {
   return {
-    notFound: true,
-  };
-}
-const posts = await Promise.all(data.newFilesPath.map(async (file) => {
-  const fileName = file.filePath;
-  const content = await getPostContent(fileName);
-
-  if (!content) {
-    console.error(`Failed to fetch content for ${fileName}`);
-    return null;
-  }
-  const { data: frontmatter } = grayMatter(content);
-  return {
-    content,
-    frontmatter,
-  };
-}));
-const titles = posts.map(post => post.frontmatter.title);
-  return {
-    paths: titles.map(title => ({ params: { title } })),
+    paths: data.newFilesPath.map((file) => ({
+      params: { id: String(file.id) },
+    })),
     fallback: false,
   };
+
 }
 
 export async function getStaticProps({params}) {
-  const response = await fetch('http://localhost:3000/api/blogs/getBlogs')
+  const response = await fetch(`http://localhost:3000/api/blogs/${params.id}`)
   if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     const data = await response.json();
 
-  if (!data || data.newFilesPath.length === 0) {
+  if (!data) {
     return {
       notFound: true,
     };
   }
-  const posts = await Promise.all(data.newFilesPath.map(async (file) => {
-    const fileName = file.filePath;
-    const content = await getPostContent(fileName);
 
-    if (!content) {
-      console.error(`Failed to fetch content for ${fileName}`);
-      return null;
-    }
-    const { data: frontmatter } = grayMatter(content);
-    return {
-      content,
-      frontmatter,
-    };
-  }));
-  const validPosts = posts.filter((post) => post !== null);
-  const filterPost = validPosts.find(post=>post.frontmatter.title === params.title)
+  const contentBody = data.content;
+  const { data: frontmatter, content } = grayMatter(contentBody);
   return {
     props: {
-      posts: filterPost,
+      post: {
+        content,
+        ...frontmatter,
+      },
     },
   };
+
 }
+
 export default withMainLayout(BlogDetails);

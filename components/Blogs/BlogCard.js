@@ -22,7 +22,7 @@ const BlogCard = ({ data }) => {
   };
   return (
     <Link
-      href={`/blogs/${data?.frontmatter?.title}`}
+      href={`/blogs/${data?.id}`}
       className="blog-card-container"
     >
       <img
@@ -33,8 +33,8 @@ const BlogCard = ({ data }) => {
         loading="lazy"
       />
       <div className="flex align-items-center ">
-        {data?.frontmatter?.tags?.length &&
-          data?.frontmatter?.tags.map((data, index) => (
+        {data?.tags?.length &&
+          data?.tags.map((data, index) => (
             <div
               key={index}
               className={`inline-flex text-center py-1 px-3 rounded-full transition duration-150 ease-in-out my-2 me-2 ${tagColor(
@@ -47,9 +47,9 @@ const BlogCard = ({ data }) => {
       </div>
       <h3
         className="blog-title dark:text-[#D9E3EA]"
-        title={data?.frontmatter?.title}
+        title={data?.title}
       >
-        {truncateString(data?.frontmatter?.title, 20)}
+        {truncateString(data?.title, 20)}
       </h3>
       <p className="blog-description text-justify" title={parsedContent}>
         {truncateString(parsedContent, 100)}

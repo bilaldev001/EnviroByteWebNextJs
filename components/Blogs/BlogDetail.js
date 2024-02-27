@@ -48,6 +48,7 @@ const BlogDetail = (props) => {
     setValidation(false);
     router.push("/signup");
   };
+  console.log(validation);
 
   return (
     <div className="bg-[#ffffff] dark:bg-[#151719] transition">

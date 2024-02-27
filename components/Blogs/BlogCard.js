@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { truncateString } from "../Utils/TruncateText";
+import grayMatter from "gray-matter";
 import ImageDisplay from "../Utils/Image";
 
 const BlogCard = ({ data }) => {

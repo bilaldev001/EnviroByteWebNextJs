@@ -39,7 +39,7 @@ const SigninForm = () => {
     <div className="pb-100 pt-[10rem] bg-[#ffffff] dark:bg-[#151719] transition min-h-[100vh] flex flex-column justify-center">
       {/* Page header */}
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px] auth-page-header">
-        <h1 className=" text-gray-800 dark:text-[#D9E3EA] font-[800] text-2xl md:text-[40px] lg:text-[3.25rem] px-2">
+        <h1 className="text-[#393953] dark:text-[#D9E3EA] font-[800] text-2xl md:text-[40px] lg:text-[3.25rem] px-2">
           Welcome back. We exist to make entrepreneurism easier.
         </h1>
       </div>

@@ -6,6 +6,7 @@ import TextField from "../Shared/InputField";
 import Spinner from "../Utils/Spinner";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser } from "../Redux/slices/AuthSlice";
+import GoogleSignIn from "./GoogleSignIn";
 
 const SignupForm = () => {
   const router = useRouter();
@@ -37,14 +38,17 @@ const SignupForm = () => {
   };
 
   return (
-    <div className="contact-section ptb-100 bg-[#ffffff] dark:bg-[#151719]">
+    <div className="ptb-100 bg-[#ffffff] dark:bg-[#151719] min-h-[100vh] flex flex-column justify-center">
       {/* Page header */}
-      <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px]">
-        <h1 className="text-[#191919] dark:text-[#D9E3EA] font-[800] text-3xl md:text-[40px] lg:text-[3.25rem]">
+      <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px] auth-page-header">
+        <h1 className=" text-gray-800 dark:text-[#D9E3EA] font-[800] text-2xl md:text-[40px] lg:text-[3.25rem] px-2">
           Welcome back. We exist to make entrepreneurism easier.
         </h1>
       </div>
-
+      <GoogleSignIn
+        btnText="Sign Up with Google"
+        text="Or, register with your email"
+      />
       {/* Form */}
       <div className="container max-w-sm mx-auto">
         <Formik
@@ -81,7 +85,7 @@ const SignupForm = () => {
         <p className="text-center mt-3 text-gray-800 text-md dark:text-white">
           Already have an account?{" "}
           <span
-            className="underline text-blue-400 cursor-pointer"
+            className="underline text-[#5d5dff] cursor-pointer"
             onClick={() => router.push("/signin")}
           >
             Sign In

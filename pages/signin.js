@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Script from "next/script";
-import PageBanner from "../components/Common/PageBanner";
 import SigninForm from "../components/Auth/SigninForm";
 import ToastContainer from "../components/Shared/Toast";
 import withMainLayout from "../components/Layouts";
@@ -37,13 +36,6 @@ const SignIn = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
       <ToastContainer />
-      {/* <PageBanner
-        pageTitle="Sign In"
-        breadcrumbTextOne="Home"
-        breadcrumbTextTwo="Sign In"
-        breadcrumbUrl="/"
-        bgImage=""
-      /> */}
       {/* Form Component */}
       <SigninForm />
     </div>

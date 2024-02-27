@@ -5712,6 +5712,11 @@ Custom Input Field
   background: transparent;
 }
 
+input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+}
+
 .error-form {
   border: 1px solid tomato !important;
 }
@@ -5816,5 +5821,5 @@ Pagination
 }
 
 .home-banner-text {
-  color: #737bab ;
+  color: #737bab;
 }

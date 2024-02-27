@@ -8,7 +8,7 @@ const BlogsComponent = ({ posts }) => {
   const [currentPage, setCurrentPage] = useState(0);
   return (
     <div className="bg-[#ffffff] dark:bg-[#151719] transition">
-      <div className="pt-100 pb-70 container mx-auto">
+      <div className="pt-[10rem] pb-70 container mx-auto">
         {/* Heading */}
         <div className="section-title">
           <h2 className="dark:text-[#D9E3EA]">Latest Articles</h2>

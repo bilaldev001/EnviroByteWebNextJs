@@ -33,13 +33,13 @@ const BlogDetails = ({posts}) => {
         />
       </Head>
       <ToastContainer />
-       <PageBanner
+       {/* <PageBanner
         pageTitle={posts?.frontmatter?.title}
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Blog"
         breadcrumbUrl="/"
         bgImage="https://preview.cruip.com/open-pro/images/news-single.jpg"
-      />
+      /> */}
       <BlogDetail blogData={posts} /> 
     </div>
   );

@@ -29,13 +29,13 @@ const Blogs = ({posts}) => {
           content="EnviroByte uses CI/CD to automate the process of calculating GHG emissions for Alberta TIER, BC GHG regulation, ECCC GHGRP, ECCC NPRI."
         />
       </Head>
-      <PageBanner
+      {/* <PageBanner
         pageTitle="Blogs"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Blogs"
         breadcrumbUrl="/"
         bgImage=""
-      />
+      /> */}
       <BlogsComponent posts={posts} />
     </div>
   );

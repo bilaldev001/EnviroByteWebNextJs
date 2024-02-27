@@ -46,9 +46,11 @@ const BlogCard = ({ data }) => {
       >
         {truncateString(data?.title, 70)}
       </h3>
-      {/* <p className="blog-description text-justify" title={parsedContent}>
-        {truncateString(parsedContent, 100)}
-      </p> */}
+      {data?.description &&
+        <p className="blog-description text-justify" title={data?.description}>
+          {truncateString(data?.description, 100)}
+        </p>
+      }
       <div className="flex align-items-center mt-2 ">
         <img
           src="https://preview.cruip.com/open-pro/images/news-author-06.jpg"

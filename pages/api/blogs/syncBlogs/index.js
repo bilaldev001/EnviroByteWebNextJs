@@ -32,12 +32,13 @@ export default async function GET(req, res) {
     if (newFileArray.length > 0) {
       await Promise.all(
         newFileArray.map(async file => {
-          const content = await getPostContent(file.path);
-          const { data: frontmatter } = grayMatter(content);
+          const fileContent = await getPostContent(file.path);
+          const { data: frontmatter, content } = grayMatter(fileContent);
           await prisma.mdxFile.create({
             data: {
               filePath: file.path,
               title: frontmatter.title,
+              description: content.slice(0, 100),
               tags: frontmatter.tags,
               categories: frontmatter.categories,
               image: frontmatter.image,

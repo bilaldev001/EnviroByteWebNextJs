@@ -8,7 +8,7 @@ export const registerUser = createAsyncThunk(
   async ({ formData, router }, thunkAPI) => {
     try {
       let response = await axios.post(`/api/auth/signup`, formData);
-      router.push("/");
+      router.push("/home");
       toast.success(response?.data?.message);
       return response.data;
     } catch (error) {
@@ -26,7 +26,7 @@ export const loginUser = createAsyncThunk(
   async ({ formData, router }, thunkAPI) => {
     try {
       let response = await axios.post(`/api/auth/signin`, formData);
-      router.push("/");
+      router.push("/home");
       toast.success(response?.data?.message);
       return response.data;
     } catch (error) {

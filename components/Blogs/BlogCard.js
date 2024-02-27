@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { truncateString } from "../Utils/TruncateText";
+import ImageDisplay from "../Utils/Image";
 
 const BlogCard = ({ data }) => {
   const tagColor = (tag) => {
@@ -18,11 +19,8 @@ const BlogCard = ({ data }) => {
     }
   };
   return (
-    <Link
-      href={`/blogs/${data?.id}`}
-      className="blog-card-container"
-    >
-      <img
+    <Link href={`/blogs/${data?.id}`} className="blog-card-container">
+      <ImageDisplay
         src={"https://preview.cruip.com/open-pro/images/news-inner-image.jpg"}
         alt={data?.title}
         className="w-full h-[250px] rounded"
@@ -43,7 +41,7 @@ const BlogCard = ({ data }) => {
           ))}
       </div>
       <h3
-        className="blog-title dark:text-[#D9E3EA]"
+        className="blog-title dark:text-[#D9E3EA] text-[#393953]"
         title={data?.title}
       >
         {truncateString(data?.title, 70)}

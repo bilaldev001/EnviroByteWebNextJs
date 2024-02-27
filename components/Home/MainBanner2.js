@@ -11,7 +11,7 @@ const MainBanner = () => {
         <div className="d-table">
           <div className="d-table-cell">
             <div className="container">
-              <div className="main-banner-content max-w-[100%] flex flex-col justify-center items-center">
+              <div className="main-banner-content flex flex-col justify-center items-center max-w-[80%] mx-auto">
                 <div
                   data-aos="zoom-in-left"
                   data-aos-delay="200"
@@ -59,7 +59,7 @@ const MainBanner = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-12 col-md-12 flex items-center justify-center mt-[64px]">
+              <div className="col-lg-12 col-md-12 flex items-center justify-center mt-[64px] main-banner-figure">
                 {/* Main Image */}
                 <DDSLogo
                   width={660}

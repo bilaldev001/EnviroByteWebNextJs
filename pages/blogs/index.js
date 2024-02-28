@@ -37,7 +37,7 @@ const Blogs = ({ posts, totalPages, currentPage }) => {
 
 export async function getServerSideProps({ query }) {
   const page = query.page || 1;
-  const perPage = 1;
+  const perPage = 10;
 
   const response = await fetch(
     `${process.env.BACKEND_URL}/api/blogs/getBlogs?page=${page}&perPage=${perPage}`

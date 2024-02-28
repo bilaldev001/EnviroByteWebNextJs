@@ -53,52 +53,54 @@ const BlogDetail = (props) => {
   return (
     <div className="bg-[#ffffff] dark:bg-[#151719] transition">
       <div
-        className={`container mx-auto pt-[10rem] pb-70 ${
+        className={`container mx-auto pt-[90px] md:pt-[10rem] pb-70 ${
           validation === true ? "" : "blur-md invert brightness-50"
         }`}
       >
-        <div className="pb-70 bg-[#ffffff] dark:bg-[#151719] transition">
-          <div className="flex items-center justify-between mb-3">
-            <div className="flex items-start gap-2 flex-wrap text-xs font-medium">
-              {blogData?.tags?.length &&
-                blogData?.tags.map((data, index) => (
-                  <div
-                    key={index}
-                    className={`inline-flex text-center py-1 px-3 rounded-full transition duration-150 ease-in-out ${tagColor(
-                      data
-                    )}`}
-                  >
-                    <p className="mb-0 text-white text-[12px]">{data}</p>
-                  </div>
-                ))}
-            </div>
-          </div>
-          <div className="d-flex justify-start items-start gap-4">
-            <div className="md:w-[40%]">
-              <ImageDisplay
-                src={blogData?.image || "noimage"}
-                className="w-full h-[250px] rounded"
-                alt="title"
-                quality={100}
-                loading="lazy"
-              />
-            </div>
-            <div className="md:w-[60%]">
-              <h1 className="text-[2rem] text-[#0e3496] mb-2 dark:text-[#D9E3EA]">
+        <div className="pb-70 bg-[#ffffff] dark:bg-[#151719] transition flex flex-column">
+          <div className="flex flex-column justify-center items-center gap-4">
+            <div className="md:w-[80%] lg:w-[70%] mx-auto">
+              <h1 className="text-[2rem] text-[#0e3496] mb-2 dark:text-[#D9E3EA] text-center">
                 {blogData?.title}
               </h1>
-              <p className="blog-description text-justify tracking-tight	 text-[18px]">
-                {blogData.content}
-              </p>
-              <div className="flex align-items-center mt-3">
+              <div className="flex align-items-center my-3">
                 <img
                   src="https://preview.cruip.com/open-pro/images/news-author-06.jpg"
                   alt="user-img"
                   className="w-[50px] h-[50px] rounded-full"
                 />
-                <h5 className="mx-3 dark:text-[#D9E3EA]">{blogData?.author || ""}</h5>
+                <h5 className="mx-3 dark:text-[#D9E3EA]">
+                  {blogData?.author || ""}
+                </h5>
                 <p>{new Date(blogData?.date).toLocaleDateString()}</p>
               </div>
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex items-start gap-2 flex-wrap text-xs font-medium">
+                  {blogData?.tags?.length &&
+                    blogData?.tags.map((data, index) => (
+                      <div
+                        key={index}
+                        className={`inline-flex text-center py-1 px-3 rounded-full transition duration-150 ease-in-out ${tagColor(
+                          data
+                        )}`}
+                      >
+                        <p className="mb-0 text-white text-[12px]">{data}</p>
+                      </div>
+                    ))}
+                </div>
+              </div>
+              <p className="blog-description text-justify tracking-tight	 text-[18px]">
+                {blogData.content}
+              </p>
+            </div>
+            <div className="md:w-[80%] lg:w-[70%] mx-auto">
+              <ImageDisplay
+                src={blogData?.image || "noimage"}
+                className="w-full h-[250px] md:h-[350px] rounded"
+                alt="title"
+                quality={100}
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

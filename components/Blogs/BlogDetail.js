@@ -74,16 +74,18 @@ const BlogDetail = (props) => {
             </div>
           </div>
           <div className="d-flex justify-start items-start gap-4">
-            <div className="md:w-[40%]">
-              <ImageDisplay
-                src={blogData?.image || "noimage"}
-                className="w-full h-[250px] rounded"
-                alt="title"
-                quality={100}
-                loading="lazy"
-              />
-            </div>
-            <div className="md:w-[60%]">
+            {blogData?.image &&
+              <div className="md:w-[40%]">
+                <ImageDisplay
+                  src={blogData?.image || "noimage"}
+                  className="w-full h-[250px] rounded"
+                  alt="title"
+                  quality={100}
+                  loading="lazy"
+                />
+              </div>
+            }
+            <div className={`md:w-[${blogData?.image ? '60' : '100'}%]`}>
               <h1 className="text-[2rem] text-[#0e3496] mb-2 dark:text-[#D9E3EA]">
                 {blogData?.title}
               </h1>

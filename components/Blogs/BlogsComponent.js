@@ -21,7 +21,9 @@ const BlogsComponent = ({ posts, totalPages, currentPage }) => {
         </div>
 
         {/* Pagination Component */}
-        <Pagination totalPages={totalPages} currentPage={currentPage} />
+        {totalPages > 1 && (
+          <Pagination totalPages={totalPages} currentPage={currentPage} />
+        )}
 
         {/* NewsLetter Component */}
         <div className="pt-[50px]">

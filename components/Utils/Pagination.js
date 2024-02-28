@@ -1,10 +1,14 @@
+import { useRouter } from "next/router";
 import React from "react";
 import ReactPaginate from "react-paginate";
 
 function Pagination({ totalPages, currentPage, setCurrentPage }) {
+  const router = useRouter();
   // Invoke when user click to request another page.
-  const handlePageClick = (event) => {
-    setCurrentPage(event.selected);
+  const handlePageClick = async (event) => {
+    // setCurrentPage(event.selected);
+    currentPage = event.selected + 1;
+    router.push({ query: { page: currentPage } });
   };
 
   return (
@@ -16,7 +20,7 @@ function Pagination({ totalPages, currentPage, setCurrentPage }) {
         pageRangeDisplayed={2}
         marginPagesDisplayed={2}
         pageCount={totalPages}
-        initialPage={currentPage}
+        initialPage={currentPage - 1}
         previousLabel="Prev"
         renderOnZeroPageCount={null}
         className=" flex flex-row w-full items-center justify-center  text-base font-medium text-white"

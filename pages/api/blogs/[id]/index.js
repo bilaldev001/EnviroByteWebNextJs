@@ -9,12 +9,11 @@ export default async function GET(req, res) {
       where: {
         id: blogId,
       },
-      select: { filePath: true },
     });
     if (!blogDB) return res.status(404).json({ message: 'Blog Not Found' });
     const fileName = blogDB.filePath;
     const content = await getPostContent(fileName);
-    res.json({ content });
+    res.json({ content, ...blogDB });
   }
   catch (error) {
     console.error(error);

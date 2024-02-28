@@ -97,7 +97,7 @@ const BlogDetail = (props) => {
                   className="w-[50px] h-[50px] rounded-full"
                 />
                 <h5 className="mx-3 dark:text-[#D9E3EA]">{blogData?.author || ""}</h5>
-                <p>{new Date(blogData?.date).toLocaleDateString()}</p>
+                <p>{new Date(blogData?.createdAt).toLocaleDateString()}</p>
               </div>
             </div>
           </div>

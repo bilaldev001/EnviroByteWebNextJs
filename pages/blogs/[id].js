@@ -54,7 +54,7 @@ export async function getStaticPaths() {
   const data = await response.json();
 
   return {
-    paths: data.newFilesPath.map((file) => ({
+    paths: data.blogs.map((file) => ({
       params: { id:file.id },
     })),
     fallback: false,

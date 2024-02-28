@@ -1,13 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import PageBanner from "../../components/Common/PageBanner";
 import BlogsComponent from "../../components/Blogs/BlogsComponent";
 import withMainLayout from "../../components/Layouts";
-import { getPostContent } from '../../middleware/post';
-import grayMatter from 'gray-matter'; 
 
-const Blogs = ({posts}) => {
-  
+const Blogs = ({ posts }) => {
+
   return (
     <div>
       <Head>
@@ -43,24 +40,32 @@ const Blogs = ({posts}) => {
 };
 
 export async function getStaticProps() {
-  const response = await fetch(`${process.env.BACKEND_URL}/api/blogs/getBlogs`)
+  const page = 1; 
+  const perPage = 10; 
+
+  const response = await fetch(`${process.env.BACKEND_URL}/api/blogs/getBlogs?page=${page}&perPage=${perPage}`);
   if (!response.ok) {
     throw new Error(`HTTP error! Status: ${response.status}`);
   }
+  
   const data = await response.json();
+  const { blogs, totalPages } = data;
 
-  if (!data || data?.newFilesPath?.length === 0) {
+  if (!data || blogs?.length === 0) {
     return {
-      notFound: true,
+      props: {
+        posts: [],
+        totalPages: 0,
+      },
     };
   }
 
-  const validPosts = data?.newFilesPath?.filter((post) => post !== null);
-
   return {
     props: {
-      posts: validPosts,
+      posts: blogs,
+      totalPages,
     },
   };
 }
+
 export default withMainLayout(Blogs);

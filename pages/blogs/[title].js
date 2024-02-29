@@ -5,11 +5,10 @@ import PageBanner from "../../components/Common/PageBanner";
 import BlogDetail from "../../components/Blogs/BlogDetail";
 import withMainLayout from "../../components/Layouts";
 import ToastContainer from "../../components/Shared/Toast";
-import grayMatter from 'gray-matter';
-import { getPostContent } from '../../middleware/post';
+import grayMatter from "gray-matter";
+import { allBlogs } from "contentlayer/generated";
 
-
-const BlogDetails = ({post}) => {
+const BlogDetails = ({ post }) => {
   return (
     <div>
       <Head>
@@ -33,60 +32,24 @@ const BlogDetails = ({post}) => {
         />
       </Head>
       <ToastContainer />
-       {/* <PageBanner
-        pageTitle={posts?.frontmatter?.title}
-        breadcrumbTextOne="Home"
-        breadcrumbTextTwo="Blog"
-        breadcrumbUrl="/"
-        bgImage="https://preview.cruip.com/open-pro/images/news-single.jpg"
-      /> */}
-      <BlogDetail blogData={post} /> 
+      <BlogDetail blogData={post} />
     </div>
   );
 };
 
-
 export async function getStaticPaths() {
-  const response = await fetch(`${process.env.BACKEND_URL}/api/blogs/getBlogs`)
-  if (!response.ok) {
-    throw new Error(`HTTP error! Status: ${response.status}`);
-  }
-  const data = await response.json();
-
   return {
-    paths: data.blogs.map((file) => ({
-      params: { id:file.id },
+    paths: allBlogs.map((blog) => ({
+      params: { title: blog.title },
     })),
     fallback: false,
   };
-
 }
 
-export async function getStaticProps({params}) {
-  const response = await fetch(`${process.env.BACKEND_URL}/api/blogs/${params.id}`)
-  if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const blogDB = await response.json();
+export async function getStaticProps({ params }) {
+  const post = allBlogs.find((blog) => blog.title === params.title);
 
-  if (!blogDB) {
-    return {
-      notFound: true,
-    };
-  }
-
-  const contentBody = blogDB.content;
-  const { data: frontmatter, content } = grayMatter(contentBody);
-  return {
-    props: {
-      post: {
-        ...blogDB,
-        ...frontmatter,
-        content,
-      },
-    },
-  };
-
+  return { props: { post } };
 }
 
 export default withMainLayout(BlogDetails);

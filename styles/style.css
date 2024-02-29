@@ -5837,3 +5837,80 @@ Pagination
 .home-banner-text {
   color: #737bab;
 }
+
+.blog-article pre {
+  background-color: #1f2937;
+  color: white;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.blog-article p {
+  font-size: 17px;
+}
+
+.blog-article li {
+  font-size: 17px;
+  color: #737b9a;
+  margin: 0.5rem 0;
+}
+
+.blog-article h1,
+.blog-article h2 {
+  font-size: 27px;
+  margin-bottom: 1rem;
+}
+.blog-article h3,
+.blog-article h4 {
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+.blog-article ul {
+  margin-bottom: 1rem;
+}
+.blog-article img {
+  margin-bottom: 1rem;
+}
+
+.dark .blog-article p,
+.dark .blog-article h1,
+.dark .blog-article h2,
+.dark .blog-article h3,
+.dark .blog-article h4,
+.dark .blog-article h5,
+.dark .blog-article h6,
+.dark .blog-article li {
+  color: white !important;
+}
+.dark .blog-article a {
+  color: #5d5dff;
+}
+.blog-article blockquote::before {
+  opacity: 0;
+}
+.dark .blog-article blockquote,
+.blockquote {
+  background-color: #1f2937;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .blog-article p {
+    font-size: 15px;
+    text-align: initial;
+  }
+
+  .blog-article li {
+    font-size: 15px;
+  }
+
+  .blog-article h1,
+  .blog-article h2 {
+    font-size: 22px;
+  }
+  .blog-article h3,
+  .blog-article h4 {
+    font-size: 20px;
+  }
+}

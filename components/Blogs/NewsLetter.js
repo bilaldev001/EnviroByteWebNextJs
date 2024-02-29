@@ -38,7 +38,7 @@ const NewsLetter = () => {
           <form className="w-full" onSubmit={handleSubmit}>
             <input
               type="email"
-              className="news-letter-input w-full md:w-[60%] text-white"
+              className="news-letter-input w-full lg:w-[60%] text-white"
               placeholder="Your best email"
               required
               value={email}
@@ -46,7 +46,7 @@ const NewsLetter = () => {
             />
             <button
               type="submit"
-              className="default-btn subscribe-btn my-2 md:my-0 md:ms-3 px-4 sm:mx-auto md:mx-0 inline-block"
+              className="default-btn subscribe-btn my-2 md:my-0 lg:ms-3 px-4 sm:mx-auto lg:mx-0 lg:inline-block"
             >
               {isLoading ? <Spinner /> : "Subscribe"} <span></span>
             </button>

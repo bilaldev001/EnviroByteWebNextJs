@@ -6,9 +6,9 @@ function Pagination({ totalPages, currentPage, setCurrentPage }) {
   const router = useRouter();
   // Invoke when user click to request another page.
   const handlePageClick = async (event) => {
-    // setCurrentPage(event.selected);
-    currentPage = event.selected + 1;
-    router.push({ query: { page: currentPage } });
+    setCurrentPage(event.selected + 1);
+    // currentPage = event.selected + 1;
+    // router.push({ query: { page: currentPage } });
   };
 
   return (

@@ -274,3 +274,5 @@ sketch
 package-lock.json
 /build/*
 /.idea/
+.contentlayer
+.mdxblogs-main

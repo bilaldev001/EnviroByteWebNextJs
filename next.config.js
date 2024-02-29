@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const path = require("path");
 const dotenv = require("dotenv");
+const { withContentlayer } = require("next-contentlayer");
 dotenv.config();
 const nextConfig = {
   reactStrictMode: true,
@@ -15,10 +16,15 @@ const nextConfig = {
       use: ["@svgr/webpack"],
     });
 
-     return config
-    },
-    trailingSlash: true,
-    optimizeFonts: false,
-    distDir: 'build',
-}
-module.exports = nextConfig
+    return config;
+  },
+  trailingSlash: true,
+  optimizeFonts: false,
+  distDir: "build",
+  reactStrictMode: true,
+  images: {
+    domains: ["images.unsplash.com", "media-exp1.licdn.com"],
+    dangerouslyAllowSVG: true,
+  },
+};
+module.exports = withContentlayer(nextConfig);

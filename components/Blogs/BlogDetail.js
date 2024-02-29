@@ -9,21 +9,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { blogCount } from "../Redux/slices/AuthSlice";
 import grayMatter from "gray-matter";
 import ImageDisplay from "../Utils/Image";
-
-const tagColor = (tag) => {
-  switch (tag) {
-    case "history":
-      return "text-gray-100 bg-blue-500 hover:bg-blue-600";
-    case "american":
-      return "text-gray-100 bg-pink-500 hover:bg-pink-600";
-    case "crime":
-      return "text-gray-100 bg-teal-500 hover:bg-teal-600";
-    case "french":
-      return "text-gray-100 bg-green-500 hover:bg-green-600";
-    default:
-      return "text-gray-100 bg-purple-600 hover:bg-purple-700";
-  }
-};
+import { Mdx } from "../mdx/mdx";
+import { setTagColor } from "../Utils/TagColors";
 
 const BlogDetail = (props) => {
   const { blogData } = props;
@@ -53,7 +40,7 @@ const BlogDetail = (props) => {
   return (
     <div className="bg-[#ffffff] dark:bg-[#151719] transition">
       <div
-        className={`container mx-auto pt-[90px] md:pt-[10rem] pb-70 ${
+        className={`container mx-auto pt-[90px] md:pt-[9rem] pb-70 ${
           validation === true ? "" : "blur-md invert brightness-50"
         }`}
       >
@@ -80,7 +67,7 @@ const BlogDetail = (props) => {
                     blogData?.tags.map((data, index) => (
                       <div
                         key={index}
-                        className={`inline-flex text-center py-1 px-3 rounded-full transition duration-150 ease-in-out ${tagColor(
+                        className={`inline-flex text-center py-1 px-3 rounded-full transition duration-150 ease-in-out ${setTagColor(
                           data
                         )}`}
                       >
@@ -89,9 +76,7 @@ const BlogDetail = (props) => {
                     ))}
                 </div>
               </div>
-              <p className="blog-description text-justify tracking-tight	 text-[18px]">
-                {blogData.content}
-              </p>
+              <Mdx code={blogData.body.code} />
             </div>
             <div className="md:w-[80%] lg:w-[70%] mx-auto">
               <ImageDisplay

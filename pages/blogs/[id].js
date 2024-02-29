@@ -67,21 +67,22 @@ export async function getStaticProps({params}) {
   if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
-    const data = await response.json();
+    const blogDB = await response.json();
 
-  if (!data) {
+  if (!blogDB) {
     return {
       notFound: true,
     };
   }
 
-  const contentBody = data.content;
+  const contentBody = blogDB.content;
   const { data: frontmatter, content } = grayMatter(contentBody);
   return {
     props: {
       post: {
-        content,
+        ...blogDB,
         ...frontmatter,
+        content,
       },
     },
   };

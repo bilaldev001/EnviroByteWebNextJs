@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { blogCount } from "../Redux/slices/AuthSlice";
 import grayMatter from "gray-matter";
 import ImageDisplay from "../Utils/Image";
+import MdxViewer from "../Utils/mdxViewer";
 
 const tagColor = (tag) => {
   switch (tag) {
@@ -90,7 +91,8 @@ const BlogDetail = (props) => {
                 {blogData?.title}
               </h1>
               <p className="blog-description text-justify tracking-tight	 text-[18px]">
-                {blogData.content}
+                {/* {blogData.content} */}
+                <MdxViewer mdxSource={blogData.content} />
               </p>
               <div className="flex align-items-center mt-3">
                 <img

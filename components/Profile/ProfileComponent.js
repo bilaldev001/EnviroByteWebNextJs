@@ -7,15 +7,15 @@ const ProfileComponent = () => {
   const [tabIndex, setTabIndex] = useState(0);
 
   return (
-    <div className="ptb-100 dark:bg-[#151719]">
+    <div className="pb-100 pt-[10rem] dark:bg-[#151719]">
       <div className="container">
         <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-          <div className="grid grid-cols-3 gap-4">
-            <div className="col-span-1">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
+            <div className="md:col-span-1">
               <TabList className="bg-[#ffffff] rounded-lg py-4 px-3 dark:bg-[#25282C] shadow-teamCard">
                 <Tab
-                  selectedClassName="bg-[#0e3496] dark:bg-[#ffffff] dark:text-[#0e3496] text-[#ffffff] font-semibold"
-                  className={`outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#0e3496] ${
+                  selectedClassName="bg-[#5d5dff] dark:bg-[#ffffff] dark:text-[#5d5dff] text-[#ffffff] font-semibold"
+                  className={`outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#5d5dff] ${
                     tabIndex === 0
                       ? "dark:text-[#023496]"
                       : "dark:text-[#D9E3EA]"
@@ -24,8 +24,8 @@ const ProfileComponent = () => {
                   Edit Account
                 </Tab>
                 <Tab
-                  selectedClassName="bg-[#0e3496] dark:bg-[#ffffff] dark:text-[#0e3496] text-[#ffffff] font-semibold"
-                  className={`outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#0e3496] ${
+                  selectedClassName="bg-[#5d5dff] dark:bg-[#ffffff] dark:text-[#5d5dff] text-[#ffffff] font-semibold"
+                  className={`outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#5d5dff] ${
                     tabIndex === 1
                       ? "dark:text-[#023496]"
                       : "dark:text-[#D9E3EA]"
@@ -34,8 +34,8 @@ const ProfileComponent = () => {
                   Change Password
                 </Tab>
                 <Tab
-                  selectedClassName="bg-[#0e3496] dark:bg-[#ffffff] dark:text-[#0e3496] text-[#ffffff] font-semibold"
-                  className={`outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#0e3496] ${
+                  selectedClassName="bg-[#5d5dff] dark:bg-[#ffffff] dark:text-[#5d5dff] text-[#ffffff] font-semibold"
+                  className={`outline-none rounded-lg transition duration-200 dark:shadow-[#00b0ee26] cursor-pointer text-[#5d5dff] ${
                     tabIndex === 2
                       ? "dark:text-[#023496]"
                       : "dark:text-[#D9E3EA]"
@@ -45,7 +45,7 @@ const ProfileComponent = () => {
                 </Tab>
               </TabList>
             </div>
-            <div className="col-span-2">
+            <div className="md:col-span-2">
               <TabPanel className="rounded-lg shadow-teamCard">
                 {/* Tabs item 1 */}
                 <EditAccountForm />

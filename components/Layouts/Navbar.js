@@ -177,7 +177,7 @@ const Navbar = () => {
                       <a className="nav-link">Blog</a>
                     </Link>
                   </li>
-                  <li className="nav-item relative">
+                  <li className="nav-item relative lg:hidden">
                     <Link legacyBehavior href="#" activeClassName="active">
                       <a className="nav-link">
                         Features <i className="fas fa-chevron-down"></i>
@@ -191,7 +191,7 @@ const Navbar = () => {
                     >
                       <div className="flex flex-col gap-3">
                         <div>
-                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA] text-[#393953]">
+                          <h3 className="text-[18px] mb-2 dark:text-[#D9E3EA] text-[#393953]">
                             EmissionX
                           </h3>
 
@@ -213,7 +213,7 @@ const Navbar = () => {
                           ))}
                         </div>
                         <div>
-                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA] text-[#393953]">
+                          <h3 className="text-[18px] mb-2 dark:text-[#D9E3EA] text-[#393953]">
                             Data Science
                           </h3>
 
@@ -237,7 +237,7 @@ const Navbar = () => {
                       </div>
                       <div className="sm:pl-3 flex flex-col gap-3">
                         <div>
-                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA] text-[#393953]">
+                          <h3 className="text-[18px] mb-2 dark:text-[#D9E3EA] text-[#393953]">
                             App
                           </h3>
                           {externalLinks.map((data, index) => (
@@ -258,7 +258,7 @@ const Navbar = () => {
                           ))}
                         </div>
                         <div>
-                          <h3 className="md:text-[24px] text-[20px] mb-2 dark:text-[#D9E3EA] text-[#393953]">
+                          <h3 className="text-[18px] mb-2 dark:text-[#D9E3EA] text-[#393953]">
                             About
                           </h3>
                           {about.map((data, index) => (
@@ -278,7 +278,123 @@ const Navbar = () => {
                       </div>
                     </ul>
                   </li>
+                  <li className="nav-item relative lg:block hidden">
+                    <Link legacyBehavior href="#" activeClassName="active">
+                      <a className="nav-link">
+                        About <i className="fas fa-chevron-down"></i>
+                      </a>
+                    </Link>
 
+                    <ul
+                      className={`dropdown-menu grid sm:grid-cols-1 px-3 dark:bg-[#151719] bg-[#ffffff] ${
+                        !menu ? "shadow-none m-0" : ""
+                      }`}
+                    >
+                      {about.map((data, index) => (
+                        <li className="nav-item" key={index}>
+                          <Link
+                            legacyBehavior
+                            href={data.href}
+                            activeClassName="active"
+                          >
+                            <a className="nav-link pl-[16px]">
+                              {data.icon} {data.name}
+                            </a>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                  <li className="nav-item relative lg:block hidden">
+                    <Link legacyBehavior href="#" activeClassName="active">
+                      <a className="nav-link">
+                        EmissionX <i className="fas fa-chevron-down"></i>
+                      </a>
+                    </Link>
+
+                    <ul
+                      className={`dropdown-menu grid sm:grid-cols-1 px-3 dark:bg-[#151719] bg-[#ffffff] ${
+                        !menu ? "shadow-none m-0" : ""
+                      }`}
+                    >
+                      {emission.map((data, index) => (
+                        <li className="nav-item" key={index}>
+                          <Link
+                            legacyBehavior
+                            href={data.href}
+                            activeClassName="active"
+                          >
+                            <a
+                              className="nav-link pl-[16px]"
+                              target={data.target}
+                            >
+                              {data.icon} {data.name}
+                            </a>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                  <li className="nav-item relative lg:block hidden">
+                    <Link legacyBehavior href="#" activeClassName="active">
+                      <a className="nav-link">
+                        Data Science <i className="fas fa-chevron-down"></i>
+                      </a>
+                    </Link>
+
+                    <ul
+                      className={`dropdown-menu grid sm:grid-cols-1 px-3 dark:bg-[#151719] bg-[#ffffff] ${
+                        !menu ? "shadow-none m-0" : ""
+                      }`}
+                    >
+                      {dataScienceLinks.map((data, index) => (
+                        <li className="nav-item" key={index}>
+                          <Link
+                            legacyBehavior
+                            href={data.href}
+                            activeClassName="active"
+                          >
+                            <a
+                              className="nav-link pl-[16px]"
+                              target={data.target}
+                            >
+                              {data.icon} {data.name}
+                            </a>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                  <li className="nav-item relative lg:block hidden">
+                    <Link legacyBehavior href="#" activeClassName="active">
+                      <a className="nav-link">
+                        App <i className="fas fa-chevron-down"></i>
+                      </a>
+                    </Link>
+
+                    <ul
+                      className={`dropdown-menu grid sm:grid-cols-1 px-3 dark:bg-[#151719] bg-[#ffffff] ${
+                        !menu ? "shadow-none m-0" : ""
+                      }`}
+                    >
+                      {externalLinks.map((data, index) => (
+                        <li className="nav-item" key={index}>
+                          <Link
+                            legacyBehavior
+                            href={data.href}
+                            activeClassName="active"
+                          >
+                            <a
+                              className="nav-link pl-[16px]"
+                              target={data.target}
+                            >
+                              {data.icon} {data.name}
+                            </a>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
                   <li className="nav-item">
                     <Link
                       legacyBehavior

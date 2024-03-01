@@ -38,13 +38,13 @@ const Profile = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
       <ToastContainer />
-      <PageBanner
+      {/* <PageBanner
         pageTitle="Profile"
         breadcrumbTextOne="Home"
         breadcrumbTextTwo="Profile"
         breadcrumbUrl="/"
         bgImage=""
-      />
+      /> */}
 
           {/* Form Component */}
           <ProfileComponent/>

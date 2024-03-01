@@ -18,6 +18,7 @@ const BlogCard = ({ data }) => {
         return "text-gray-100 bg-purple-600 hover:bg-purple-700";
     }
   };
+  // console.log(data?.description);
   return (
     <Link href={`/blogs/${data?.id}`} className="blog-card-container">
       <ImageDisplay
@@ -41,16 +42,19 @@ const BlogCard = ({ data }) => {
           ))}
       </div>
       <h3
-        className="blog-title dark:text-[#D9E3EA] text-[#393953]"
+        className="blog-title dark:text-[#D9E3EA] text-[#393953] truncate"
         title={data?.title}
       >
         {truncateString(data?.title, 70)}
       </h3>
-      {data?.description &&
-        <p className="blog-description text-justify" title={data?.description}>
+      {data?.description && (
+        <p
+          className="blog-description text-justify truncate-card-description"
+          title={data?.description}
+        >
           {truncateString(data?.description, 100)}
         </p>
-      }
+      )}
       <div className="flex align-items-center mt-2 ">
         <img
           src="https://preview.cruip.com/open-pro/images/news-author-06.jpg"

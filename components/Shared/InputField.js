@@ -14,18 +14,28 @@ const CustomInput = ({ label, righticon, ...props }) => {
           {label}
         </label>
       )}
-      <div
-        className={`flex items-center justify-between py-0 custom-form-input w-full focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 ${
-          meta.touched && meta.error && "border border-error error-form"
-        }`}
-      >
+      {props.type === "password" ? (
+        <div
+          className={`flex items-center justify-between py-0 custom-form-input w-full focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 ${
+            meta.touched && meta.error && "border border-error error-form"
+          }`}
+        >
+          <input
+            className={`custom-form-input w-full text-gray-800 dark:text-[#D9E3EA] px-0 outline-none border-none`}
+            {...field}
+            {...props}
+          />
+          {righticon}
+        </div>
+      ) : (
         <input
-          className={`custom-form-input w-full text-gray-800 dark:text-[#D9E3EA] px-0 outline-none border-none`}
+          className={`custom-form-input w-full text-gray-800 dark:text-[#D9E3EA] outline-none focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500 ${
+            meta.touched && meta.error && "border border-error error-form"
+          }`}
           {...field}
           {...props}
         />
-        {righticon}
-      </div>
+      )}
 
       <ErrorMessage
         component="p"

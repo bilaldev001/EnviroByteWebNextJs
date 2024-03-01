@@ -59,9 +59,9 @@ const ChangePasswordForm = () => {
       >
         {() => (
           <Form className="w-full">
-            <div className="grid grid-cols-2 gap-x-4">
-              <div className="col-span-2">
-                <div className="w-1/2 pe-[0.5rem]">
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-4">
+              <div className="lg:col-span-2">
+                <div className="lg:w-1/2 w-full lg:pe-[0.5rem]">
                   <TextField
                     type={oldPEye ? "text" : "password"}
                     label="Old Password"
@@ -69,16 +69,23 @@ const ChangePasswordForm = () => {
                     placeholder="Enter your old password"
                     autoComplete={false}
                     righticon={
-                      <Image
-                        fluid
-                        src={oldPEye ? CloseEye : OpenEye}
-                        loading="lazy"
-                        width={20}
-                        height={20}
-                        onClick={() => {
-                          setoldPEye(!oldPEye);
-                        }}
-                      />
+                      oldPEye ? (
+                        <CloseEye
+                          width="20"
+                          className="cursor-pointer"
+                          onClick={() => {
+                            setoldPEye(!oldPEye);
+                          }}
+                        />
+                      ) : (
+                        <OpenEye
+                          width="20"
+                          className="cursor-pointer"
+                          onClick={() => {
+                            setoldPEye(!oldPEye);
+                          }}
+                        />
+                      )
                     }
                   />
                 </div>
@@ -90,16 +97,23 @@ const ChangePasswordForm = () => {
                 placeholder="Enter your new password"
                 autoComplete={false}
                 righticon={
-                  <Image
-                    fluid
-                    src={newPEye ? CloseEye : OpenEye}
-                    loading="lazy"
-                    width={20}
-                    height={20}
-                    onClick={() => {
-                      setnewPEye(!newPEye);
-                    }}
-                  />
+                  newPEye ? (
+                    <CloseEye
+                      width="20"
+                      className="cursor-pointer"
+                      onClick={() => {
+                        setnewPEye(!newPEye);
+                      }}
+                    />
+                  ) : (
+                    <OpenEye
+                      width="20"
+                      className="cursor-pointer"
+                      onClick={() => {
+                        setnewPEye(!newPEye);
+                      }}
+                    />
+                  )
                 }
               />
               <TextField
@@ -109,16 +123,23 @@ const ChangePasswordForm = () => {
                 placeholder="Confirm your password"
                 autoComplete={false}
                 righticon={
-                  <Image
-                    fluid
-                    src={confirmPEye ? CloseEye : OpenEye}
-                    loading="lazy"
-                    width={20}
-                    height={20}
-                    onClick={() => {
-                      setconfirmPEye(!confirmPEye);
-                    }}
-                  />
+                  confirmPEye ? (
+                    <CloseEye
+                      width="20"
+                      className="cursor-pointer"
+                      onClick={() => {
+                        setconfirmPEye(!confirmPEye);
+                      }}
+                    />
+                  ) : (
+                    <OpenEye
+                      width="20"
+                      className="cursor-pointer"
+                      onClick={() => {
+                        setconfirmPEye(!confirmPEye);
+                      }}
+                    />
+                  )
                 }
               />
             </div>

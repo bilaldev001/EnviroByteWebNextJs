@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
-import Navbar from "../components/Layouts/Navbar";
-import MainBanner from "../components/Home/MainBanner";
-import BriefEmissionX from "../components/Home/BriefEmissionX";
-import OurServices from "../components/Home/OurServices";
-import FunFacts from "../components/Common/FunFacts";
 import SolutionsTab from "../components/Common/SolutionsTab";
-import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
 import withMainLayout from "../components/Layouts";
 import Process from "../components/Home/Process";
 import NewsLetter from "../components/Blogs/NewsLetter";
 import Target from "../components/Home/Target";
 import Features from "../components/Home/Features";
+import MainBanner from "../components/Home/MainBanner2";
+import BriefEmissionX from "../components/Home/BriefEmissionXNew";
+import OurServices from "../components/Home/OurServicesNew";
+
 
 const Index = () => {
+
+
   return (
     <div className={"duration-200 --font-inter font-inter"}>
       <>
@@ -43,19 +43,21 @@ const Index = () => {
 
         <MainBanner />
 
+        <Process />
+
         <BriefEmissionX />
-
-        {/* <Process /> */}
-
-        {/* <Features /> */}
 
         <OurServices />
 
-        {/* <Target /> */}
+        <Features />
 
-        <FunFacts />
+        {/* <OurServices /> */}
 
         <SolutionsTab />
+
+        <Target />
+
+        {/* <FunFacts /> */}
 
         <div className="dark:bg-[#151719] transition">
           <NewsLetter />

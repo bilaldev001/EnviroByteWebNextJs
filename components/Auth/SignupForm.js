@@ -45,10 +45,10 @@ const SignupForm = () => {
           Welcome back. We exist to make entrepreneurism easier.
         </h1>
       </div>
-      <GoogleSignIn
+      {/* <GoogleSignIn
         btnText="Sign Up with Google"
         text="Or, register with your email"
-      />
+      /> */}
       {/* Form */}
       <div className="container max-w-sm mx-auto">
         <Formik

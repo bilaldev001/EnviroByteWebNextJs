@@ -1,7 +1,8 @@
-import Link from "next/link";
 import React from "react";
 import { truncateString } from "../Utils/TruncateText";
 import ImageDisplay from "../Utils/Image";
+import { useRouter } from "next/router";
+import ShareBlog from "./ShareBlog";
 
 const BlogCard = ({ data }) => {
   const tagColor = (tag) => {
@@ -18,9 +19,10 @@ const BlogCard = ({ data }) => {
         return "text-gray-100 bg-purple-600 hover:bg-purple-700";
     }
   };
-  // console.log(data?.description);
+
+  const route = useRouter();
   return (
-    <Link href={`/blogs/${data?.id}`} className="blog-card-container">
+    <div className="blog-card-container">
       <ImageDisplay
         src={"https://preview.cruip.com/open-pro/images/news-inner-image.jpg"}
         alt={data?.title}
@@ -42,7 +44,8 @@ const BlogCard = ({ data }) => {
           ))}
       </div>
       <h3
-        className="blog-title dark:text-[#D9E3EA] text-[#393953] truncate"
+        onClick={() => route.push(`/blogs/${data?.id}`)}
+        className="blog-title dark:text-[#D9E3EA] text-[#393953] truncate cursor-pointer"
         title={data?.title}
       >
         {truncateString(data?.title, 70)}
@@ -55,16 +58,24 @@ const BlogCard = ({ data }) => {
           {truncateString(data?.description, 100)}
         </p>
       )}
-      <div className="flex align-items-center mt-2 ">
-        <img
-          src="https://preview.cruip.com/open-pro/images/news-author-06.jpg"
-          alt="user-img"
-          className="w-[30px] h-[30px] rounded-full"
-        />
-        <h5 className="mx-3 dark:text-[#D9E3EA]">{data?.author || ""}</h5>
-        <p>{new Date(data?.createdAt).toLocaleDateString()}</p>
+      <div className="flex align-items-center mt-2 justify-between">
+        <div className="flex align-items-center">
+          <img
+            src="https://preview.cruip.com/open-pro/images/news-author-06.jpg"
+            alt="user-img"
+            className="w-[30px] h-[30px] rounded-full"
+          />
+          <h5 className="mx-3 dark:text-[#D9E3EA] text-[#393953]">
+            {data?.author || "Authur Name"}
+          </h5>
+          <p className="mb-0">
+            {new Date(data?.createdAt).toLocaleDateString()}
+          </p>
+        </div>
+        <ShareBlog data={data} />
+        
       </div>
-    </Link>
+    </div>
   );
 };
 

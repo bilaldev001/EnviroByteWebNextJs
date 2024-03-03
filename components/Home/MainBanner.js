@@ -32,7 +32,7 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                       data-aos-once="true"
                     >
-                      <p className="">
+                      <p className="" style={{color: 'white'}}>
                         EnviroByte applies data-driven methods with
                         environmental science, software engineering, and machine
                         learning to increase efficiency and effectiveness of

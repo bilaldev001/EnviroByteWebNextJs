@@ -6,7 +6,8 @@
     "dev": "next dev",
     "startSync": "node cron.js",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "runDbMigration": "npx prisma db push"
   },
   "dependencies": {
     "@formspree/react": "2.4.0",

@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/router";
 import TextField from "../Shared/InputField";
 import Spinner from "../Utils/Spinner";
 import { useDispatch, useSelector } from "react-redux";
-
+import OpenEye from "../../public/images/auth/openeye.svg";
+import CloseEye from "../../public/images/auth/closeeye.svg";
 import { loginUser } from "../Redux/slices/AuthSlice";
 import GoogleSignIn from "./GoogleSignIn";
 
@@ -13,6 +14,7 @@ const SigninForm = () => {
   const router = useRouter();
   const disptach = useDispatch();
   const loading = useSelector((state) => state?.auth?.loading);
+  const [PEye, setPEye] = useState(false);
 
   // Login Form Initial Values
   const initialValues = {
@@ -67,6 +69,25 @@ const SigninForm = () => {
                 label="Password"
                 name="password"
                 placeholder="Enter your password"
+                righticon={
+                  PEye ? (
+                    <CloseEye
+                      width="20"
+                      className="cursor-pointer"
+                      onClick={() => {
+                        setPEye(!PEye);
+                      }}
+                    />
+                  ) : (
+                    <OpenEye
+                      width="20"
+                      className="cursor-pointer"
+                      onClick={() => {
+                        setPEye(!PEye);
+                      }}
+                    />
+                  )
+                }
               />
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center ">

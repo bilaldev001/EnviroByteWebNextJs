@@ -49,8 +49,10 @@ const BlogDetail = (props) => {
     setValidation(false);
     router.push("/signup");
   };
-  console.log(validation);
 
+  const handlePrintClick = () => {
+    window.print();
+  };
   return (
     <div className="bg-[#ffffff] dark:bg-[#151719] transition">
       <div
@@ -59,7 +61,7 @@ const BlogDetail = (props) => {
         }`}
       >
         <div className="pb-70 bg-[#ffffff] dark:bg-[#151719] transition">
-          <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center justify-between mb-3 w-full">
             <div className="flex items-start gap-2 flex-wrap text-xs font-medium">
               {blogData?.tags?.length &&
                 blogData?.tags.map((data, index) => (
@@ -73,9 +75,15 @@ const BlogDetail = (props) => {
                   </div>
                 ))}
             </div>
+            <button
+              onClick={handlePrintClick}
+              className="rounded-full bg-[#5d5dff] group-hover:bg-violet-300 w-[40px] h-[40px] flex items-center justify-center"
+            >
+              <i class="fa-solid fa-print text-white " />
+            </button>
           </div>
           <div className="d-flex justify-start items-start gap-4">
-            {blogData?.image &&
+            {blogData?.image && (
               <div className="md:w-[40%]">
                 <ImageDisplay
                   src={blogData?.image || "noimage"}
@@ -85,9 +93,9 @@ const BlogDetail = (props) => {
                   loading="lazy"
                 />
               </div>
-            }
-            <div className={`md:w-[${blogData?.image ? '60' : '100'}%]`}>
-              <h1 className="text-[2rem] text-[#0e3496] mb-2 dark:text-[#D9E3EA]">
+            )}
+            <div className={`md:w-[${blogData?.image ? "60" : "100"}%]`}>
+              <h1 className="text-[2rem] text-[#393953] mb-2 dark:text-[#D9E3EA]">
                 {blogData?.title}
               </h1>
               <p className="blog-description text-justify tracking-tight	 text-[18px]">
@@ -100,13 +108,15 @@ const BlogDetail = (props) => {
                   alt="user-img"
                   className="w-[50px] h-[50px] rounded-full"
                 />
-                <h5 className="mx-3 dark:text-[#D9E3EA]">{blogData?.author || ""}</h5>
+                <h5 className="mx-3 dark:text-[#D9E3EA] text-[#393953] ">
+                  {blogData?.author || "Authur Name"}
+                </h5>
                 <p>{new Date(blogData?.createdAt).toLocaleDateString()}</p>
               </div>
             </div>
           </div>
         </div>
-        <h1 className="text-3xl border-y py-3 mb-3 dark:text-[#D9E3EA] dark:border-gray-700">
+        <h1 className="text-3xl border-y py-3 mb-3 text-[#393953] dark:text-[#D9E3EA] dark:border-gray-700">
           More
         </h1>
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">

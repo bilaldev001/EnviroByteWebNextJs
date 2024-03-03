@@ -44,7 +44,7 @@ const EditAccountForm = () => {
       >
         {() => (
           <Form className="w-full">
-            <div className="grid grid-cols-2 gap-x-4">
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-4">
               <TextField
                 type="email"
                 label="Email"

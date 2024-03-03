@@ -24,7 +24,7 @@ const NewsLetter = () => {
     }
   };
   return (
-    <section className="container">
+    <section className="container px-0">
       <div className="news-letter-container flex flex-col md:flex-row lg:flex-row items-center py-[64px] px-[48px] mt-0">
         <div className="section-title w-full md:w-[50%] m-0 container">
           <h1 className="md:text-start text-white text-[32px] mb-2">

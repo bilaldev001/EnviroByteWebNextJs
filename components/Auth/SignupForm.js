@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/router";
@@ -6,12 +6,15 @@ import TextField from "../Shared/InputField";
 import Spinner from "../Utils/Spinner";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser } from "../Redux/slices/AuthSlice";
+import OpenEye from "../../public/images/auth/openeye.svg";
+import CloseEye from "../../public/images/auth/closeeye.svg";
 import GoogleSignIn from "./GoogleSignIn";
 
 const SignupForm = () => {
   const router = useRouter();
   const disptach = useDispatch();
   const loading = useSelector((state) => state?.auth?.loading);
+  const [PEye, setPEye] = useState(false);
 
   // Sign Up Form Initial Values
   const initialValues = {
@@ -42,7 +45,7 @@ const SignupForm = () => {
       {/* Page header */}
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-[64px] auth-page-header">
         <h1 className=" text-[#393953] dark:text-[#D9E3EA] font-[800] text-2xl md:text-[40px] lg:text-[3.25rem] px-2">
-          Welcome back. We exist to make entrepreneurism easier.
+          Welcome. We exist to make entrepreneurism easier.
         </h1>
       </div>
       {/* <GoogleSignIn
@@ -75,6 +78,25 @@ const SignupForm = () => {
                 label="Password"
                 name="password"
                 placeholder="Enter your password"
+                righticon={
+                  PEye ? (
+                    <CloseEye
+                      width="20"
+                      className="cursor-pointer"
+                      onClick={() => {
+                        setPEye(!PEye);
+                      }}
+                    />
+                  ) : (
+                    <OpenEye
+                      width="20"
+                      className="cursor-pointer"
+                      onClick={() => {
+                        setPEye(!PEye);
+                      }}
+                    />
+                  )
+                }
               />
               <button className="signin-btn default-btn w-full rounded">
                 {loading ? <Spinner /> : "Sign Up"} <span></span>

@@ -74,7 +74,7 @@ const SignupForm = () => {
                 placeholder="Enter your email"
               />
               <TextField
-                type="password"
+                type={PEye ? "text" : "password"}
                 label="Password"
                 name="password"
                 placeholder="Enter your password"

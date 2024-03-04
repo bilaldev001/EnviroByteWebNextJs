@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import Script from "next/script";
-import PageBanner from "../components/Common/PageBanner";
-import SignupForm from "../components/Auth/SignupForm";
 import ToastContainer from "../components/Shared/Toast";
 import withMainLayout from "../components/Layouts";
 import ProfileComponent from "../components/Profile/ProfileComponent";
+import { useSelector } from "react-redux";
+import { useRouter } from "next/router";
 
 const Profile = () => {
+  const router = useRouter();
+  const isAuthenticated = useSelector((state) => state?.auth?.isAuthenticated);
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      router.push("/signin");
+    }
+  }, []);
+
   return (
     <div className={"duration-200 --font-inter font-inter"}>
       <Head>
@@ -46,8 +55,12 @@ const Profile = () => {
         bgImage=""
       /> */}
 
-          {/* Form Component */}
-          <ProfileComponent/>
+      {/* Form Component */}
+      {isAuthenticated ? (
+        <ProfileComponent />
+      ) : (
+        <div className="pb-100 pt-[10rem] dark:bg-[#151719] h-[50vh]"></div>
+      )}
     </div>
   );
 };

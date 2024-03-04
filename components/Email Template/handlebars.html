@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Latest Blog</title>
+    <script>
+        function fulltemplate() {
+            console.log("called")
+            var data = {
+                title: "His mother had always taught him",
+                description: "His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto. He never looked down on those who were less fortunate or who had less money than him. But the stupidity of the group of people he was talking to made him change his mind.",
+                tags: ["history", "science", "crime"],
+                imageSrc: "https://preview.cruip.com/open-pro/images/news-inner-image.jpg",
+                author: "authur name"
+            }
+            var source = document.getElementById("entry-template").innerHTML;
+            var template = Handlebars.compile(source);
+
+            var filled = template(data)
+            document.querySelector("#output").innerHTML = filled
+        }
+    </script>
+</head>
+
+<body>
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="container mx-auto p-5">
+            <div class="flex items-start gap-2 flex-wrap text-xs font-medium mb-3">
+                {{#each tags}}
+                <div
+                    class="inline-flex text-center py-1 text-[12px] capitalize px-3 rounded-full transition duration-150 ease-in-out text-gray-100 bg-purple-600 hover:bg-purple-700">
+                    {{this}}</div>
+                {{/each}}
+            </div>
+            <div class="flex justify-start items-start md:flex-row flex-col gap-4">
+                {{#if imageSrc}}
+                <div class="md:w-[40%] w-full">
+                    <img src="{{imageSrc}}" class="w-full h-[250px] rounded" alt="title" quality="100" loading="lazy" />
+                </div>
+                <div class="md:w-[60%] w-full">
+                    <h1 class="lg:text-[2rem] text-[1.5rem] text-[#393953] mb-2 font-semibold">{{title}}</h1>
+                    <p class="text-justify tracking-tight text-[18px]">
+                        {{description}}
+                    </p>
+                    <div class="flex align-items-center mt-3">
+                        <img src="https://preview.cruip.com/open-pro/images/news-author-06.jpg" alt="user-img"
+                            class="w-[50px] h-[50px] rounded-full" />
+                        <h5 class="mx-3  text-[#393953] capitalize">
+                            {{author}}
+                        </h5>
+                        <p>{{date}}</p>
+                    </div>
+                </div>
+                {{else}}
+                <div class="w-full">
+                    <h1 class="text-[2rem] text-[#393953] mb-2 ">
+                        {{title}}
+                    </h1>
+                    <p class="text-justify tracking-tight text-[18px]">
+                        {{description}}
+                    </p>
+                    <div class="flex align-items-center mt-3">
+                        <img src="https://preview.cruip.com/open-pro/images/news-author-06.jpg" alt="user-img"
+                            class="w-[50px] h-[50px] rounded-full" />
+                        <h5 class="mx-3  text-[#393953] ">
+                            {{author}}
+                        </h5>
+                        <p>{{date}}</p>
+                    </div>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+
+    </script>
+    <div id="output"></div>
+    <button
+        class="inline-flex text-center py-1 px-3 rounded-full transition duration-150 ease-in-out text-gray-100 bg-purple-600 hover:bg-purple-700"
+        onclick="fulltemplate()">fill</button>
+</body>
+
+</html>

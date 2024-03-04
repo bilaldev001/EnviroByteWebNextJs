@@ -22,7 +22,7 @@ const BlogCard = ({ data }) => {
 
   const route = useRouter();
   return (
-    <div className="blog-card-container">
+    <div className="blog-card-container flex flex-col">
       <ImageDisplay
         src={"https://preview.cruip.com/open-pro/images/news-inner-image.jpg"}
         alt={data?.title}
@@ -39,7 +39,7 @@ const BlogCard = ({ data }) => {
                 data
               )}`}
             >
-              <p className="mb-0 text-white text-[12px]">{data}</p>
+              <p className="mb-0 text-white text-[12px] capitalize">{data}</p>
             </div>
           ))}
       </div>
@@ -52,7 +52,7 @@ const BlogCard = ({ data }) => {
       </h3>
       {data?.description && (
         <p
-          className="blog-description text-justify truncate-card-description"
+          className="blog-description text-justify truncate-card-description grow"
           title={data?.description}
         >
           {truncateString(data?.description, 100)}

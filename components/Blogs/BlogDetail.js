@@ -10,6 +10,12 @@ import { blogCount } from "../Redux/slices/AuthSlice";
 import grayMatter from "gray-matter";
 import ImageDisplay from "../Utils/Image";
 import MdxViewer from "../Utils/mdxViewer";
+import {
+  EmailIcon,
+  EmailShareButton,
+  LinkedinIcon,
+  LinkedinShareButton,
+} from "react-share";
 
 const tagColor = (tag) => {
   switch (tag) {
@@ -35,6 +41,7 @@ const BlogDetail = (props) => {
   const [validation, setValidation] = useState(
     blogCountData?.validation || isAuthenticated
   );
+  const shareUrl = window.location.href;
 
   useEffect(() => {
     const handleSubmit = () => {
@@ -54,14 +61,14 @@ const BlogDetail = (props) => {
     window.print();
   };
   return (
-    <div className="bg-[#ffffff] dark:bg-[#151719] transition">
+    <div className="bg-[#ffffff] dark:bg-[#151719] transition blog-detail">
       <div
         className={`container mx-auto pt-[10rem] pb-70 ${
           validation === true ? "" : "blur-md invert brightness-50"
         }`}
       >
         <div className="pb-70 bg-[#ffffff] dark:bg-[#151719] transition">
-          <div className="flex items-center justify-between mb-3 w-full">
+          <div className="flex items-center justify-between mb-3 w-full flex-wrap gap-3">
             <div className="flex items-start gap-2 flex-wrap text-xs font-medium">
               {blogData?.tags?.length &&
                 blogData?.tags.map((data, index) => (
@@ -75,16 +82,31 @@ const BlogDetail = (props) => {
                   </div>
                 ))}
             </div>
-            <button
-              onClick={handlePrintClick}
-              className="rounded-full bg-[#5d5dff] group-hover:bg-violet-300 w-[40px] h-[40px] flex items-center justify-center"
-            >
-              <i class="fa-solid fa-print text-white " />
-            </button>
+            <div className="flex items-center justify-between gap-2">
+              <LinkedinShareButton
+                url={`${shareUrl}${blogData?.id}`}
+                title={blogData?.title}
+              >
+                <LinkedinIcon size={40} round />
+              </LinkedinShareButton>
+              <EmailShareButton
+                url={`${shareUrl}${blogData?.id}`}
+                subject={blogData?.title}
+                body={blogData?.description}
+              >
+                <EmailIcon size={40} round />
+              </EmailShareButton>
+              <button
+                onClick={handlePrintClick}
+                className="rounded-full bg-[#5d5dff] group-hover:bg-violet-300 w-[40px] h-[40px] flex items-center justify-center"
+              >
+                <i class="fa-solid fa-print text-white " />
+              </button>
+            </div>
           </div>
-          <div className="d-flex justify-start items-start gap-4">
+          <div className="d-flex justify-start items-start md:flex-row flex-col gap-4">
             {blogData?.image && (
-              <div className="md:w-[40%]">
+              <div className="md:w-[40%] w-full">
                 <ImageDisplay
                   src={blogData?.image || "noimage"}
                   className="w-full h-[250px] rounded"
@@ -94,7 +116,9 @@ const BlogDetail = (props) => {
                 />
               </div>
             )}
-            <div className={`md:w-[${blogData?.image ? "60" : "100"}%]`}>
+            <div
+              className={`md:w-[${blogData?.image ? "60%" : "full"}] w-full`}
+            >
               <h1 className="text-[2rem] text-[#393953] mb-2 dark:text-[#D9E3EA]">
                 {blogData?.title}
               </h1>

@@ -114,8 +114,14 @@ h6 {
   color: #0e3496;
 }
 
-p {
-  font-size: 15px;
+.blog-detail li {
+  font-size: 16px;
+}
+
+p,
+code,
+pre {
+  font-size: 16px;
   line-height: 1.8;
   color: #737b9a;
   margin-bottom: 15px;
@@ -3271,9 +3277,9 @@ Subscribe Section CSS
 /*================================================
 Contact Section CSS
 =================================================*/
-.contact-section {
+/* .contact-section {
   background-color: #f6f5fb;
-}
+} */
 
 .contact-form form .form-control {
   background-color: #ffffff;
